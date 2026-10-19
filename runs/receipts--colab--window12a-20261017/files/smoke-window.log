@@ -1,0 +1,30 @@
+[16:53:25] machine: {'card': 'NVIDIA A100-SXM4-40GB', 'memory': '40960 MiB', 'driver': '580.82.07', 'compat': False, 'driver_cuda': '13.0', 'colab_release_tag': 'release-colab-external-images_20261014-060047_RC00', 'cores': 12, 'disk_free_gb': 193.2, 'runtime': '13.4'}
+[16:54:38] resources {'at': 'muse-glimmer-30b: before download', 'time': '16:54:38', 'disk_free_gb': 204.2, 'ram_available_mb': 83310, 'ram_total_mb': 85477}
+[16:54:38] downloading meta-models/Muse-Glimmer-30B (BF16) for conversion
+/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_auth.py:138: UserWarning: 
+Error while fetching `HF_TOKEN` secret value from your vault: 'Requesting secret HF_TOKEN timed out. Secrets can only be fetched when running from the Colab UI.'.
+  warnings.warn(f"\nError while fetching `HF_TOKEN` secret value from your vault: '{str(e)}'.")
+Downloading bytes:           |  0.00B            
+Reconstructing (incomplete total...): |          |  0.00B /  0.00B            
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[16:58:41] converting to Q8_0
+[17:07:17] resources {'at': 'muse-glimmer-30b: after conversion', 'time': '17:07:17', 'disk_free_gb': 113.5, 'ram_available_mb': 82007, 'ram_total_mb': 85477}
+[17:07:20] hashing muse-glimmer-30b-Q8_0.gguf
+[17:09:24] resources {'at': 'qwen3.6-35b-a3b: before download', 'time': '17:09:24', 'disk_free_gb': 173.1, 'ram_available_mb': 81961, 'ram_total_mb': 85477}
+[17:09:24] downloading Qwen/Qwen3.6-35B-A3B (BF16) for conversion
+Downloading bytes:           |  0.00B            
+Reconstructing (incomplete total...): |          |  0.00B /  0.00B            
+Fetching 37 files:   0%|          | 0/37 [00:00<?, ?it/s]
+[17:13:15] converting to Q8_0
+[17:25:38] resources {'at': 'qwen3.6-35b-a3b: after conversion', 'time': '17:25:38', 'disk_free_gb': 63.1, 'ram_available_mb': 81891, 'ram_total_mb': 85477}
+[17:25:41] hashing qwen3.6-35b-a3b-Q8_0.gguf
+[17:28:51] resources {'at': 'nemotron-3.5-lightning-30b-a3b: before download', 'time': '17:28:51', 'disk_free_gb': 135.0, 'ram_available_mb': 81620, 'ram_total_mb': 85477}
+[17:28:51] downloading nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (BF16) for conversion
+Downloading bytes:           |  0.00B            
+Reconstructing (incomplete total...): |          |  0.00B /  0.00B            
+Fetching 21 files:   0%|          | 0/21 [00:00<?, ?it/s]
+[17:31:51] converting to Q8_0
+[17:42:25] resources {'at': 'nemotron-3.5-lightning-30b-a3b: after conversion', 'time': '17:42:25', 'disk_free_gb': 34.2, 'ram_available_mb': 81876, 'ram_total_mb': 85477}
+[17:42:28] hashing nemotron-3.5-lightning-30b-a3b-Q8_0.gguf

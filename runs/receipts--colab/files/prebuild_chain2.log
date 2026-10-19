@@ -1,0 +1,14 @@
+== gemma-4-31b-it on CPU -> window13g-prebuild-gemma-20261018 07:33:11
+gemma-4-31b-it: OK commit ed13a8aca60594fe81a868f0d2d56008dcd1b3c5 files LICENSE,README.md,UPSTREAM-CARD.md,gemma-4-31b-it-Q8_0.gguf
+   VM gate rejected try 1: "why": ["Hugging Face 45.4 MB/s < 60.0"]
+   VM gate passed (try 2)
+   own rate 0.26/hr
+   exec exit=0 wall=884s end=exec
+   end balance 1163.44 (start 1163.52)
+== qwen3.8-27b on A100 -> window13i-prebuild-qwen3.8-a100-20261018 07:50:25
+qwen3.8-27b: FAIL ok=False reproduced=None sha=None error=ImportError: cannot import name 'XetAuthorizationError' from 'huggingface_hub.errors' (/usr/local/lib/python3.13/dist-packages/huggingface_hub/errors.py)
+   VM gate passed (try 1)
+   own rate 5.3/hr
+   exec exit=0 wall=861s end=exec
+   end balance 1162.42 (start 1163.44)
+CHAIN STOPPED at qwen3.8-27b

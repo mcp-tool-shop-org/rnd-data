@@ -1,0 +1,16 @@
+{
+ "run": {
+  "id": "14e-try3",
+  "venue": "colab",
+  "hardware": "A100",
+  "date": "2026-10-19",
+  "cost": 0.06,
+  "cost_unit": "colab_units",
+  "cost_basis": "estimate",
+  "outcome": "stopped",
+  "why": "stopped on R&D's ruling to make PIN_CONTENT required, which changed the script",
+  "pins": {
+   "role-set": "6f1000b"
+  }
+ }
+}

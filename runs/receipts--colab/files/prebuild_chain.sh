@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# Prebuilds 2-4 (R&D's go after Muse, 2026-10-18): Qwen3.8, Gemma 4, Granite 4.2, one CPU --high-mem session each,
+# with cc71286's scripts (as window 13e). Each must report ok, reproduced and uploaded at its expect_sha256, or the chain
+# stops there. The disk floor is each model's conversion peak (night one's readings) + 20 GB. From Git Bash:
+#   bash /e/AI/Publisher/receipts/colab/prebuild_chain.sh
+set -uo pipefail
+R=/e/AI/Publisher/receipts/colab
+SRC=$R/window13e-prebuild-muse-20261018
+HF_TOKEN_GGUF_WRITE="$(powershell.exe -NoProfile -Command "[Environment]::GetEnvironmentVariable('HF_TOKEN_GGUF_WRITE','User')" | tr -d '\r\n')"
+export HF_TOKEN_GGUF_WRITE WSLENV=HF_TOKEN_GGUF_WRITE
+# served_as | window letter | disk floor GB (peak + 20) | expected sha256
+for row in "qwen3.8-27b|f|105|2ab268e0bd3f8e5daf1280e2243ac19abd5e3bb34e8444f5cfff5147fab977d4" \
+           "gemma-4-31b-it|g|117|e357a45071c2cbbc44b97506dfadc34bac0d5f6592f1d500edfaa9647f01e7bf" \
+           "granite-4.2-30b|h|110|1b5c47835f6f8b8732550541dc432d0a351e3f706961ff3c750d3ee1987b9b4c"; do
+  IFS='|' read -r model letter floor want <<< "$row"
+  D=$R/window13$letter-prebuild-${model%%-*}-20261018
+  mkdir -p "$D"
+  cp "$SRC"/{smoke_window.sh,pin_window.py,vm_gate.py,apache-2.0.txt} "$D/"
+  sed -e "s#window13e-prebuild-muse-20261018#$(basename "$D")#g" \
+      -e "s#PIN_ONLY=muse-glimmer-30b#PIN_ONLY=$model#" \
+      -e "s#PIN_SESSION=pb-muse#PIN_SESSION=pb-${model%%-*}#" \
+      -e "s#PIN_GATE_MIN_DISK_GB=111#PIN_GATE_MIN_DISK_GB=$floor#" \
+      -e "s#Prebuild 1 of 4: Muse#Prebuild ($model)#" \
+      -e "s#expect_sha256 c321320a...#expect_sha256 ${want:0:8}...#" "$SRC/launch.sh" > "$D/launch.sh"
+  echo "== $model -> $(basename "$D") $(date -u +%T)"
+  MSYS_NO_PATHCONV=1 wsl -d Ubuntu -e bash -l "/mnt/e/AI/Publisher/receipts/colab/$(basename "$D")/launch.sh" > /dev/null 2>&1
+  verdict=$(python -I - "$D/pin-result.json" "$want" <<'PY'
+import json, sys
+try:
+    r = json.load(open(sys.argv[1], encoding="utf-8"))
+except Exception as e:
+    print(f"FAIL no pin-result ({type(e).__name__})"); sys.exit()
+u, m = r.get("uploaded") or {}, (r.get("models") or [{}])[0]
+ok = r.get("ok") and m.get("reproduced") and m.get("gguf_sha256") == sys.argv[2] and u.get("sha256") == sys.argv[2]
+print(("OK commit " + str(u.get("commit")) + " files " + ",".join(u.get("files") or [])) if ok
+      else f"FAIL ok={r.get('ok')} reproduced={m.get('reproduced')} sha={str(m.get('gguf_sha256'))[:12]} error={str(r.get('error'))[:160]}")
+PY
+)
+  echo "$model: $verdict"
+  case "$verdict" in OK*) ;; *) echo "CHAIN STOPPED at $model"; exit 1;; esac
+done
+echo "CHAIN DONE $(date -u +%T)"

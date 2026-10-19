@@ -1,0 +1,11 @@
+[01:12:41] PROBE file {"name": "qwen3.8-27b/qwen3.8-27b-Q8_0.gguf", "size": 29047084448, "xet_hash": true, "lfs": true} hub 1.33.0 hf_xet present
+[01:12:51] PROBE {"t": 10.0, "watch_bytes": 3148058816, "watch_alloc": 3148070912, "watch_files": 4, "xet_bytes": 186585, "xet_alloc": 188416, "xet_files": 1, "free": 217310392320}
+[01:13:01] PROBE {"t": 20.0, "watch_bytes": 6595117248, "watch_alloc": 6595133440, "watch_files": 4, "xet_bytes": 322963, "xet_alloc": 323584, "xet_files": 1, "free": 213862137856}
+[01:13:11] PROBE {"t": 30.0, "watch_bytes": 10180772032, "watch_alloc": 10180788224, "watch_files": 4, "xet_bytes": 431736, "xet_alloc": 434176, "xet_files": 1, "free": 210277400576}
+[01:13:21] PROBE {"t": 40.0, "watch_bytes": 13931921600, "watch_alloc": 13931933696, "watch_files": 4, "xet_bytes": 542741, "xet_alloc": 544768, "xet_files": 1, "free": 206526115840}
+[01:13:31] PROBE {"t": 50.0, "watch_bytes": 17554870464, "watch_alloc": 17554882560, "watch_files": 4, "xet_bytes": 637545, "xet_alloc": 638976, "xet_files": 1, "free": 202903048192}
+[01:13:41] PROBE {"t": 60.0, "watch_bytes": 21123764416, "watch_alloc": 21123776512, "watch_files": 4, "xet_bytes": 747139, "xet_alloc": 749568, "xet_files": 1, "free": 199334027264}
+[01:13:51] PROBE {"t": 70.0, "watch_bytes": 24396013760, "watch_alloc": 24396025856, "watch_files": 4, "xet_bytes": 851610, "xet_alloc": 851968, "xet_files": 1, "free": 196061642752}
+[01:14:01] PROBE {"t": 80.0, "watch_bytes": 28268867776, "watch_alloc": 28268879872, "watch_files": 4, "xet_bytes": 906707, "xet_alloc": 909312, "xet_files": 1, "free": 192188862464}
+[01:14:03] PROBE {"t": 82.4, "watch_bytes": 29047084765, "watch_alloc": 29047103488, "watch_files": 5, "xet_bytes": 907105, "xet_alloc": 909312, "xet_files": 1, "free": 191410638848}
+PIN_RESULT {"probe": "xet-signal", "job_token": "probe13u-1792372234", "model": "qwen3.8-27b", "hf_xet": "present", "hub_version": "1.33.0", "file": {"name": "qwen3.8-27b/qwen3.8-27b-Q8_0.gguf", "size": 29047084448, "xet_hash": true, "lfs": true}, "seconds": 245, "sha256": "2ab268e0bd3f8e5daf1280e2243ac19abd5e3bb34e8444f5cfff5147fab977d4", "reproduced": true, "ok": true, "token_clean": {"file_gone": true, "value_dropped": true, "env_clear": true, "no_cached_token": true, "no_colab_secret": true}}

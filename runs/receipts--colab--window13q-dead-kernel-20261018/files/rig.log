@@ -1,0 +1,19 @@
+start balance 1141.11, account rate 0.00/hr 2026-10-18T18:16:33Z
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /dev/null
+[colab] Creating session 'dead13q'...
+[colab] Session READY.
+VM gate passed (try 1)
+Usage rate: 0.08/hr
+Active assignments: 1
+own rate 0.08/hr
+deadline 19:24:27 (cap 0.1 less 0.01 at 0.08/hr); grace 180s
+STALL (dead13q): job.log unchanged for 20 minutes 18:43:22
+exec exit=124 wall=1585s end=stall
+fetched job.log (261 bytes)
+[colab] Download failed: File or directory not found: /content/pin/pin-result.json
+exit fetch took 2s
+end balance 1141.08 (start 1141.11)
+stopping dead13q
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

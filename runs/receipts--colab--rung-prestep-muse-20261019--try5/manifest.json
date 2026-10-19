@@ -1,0 +1,187 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--rung-prestep-muse-20261019--try5",
+ "kind": "run",
+ "source": "receipts/colab/rung-prestep-muse-20261019/try5",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": ".end",
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "bytes": 5,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".exec.pid",
+   "sha256": "06c89d06453a18f77191aadde945b5e582ce14959554d8fceb421b41c343e585",
+   "bytes": 4,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".fetch.out",
+   "sha256": "d97dc9b914f9d566c1d0afc0a2bd2e870811f91e9e5b328549b226221b70dc8a",
+   "bytes": 70,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "gate.jsonl",
+   "sha256": "1cdfba0948e4a27fa9471fb1ff1d47129bf71182a2140f549e76b1c7a406c8aa",
+   "bytes": 547,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "job.log",
+   "sha256": "cc4da9111e1f593eb1d583766819f5049937d626247321e8018971067e0e3849",
+   "bytes": 8268,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "launch.sh",
+   "sha256": null,
+   "bytes": 1132,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "outcome.draft.json",
+   "sha256": "72736f7bb4dedf0dd3eec234e779d4b630c1a73c6f8baf891af19034c4dc33a0",
+   "bytes": 174,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "outcome.json",
+   "sha256": "cdcf1714778aa61ca57ede6fb0041e4fbfba39ec3ebc180580f7bf2c9fe600f5",
+   "bytes": 390,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result.json",
+   "sha256": "940c79005555c45556677d59739ccb2646b7688ea37e399ebd079e460da1509c",
+   "bytes": 7737,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "prestep_fit_tokenizer.py",
+   "sha256": "a250464ab9f11b0f2ba6b1d3679523bffbb4bdcb5af0944a41e314dedde18f24",
+   "bytes": 5895,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "rung_prestep_muse.py",
+   "sha256": "229748a229fa8ad9c4724ba1b812e753c14405886db071775a52fc4f00ce202e",
+   "bytes": 5126,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke-window.log",
+   "sha256": "9c50ab808fef5f9c2c1803b725c5ff7e4363620c3a98127b3a2aeb564d1e2cc6",
+   "bytes": 8627,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "status.log",
+   "sha256": null,
+   "bytes": 930,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "window.log",
+   "sha256": null,
+   "bytes": 1739,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/.end"
+  },
+  {
+   "sha256": "06c89d06453a18f77191aadde945b5e582ce14959554d8fceb421b41c343e585",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/.exec.pid"
+  },
+  {
+   "sha256": "d97dc9b914f9d566c1d0afc0a2bd2e870811f91e9e5b328549b226221b70dc8a",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/.fetch.out"
+  },
+  {
+   "sha256": "1cdfba0948e4a27fa9471fb1ff1d47129bf71182a2140f549e76b1c7a406c8aa",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/gate.jsonl"
+  },
+  {
+   "sha256": "cc4da9111e1f593eb1d583766819f5049937d626247321e8018971067e0e3849",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/job.log"
+  },
+  {
+   "sha256": "72736f7bb4dedf0dd3eec234e779d4b630c1a73c6f8baf891af19034c4dc33a0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/outcome.draft.json"
+  },
+  {
+   "sha256": "cdcf1714778aa61ca57ede6fb0041e4fbfba39ec3ebc180580f7bf2c9fe600f5",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/outcome.json"
+  },
+  {
+   "sha256": "940c79005555c45556677d59739ccb2646b7688ea37e399ebd079e460da1509c",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/pin-result.json"
+  },
+  {
+   "sha256": "a250464ab9f11b0f2ba6b1d3679523bffbb4bdcb5af0944a41e314dedde18f24",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/prestep_fit_tokenizer.py"
+  },
+  {
+   "sha256": "229748a229fa8ad9c4724ba1b812e753c14405886db071775a52fc4f00ce202e",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/rung_prestep_muse.py"
+  },
+  {
+   "sha256": "9c50ab808fef5f9c2c1803b725c5ff7e4363620c3a98127b3a2aeb564d1e2cc6",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/smoke-window.log"
+  }
+ ],
+ "private_files": {
+  "unapproved": 1
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

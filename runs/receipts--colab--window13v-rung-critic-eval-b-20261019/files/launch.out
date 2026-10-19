@@ -1,0 +1,26 @@
+start balance 1136.49, account rate 0.00/hr 2026-10-19T05:29:00Z
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /dev/null
+[colab] Creating session 'pinw13vb'...
+[colab] Session READY.
+VM gate passed (try 1)
+Usage rate: 0.08/hr
+Active assignments: 1
+own rate 0.08/hr
+deadline 05:46:40 (cap 0.033 less 0.01 at 0.08/hr); grace 60s
+uploaded pack.tar aa11101c9d47e45f
+uploaded card-values.json 36cd89bbd95f2918
+uploaded critic-eval-inputs.tar.gz ead500b16c4ec924
+uploaded resume-a.tar 97d9c18ecae9f63b
+uploaded the token file (owner-only, deleted on the rig)
+exec exit=0 wall=1039s end=exec
+fetched job.log (96537 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window13v-rung-critic-eval-b-20261019/pin-result.json'
+[colab] Downloaded '/content/pin/critic-eval-out.tar' to '/mnt/e/AI/Publisher/receipts/colab/window13v-rung-critic-eval-b-20261019/critic-eval-out.tar'
+exit fetch took 2s
+PIN_RESULT {"started": "2026-10-19T05:29:34Z", "job_token": "pinw13vb-1792387765", "stub": true, "machine": {"card": "STUB (CPU)", "memory": "0 MiB", "driver": "stub", "compat": false, "driver_cuda": "stub", "colab_release_tag": "release-colab-external-images_20261014-060047_RC00", "cores": 2, "disk_free_gb": 205.3, "runtime": "13.4", "stub": true}, "role": "critic-eval", "llama_server": {"commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab", "sha256": "b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3", "path": "stub", "stub": true}, "token_clean": {"file_gone": true, "value_dro
+end balance 1136.47 (start 1136.49)
+stopping pinw13vb
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.
+launch_rc=0

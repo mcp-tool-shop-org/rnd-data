@@ -1,0 +1,39 @@
+{
+ "started": "2026-10-19T16:28:22Z",
+ "job_token": null,
+ "machine": {
+  "card": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "memory": "97887 MiB",
+  "driver": "615.71.09",
+  "compat": false,
+  "driver_cuda": "",
+  "colab_release_tag": null,
+  "cores": 256,
+  "disk_free_gb": 699.9,
+  "runtime": "13.4"
+ },
+ "role": "convert",
+ "only": [
+  "nemotron-3.5-super-vl-120b-a12b"
+ ],
+ "models": [],
+ "ok": false,
+ "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc4 in position 4830: invalid continuation byte",
+ "resources": [
+  {
+   "at": "nemotron-3.5-super-vl-120b-a12b: before download",
+   "time": "16:28:43",
+   "disk_free_gb": 750.8,
+   "ram_available_mb": 1336666,
+   "ram_total_mb": 1547639
+  },
+  {
+   "at": "nemotron-3.5-super-vl-120b-a12b: after BF16 conversion",
+   "time": "16:54:16",
+   "disk_free_gb": 251.4,
+   "ram_available_mb": 1301249,
+   "ram_total_mb": 1547639
+  }
+ ],
+ "ended": "2026-10-19T16:56:19Z"
+}

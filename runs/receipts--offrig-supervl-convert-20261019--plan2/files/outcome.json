@@ -1,0 +1,78 @@
+{
+ "plan": 2,
+ "pod": "ie84jmvrmsv878",
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+ "region": "EU-CZ",
+ "host": {
+  "threads": 256,
+  "ram_gb": 1511,
+  "disk_gb": 700
+ },
+ "pin_window": {
+  "convert": "d40451f (ced14783 on the pod)",
+  "upload": "e2c101a (3cfd927d)"
+ },
+ "times_utc": {
+  "download": "16:28:43-16:32:04 (249 GB, 3 min 21 s)",
+  "bf16": "16:32:54-16:54:16 (1,282 s)",
+  "quantize_run1": "16:54:16-16:56:19 (rc lost: run_proc UnicodeDecodeError 0xc4)",
+  "quantize_clean": "17:09:57-17:11:49 (rc 0, 112 s)",
+  "upload": "17:16:35-17:21:01 (rung + real)",
+  "shutdown": "17:21:47"
+ },
+ "gguf_sha256": "6fa3c010ebd015d298d910a2ab6ad4d953155b1cc418b0f54581075aafbeeb02",
+ "gguf_bytes": 131601242400,
+ "quantize_deterministic": true,
+ "bf16_sha256": "209425cfc1f220736fcc483d0f934d64615524909c81ec9ff136937aa45f769f",
+ "types": {
+  "Q8_0": 365,
+  "F32": 415,
+  "BF16": 1
+ },
+ "tensors": 781,
+ "upload": {
+  "repo": "private OpenMDW repo",
+  "commit": "bbc611ce4ed9fb7204f443181b8b1f1f4a37f7fb",
+  "rung_commit": "6069e51a934601057ef5457966d9231023d13dbe",
+  "rung_checks": {
+   "licence_accepted": true,
+   "licence_file": true,
+   "readme_note": true,
+   "deleted": true
+  },
+  "verified_from_rig": "private, size and LFS sha256 match",
+  "readme_fix": {
+   "commit": "438cdfacf71b33cc56a4c1d5aa0dfb565dc0b752",
+   "readme_sha256": "a002404fdb38095610eae838137db91f376d49c93478771c2b09af0a307610f1",
+   "why": "the first README said --outtype q8_0; the route was BF16 then llama-quantize (R&D 2026-10-19)"
+  }
+ },
+ "tokenizer_hf": {
+  "file": "tokenizer_hf-super-vl.json",
+  "sha256": "578793a973ac163baa30e6b96eba5a7e3b60c839eb8f39c8f5a668e3f5242138",
+  "strings": 50,
+  "transformers": "5.20.1",
+  "note": "recorded after the run; the conversion's tokenizer_check never ran"
+ },
+ "mistakes": [
+  45,
+  46
+ ],
+ "spent_usd": 2.34,
+ "publisher_offrig_spent_usd": 5.39,
+ "run": {
+  "id": "publisher-plan2",
+  "venue": "runpod",
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "date": "2026-10-19",
+  "cost": 2.34,
+  "cost_unit": "usd",
+  "cost_basis": "balance",
+  "cap": 8.72,
+  "outcome": "results",
+  "pins": {
+   "role-set": "d40451f",
+   "role-set-upload": "e2c101a"
+  }
+ }
+}

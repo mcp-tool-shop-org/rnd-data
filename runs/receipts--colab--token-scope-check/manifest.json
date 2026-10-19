@@ -1,0 +1,55 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--token-scope-check",
+ "kind": "collection",
+ "source": "receipts/colab/token-scope-check",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "result-scopes.json",
+   "sha256": null,
+   "bytes": 673,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "result.json",
+   "sha256": null,
+   "bytes": 1013,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "run.sh",
+   "sha256": "cf8c0e11a0a2d61ca46f6e55e9fb048cf683abca073f2e3a9b04fd891884d72c",
+   "bytes": 895,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "token_scope_check.py",
+   "sha256": null,
+   "bytes": 2993,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "cf8c0e11a0a2d61ca46f6e55e9fb048cf683abca073f2e3a9b04fd891884d72c",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--token-scope-check/files/run.sh"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

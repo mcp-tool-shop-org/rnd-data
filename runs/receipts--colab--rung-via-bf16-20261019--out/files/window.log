@@ -1,0 +1,25 @@
+start balance 1107.44, account rate 0.00/hr 2026-10-19T17:31:30Z
+9d8074b01151a2944d2207047552a8f3019990dcef0a672b2d36f547b24d1113  colab/pin_window.py
+[colab] Creating session 'rungbf16'...
+[colab] Session READY.
+VM gate passed (try 1)
+Usage rate: 0.26/hr
+Active assignments: 1
+own rate 0.26/hr
+deadline 20:13:26 (cap 1 less 0.3 at 0.26/hr); grace 60s
+uploaded pin_window.py 9d8074b01151a294
+exec exit=0 wall=263s end=exec
+fetched job.log (20519 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to 'out/pin-result.json'
+[colab] Download failed: File or directory not found: /content/pin/pilot-out.tar
+[colab] Download failed: File or directory not found: /content/pin/lib.tar
+[colab] Download failed: File or directory not found: /content/pin/generations.jsonl
+exit fetch took 3s
+PIN_RESULT {"started": "2026-10-19T17:31:56Z", "job_token": "rungbf16-1792431114", "machine": {"card": "CPU", "memory": "0 MiB", "driver": "none", "compat": false, "driver_cuda": "none", "colab_release_tag": "release-colab-external-images_20261016-060059_RC01", "cores": 8, "disk_free_gb": 205.3, "runtime": "none", "cpu": true}, "role": "convert", "only": ["qwen2.5-0.5b-instruct"], "models": [{"served_as": "qwen2.5-0.5b-instruct", "repo": "Qwen/Qwen2.5-0.5B-Instruct", "revision": "7ae557604adf67be50417f59c2c2f167def9a775", "card": null, "convert_timeout_s": 3600, "llama_quantize": {"path": "/co
+end balance 1107.44 (start 1107.44)
+open lock not free after 60 s; stopping rungbf16 anyway
+stopping rungbf16
+[colab] Session terminated.
+sessions after stop:
+[rungpre] gpu-a100-s-kkb-euw4a0-20zi5rknbcgys | Hardware: A100 | Shape: Standard | Variant: GPU
+rc=0

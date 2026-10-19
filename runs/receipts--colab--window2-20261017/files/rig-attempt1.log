@@ -1,0 +1,15 @@
+/mnt/e/AI/role-set-regen/scripts/colab/smoke_window.sh: line 38: syntax error near unexpected token `then'
+/mnt/e/AI/role-set-regen/scripts/colab/smoke_window.sh: line 38: `i "fail\|error"; then ok=1; break; fi'
+...
+[colab] Session READY.
+Usage rate: 5.30/hr
+Active assignments: 1
+[colab] Upload failed: HTTPSConnectionPool(host='8080-gpu-a100-s-kkb-ass1b0-24sdeeoqieayj-b.asia-southeast1-0.prod.colab.dev', port=443): Max retries exceeded with url: /api/contents/content/llama-server?authuser=0&colab-runtime-proxy-token=eyJhbGciOiJFUzI1NiIsICJraWQiOiJzUlJHdWcifQ.eyJhdWQiOiJncHUtYTEwMC1zLWtrYi1hc3MxYjAtMjRzZGVlb3FpZWF5aiIsICJleHAiOjE3OTIyMTQzOTksICJwb3J0Ijo4MDgwfQ.IL7lTon9M9kBk13sH4PY8CY6eUodEA5psFgH0UGST2Q8MBDKfDH4x1kUTNBEJQKtNh7kBcuVW9rcuk1MhIlwOA (Caused by SSLError(SSLError(5, '[SSL: UNEXPECTED_EOF_WHILE_READING] unexpected eof while reading (_ssl.c:2658)')))
+exec exit=0 wall=22s
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window2-20261017/pin-result.json'
+[colab] Download failed: File or directory not found: /content/pin/lib.tar
+[colab] Download failed: File or directory not found: /content/pin/generations.jsonl
+stopping pinw2
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

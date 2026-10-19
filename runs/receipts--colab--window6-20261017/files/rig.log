@@ -1,0 +1,19 @@
+start balance 1192.18 2026-10-17T09:58:32Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+ColabRequestError: Failed to issue request POST 
+https://colab.research.google.com/tun/m/assign?nbh=64f75742_1395_438f_bae2_aaa76aa67fd2........&variant=GPU&accelerator=H100: Service Unavailable
+Usage rate: 0.00/hr
+Active assignments: 0
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+exec exit=1 wall=0s
+[colab] Session 'pinw6' not found.
+[colab] Session 'pinw6' not found.
+[colab] Session 'pinw6' not found.
+end balance 1192.18 (start 1192.18)
+stopping colab
+[colab] Session 'colab' not found.
+sessions after stop:
+[colab] No active sessions found on server.

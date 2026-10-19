@@ -1,0 +1,15 @@
+scripts/colab/smoke_window.sh: line 52: syntax error near unexpected token `('
+scripts/colab/smoke_window.sh: line 52: `echo "end balance $(bal) (start $START)"'
+uild/llama-server
+[colab] Creating session 'pinw2'...
+[colab] Session READY.
+Usage rate: 5.30/hr
+Active assignments: 1
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+stopping pinw2
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

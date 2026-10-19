@@ -1,0 +1,37 @@
+{
+ "plan3": {
+  "plan": 3,
+  "pod": "pyjtkz8y5w2dld",
+  "gpu": "NVIDIA H200",
+  "host_cuda": "13.2",
+  "usd_per_hr": 5.29,
+  "created_utc": "2026-10-19T18:15:17Z",
+  "ended": "offrig stopped the launch at ~902 s: pod RUNNING but no ssh endpoint (pod_not_ready, retryable); terminated, plan closed",
+  "spent_usd": 1.33,
+  "ran": "nothing (no ssh); setup, stub, pre-step and critic-eval not reached",
+  "bundle": {
+   "pin_window": "9d8074b0 (role-set 89b5f2e)",
+   "prestep": "a250464a",
+   "card_values": "ebb459e5",
+   "inputs": "75655bfc",
+   "tokenizer_hf": "578793a9"
+  },
+  "publisher_runpod_spent_usd": 6.72,
+  "step1_cap_left_usd": 15.28,
+  "relaunch_max_hours_at_5_29": 2.85
+ },
+ "plan4": {
+  "plan": 4,
+  "pod": "aftnvggbhttb2v",
+  "gpu": "NVIDIA H200",
+  "host_cuda": "13.2",
+  "usd_per_hr": 5.29,
+  "capacity_wait_s": 306,
+  "boot": "RUNNING but no ssh endpoint; offrig stopped it at ~898 s (pod_not_ready, retryable), terminated, plan closed",
+  "spent_usd": 1.33,
+  "ran": "nothing"
+ },
+ "profile_check": "critic-h200 matches the profiles that booted (same image runpod/pytorch:2.8.0-py3.11-cuda12.8.1, same [profiles.job]); differs only in card and min_cuda 13.0",
+ "publisher_runpod_spent_usd": 8.05,
+ "step1_cap_left_usd": 13.95
+}

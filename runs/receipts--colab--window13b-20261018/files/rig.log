@@ -1,0 +1,28 @@
+start balance 1071.67, account rate 0.00/hr 2026-10-18T03:52:32Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+[colab] Creating session 'pinw13b'...
+[colab] Session READY.
+Usage rate: 5.30/hr
+Active assignments: 1
+own rate 5.3/hr
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+uploaded pack.tar aa11101c9d47e45f
+uploaded card-values.json 36cd89bbd95f2918
+uploaded resume.tar 1f5348940987c7fa
+uploaded prior.tar 2b49f6ac54e967a8
+exec exit=0 wall=5241s end=exec
+fetched job.log (397429 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window13b-20261018/pin-result.json'
+[colab] Downloaded '/content/pin/pilot-out.tar' to '/mnt/e/AI/Publisher/receipts/colab/window13b-20261018/pilot-out.tar'
+[colab] Downloaded '/content/pin/lib.tar' to '/mnt/e/AI/Publisher/receipts/colab/window13b-20261018/lib.tar'
+[colab] Download failed: File or directory not found: /content/pin/generations.jsonl
+exit fetch took 50s
+PIN_RESULT {"started": "2026-10-18T03:54:12Z", "job_token": "pinw13b-1792295572", "machine": {"card": "NVIDIA A100-SXM4-40GB", "memory": "40960 MiB", "driver": "580.82.07", "compat": false, "driver_cuda": "13.0", "colab_release_tag": "release-colab-external-images_20261014-060047_RC00", "cores": 12, "disk_free_gb": 193.2, "runtime": "13.4"}, "role": "pilot", "llama_server": {"commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab", "sha256": "b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3", "path": "/content/pin/llama-server", "src": "/content/pin/llama.cpp", "cuda_wheels": ["nvi
+end balance 1163.79 (start 1071.67)
+stopping pinw13b
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

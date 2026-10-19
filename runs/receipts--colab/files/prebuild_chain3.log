@@ -1,0 +1,14 @@
+== qwen3.8-27b on A100 -> window13j-prebuild-qwen3.8-a100-20261018 08:53:52
+qwen3.8-27b: OK commit 733c9901e2651494a7794fae31c2e8bc3fee6a28 files LICENSE,README.md,UPSTREAM-CARD.md,qwen3.8-27b-Q8_0.gguf
+   VM gate rejected try 1: "why": ["the gate exec died or timed out before it printed"]
+   VM gate passed (try 2)
+   own rate 5.3/hr
+   exec exit=0 wall=1139s end=exec
+   end balance 1160.78 (start 1162.35)
+== granite-4.2-30b on A100 -> window13k-prebuild-granite-a100-20261018 09:18:30
+granite-4.2-30b: OK commit d847f5b87a6b0f8cb9ae3ff5c6330bafb0364670 files LICENSE,README.md,UPSTREAM-CARD.md,granite-4.2-30b-Q8_0.gguf
+   VM gate passed (try 1)
+   own rate 5.3/hr
+   exec exit=0 wall=1222s end=exec
+   end balance 1158.69 (start 1160.34)
+CHAIN DONE 09:41:13

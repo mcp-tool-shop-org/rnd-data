@@ -1,0 +1,1 @@
+{"window": "window13r-dead-kernel-stall600-20261018", "date": "2026-10-18", "commit": "69fc18a22bb5e032a383979eba64c31e9e2a64d8", "card": "CPU", "cap": 0.1, "spent": 0.02, "basis": "rate_x_runtime", "end": "stall", "outcome": null, "why": null}

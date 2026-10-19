@@ -1,0 +1,26 @@
+start balance 1158.67, account rate 0.00/hr 2026-10-18T09:59:55Z
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /dev/null
+[colab] Creating session 'pinw13m'...
+[colab] Session READY.
+VM gate passed (try 1)
+Usage rate: 0.26/hr
+Active assignments: 1
+own rate 0.26/hr
+uploaded pack.tar aa11101c9d47e45f
+uploaded card-values.json 36cd89bbd95f2918
+uploaded resume.tar 3d8b7ed583a3d23a
+uploaded prior.tar ed8263776dc09b7e
+uploaded the token file (owner-only, deleted on the rig)
+exec exit=0 wall=884s end=exec
+fetched job.log (505189 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window13m-rung-wa-20261018/pin-result.json'
+[colab] Downloaded '/content/pin/pilot-out.tar' to '/mnt/e/AI/Publisher/receipts/colab/window13m-rung-wa-20261018/pilot-out.tar'
+[colab] Download failed: File or directory not found: /content/pin/lib.tar
+[colab] Download failed: File or directory not found: /content/pin/generations.jsonl
+exit fetch took 24s
+PIN_RESULT {"started": "2026-10-18T10:00:36Z", "job_token": "pinw13m-1792317628", "stub": true, "machine": {"card": "STUB (CPU)", "memory": "0 MiB", "driver": "stub", "compat": false, "driver_cuda": "stub", "colab_release_tag": "release-colab-external-images_20261014-060047_RC00", "cores": 8, "disk_free_gb": 205.3, "runtime": "13.4", "stub": true}, "role": "pilot", "llama_server": {"commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab", "sha256": "b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3", "path": "stub", "stub": true}, "role_set": {"commit": "430285a379aa8d6f452e730830d6
+end balance 1158.62 (start 1158.67)
+stopping pinw13m
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

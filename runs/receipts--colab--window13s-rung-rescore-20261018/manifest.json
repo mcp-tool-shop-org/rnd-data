@@ -1,0 +1,15 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--window13s-rung-rescore-20261018",
+ "kind": "run",
+ "source": "receipts/colab/window13s-rung-rescore-20261018",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [],
+ "copies": [],
+ "private_files": {
+  "item-text": 27
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

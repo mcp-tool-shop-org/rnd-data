@@ -1,0 +1,24 @@
+start balance 1163.52, account rate 0.08/hr 2026-10-18T07:33:12Z
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /dev/null
+[colab] Creating session 'pb-gemma-cpu'...
+[colab] Session READY.
+VM gate rejected try 1: "why": ["Hugging Face 45.4 MB/s < 60.0"]
+[colab] Session terminated.
+[colab] Creating session 'pb-gemma-cpu'...
+[colab] Session READY.
+VM gate passed (try 2)
+Usage rate: 0.34/hr
+Active assignments: 2
+own rate 0.26/hr
+uploaded apache-2.0.txt cfc7749b96f63bd3
+uploaded the token file (owner-only, deleted on the rig)
+exec exit=0 wall=884s end=exec
+fetched job.log (7106 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window13g-prebuild-gemma-20261018/pin-result.json'
+exit fetch took 1s
+PIN_RESULT {"started": "2026-10-18T07:34:15Z", "job_token": "pb-gemma-cpu-1792308852", "machine": {"card": "CPU", "memory": "0 MiB", "driver": "none", "compat": false, "driver_cuda": "none", "colab_release_tag": "release-colab-external-images_20261014-060047_RC00", "cores": 8, "disk_free_gb": 205.3, "runtime": "none", "cpu": true}, "role": "prebuild", "only": ["gemma-4-31b-it"], "models": [{"served_as": "gemma-4-31b-it", "repo": "google/gemma-4-31B-it", "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475", "card": null, "tokenizer_hf": [[23391], [9259, 236764, 1902, 236888], [818, 3823, 8864
+end balance 1163.44 (start 1163.52)
+stopping pb-gemma-cpu
+[colab] Session terminated.
+sessions after stop:
+[cpusurv] m-s-kkb-usc1b1-3p458lf5p9j41 | Hardware: CPU | Shape: Standard | Variant: DEFAULT

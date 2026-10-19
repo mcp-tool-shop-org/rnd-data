@@ -1,0 +1,43 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--cpu-measure-20261018",
+ "kind": "run",
+ "source": "receipts/colab/cpu-measure-20261018",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "gate.jsonl",
+   "sha256": "03d1fb3d36da32797a2fa44f1395976d93b18a3454de147ab6ba64b4d018a132",
+   "bytes": 730,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "outcome.json",
+   "sha256": "7f20771a71d4e54b849b8123e87d3b9b970f33db0a5ad9c330c83454bf19e872",
+   "bytes": 219,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "03d1fb3d36da32797a2fa44f1395976d93b18a3454de147ab6ba64b4d018a132",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--cpu-measure-20261018/files/gate.jsonl"
+  },
+  {
+   "sha256": "7f20771a71d4e54b849b8123e87d3b9b970f33db0a5ad9c330c83454bf19e872",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--cpu-measure-20261018/files/outcome.json"
+  }
+ ],
+ "private_files": {
+  "unapproved": 1
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

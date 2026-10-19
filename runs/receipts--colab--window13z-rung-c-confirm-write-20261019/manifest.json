@@ -1,0 +1,210 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--window13z-rung-c-confirm-write-20261019",
+ "kind": "run",
+ "source": "receipts/colab/window13z-rung-c-confirm-write-20261019",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": ".end",
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "bytes": 5,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".exec.pid",
+   "sha256": "8dcb6add5f6aa489a85a0535bf7d8ec66fe54b7d5c4f6868122c5d2d475e8586",
+   "bytes": 4,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".fetch.out",
+   "sha256": "e228c6dda075bb99028f5f93ace839a214cab1b7a9679f6181295241f431e07f",
+   "bytes": 141,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "card-values.json",
+   "sha256": "36cd89bbd95f2918528ae40b6ebfc1b91c3f17daccc0db708f36251b0bc9e207",
+   "bytes": 11011,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "gate.jsonl",
+   "sha256": "7b8fb766d29fc61a77d056827232ae8349e9b54b835bf0126dea41ba63a6af44",
+   "bytes": 365,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "job.log",
+   "sha256": null,
+   "bytes": 128024,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "launch.out",
+   "sha256": "a04334c3ab8cc9af9875b7d9c0966946cfedc641337ac8f62280ba67e4d19207",
+   "bytes": 1609,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "launch.sh",
+   "sha256": null,
+   "bytes": 3108,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "outcome.draft.json",
+   "sha256": "78d23e9ef65acfff354a96983bef844b80cf3ce6e673992a1b5ded4734dfe05f",
+   "bytes": 245,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "outcome.json",
+   "sha256": "4ab7c985a41f606fb5f8c83a999cc71ad3f8ef56380fdab83cbfcb54ba5a7402",
+   "bytes": 843,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result.json",
+   "sha256": null,
+   "bytes": 6416,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "rig.log",
+   "sha256": "6c6dfe1785d7d6202e38f132e7103e899526fbdcba11e7ff42fac217ad82eecf",
+   "bytes": 1597,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke-window.log",
+   "sha256": null,
+   "bytes": 128517,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "smoke_window.sh",
+   "sha256": "a74821aa2d6aef573277147f427dafb6f5d4f3b1559824ef1bf06eb3f977336d",
+   "bytes": 20189,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "status.log",
+   "sha256": "fa64be397c6b291dc299670c1ff43cc8e7adb0f7c1b3656c99c56f4a8489b0b2",
+   "bytes": 3410,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "vm_gate.py",
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "bytes": 6116,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/.end"
+  },
+  {
+   "sha256": "8dcb6add5f6aa489a85a0535bf7d8ec66fe54b7d5c4f6868122c5d2d475e8586",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/.exec.pid"
+  },
+  {
+   "sha256": "e228c6dda075bb99028f5f93ace839a214cab1b7a9679f6181295241f431e07f",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/.fetch.out"
+  },
+  {
+   "sha256": "36cd89bbd95f2918528ae40b6ebfc1b91c3f17daccc0db708f36251b0bc9e207",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/card-values.json"
+  },
+  {
+   "sha256": "7b8fb766d29fc61a77d056827232ae8349e9b54b835bf0126dea41ba63a6af44",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/gate.jsonl"
+  },
+  {
+   "sha256": "a04334c3ab8cc9af9875b7d9c0966946cfedc641337ac8f62280ba67e4d19207",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/launch.out"
+  },
+  {
+   "sha256": "78d23e9ef65acfff354a96983bef844b80cf3ce6e673992a1b5ded4734dfe05f",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/outcome.draft.json"
+  },
+  {
+   "sha256": "4ab7c985a41f606fb5f8c83a999cc71ad3f8ef56380fdab83cbfcb54ba5a7402",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/outcome.json"
+  },
+  {
+   "sha256": "6c6dfe1785d7d6202e38f132e7103e899526fbdcba11e7ff42fac217ad82eecf",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/rig.log"
+  },
+  {
+   "sha256": "a74821aa2d6aef573277147f427dafb6f5d4f3b1559824ef1bf06eb3f977336d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/smoke_window.sh"
+  },
+  {
+   "sha256": "fa64be397c6b291dc299670c1ff43cc8e7adb0f7c1b3656c99c56f4a8489b0b2",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/status.log"
+  },
+  {
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/vm_gate.py"
+  }
+ ],
+ "private_files": {
+  "item-text": 17,
+  "unapproved": 17
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

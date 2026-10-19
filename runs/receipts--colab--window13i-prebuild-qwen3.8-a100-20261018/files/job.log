@@ -1,0 +1,14 @@
+[07:51:10] machine: {'card': 'NVIDIA A100-SXM4-40GB', 'memory': '40960 MiB', 'driver': '580.82.07', 'compat': False, 'driver_cuda': '13.0', 'colab_release_tag': 'release-colab-external-images_20261014-060047_RC00', 'cores': 12, 'disk_free_gb': 193.3, 'runtime': '13.4'}
+[07:51:48] resources {'at': 'qwen3.8-27b: before download', 'time': '07:51:48', 'disk_free_gb': 206.9, 'ram_available_mb': 83645, 'ram_total_mb': 85477}
+[07:51:48] downloading Qwen/Qwen3.8-27B (BF16) for conversion
+/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_auth.py:138: UserWarning: 
+Error while fetching `HF_TOKEN` secret value from your vault: 'Requesting secret HF_TOKEN timed out. Secrets can only be fetched when running from the Colab UI.'.
+  warnings.warn(f"\nError while fetching `HF_TOKEN` secret value from your vault: '{str(e)}'.")
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[07:54:52] converting to Q8_0
+[07:59:53] HEARTBEAT pid=1907 elapsed=300s disk_free_gb=133.4 ram_free_mb=81921 cmd=/usr/bin/python3 /content/pin/llama.cpp/convert_hf_to_gguf.py /content/pin/qwen3
+[08:03:11] resources {'at': 'qwen3.8-27b: after conversion', 'time': '08:03:11', 'disk_free_gb': 122.0, 'ram_available_mb': 82722, 'ram_total_mb': 85477}
+[08:03:14] resources {'at': 'qwen3.8-27b: after dropping snapshot', 'time': '08:03:14', 'disk_free_gb': 177.6, 'ram_available_mb': 82754, 'ram_total_mb': 85477}
+[08:03:14] hashing qwen3.8-27b-Q8_0.gguf
+[08:05:12] qwen3.8-27b: reproduces its pinned GGUF: True
+PIN_RESULT {"started": "2026-10-18T07:51:10Z", "job_token": "pb-qwen3.8-a100-1792309863", "machine": {"card": "NVIDIA A100-SXM4-40GB", "memory": "40960 MiB", "driver": "580.82.07", "compat": false, "driver_cuda": "13.0", "colab_release_tag": "release-colab-external-images_20261014-060047_RC00", "cores": 12, "disk_free_gb": 193.3, "runtime": "13.4"}, "role": "prebuild", "only": ["qwen3.8-27b"], "models": [], "ok": false, "error": "ImportError: cannot import name 'XetAuthorizationError' from 'huggingface_hub.errors' (/usr/local/lib/python3.13/dist-packages/huggingface_hub/errors.py)", "resources": [{"at": "qwen3.8-27b: before download", "time": "07:51:48", "disk_free_gb": 206.9, "ram_available_mb": 83645, "ram_total_mb": 85477}, {"at": "qwen3.8-27b: after conversion", "time": "08:03:11", "disk_free_gb": 122.0, "ram_available_mb": 82722, "ram_total_mb": 85477}, {"at": "qwen3.8-27b: after dropping snapshot", "time": "08:03:14", "disk_free_gb": 177.6, "ram_available_mb": 82754, "ram_total_mb": 85477}], "ended": "2026-10-18T08:05:16Z"}

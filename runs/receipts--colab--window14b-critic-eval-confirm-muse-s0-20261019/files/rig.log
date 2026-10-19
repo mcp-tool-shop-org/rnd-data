@@ -1,0 +1,32 @@
+start balance 1113.94, account rate 0.00/hr 2026-10-19T12:41:59Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+ColabRequestError: Failed to issue request POST 
+https://colab.research.google.com/tun/m/assign?nbh=8477d8f4_9024_4a20_9195_099109096512........&variant=GPU&accelerator=A100: Service Unavailable
+VM gate rejected try 1: "why": ["the gate exec died or timed out before it printed"]
+[colab] Session 'pinw14b' not found.
+[colab] Creating session 'pinw14b'...
+[colab] Session READY.
+VM gate passed (try 2)
+Usage rate: 5.30/hr
+Active assignments: 1
+own rate 5.3/hr
+deadline 15:32:39 (cap 15.2 less 0.3 at 5.3/hr); grace 60s
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+uploaded pack.tar aa11101c9d47e45f
+uploaded card-values.json 36cd89bbd95f2918
+uploaded critic-eval-inputs.tar.gz 75655bfcba361e34
+uploaded the token file (owner-only, deleted on the rig)
+exec exit=0 wall=4213s end=exec
+fetched job.log (75585 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window14b-critic-eval-confirm-muse-s0-20261019/pin-result.json'
+[colab] Downloaded '/content/pin/critic-eval-out.tar' to '/mnt/e/AI/Publisher/receipts/colab/window14b-critic-eval-confirm-muse-s0-20261019/critic-eval-out.tar'
+exit fetch took 52s
+PIN_RESULT {"started": "2026-10-19T12:45:25Z", "job_token": "pinw14b-1792413839", "machine": {"card": "NVIDIA A100-SXM4-40GB", "memory": "40960 MiB", "driver": "580.82.07", "compat": false, "driver_cuda": "13.0", "colab_release_tag": "release-colab-external-images_20261014-060047_RC00", "cores": 12, "disk_free_gb": 193.2, "runtime": "13.4"}, "role": "critic-eval", "llama_server": {"commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab", "sha256": "b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3", "path": "/content/pin/llama-server", "src": "/content/pin/llama.cpp", "cuda_wheels":
+end balance 1107.88 (start 1113.94)
+stopping pinw14b
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

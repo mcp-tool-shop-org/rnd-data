@@ -1,0 +1,28 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--rung-via-bf16-20261019",
+ "kind": "collection",
+ "source": "receipts/colab/rung-via-bf16-20261019",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "rung_via_bf16.py",
+   "sha256": "0ba0873b029fa07aa6384eec683f1c6ca7aec73d85cf8aa41e9b5f7bd0e7b60a",
+   "bytes": 575,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "0ba0873b029fa07aa6384eec683f1c6ca7aec73d85cf8aa41e9b5f7bd0e7b60a",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019/files/rung_via_bf16.py"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

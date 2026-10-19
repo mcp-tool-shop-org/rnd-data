@@ -1,0 +1,182 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab",
+ "kind": "collection",
+ "source": "receipts/colab",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "check_rung.py",
+   "sha256": "318da65c6e1ede82a41a45edd409397e523c72e5feab7ab8ccbc3b97eb6ae94b",
+   "bytes": 1856,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "fake-colab-cli.sh",
+   "sha256": "b79a9c4be1c7b86564e940ee2ee1356dd837577e5814cc983eb0416e6133b9dc",
+   "bytes": 1455,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "highmem-rate-probe.sh",
+   "sha256": "f2d062727872db74b2ea45b4451eb7cbceb0f2b5a20e4036924f2201eebb9e49",
+   "bytes": 511,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "prebuild_chain.log",
+   "sha256": "f3d177eea63e6b0fd427f981488dc36ffadacf8fd11c86b34db7a2211bf6b534",
+   "bytes": 164,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "prebuild_chain.sh",
+   "sha256": "21786ec78a4fccf6e3329ac379b430e1fe681dfb5fcc6df97f960e59cd342b76",
+   "bytes": 2673,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "prebuild_chain2.log",
+   "sha256": "9bc278142443d99b7466b98ac58a72e68936975a0219d140bbfe64343822c748",
+   "bytes": 826,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "prebuild_chain2.sh",
+   "sha256": "11156df3ebeb506b78987262438b553e0abcfb1c3944dbfa4e4019b8dd10d357",
+   "bytes": 3215,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "prebuild_chain3.log",
+   "sha256": "e4eef14a32f73ed1e54da72454207ca138e46729357e5ebee14b91cf90ea6b85",
+   "bytes": 764,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "prebuild_chain3.sh",
+   "sha256": "e80256b583c70278d4a75a39bcbab04a07b3802cc72f8774acbe785885938def",
+   "bytes": 3234,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "stub-rung-5b-README.md",
+   "sha256": null,
+   "bytes": 15708,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "stub_rung.sh",
+   "sha256": "42181f47315abcd8ab3ade26d8c398fb63146f0dfda3dec51dded9d6c249a7b4",
+   "bytes": 2715,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "stub_rung_launch.sh",
+   "sha256": "fec89031df1f8ae77fad293a924567798a8dd4b9d86c0824aa32842f7472e393",
+   "bytes": 1899,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "units-ledger.md",
+   "sha256": "b5da1f6ad76ea40afefc46fbcf35acaf85198385d3aa6fa41f439f7c72a290f3",
+   "bytes": 20443,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "318da65c6e1ede82a41a45edd409397e523c72e5feab7ab8ccbc3b97eb6ae94b",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/check_rung.py"
+  },
+  {
+   "sha256": "b79a9c4be1c7b86564e940ee2ee1356dd837577e5814cc983eb0416e6133b9dc",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/fake-colab-cli.sh"
+  },
+  {
+   "sha256": "f2d062727872db74b2ea45b4451eb7cbceb0f2b5a20e4036924f2201eebb9e49",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/highmem-rate-probe.sh"
+  },
+  {
+   "sha256": "f3d177eea63e6b0fd427f981488dc36ffadacf8fd11c86b34db7a2211bf6b534",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/prebuild_chain.log"
+  },
+  {
+   "sha256": "21786ec78a4fccf6e3329ac379b430e1fe681dfb5fcc6df97f960e59cd342b76",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/prebuild_chain.sh"
+  },
+  {
+   "sha256": "9bc278142443d99b7466b98ac58a72e68936975a0219d140bbfe64343822c748",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/prebuild_chain2.log"
+  },
+  {
+   "sha256": "11156df3ebeb506b78987262438b553e0abcfb1c3944dbfa4e4019b8dd10d357",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/prebuild_chain2.sh"
+  },
+  {
+   "sha256": "e4eef14a32f73ed1e54da72454207ca138e46729357e5ebee14b91cf90ea6b85",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/prebuild_chain3.log"
+  },
+  {
+   "sha256": "e80256b583c70278d4a75a39bcbab04a07b3802cc72f8774acbe785885938def",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/prebuild_chain3.sh"
+  },
+  {
+   "sha256": "42181f47315abcd8ab3ade26d8c398fb63146f0dfda3dec51dded9d6c249a7b4",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/stub_rung.sh"
+  },
+  {
+   "sha256": "fec89031df1f8ae77fad293a924567798a8dd4b9d86c0824aa32842f7472e393",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/stub_rung_launch.sh"
+  },
+  {
+   "sha256": "b5da1f6ad76ea40afefc46fbcf35acaf85198385d3aa6fa41f439f7c72a290f3",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab/files/units-ledger.md"
+  }
+ ],
+ "private_files": {
+  "unapproved": 4
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

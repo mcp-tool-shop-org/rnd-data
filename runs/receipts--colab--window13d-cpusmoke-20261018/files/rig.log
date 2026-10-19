@@ -1,0 +1,19 @@
+start balance 1163.72, account rate 0.08/hr 2026-10-18T06:19:46Z
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /dev/null
+[colab] Creating session 'cpusmoke'...
+[colab] Session READY.
+VM gate passed (try 1)
+Usage rate: 0.16/hr
+Active assignments: 2
+own rate 0.08/hr
+uploaded the token file (owner-only, deleted on the rig)
+exec exit=0 wall=62s end=exec
+fetched job.log (295 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window13d-cpusmoke-20261018/pin-result.json'
+exit fetch took 1s
+PIN_RESULT {"ok": true, "mock": true, "job_token": "cpusmoke-1792304411", "steps": 6, "seconds": 60, "silent": false}
+end balance 1163.72 (start 1163.72)
+stopping cpusmoke
+[colab] Session terminated.
+sessions after stop:
+[cpusurv] m-s-kkb-usc1b1-3p458lf5p9j41 | Hardware: CPU | Shape: Standard | Variant: DEFAULT

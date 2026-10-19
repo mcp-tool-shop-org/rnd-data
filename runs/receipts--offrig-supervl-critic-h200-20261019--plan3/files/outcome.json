@@ -1,0 +1,17 @@
+{
+ "run": {
+  "id": "publisher-plan3",
+  "venue": "runpod",
+  "hardware": "NVIDIA H200",
+  "date": "2026-10-19",
+  "cost": 1.33,
+  "cost_unit": "usd",
+  "cost_basis": "balance",
+  "cap": 15.87,
+  "outcome": "boot-fail",
+  "why": "pod on a CUDA 13.2 host never got an ssh endpoint; offrig stopped it at ~902 s (pod_not_ready); nothing ran",
+  "pins": {
+   "role-set": "89b5f2e"
+  }
+ }
+}

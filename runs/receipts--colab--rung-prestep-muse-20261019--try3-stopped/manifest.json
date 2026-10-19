@@ -1,0 +1,37 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--rung-prestep-muse-20261019--try3-stopped",
+ "kind": "run",
+ "source": "receipts/colab/rung-prestep-muse-20261019/try3-stopped",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "outcome.json",
+   "sha256": "a52573eeb4e5f896b0fa1dc568c5adbaf7b5c7e6631df669dbc49d75b422cdf4",
+   "bytes": 349,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "window.log",
+   "sha256": null,
+   "bytes": 331,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "a52573eeb4e5f896b0fa1dc568c5adbaf7b5c7e6631df669dbc49d75b422cdf4",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try3-stopped/files/outcome.json"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

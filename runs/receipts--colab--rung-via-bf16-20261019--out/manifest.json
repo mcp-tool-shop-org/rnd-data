@@ -1,0 +1,154 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--rung-via-bf16-20261019--out",
+ "kind": "run",
+ "source": "receipts/colab/rung-via-bf16-20261019/out",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": ".end",
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "bytes": 5,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".exec.pid",
+   "sha256": "129aca65bcd9e9c95006b0311c041862b43c7ecc4d979a274796dc411f721ff8",
+   "bytes": 4,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".fetch.out",
+   "sha256": "d97dc9b914f9d566c1d0afc0a2bd2e870811f91e9e5b328549b226221b70dc8a",
+   "bytes": 70,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "gate.jsonl",
+   "sha256": "f416e1075ba77b33058b569de0e30723e37eb5d3ee9e8758a2b9e9628008f24b",
+   "bytes": 361,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "job.log",
+   "sha256": "edf0ff0a1e8a2ca316a9865e929abd46749bc63c6b6ecede0c528e7b8421171b",
+   "bytes": 20519,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "outcome.draft.json",
+   "sha256": "1c0fc0ad886bf12cf67809e0e4fa3f308fcde8924a32d637fd26b89035c9010d",
+   "bytes": 173,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "outcome.json",
+   "sha256": "a1de7f7f892a6130bec2a84a5490b6bf1254494588dfe208cd74382f261bfa26",
+   "bytes": 381,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result.json",
+   "sha256": "c596f964ad0ae1c3ecea5d53ad46ed0a2fc164819f21d5709dba16530ac79d73",
+   "bytes": 24366,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke-window.log",
+   "sha256": "9f758ebe70d743dbdc1eac47da50261c156d87e4ffb2150f590100745b0f49f0",
+   "bytes": 21173,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "status.log",
+   "sha256": null,
+   "bytes": 620,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "window.log",
+   "sha256": "a09dbd6bfe593554d7fde7ef60627906cb44c13cd303fc9f24ef3bde10e02358",
+   "bytes": 1649,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/.end"
+  },
+  {
+   "sha256": "129aca65bcd9e9c95006b0311c041862b43c7ecc4d979a274796dc411f721ff8",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/.exec.pid"
+  },
+  {
+   "sha256": "d97dc9b914f9d566c1d0afc0a2bd2e870811f91e9e5b328549b226221b70dc8a",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/.fetch.out"
+  },
+  {
+   "sha256": "f416e1075ba77b33058b569de0e30723e37eb5d3ee9e8758a2b9e9628008f24b",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/gate.jsonl"
+  },
+  {
+   "sha256": "edf0ff0a1e8a2ca316a9865e929abd46749bc63c6b6ecede0c528e7b8421171b",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/job.log"
+  },
+  {
+   "sha256": "1c0fc0ad886bf12cf67809e0e4fa3f308fcde8924a32d637fd26b89035c9010d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/outcome.draft.json"
+  },
+  {
+   "sha256": "a1de7f7f892a6130bec2a84a5490b6bf1254494588dfe208cd74382f261bfa26",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/outcome.json"
+  },
+  {
+   "sha256": "c596f964ad0ae1c3ecea5d53ad46ed0a2fc164819f21d5709dba16530ac79d73",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/pin-result.json"
+  },
+  {
+   "sha256": "9f758ebe70d743dbdc1eac47da50261c156d87e4ffb2150f590100745b0f49f0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/smoke-window.log"
+  },
+  {
+   "sha256": "a09dbd6bfe593554d7fde7ef60627906cb44c13cd303fc9f24ef3bde10e02358",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-via-bf16-20261019--out/files/window.log"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

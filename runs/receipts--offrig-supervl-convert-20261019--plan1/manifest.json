@@ -1,0 +1,28 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--offrig-supervl-convert-20261019--plan1",
+ "kind": "run",
+ "source": "receipts/offrig-supervl-convert-20261019/plan1",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "outcome.json",
+   "sha256": "68a1a28f183cc82312ac140850bad1ae1fa370c1dd3bebb2ce5177645387cb5f",
+   "bytes": 416,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "68a1a28f183cc82312ac140850bad1ae1fa370c1dd3bebb2ce5177645387cb5f",
+   "store": "rnd-data",
+   "location": "runs/receipts--offrig-supervl-convert-20261019--plan1/files/outcome.json"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

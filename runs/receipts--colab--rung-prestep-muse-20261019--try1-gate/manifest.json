@@ -1,0 +1,50 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--rung-prestep-muse-20261019--try1-gate",
+ "kind": "run",
+ "source": "receipts/colab/rung-prestep-muse-20261019/try1-gate",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "gate.jsonl",
+   "sha256": "df19ad096ad0add77162cce929506d10da112b78c5398e69b86e801532da120b",
+   "bytes": 1512,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "outcome.json",
+   "sha256": "dbc2641c6ad65978e0caecace57bc3dfa43a6e68ace02907b98a44d690b8f53b",
+   "bytes": 347,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "window.log",
+   "sha256": null,
+   "bytes": 895,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "df19ad096ad0add77162cce929506d10da112b78c5398e69b86e801532da120b",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try1-gate/files/gate.jsonl"
+  },
+  {
+   "sha256": "dbc2641c6ad65978e0caecace57bc3dfa43a6e68ace02907b98a44d690b8f53b",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--rung-prestep-muse-20261019--try1-gate/files/outcome.json"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

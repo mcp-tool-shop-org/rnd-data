@@ -1,0 +1,11 @@
+[18:51:54] mock step 1
+[18:52:24] mock step 2
+[18:52:54] mock step 3
+[18:53:24] mock step 4
+[18:53:54] mock step 5
+[18:54:24] mock step 6
+[18:54:54] mock step 7
+[18:55:24] mock step 8
+[18:55:54] mock step 9
+[18:56:24] mock step 10
+PIN_RESULT {"ok": true, "mock": true, "steps": 10, "seconds": 300, "silent": true}

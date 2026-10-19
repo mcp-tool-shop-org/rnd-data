@@ -1,0 +1,18 @@
+start balance 1163.79, account rate 0.00/hr 2026-10-18T05:24:25Z
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /dev/null
+[colab] Creating session 'cpusurv'...
+[colab] Session READY.
+VM gate passed (try 1)
+Usage rate: 0.08/hr
+Active assignments: 1
+own rate 0.08/hr
+exec exit=0 wall=16203s end=exec
+fetched job.log (6764 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window13c-survival-20261018/pin-result.json'
+exit fetch took 2s
+PIN_RESULT {"ok": true, "mock": true, "job_token": "cpusurv-1792301088", "steps": 270, "seconds": 16200, "silent": false}
+end balance 1158.67 (start 1163.79)
+stopping cpusurv
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

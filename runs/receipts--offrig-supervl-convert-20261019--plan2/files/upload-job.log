@@ -1,0 +1,93 @@
+"""critic-signal §10 upload, with R&D's upload rung first (2026-10-19). Runs on plan 2's pod with pin_window at #98's head.
+
+1. Rung: a tiny real GGUF goes through the same upload_hosted child to PIN_GGUF_REPO under rung/. The licence guard must
+   accept openmdw-1.1, rung/LICENSE must be the vendored agreement (ac19de4a...), and rung/README.md must carry the
+   note. Then rung/ is deleted.
+2. On a pass only: the clean Q8_0 (a hard link, so a failed upload never loses the file) is checked against PIN_EXPECT_SHA
+   and uploaded the same way. On a fail: stop, the GGUF stays on the pod.
+
+The WRITE token comes from /dev/shm/hf.token (read once, deleted), is held only in this process and handed to each
+upload by pin_window's own _TOKEN slot; token_clean is checked at the end. Prints RUNG_RESULT and UPLOAD_RESULT lines."""
+import hashlib
+import json
+import os
+import sys
+import tempfile
+from pathlib import Path
+
+here = Path(__file__).resolve().parent
+sys.path.insert(0, str(here))
+os.environ.setdefault("PIN_CONTENT", "/root/content")
+import pin_window as pw  # noqa: E402
+
+NAME = "nemotron-3.5-super-vl-120b-a12b"
+OPENMDW_SHA = "ac19de4aa4e0216bbf0ca2fc5794490637a6ba786f12afec8fb63f0005c5b27f"
+NOTE = "one conversion (critic-signal §10, R&D 2026-10-19); reproducibility is not re-proven for this GGUF"
+expect = os.environ["PIN_EXPECT_SHA"]
+clean = pw.WORK / os.environ.get("PIN_CLEAN_GGUF", "clean-Q8_0.gguf")
+repo = os.environ["PIN_GGUF_REPO"]
+
+rung: dict = {}
+up: dict = {}
+pw.read_token_file(needed=True)
+tok = pw.take_token()
+try:
+    if not tok:
+        raise RuntimeError("no WRITE token reached the pod")
+    from huggingface_hub import HfApi, hf_hub_download
+
+    spec = next(m for m in pw.MODELS if m["served_as"] == NAME)
+
+    # 1. The rung: a few-MB real GGUF, written by gguf-py, through the same child.
+    sys.path.insert(0, str(pw.WORK / "llama.cpp" / "gguf-py"))
+    import numpy as np
+    from gguf import GGUFWriter
+
+    tiny = pw.WORK / "rung-tiny.gguf"
+    w = GGUFWriter(str(tiny), "llama")
+    w.add_tensor("rung.weight", np.zeros((1024, 1024), dtype=np.float32))
+    w.write_header_to_file(); w.write_kv_data_to_file(); w.write_tensors_to_file(); w.close()
+    tiny_sha = pw.sha256(tiny)
+    rspec = dict(spec, served_as="rung")
+    pw._TOKEN = tok
+    pw.upload_hosted(rspec, {"path": str(tiny), "revision": spec["revision"], "gguf_sha256": tiny_sha, "readme_note": NOTE},
+                     rung)
+    got = rung.get("uploaded") or {}
+    api = HfApi(token=tok)
+    with tempfile.TemporaryDirectory() as d:
+        lic = Path(hf_hub_download(repo, "rung/LICENSE", local_dir=d, token=tok))
+        readme = Path(hf_hub_download(repo, "rung/README.md", local_dir=d, token=tok)).read_text(encoding="utf-8")
+        lic_sha = hashlib.sha256(lic.read_bytes()).hexdigest()
+    checks = {"licence_accepted": got.get("licence") == "openmdw-1.1", "licence_file": lic_sha == OPENMDW_SHA,
+              "readme_note": f"- Note: {NOTE}" in readme and "openmdw-1.1" in readme}
+    rung.update(checks=checks, licence_sha256=lic_sha, files=got.get("files"), commit=got.get("commit"))
+    api.delete_folder("rung", repo_id=repo, commit_message="remove the upload rung (critic-signal §10)")
+    rung["deleted"] = not any(f.startswith("rung/") for f in api.list_repo_files(repo))
+    del api
+    rung["ok"] = all(checks.values()) and rung["deleted"]
+    if not rung["ok"]:
+        raise RuntimeError("the upload rung failed; the Super-VL GGUF stays on the pod")
+
+    # 2. The real upload, through a hard link so the file survives a failed upload.
+    sha = pw.sha256(clean)
+    if sha != expect:
+        raise RuntimeError(f"the clean Q8_0 ({sha[:12]}) isn't the pin ({expect[:12]})")
+    link = pw.WORK / f"{NAME}-Q8_0.upload.gguf"
+    link.unlink(missing_ok=True)
+    os.link(clean, link)
+    pw._TOKEN = tok
+    pw.upload_hosted(spec, {"path": str(link), "revision": spec["revision"], "gguf_sha256": sha, "readme_note": NOTE}, up)
+    up["ok"] = True
+except Exception as e:  # noqa: BLE001 - reported, and the exit code says so
+    target = up if rung.get("ok") else rung
+    target["ok"], target["error"] = False, f"{type(e).__name__}: {e}"
+finally:
+    tok = None
+    pw.take_token()
+    try:
+        pw.check_token_clean(up)
+    except RuntimeError as e:
+        up["ok"], up["token_error"] = False, str(e)
+print("RUNG_RESULT " + json.dumps(rung), flush=True)
+print("UPLOAD_RESULT " + json.dumps(up), flush=True)
+sys.exit(0 if rung.get("ok") and up.get("ok") else 1)

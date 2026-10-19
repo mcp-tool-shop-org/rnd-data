@@ -1,0 +1,197 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--window13c-survival-20261018",
+ "kind": "run",
+ "source": "receipts/colab/window13c-survival-20261018",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": ".end",
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "bytes": 5,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".exec.pid",
+   "sha256": "e0a13b394ab56e93b69fcd5666d01e68b80cf540b176c19a03d875ca8d773e04",
+   "bytes": 6,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".fetch.out",
+   "sha256": "0fbb18e39e1a58d185bf3d872734612a7d00d81d7387260ffed584bc5b9dfc25",
+   "bytes": 129,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "gate.jsonl",
+   "sha256": "f2eab020cda657a68cd16241e9278b665de5aae5de0c3065759939c21adfcc07",
+   "bytes": 364,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "job.log",
+   "sha256": "a9d12774a728bdb7544a3bba4dc1e9a4d7e711130374b65c9dba1b3ec3281f80",
+   "bytes": 6764,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "launch.sh",
+   "sha256": "ea283fb5aa4cf7960f1d257808e425438a240bc3e35e6a74868b36717e325c80",
+   "bytes": 900,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "mock_job.py",
+   "sha256": "f5b445e4b559568f3ccdf20d9ac635f1b0e0c93719ce1193b9f605be4fda4a61",
+   "bytes": 6542,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "outcome.json",
+   "sha256": "5f8e291d3dc588df442498e51d82e9c86a64d02eba6fee7a9bcd12a59690e662",
+   "bytes": 276,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result.json",
+   "sha256": "ef175911070e29c79a46d89551f62eef754553e1c0e238c731e8754aa6ae8a44",
+   "bytes": 118,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "rig.log",
+   "sha256": "5d001b5b5cd863076962ef01e4515140e4eda4154f26a8564ed1a5858a8df8d2",
+   "bytes": 767,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke-window.log",
+   "sha256": "a9d12774a728bdb7544a3bba4dc1e9a4d7e711130374b65c9dba1b3ec3281f80",
+   "bytes": 6764,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke_window.sh",
+   "sha256": "1e9b36d9f065b51a508ae914d1153e217229cfc5ace6190c0c2a27dc9887e324",
+   "bytes": 15792,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "status.log",
+   "sha256": "9f723d8798212bc1b72bc5ea03938f814c190c371340ef7d0182029e06c7f57e",
+   "bytes": 40920,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "vm_gate.py",
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "bytes": 6116,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/.end"
+  },
+  {
+   "sha256": "e0a13b394ab56e93b69fcd5666d01e68b80cf540b176c19a03d875ca8d773e04",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/.exec.pid"
+  },
+  {
+   "sha256": "0fbb18e39e1a58d185bf3d872734612a7d00d81d7387260ffed584bc5b9dfc25",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/.fetch.out"
+  },
+  {
+   "sha256": "f2eab020cda657a68cd16241e9278b665de5aae5de0c3065759939c21adfcc07",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/gate.jsonl"
+  },
+  {
+   "sha256": "a9d12774a728bdb7544a3bba4dc1e9a4d7e711130374b65c9dba1b3ec3281f80",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/job.log"
+  },
+  {
+   "sha256": "ea283fb5aa4cf7960f1d257808e425438a240bc3e35e6a74868b36717e325c80",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/launch.sh"
+  },
+  {
+   "sha256": "f5b445e4b559568f3ccdf20d9ac635f1b0e0c93719ce1193b9f605be4fda4a61",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/mock_job.py"
+  },
+  {
+   "sha256": "5f8e291d3dc588df442498e51d82e9c86a64d02eba6fee7a9bcd12a59690e662",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/outcome.json"
+  },
+  {
+   "sha256": "ef175911070e29c79a46d89551f62eef754553e1c0e238c731e8754aa6ae8a44",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/pin-result.json"
+  },
+  {
+   "sha256": "5d001b5b5cd863076962ef01e4515140e4eda4154f26a8564ed1a5858a8df8d2",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/rig.log"
+  },
+  {
+   "sha256": "a9d12774a728bdb7544a3bba4dc1e9a4d7e711130374b65c9dba1b3ec3281f80",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/smoke-window.log"
+  },
+  {
+   "sha256": "1e9b36d9f065b51a508ae914d1153e217229cfc5ace6190c0c2a27dc9887e324",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/smoke_window.sh"
+  },
+  {
+   "sha256": "9f723d8798212bc1b72bc5ea03938f814c190c371340ef7d0182029e06c7f57e",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/status.log"
+  },
+  {
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13c-survival-20261018/files/vm_gate.py"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

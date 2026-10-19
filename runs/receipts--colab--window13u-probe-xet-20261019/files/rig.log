@@ -1,0 +1,22 @@
+start balance 1136.54, account rate 0.00/hr 2026-10-19T01:10:11Z
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /dev/null
+[colab] Creating session 'probe13u'...
+[colab] Session READY.
+VM gate passed (try 1)
+Usage rate: 0.26/hr
+Active assignments: 1
+own rate 0.26/hr
+deadline 02:12:52 (cap 0.3 less 0.03 at 0.26/hr); grace 60s
+uploaded pin_window.py 27b8f860d8018479
+uploaded the token file (owner-only, deleted on the rig)
+EXEC NEVER STARTED (probe13u): kernel IDLE, job.log empty; re-running the exec once 01:12:36
+exec exit=0 wall=369s end=exec
+fetched job.log (2291 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window13u-probe-xet-20261019/pin-result.json'
+exit fetch took 2s
+PIN_RESULT {"probe": "xet-signal", "job_token": "probe13u-1792372234", "model": "qwen3.8-27b", "hf_xet": "present", "hub_version": "1.33.0", "file": {"name": "qwen3.8-27b/qwen3.8-27b-Q8_0.gguf", "size": 29047084448, "xet_hash": true, "lfs": true}, "seconds": 245, "sha256": "2ab268e0bd3f8e5daf1280e2243ac19abd5e3bb34e8444f5cfff5147fab977d4", "reproduced": true, "ok": true, "token_clean": {"file_gone": true, "value_dropped": true, "env_clear": true, "no_cached_token": true, "no_colab_secret": true}}
+end balance 1136.53 (start 1136.54)
+stopping probe13u
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

@@ -1,0 +1,80 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--verifier-gold",
+ "kind": "collection",
+ "source": "receipts/verifier-gold",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "README.md",
+   "sha256": "01decf211be258cf63f639217ee312b2ec75c5aefe4f7aecf6ffadac3e88f430",
+   "bytes": 36399,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "reasoning-diffs-2026-10.jsonl",
+   "sha256": "4f5363c506d17ba9a767e15944b8b0081f636d050e911a2cdaeb31498b00371e",
+   "bytes": 481580,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "reasoning-diffs-b2-2026-10.jsonl",
+   "sha256": "709eabbc38d5ef643094e0f23873810597356f981329ad86d8006b5abd76750b",
+   "bytes": 685087,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "reasoning-diffs-hard-2026-10.jsonl",
+   "sha256": "e0f0bb956f422c2cd9e117861c3137760b92938de5f97471e85b2ece8312c201",
+   "bytes": 180441,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "reasoning-prs-2026-10-08.jsonl",
+   "sha256": "95da4a69db0f8cdffa1a3f21e5d2511fd79cb91c2eeefc0b4b997ad6ebed1cc5",
+   "bytes": 502982,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "01decf211be258cf63f639217ee312b2ec75c5aefe4f7aecf6ffadac3e88f430",
+   "store": "rnd-data",
+   "location": "runs/receipts--verifier-gold/files/README.md"
+  },
+  {
+   "sha256": "4f5363c506d17ba9a767e15944b8b0081f636d050e911a2cdaeb31498b00371e",
+   "store": "d",
+   "location": "blobs/4f/4f5363c506d17ba9a767e15944b8b0081f636d050e911a2cdaeb31498b00371e"
+  },
+  {
+   "sha256": "709eabbc38d5ef643094e0f23873810597356f981329ad86d8006b5abd76750b",
+   "store": "d",
+   "location": "blobs/70/709eabbc38d5ef643094e0f23873810597356f981329ad86d8006b5abd76750b"
+  },
+  {
+   "sha256": "e0f0bb956f422c2cd9e117861c3137760b92938de5f97471e85b2ece8312c201",
+   "store": "rnd-data",
+   "location": "runs/receipts--verifier-gold/files/reasoning-diffs-hard-2026-10.jsonl"
+  },
+  {
+   "sha256": "95da4a69db0f8cdffa1a3f21e5d2511fd79cb91c2eeefc0b4b997ad6ebed1cc5",
+   "store": "d",
+   "location": "blobs/95/95da4a69db0f8cdffa1a3f21e5d2511fd79cb91c2eeefc0b4b997ad6ebed1cc5"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "77fdc75db0a7cc7f5e8c9fa02c36ce5e189c0af3"
+}

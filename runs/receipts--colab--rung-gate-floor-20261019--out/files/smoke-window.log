@@ -1,0 +1,4 @@
+[17:55:30] mock step 1
+[17:55:40] mock step 2
+[17:55:50] mock step 3
+PIN_RESULT {"ok": true, "mock": true, "job_token": "rungfloor-1792432528", "steps": 3, "seconds": 30, "silent": false}

@@ -1,0 +1,209 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--window13f-prebuild-qwen3.8-20261018",
+ "kind": "run",
+ "source": "receipts/colab/window13f-prebuild-qwen3.8-20261018",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": ".end",
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "bytes": 5,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".exec.pid",
+   "sha256": "31345b0d17130aeadc48e657e25fa9c5519802db06c593430ec911dcae7d1d7d",
+   "bytes": 6,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".fetch.out",
+   "sha256": "8634b4b298652da7cc9e48da455d49979974f3974eab59d0cec8dee78f225184",
+   "bytes": 137,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "README.md",
+   "sha256": "421d0d476e3f5410e152d31f63df0e1119dc8dd7786c38eb32daab584a696719",
+   "bytes": 1293,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "argon-reply-torch-gguf-2026-10-18.md",
+   "sha256": "3f9d922e23acfdd9ba39b97e447cd900a83e073be7c03be7f790508c877c368d",
+   "bytes": 4362,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "gate.jsonl",
+   "sha256": "cdef8630c26d5f79e2661217b0efd337e1a541f7ae7c466801c0690dac29d7e5",
+   "bytes": 369,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "job.log",
+   "sha256": "cf09bbf583ed558b025abf0245a9b5430d477ef0ce5a316e66fd970b99a32600",
+   "bytes": 19805,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "launch.sh",
+   "sha256": null,
+   "bytes": 1271,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "outcome.json",
+   "sha256": "df8e67e14892cf64d773f14354e782a8fc9ce424881c0d69727b726581d11485",
+   "bytes": 383,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result.json",
+   "sha256": "cf3d875b186b4578a298f30cd63568d4ef350e058b94bf77efe3a5447d46d0f2",
+   "bytes": 23392,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "rig.log",
+   "sha256": "9ddce28750b6a0bc2ef77ac8d1192fb27dd5b5fe9d05b492557409f0180096d0",
+   "bytes": 1405,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke-window.log",
+   "sha256": "7d3bbad38e6cc67bc7d370d017840498c2f3c681f70b89ccb4b03ec12a7b3546",
+   "bytes": 20461,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke_window.sh",
+   "sha256": "4ed04741ce13677379921347e48a0f4a8338e2c327d9e0ce6b551ef1dfc32ca2",
+   "bytes": 16009,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "status.log",
+   "sha256": "92a261fdcee2575de904eb71b9b456d8fe6f8f460496396bbba52587228bf11a",
+   "bytes": 1550,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "vm_gate.py",
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "bytes": 6116,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/.end"
+  },
+  {
+   "sha256": "31345b0d17130aeadc48e657e25fa9c5519802db06c593430ec911dcae7d1d7d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/.exec.pid"
+  },
+  {
+   "sha256": "8634b4b298652da7cc9e48da455d49979974f3974eab59d0cec8dee78f225184",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/.fetch.out"
+  },
+  {
+   "sha256": "421d0d476e3f5410e152d31f63df0e1119dc8dd7786c38eb32daab584a696719",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/README.md"
+  },
+  {
+   "sha256": "3f9d922e23acfdd9ba39b97e447cd900a83e073be7c03be7f790508c877c368d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/argon-reply-torch-gguf-2026-10-18.md"
+  },
+  {
+   "sha256": "cdef8630c26d5f79e2661217b0efd337e1a541f7ae7c466801c0690dac29d7e5",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/gate.jsonl"
+  },
+  {
+   "sha256": "cf09bbf583ed558b025abf0245a9b5430d477ef0ce5a316e66fd970b99a32600",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/job.log"
+  },
+  {
+   "sha256": "df8e67e14892cf64d773f14354e782a8fc9ce424881c0d69727b726581d11485",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/outcome.json"
+  },
+  {
+   "sha256": "cf3d875b186b4578a298f30cd63568d4ef350e058b94bf77efe3a5447d46d0f2",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/pin-result.json"
+  },
+  {
+   "sha256": "9ddce28750b6a0bc2ef77ac8d1192fb27dd5b5fe9d05b492557409f0180096d0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/rig.log"
+  },
+  {
+   "sha256": "7d3bbad38e6cc67bc7d370d017840498c2f3c681f70b89ccb4b03ec12a7b3546",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/smoke-window.log"
+  },
+  {
+   "sha256": "4ed04741ce13677379921347e48a0f4a8338e2c327d9e0ce6b551ef1dfc32ca2",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/smoke_window.sh"
+  },
+  {
+   "sha256": "92a261fdcee2575de904eb71b9b456d8fe6f8f460496396bbba52587228bf11a",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/status.log"
+  },
+  {
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/vm_gate.py"
+  }
+ ],
+ "private_files": {
+  "item-text": 1,
+  "unapproved": 1
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}
