@@ -1,3 +1,7 @@
 store.local.json
 *.tmp
 __pycache__/
+site/.astro/
+site/dist/
+site/node_modules/
+.polyglot-cache.json
