@@ -1,0 +1,995 @@
+{
+ "checked": "2026-10-19T17:02:10+00:00",
+ "sources": [
+  {
+   "id": "nvidia-tech-blog",
+   "kind": "feed",
+   "url": "https://developer.nvidia.com/blog/feed/",
+   "why": "NVIDIA's developer posts: models, tools and techniques; the NVIDIA newsletter draws on it",
+   "latest": {
+    "key": "https://developer.nvidia.com/blog/?p=123793",
+    "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
+    "date": "2026-10-19T17:00:00Z",
+    "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123793",
+     "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
+     "date": "2026-10-19T17:00:00Z",
+     "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123865",
+     "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+     "date": "2026-10-16T17:00:00Z",
+     "url": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123590",
+     "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+     "date": "2026-10-15T18:01:00Z",
+     "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=122698",
+     "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+     "date": "2026-10-15T18:00:01Z",
+     "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123574",
+     "title": "Optimizing Agent Reliability and Tool Calling Efficiency for Chip Design Using NVIDIA NeMo Gym",
+     "date": "2026-10-14T16:10:45Z",
+     "url": "https://developer.nvidia.com/blog/optimizing-agent-reliability-and-tool-calling-efficiency-for-chip-design-using-nvidia-nemo-gym/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123309",
+     "title": "How to Rewrite Apache Spark UDFs for GPU Acceleration with AI Agents",
+     "date": "2026-10-13T21:33:21Z",
+     "url": "https://developer.nvidia.com/blog/rewrite-apache-spark-udfs-gpu-acceleration-ai-agents/"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "cuda-toolkit",
+   "kind": "page",
+   "url": "https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html",
+   "why": "the current CUDA toolkit version; driver minimums and Blackwell support for the RTX 5090",
+   "latest": {
+    "key": "CUDA Toolkit 13.4 Update 2",
+    "title": "CUDA Toolkit 13.4 Update 2",
+    "date": null,
+    "url": "https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html"
+   },
+   "latest_prerelease": null,
+   "new": [],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "nvidia-hf-models",
+   "kind": "huggingface",
+   "url": "https://huggingface.co/api/models?author=nvidia&sort=createdAt&direction=-1&limit=30",
+   "why": "new NVIDIA open models (Nemotron and others) that might fit the 5090",
+   "latest": {
+    "key": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+    "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+    "date": "2026-10-16T18:30:41.000Z",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+     "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+     "date": "2026-10-16T18:30:41.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
+     "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
+     "date": "2026-10-16T18:26:53.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+     "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+     "date": "2026-10-16T18:25:29.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
+     "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
+     "date": "2026-10-16T16:25:01.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF"
+    },
+    {
+     "key": "nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
+     "title": "nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
+     "date": "2026-10-16T04:40:26.000Z",
+     "url": "https://huggingface.co/nvidia/Muse-Spark-Open-816B-A42B-DFlash2"
+    },
+    {
+     "key": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+     "title": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+     "date": "2026-10-15T08:42:42.000Z",
+     "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16"
+    },
+    {
+     "key": "nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
+     "title": "nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
+     "date": "2026-10-13T19:17:25.000Z",
+     "url": "https://huggingface.co/nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60"
+    },
+    {
+     "key": "nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
+     "title": "nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
+     "date": "2026-10-13T18:04:43.000Z",
+     "url": "https://huggingface.co/nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2"
+    },
+    {
+     "key": "nvidia/Kimodo-SOMA-RP-v1.2",
+     "title": "nvidia/Kimodo-SOMA-RP-v1.2",
+     "date": "2026-10-13T18:03:31.000Z",
+     "url": "https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.2"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+     "title": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+     "date": "2026-10-12T15:32:30.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+     "title": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+     "date": "2026-10-12T15:32:06.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16",
+     "title": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16",
+     "date": "2026-10-12T15:31:49.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
+     "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
+     "date": "2026-10-12T14:42:40.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
+     "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
+     "date": "2026-10-12T14:27:49.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr",
+     "title": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr",
+     "date": "2026-10-11T20:20:59.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr"
+    },
+    {
+     "key": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2",
+     "title": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2",
+     "date": "2026-10-10T18:54:08.000Z",
+     "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S5_2"
+    },
+    {
+     "key": "nvidia/cosmos3-nano-libero10-sdg-export-S5_all",
+     "title": "nvidia/cosmos3-nano-libero10-sdg-export-S5_all",
+     "date": "2026-10-10T18:53:19.000Z",
+     "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S5_all"
+    },
+    {
+     "key": "nvidia/cosmos3-nano-libero10-sdg-export-D5",
+     "title": "nvidia/cosmos3-nano-libero10-sdg-export-D5",
+     "date": "2026-10-09T21:31:12.000Z",
+     "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-D5"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+     "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+     "date": "2026-10-09T12:45:14.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16"
+    },
+    {
+     "key": "nvidia/cosmos3-nano-libero10-sdg-export-S_best",
+     "title": "nvidia/cosmos3-nano-libero10-sdg-export-S_best",
+     "date": "2026-10-08T18:25:07.000Z",
+     "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S_best"
+    },
+    {
+     "key": "nvidia/cosmos3-nano-libero10-sdg-export-S_worst",
+     "title": "nvidia/cosmos3-nano-libero10-sdg-export-S_worst",
+     "date": "2026-10-08T18:24:21.000Z",
+     "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S_worst"
+    },
+    {
+     "key": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
+     "title": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
+     "date": "2026-10-08T16:20:17.000Z",
+     "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local"
+    },
+    {
+     "key": "nvidia/GLM-5.3-Flash-FP4-Local",
+     "title": "nvidia/GLM-5.3-Flash-FP4-Local",
+     "date": "2026-10-08T16:19:57.000Z",
+     "url": "https://huggingface.co/nvidia/GLM-5.3-Flash-FP4-Local"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
+     "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
+     "date": "2026-10-07T19:15:58.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF"
+    },
+    {
+     "key": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+     "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+     "date": "2026-10-07T17:50:42.000Z",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB"
+    },
+    {
+     "key": "nvidia/cosmos3-nano-libero10-sdg-export-S_all",
+     "title": "nvidia/cosmos3-nano-libero10-sdg-export-S_all",
+     "date": "2026-10-07T16:51:49.000Z",
+     "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S_all"
+    },
+    {
+     "key": "nvidia/cosmos3-nano-libero10-sdg-export-D_half",
+     "title": "nvidia/cosmos3-nano-libero10-sdg-export-D_half",
+     "date": "2026-10-07T16:48:52.000Z",
+     "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-D_half"
+    },
+    {
+     "key": "nvidia/cosmos3-nano-libero10-sdg-export-D2",
+     "title": "nvidia/cosmos3-nano-libero10-sdg-export-D2",
+     "date": "2026-10-07T16:46:35.000Z",
+     "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-D2"
+    },
+    {
+     "key": "nvidia/cosmos3-nano-libero10-sdg-export-S2",
+     "title": "nvidia/cosmos3-nano-libero10-sdg-export-S2",
+     "date": "2026-10-07T16:43:30.000Z",
+     "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S2"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "nvidia-skills",
+   "kind": "github-commits",
+   "url": "https://github.com/NVIDIA/skills",
+   "why": "the skills catalogue mirrored in catalogs/nvidia-skills; run `rnd catalog sync` when it moves",
+   "latest": {
+    "key": "901efd38824e",
+    "title": "chore: sync skills (Nemotron Voice Agent)",
+    "date": "2026-10-19T16:44:34Z",
+    "url": "https://github.com/NVIDIA/skills/commit/901efd38824e6a96a711f0dc6250e057fc717ed7"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "901efd38824e",
+     "title": "chore: sync skills (Nemotron Voice Agent)",
+     "date": "2026-10-19T16:44:34Z",
+     "url": "https://github.com/NVIDIA/skills/commit/901efd38824e6a96a711f0dc6250e057fc717ed7",
+     "body": "chore: sync skills (Nemotron Voice Agent)"
+    },
+    {
+     "key": "8a7430653e0d",
+     "title": "chore: sync skills (Nsight)",
+     "date": "2026-10-19T15:18:33Z",
+     "url": "https://github.com/NVIDIA/skills/commit/8a7430653e0d7c26e17642b03cc9297213fc16ac",
+     "body": "chore: sync skills (Nsight)"
+    },
+    {
+     "key": "6b053fab3c8b",
+     "title": "Describe the Nsight catalog component broadly",
+     "date": "2026-10-19T15:09:48Z",
+     "url": "https://github.com/NVIDIA/skills/commit/6b053fab3c8b5075a99661456905d504bed786f7",
+     "body": "Describe the Nsight catalog component broadly\n\nSigned-off-by: Unnikrishnan Kizhakkemadam Sreekumar <unnik@nvidia.com>"
+    },
+    {
+     "key": "292cd1f4d726",
+     "title": "Catalog the Nsight Compute Sanitizer skill",
+     "date": "2026-10-19T15:09:48Z",
+     "url": "https://github.com/NVIDIA/skills/commit/292cd1f4d726882a84df1408ab9d0b31c2a9cda3",
+     "body": "Catalog the Nsight Compute Sanitizer skill\n\nSigned-off-by: Unnikrishnan Kizhakkemadam Sreekumar <unnik@nvidia.com>"
+    },
+    {
+     "key": "4621bf0967c4",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-19T13:57:46Z",
+     "url": "https://github.com/NVIDIA/skills/commit/4621bf0967c40a4bfd0045ab29c8958290bb4f9c",
+     "body": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json\n\nGenerated by .github/workflows/generate-skill-metadata.yml."
+    },
+    {
+     "key": "7c8da3f6ab58",
+     "title": "chore: sync skills (Physical AI)",
+     "date": "2026-10-19T13:51:50Z",
+     "url": "https://github.com/NVIDIA/skills/commit/7c8da3f6ab587bf126236da7f170d6e2bbf9cb53",
+     "body": "chore: sync skills (Physical AI)"
+    },
+    {
+     "key": "4fc9cf6cec78",
+     "title": "chore: sync skills (NeMo Fabric)",
+     "date": "2026-10-17T14:14:35Z",
+     "url": "https://github.com/NVIDIA/skills/commit/4fc9cf6cec785070e0bf5bb4aa6c992f71b1c97e",
+     "body": "chore: sync skills (NeMo Fabric)"
+    },
+    {
+     "key": "32620a6776a0",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-17T14:12:23Z",
+     "url": "https://github.com/NVIDIA/skills/commit/32620a6776a0cc5eee5e7c84f0947683cdbb5566",
+     "body": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json\n\nGenerated by .github/workflows/generate-skill-metadata.yml."
+    },
+    {
+     "key": "1131d605afba",
+     "title": "Preserve Physical AI help links",
+     "date": "2026-10-17T14:09:50Z",
+     "url": "https://github.com/NVIDIA/skills/commit/1131d605afba15672436e1eac8c6bdc1b36c6a60",
+     "body": "Preserve Physical AI help links\n\nSigned-off-by: Miguel Angel Zamora Mora <mzamoramora@nvidia.com>"
+    },
+    {
+     "key": "470792b6bc58",
+     "title": "Register physics selection skill under Physical AI",
+     "date": "2026-10-17T14:09:50Z",
+     "url": "https://github.com/NVIDIA/skills/commit/470792b6bc5868776649992a8a56d05603562ff5",
+     "body": "Register physics selection skill under Physical AI\n\nSigned-off-by: Miguel Angel Zamora Mora <mzamoramora@nvidia.com>"
+    },
+    {
+     "key": "12a4695275bb",
+     "title": "chore: sync skills (TAO Toolkit,orphan pruning)",
+     "date": "2026-10-16T21:35:27Z",
+     "url": "https://github.com/NVIDIA/skills/commit/12a4695275bbb8e57e401f54a91bed6176c047df",
+     "body": "chore: sync skills (TAO Toolkit,orphan pruning)"
+    },
+    {
+     "key": "a0980f42811e",
+     "title": "components.d/tao-toolkit: TAO 7.3.0 skill set (+8, -2 renamed)",
+     "date": "2026-10-16T20:52:10Z",
+     "url": "https://github.com/NVIDIA/skills/commit/a0980f42811e8e380cb5362ff4fd070b1c31ce8e",
+     "body": "components.d/tao-toolkit: TAO 7.3.0 skill set (+8, -2 renamed)\n\nTAO Toolkit 7.3.0 (NVIDIA-TAO/tao-skill-bank tag 7.3.0) adds six skills\nand renames two:\n- new: tao-run-deft-od-aoi, tao-run-dinov3-ssl-deft,\n  tao-token-efficient-execution, tao-finetune-anomalygennext,\n  tao-generate-od-defects, tao-prepare-anomalygennext-inputs\n- renamed: tao-finetune-nv-tesseract-ad-diffusion -> tao-finetune-kumo-anomaly,\n  tao-finetune-nv-tesseract-forecasting -> tao-finetune-kumo-forecast\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>\nSigned-off-by: Christina Wang <christwang@nvidia.com>"
+    },
+    {
+     "key": "662abcac3aa5",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-16T20:48:50Z",
+     "url": "https://github.com/NVIDIA/skills/commit/662abcac3aa5786afe4d908cfe5dd8f261a81044",
+     "body": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json\n\nGenerated by .github/workflows/generate-skill-metadata.yml."
+    },
+    {
+     "key": "669b6a3a87ce",
+     "title": "Let components join a shared README row without taking its help links",
+     "date": "2026-10-16T20:41:28Z",
+     "url": "https://github.com/NVIDIA/skills/commit/669b6a3a87ce5921815054cb1ebe3907b11b1e1a",
+     "body": "Let components join a shared README row without taking its help links\n\nWhen several components.d entries share a `name`, the README generator\nmerges them into one product row. The Getting Help row then takes the\nlinks of whichever synced entry sorts first by URL, so adding a second\nsource repo to an existing product can silently repoint every skill in\nthat row to the new repo's issues, contributing and security pages.\n\nAdd an optional `links.primary` field. A component with\n`links.primary: false` still adds its skills to the shared row but only\nsupplies the row's help links when no primary component shares the name.\nHelp rows now carry a priority (synced, then `primary: false`, then\nmanual) and the lowest priority wins, which keeps the existing rule that\nsynced links replace manual em dashes.\n\nOutput is unchanged for the current components.d set.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nSigned-off-by: Moshe Abramovitch <moshea@nvidia.com>"
+    },
+    {
+     "key": "38b6f0dc04e9",
+     "title": "chore: sync skills (Ethos,cuOpt)",
+     "date": "2026-10-16T18:58:17Z",
+     "url": "https://github.com/NVIDIA/skills/commit/38b6f0dc04e97ad42788b96c258cb3f6e7bb040c",
+     "body": "chore: sync skills (Ethos,cuOpt)"
+    },
+    {
+     "key": "198120d5c727",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-16T18:58:09Z",
+     "url": "https://github.com/NVIDIA/skills/commit/198120d5c7277c76625e40cce563bd9a599e6b47",
+     "body": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json\n\nGenerated by .github/workflows/generate-skill-metadata.yml."
+    },
+    {
+     "key": "0cddf517b3aa",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-16T17:28:58Z",
+     "url": "https://github.com/NVIDIA/skills/commit/0cddf517b3aa56c71c45dea3cde5b347dca9d092",
+     "body": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json\n\nGenerated by .github/workflows/generate-skill-metadata.yml."
+    },
+    {
+     "key": "b71950db9b50",
+     "title": "chore: sync skills (Ethos)",
+     "date": "2026-10-16T17:28:18Z",
+     "url": "https://github.com/NVIDIA/skills/commit/b71950db9b50853b9e95da16db573bf22a30bb8e",
+     "body": "chore: sync skills (Ethos)"
+    },
+    {
+     "key": "970f9e1c3baa",
+     "title": "chore: sync skills (TileGym)",
+     "date": "2026-10-16T15:13:48Z",
+     "url": "https://github.com/NVIDIA/skills/commit/970f9e1c3baa9d10b9eaa5715f43f14db7968234",
+     "body": "chore: sync skills (TileGym)"
+    },
+    {
+     "key": "029363a2023c",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-15T20:49:33Z",
+     "url": "https://github.com/NVIDIA/skills/commit/029363a2023c0b24b1a75ddbeac11cd286d74afb",
+     "body": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json\n\nGenerated by .github/workflows/generate-skill-metadata.yml."
+    },
+    {
+     "key": "675de2f16228",
+     "title": "chore: sync skills (Ethos,RTX Remix)",
+     "date": "2026-10-15T17:19:12Z",
+     "url": "https://github.com/NVIDIA/skills/commit/675de2f162289f140f428c25cb07c109bded8144",
+     "body": "chore: sync skills (Ethos,RTX Remix)"
+    },
+    {
+     "key": "17d96b3f4b72",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-15T17:18:34Z",
+     "url": "https://github.com/NVIDIA/skills/commit/17d96b3f4b724f9f64948a7d6e89f0a5eae97074",
+     "body": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json\n\nGenerated by .github/workflows/generate-skill-metadata.yml."
+    },
+    {
+     "key": "4531eb877107",
+     "title": "Onboard Ethos skills from NVIDIA-NeMo/eval-author",
+     "date": "2026-10-15T16:43:43Z",
+     "url": "https://github.com/NVIDIA/skills/commit/4531eb877107c909a7834e19da298170f70c0029",
+     "body": "Onboard Ethos skills from NVIDIA-NeMo/eval-author\n\nSigned-off-by: Alec Khoury <akhoury@nvidia.com>"
+    },
+    {
+     "key": "b3b762b49510",
+     "title": "chore: sync skills (ovnewton)",
+     "date": "2026-10-15T15:56:26Z",
+     "url": "https://github.com/NVIDIA/skills/commit/b3b762b49510c26635c7ec48c1a3724bfcad54b5",
+     "body": "chore: sync skills (ovnewton)"
+    },
+    {
+     "key": "ae50e7fc1379",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-15T14:45:09Z",
+     "url": "https://github.com/NVIDIA/skills/commit/ae50e7fc137941b2e860cf93871086cbc802ec3f",
+     "body": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json\n\nGenerated by .github/workflows/generate-skill-metadata.yml."
+    },
+    {
+     "key": "1a88d4fd2a8c",
+     "title": "Use product-prefixed ovnewton catalog name",
+     "date": "2026-10-15T14:35:08Z",
+     "url": "https://github.com/NVIDIA/skills/commit/1a88d4fd2a8cb98cf2e90b7d41346297417442c0",
+     "body": "Use product-prefixed ovnewton catalog name\n\nSigned-off-by: Miguel Angel Zamora Mora <mzamoramora@nvidia.com>"
+    },
+    {
+     "key": "986e8d3326c7",
+     "title": "Register ovnewton skill",
+     "date": "2026-10-15T14:35:08Z",
+     "url": "https://github.com/NVIDIA/skills/commit/986e8d3326c7594cb997c7eb10570352f85ab71f",
+     "body": "Register ovnewton skill\n\nSigned-off-by: Miguel Angel Zamora Mora <mzamoramora@nvidia.com>"
+    },
+    {
+     "key": "7efb297d5999",
+     "title": "chore: sync skills (BioNeMo Libraries,cuDF)",
+     "date": "2026-10-15T13:29:53Z",
+     "url": "https://github.com/NVIDIA/skills/commit/7efb297d5999e45571b76d1da6ed1072835b00ed",
+     "body": "chore: sync skills (BioNeMo Libraries,cuDF)"
+    },
+    {
+     "key": "4da9e235bd8d",
+     "title": "Sync Genomics Workflow Acceleration",
+     "date": "2026-10-14T23:56:16Z",
+     "url": "https://github.com/NVIDIA/skills/commit/4da9e235bd8d0ee77a7cbb1a8673d3578e5c88a3",
+     "body": "Sync Genomics Workflow Acceleration\n\nSigned-off-by: Ohad Mosafi <omosafi@nvidia.com>"
+    },
+    {
+     "key": "009a566744de",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-14T21:51:42Z",
+     "url": "https://github.com/NVIDIA/skills/commit/009a566744dee8161fbe1365d8c9d093e6654da7",
+     "body": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json\n\nGenerated by .github/workflows/generate-skill-metadata.yml."
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "nemo-relay",
+   "kind": "github-releases",
+   "url": "https://github.com/NVIDIA/NeMo-Relay",
+   "why": "planned instrument: agent tracing (instruments/nemo-relay.md)",
+   "latest": {
+    "key": "0.10.2",
+    "title": "0.10.2",
+    "date": "2026-10-14T22:10:11Z",
+    "url": "https://github.com/NVIDIA/NeMo-Relay/releases/tag/0.10.2"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "0.10.2",
+     "title": "0.10.2",
+     "date": "2026-10-14T22:10:11Z",
+     "url": "https://github.com/NVIDIA/NeMo-Relay/releases/tag/0.10.2",
+     "prerelease": false,
+     "body": "<!-- Release notes generated using configuration in .github/release.yml at 0.10.2 -->\r\n\r\n## What's Changed\r\n### 🐛 Bug Fixes\r\n* fix(pii): preserve bounded trajectory status metadata by @j-nolan in https://github.com/NVIDIA/NeMo-Relay/pull/1339\r\n* fix: restore layered configuration for daemon workers by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1344\r\n* fix: validate upstream URLs and clarify daemon forwarding errors by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1345\r\n* fix: deliver managed daemon hooks without the system proxy by @tianyangc-nvidia in https://github.com/NVIDIA/NeMo-Relay/pull/1351\r\n### 🧰 Maintenance\r\n* chore: bump rustls to 0.23.46 by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1340\r\n\r\n## New Contributors\r\n* @j-nolan made their first contribution in https://github.com/NVIDIA/NeMo-Relay/pull/1339\r\n* @tianyangc-nvidia made their first contribution in https://github.com/NVIDIA/NeMo-Relay/pull/1351\r\n\r\n**Full Changelog**: https://github.com/NVIDIA/NeMo-Relay/compare/0.10.1...0.10.2"
+    },
+    {
+     "key": "0.10.1",
+     "title": "0.10.1",
+     "date": "2026-10-14T01:41:15Z",
+     "url": "https://github.com/NVIDIA/NeMo-Relay/releases/tag/0.10.1",
+     "prerelease": false,
+     "body": "<!-- Release notes generated using configuration in .github/release.yml at 0.10.1 -->\r\n\r\n## What's Changed\r\n### ✨ New Features\r\n* feat: support full LLM middleware in daemon workers by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1281\r\n* feat: make the Codex ChatGPT upstream configurable by @samratjha96 in https://github.com/NVIDIA/NeMo-Relay/pull/1319\r\n### 🐛 Bug Fixes\r\n* fix: align gateway hook timeout with daemon execution by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1288\r\n* fix: block on fail-closed hook delivery errors by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1289\r\n* fix: block fail-closed daemon hooks without credentials by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1290\r\n* fix: preserve multiple normalized request edits by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1296\r\n* fix: bound Anthropic streaming content block storage by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1303\r\n* fix: restrict typed reconstruction to registered types by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1304\r\n* fix: retain Go native handles throughout FFI calls by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1302\r\n* fix: authenticate pi hook forwarding and enforce session ownership by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1306\r\n* fix: skip dynamic plugins when trust verification fails by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1305\r\n* fix: load verified native plugin artifacts by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1307\r\n* fix: confine pi named upstreams to public and loopback addresses by @bbednarski9 in https://github.com/NVIDIA/NeMo-Relay/pull/1314\r\n* fix: propagate LangChain tool schema edits to model calls by @ericevans-nv in https://github.com/NVIDIA/NeMo-Relay/pull/1316\r\n* fix: preserve plugin and remote HTTP error statuses by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1317\r\n### 🧰 Maintenance\r\n* chore: replace deprecated YAML dependency by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1282\r\n### 📝 Documentation Updates\r\n* docs: add 0.10.1 release and migration notes by @willkill07 in https://github.com/NVIDIA/NeMo-Relay/pull/1299\r\n\r\n## New Contributors\r\n* @samratjha96 made their first contribution in https://github.com/NVIDIA/NeMo-Relay/pull/1319\r\n\r\n**Full Changelog**: https://github.com/NVIDIA/NeMo-Relay/compare/0.10.0...0.10.1"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "nvidia-pair",
+   "kind": "github-releases",
+   "url": "https://github.com/NVIDIA/Personal-AI-Router",
+   "why": "the LAN router compared with interlock (briefs/pair-and-interlock)",
+   "latest": {
+    "key": "v1.0.0",
+    "title": "NVIDIA PAIR 1.0.0",
+    "date": "2026-10-13T12:08:25Z",
+    "url": "https://github.com/NVIDIA/Personal-AI-Router/releases/tag/v1.0.0"
+   },
+   "latest_prerelease": null,
+   "new": [],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "ollama",
+   "kind": "github-releases",
+   "url": "https://github.com/ollama/ollama",
+   "why": "the 5090 serving engine; a new version can change behaviour the experiments depend on",
+   "latest": {
+    "key": "v0.40.6",
+    "title": "v0.40.6",
+    "date": "2026-10-16T22:00:46Z",
+    "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6"
+   },
+   "latest_prerelease": {
+    "key": "v0.40.7-rc0",
+    "title": "v0.40.7",
+    "date": "2026-10-18T00:28:57Z",
+    "url": "https://github.com/ollama/ollama/releases/tag/v0.40.7-rc0"
+   },
+   "new": [
+    {
+     "key": "v0.40.7-rc0",
+     "title": "v0.40.7",
+     "date": "2026-10-18T00:28:57Z",
+     "url": "https://github.com/ollama/ollama/releases/tag/v0.40.7-rc0",
+     "prerelease": true,
+     "body": "## What's Changed\r\n* openai: allow Responses effort on non-thinking models by @hoyyeva in https://github.com/ollama/ollama/pull/19010\r\n* llama-server: let llama-server infer the draft speculative type by @dhiltgen in https://github.com/ollama/ollama/pull/19064\r\n* mlx: add PPLX Decider v1.2 support by @dhiltgen in https://github.com/ollama/ollama/pull/19072\r\n\r\n\r\n**Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.6...v0.40.7-rc0"
+    },
+    {
+     "key": "v0.40.6",
+     "title": "v0.40.6",
+     "date": "2026-10-16T22:00:46Z",
+     "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6",
+     "prerelease": false,
+     "body": "## What's Changed\r\n* win: prevent orphaned runners by @dhiltgen in https://github.com/ollama/ollama/pull/18500\r\n* gguf: add the q2_0 tensor and file types by @jmorganca in https://github.com/ollama/ollama/pull/18967\r\n* Launch clef in Ollama's cloud by @jberg5 in https://github.com/ollama/ollama/pull/19036\r\n* use identifiers for --ask mode question keys by @jberg5 in https://github.com/ollama/ollama/pull/19041\r\n\r\n\r\n**Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.5...v0.40.6-rc0"
+    },
+    {
+     "key": "v0.40.5",
+     "title": "v0.40.5",
+     "date": "2026-10-14T19:45:22Z",
+     "url": "https://github.com/ollama/ollama/releases/tag/v0.40.5",
+     "prerelease": false,
+     "body": "## NVIDIA Nemotron 3.5 Super\r\n\r\n[NVIDIA Nemotron 3.5 Super](https://ollama.com/library/nemotron-3.5-super) is a vision-language model for coding, reasoning, tool use, and document understanding. It pairs a 120B-parameter hybrid Mamba-2/Transformer mixture-of-experts backbone (12B active per token) with a C-RADIO vision encoder, and supports tool calling, an on/off thinking mode, and context up to 1M tokens.\r\n\r\n```\r\nollama run nemotron-3.5-super\r\n```\r\n\r\nA compact sibling, [Nemotron 3.5 Bolt](https://ollama.com/library/nemotron-3.5-bolt), distills Super down to 74B parameters (9B active) tuned to fit a 24 GB NVIDIA GPU for everyday agentic tasks, with speculative decoding via its included drafter.\r\n\r\n## What's Changed\r\n* Decision models are now available on cloud — use `clef:cloud` and `clef-flash:cloud` to run decision models through ollama.com cloud without pulling them locally\r\n* Continuing an OpenAI-compatible Responses conversation that includes custom tool calls no longer fails with an error\r\n* Clearer error messages when cloud access fails: sign-in problems, payment issues in the desktop app, and upstream access errors from the ChatGPT gateway now explain what went wrong\r\n* Updated llama.cpp (adding Nemotron 3.5 support) and MLX\r\n\r\n## New Contributors\r\n* @willietran made their first contribution in https://github.com/ollama/ollama/pull/18986\r\n\r\n**Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.4...v0.40.5"
+    },
+    {
+     "key": "v0.40.4",
+     "title": "v0.40.4",
+     "date": "2026-10-12T19:00:12Z",
+     "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4",
+     "prerelease": false,
+     "body": "## Decision models in the CLI\r\nDecision models can now be used directly from the terminal with `ollama run` — ask yes/no questions, classify text into labels, or score against a rubric:\r\n`ollama run nimble --ask \"Is a refund being requested?\" < ticket.txt`\r\n\r\n ## What's Changed\r\n  * Kev decision models are now supported by the MLX runner on Apple silicon\r\n  * `ollama launch` can now be used with usage credits without upgrading to a paid plan\r\n  * `ollama launch codex` now includes locally installed Ollama models in its model picker. Use `/model` within the Codex CLI to swap models.\r\n  * Improved inference performance by reusing verified manifests and already loaded models\r\n  * Added support for multimodal embeddings through llama-server\r\n  * Fixed loading multimodal embedding models with small context windows\r\n  * Improved Gemma 4 prefill performance on NVIDIA GPUs with the MLX runner\r\n  * MLX runner now clips long Laya states instead of rejecting them\r\n  * Improved speculative decoding reliability in the MLX runner, including recurrent state handling after rollback\r\n   * Updated llama.cpp with native decision model support\r\n  * Updated README and documentation with clearer privacy and cloud-services wording\r\n\r\n  \r\n  **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.3...v0.40.4"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "llama-cpp",
+   "kind": "github-releases",
+   "url": "https://github.com/ggml-org/llama.cpp",
+   "why": "the engine under Ollama; report notable releases only",
+   "latest": {
+    "key": "b11738",
+    "title": "b11738",
+    "date": "2026-10-19T16:59:59Z",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11738"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "b11738",
+     "title": "b11738",
+     "date": "2026-10-19T16:59:59Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11738",
+     "prerelease": true,
+     "body": "<details open>\n\nserver : fix swa checkpoint invalidation logic (#30666)\n\n* server : fix swa checkpoint invalidation logic\n\nAssisted-by: Claude\n\n* add testcase that fails with > n_past, but works with > n_prefix\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57466532>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11738/cudart-llama-b11738-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11738/cudart-llama-b11738-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11738/cudart-llama-b11738-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11738/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11738/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11738/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11738/llama-b11738-ui.tar.gz)"
+    },
+    {
+     "key": "b11734",
+     "title": "b11734",
+     "date": "2026-10-19T14:08:40Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11734",
+     "prerelease": true,
+     "body": "<details open>\n\ncann : refactor `#ifdef` blocks to avoid unreachable code after `return` (#25273)\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57413259>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11734/cudart-llama-b11734-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11734/cudart-llama-b11734-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11734/cudart-llama-b11734-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11734/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11734/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11734/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11734/llama-b11734-ui.tar.gz)"
+    },
+    {
+     "key": "b11732",
+     "title": "b11732",
+     "date": "2026-10-19T13:50:27Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11732",
+     "prerelease": true,
+     "body": "<details open>\n\nCUDA: fix warning for nonexistent extra semicolon (#30774)\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57407216>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11732/cudart-llama-b11732-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11732/cudart-llama-b11732-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11732/cudart-llama-b11732-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11732/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11732/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11732/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11732/llama-b11732-ui.tar.gz)"
+    },
+    {
+     "key": "b11731",
+     "title": "b11731",
+     "date": "2026-10-19T13:35:36Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11731",
+     "prerelease": true,
+     "body": "<details open>\n\nggml-cpu: vectorize ggml_v_silu and ggml_v_expf (#30791)\n\nSigned-off-by: Aaron Teo <aaron.teo1@ibm.com>\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57402235>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11731/cudart-llama-b11731-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11731/cudart-llama-b11731-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11731/cudart-llama-b11731-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11731/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11731/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11731/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11731/llama-b11731-ui.tar.gz)"
+    },
+    {
+     "key": "b11729",
+     "title": "b11729",
+     "date": "2026-10-19T11:24:09Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11729",
+     "prerelease": true,
+     "body": "<details open>\n\nqwen3 : bidirectional attention and dense_2 output projection (#30607)\n\n* qwen3 : bidirectional attention and dense_2 output projection\n\nAssisted-by: Grok\n\n* convert : read use_bidirectional_attention in base\n\nAssisted-by: Grok\n\n* Update conversion/base.py\n\nCo-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@huggingface.co>\n\n---------\n\nCo-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@huggingface.co>\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57363774>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11729/cudart-llama-b11729-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11729/cudart-llama-b11729-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11729/cudart-llama-b11729-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11729/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11729/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11729/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11729/llama-b11729-ui.tar.gz)"
+    },
+    {
+     "key": "b11727",
+     "title": "b11727",
+     "date": "2026-10-19T10:23:39Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11727",
+     "prerelease": true,
+     "body": "<details open>\n\ntools : reject truncated GGUF tensor data in split and export tools (#30497)\n\n* The problem here in the repo is gguf-split can silently produce corrupted tensor output when the input GGUF file is truncated. The fix is to add tensor-data bounds checks and short-read checks in gguf-split.cpp and export-lora.cpp, and a regression test that checks truncated input is rejected and valid tensor data is preserved.#\n\n* Bug : GGUF-split can silently produce corrupted tensor output when the input GGUF file is truncated. Fix : add short-read checks in gguf-split.cpp (in copy_file_to_file in split_strategy) and export-lora.cpp (in read_tensor_data of file_input) so that truncated input is rejected.\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57346730>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-b11727-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-b11727-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-b11727-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11727/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11727/llama-b11727-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (3"
+    },
+    {
+     "key": "b11724",
+     "title": "b11724",
+     "date": "2026-10-19T05:44:32Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11724",
+     "prerelease": true,
+     "body": "<details open>\n\nCUDA: fix shared-memory WAR hazard in flash_attn_ext_vec (#30573)\n\n* CUDA: fix KQ write-after-read race in flash_attn_ext_vec\n\nAssisted-by: ChatGPT\n\n* CUDA: apply review suggestions for KQ sync comments\n\nCo-authored-by: Johannes Gäßler <johannesg@5d6.de>\n\n---------\n\nCo-authored-by: Johannes Gäßler <johannesg@5d6.de>\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57270560>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11724/cudart-llama-b11724-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11724/cudart-llama-b11724-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11724/cudart-llama-b11724-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11724/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11724/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11724/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11724/llama-b11724-ui.tar.gz)"
+    },
+    {
+     "key": "b11723",
+     "title": "b11723",
+     "date": "2026-10-19T02:06:12Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11723",
+     "prerelease": true,
+     "body": "<details open>\n\nhexagon: FLASH_ATTN_EXT improvements for longer context and SWA models (#30731)\n\n* hex-fa: support for masked block skipping to reduce DMA fetching\n\n* hex-fa: finetuning the hmx->hvx crossover thresholds (boosting gemma-4)\n\n* hex-fa: update hmx gate to account for mdev.count\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57234765>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11723/cudart-llama-b11723-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11723/cudart-llama-b11723-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11723/cudart-llama-b11723-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11723/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11723/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11723/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11723/llama-b11723-ui.tar.gz)"
+    },
+    {
+     "key": "b11722",
+     "title": "b11722",
+     "date": "2026-10-19T01:51:19Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11722",
+     "prerelease": true,
+     "body": "<details open>\n\nhexagon: allow multistream FA (#30218)\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57232684>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-b11722-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-b11722-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-b11722-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11722/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11722/llama-b11722-ui.tar.gz)"
+    },
+    {
+     "key": "b11721",
+     "title": "b11721",
+     "date": "2026-10-18T18:04:19Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11721",
+     "prerelease": true,
+     "body": "<details open>\n\ncuda : fuse qwen4exp's SCALE -> SIGMOID -> SCALE -> hc_post chain (#30602)\n\nPort of the Vulkan HC_POST_GATE fusion (#29520). hc_combine builds the\nhc_post weights as 2*sigmoid(inject/hc); dsv4_hc_post_f32 now takes a\ngated template flag and computes scale_out*sigmoid(scale_in*p) from the\nraw weights, so the chain runs as one kernel instead of four.\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57168730>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11721/cudart-llama-b11721-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11721/cudart-llama-b11721-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11721/cudart-llama-b11721-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11721/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11721/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11721/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11721/llama-b11721-ui.tar.gz)"
+    },
+    {
+     "key": "b11720",
+     "title": "b11720",
+     "date": "2026-10-18T17:36:42Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11720",
+     "prerelease": true,
+     "body": "<details open>\n\nggml: support non-contiguous SUM (CPU, CUDA, Vulkan, WebGPU) (#28851)\n\n* ggml: support non-contiguous SUM (CPU, CUDA)\n\n* tests: add non-contiguous SUM cases\n\n* tests: SUM over non-contiguous views\n\n* vulkan: support non-contiguous SUM\n\n* webgpu: support non-contiguous SUM\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57164866>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11720/cudart-llama-b11720-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11720/cudart-llama-b11720-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11720/cudart-llama-b11720-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11720/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11720/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11720/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11720/llama-b11720-ui.tar.gz)"
+    },
+    {
+     "key": "b11719",
+     "title": "b11719",
+     "date": "2026-10-18T11:11:37Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11719",
+     "prerelease": true,
+     "body": "<details open>\n\nggml-cuda: fattn do not check oob if k_VKQ_max = (k_VKQ_max - nbatch_fa) (#30572)\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57114852>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11719/cudart-llama-b11719-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11719/cudart-llama-b11719-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11719/cudart-llama-b11719-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11719/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11719/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11719/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11719/llama-b11719-ui.tar.gz)"
+    },
+    {
+     "key": "b11718",
+     "title": "b11718",
+     "date": "2026-10-18T04:42:47Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11718",
+     "prerelease": true,
+     "body": "<details open>\n\nRestore ESIMD kernels on FFN path (#30239)\n\n* Reenable ESIMD on the FFN path\n\nSigned-off-by: Todd Malsbary <todd.malsbary@intel.com>\n\n* Extend ESIMD fusion on FFN path to include Q8_0\n\nSigned-off-by: Todd Malsbary <todd.malsbary@intel.com>\n\n* Remove comment explicitly referencing ESIMD in test-backend-ops\n\nSigned-off-by: Todd Malsbary <todd.malsbary@intel.com>\n\n---------\n\nSigned-off-by: Todd Malsbary <todd.malsbary@intel.com>\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57072547>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11718/cudart-llama-b11718-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11718/cudart-llama-b11718-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11718/cudart-llama-b11718-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11718/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11718/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11718/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-ui.tar.gz)"
+    },
+    {
+     "key": "b11717",
+     "title": "b11717",
+     "date": "2026-10-18T02:50:12Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11717",
+     "prerelease": true,
+     "body": "<details open>\n\nhexagon: add support for hadamard MUL_MAT and GET_ROW for flat and tiled Q1_0 and Q2_0 (#30627)\n\n* hex-hadamard: add support for hadamard ops\n\n* hex-mm: reduce pkt counts in the q8_1 quantizer and vec_dot_q1\n\n* hex-q1/q2: add support for flat and tiled GET_ROWS for Q1_0 and Q2_0\n\n---------\n\nCo-authored-by: Max Krasnyansky <maxk@qti.qualcomm.com>\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57059545>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11717/cudart-llama-b11717-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11717/cudart-llama-b11717-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11717/cudart-llama-b11717-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11717/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11717/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11717/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310p)\n- openEuler aarch64 (910b, ACL Graph)\n\n**UI:**\n- [UI](https://github.com/ggml-org/llama.cpp/releases/download/b11717/llama-b11717-ui.tar.gz)"
+    },
+    {
+     "key": "b11716",
+     "title": "b11716",
+     "date": "2026-10-17T21:11:34Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11716",
+     "prerelease": true,
+     "body": "<details open>\n\nhexagon: add support for Q1_0 and Q2_0 (#30122)\n\n* hexagon: add support for q1_0 quant\n\n* hexagon: enable Q1_0 weights in the 2D HMX MUL_MAT path\n\n* hex-q1: cleanup gates, generalize tiling and remove in-loop divs\n\n* hex-tiling: document tiled formats in developer.md and update htp-tensor.h\n\n* hex-q2: add support for Q2_0\n\n* hex-q2: remove stale asserts and speacial cases\n\n* hex-mm: fix MUL_MAT_NX assumption about square tiling, Q1/Q2 have non-square tiles\n\n* hex-q1/2: minor optimizations (unrolls/un-unrolls/...)\n\n* hex-q1: optimize Q1_0 layout to reduce unpack/vrmpy overhead\n\n* hex-q1/q2_0: further optimize vec_dots\n\n---------\n\nCo-authored-by: Max Krasnyansky <maxk@qti.qualcomm.com>\n\n</details>\n\n**Website:**\n- <https://llama.app>\n\n**Attestations:**\n- <https://github.com/ggml-org/llama.cpp/attestations/57016509>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-macos-arm64.tar.gz)\n- macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23780)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-macos-x64.tar.gz)\n- [iOS XCFramework](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-xcframework.zip)\n\n**Linux:**\n- [Ubuntu x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-x64.tar.gz)\n- [Ubuntu arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-arm64.tar.gz)\n- [Ubuntu s390x (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-s390x.tar.gz)\n- [Ubuntu x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-vulkan-x64.tar.gz)\n- [Ubuntu arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-vulkan-arm64.tar.gz)\n- [Ubuntu x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11716/cudart-llama-b11716-bin-ubuntu-cuda-12.8-x64.tar.gz)\n- [Ubuntu x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-cuda-13.4-x64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11716/cudart-llama-b11716-bin-ubuntu-cuda-13.4-x64.tar.gz)\n- [Ubuntu arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-cuda-13.4-arm64.tar.gz) - [CUDA 13.4 libraries](https://github.com/ggml-org/llama.cpp/releases/download/b11716/cudart-llama-b11716-bin-ubuntu-cuda-13.4-arm64.tar.gz)\n- [Ubuntu x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-rocm-10.0-x64.tar.gz)\n- [Ubuntu x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-openvino-2026.4.1-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP32)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-sycl-fp32-x64.tar.gz)\n- [Ubuntu x64 (SYCL FP16)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-ubuntu-sycl-fp16-x64.tar.gz)\n- [Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-linux-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/linux.md)\n\n**Android:**\n- [Android arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-android-arm64.tar.gz)\n- [Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-android-arm64-snapdragon.tar.gz) - [setup guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/backend/snapdragon/README.md)\n\n**Windows:**\n- [Windows x64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-cpu-x64.zip)\n- [Windows arm64 (CPU)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-cpu-arm64.zip)\n- [Windows arm64 (OpenCL Adreno)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-opencl-adreno-arm64.zip)\n- [Windows x64 (CUDA 12)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-cuda-12.4-x64.zip) - [CUDA 12.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11716/cudart-llama-bin-win-cuda-12.4-x64.zip)\n- [Windows x64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-cuda-13.4-x64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11716/cudart-llama-bin-win-cuda-13.4-x64.zip)\n- [Windows arm64 (CUDA 13)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-cuda-13.4-arm64.zip) - [CUDA 13.4 DLLs](https://github.com/ggml-org/llama.cpp/releases/download/b11716/cudart-llama-bin-win-cuda-13.4-arm64.zip)\n- [Windows x64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-vulkan-x64.zip)\n- [Windows arm64 (Vulkan)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-vulkan-arm64.zip)\n- [Windows x64 (OpenVINO)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-openvino-2026.4.1-x64.zip)\n- [Windows x64 (SYCL)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-sycl-x64.zip)\n- [Windows x64 (ROCm 10.0)](https://github.com/ggml-org/llama.cpp/releases/download/b11716/llama-b11716-bin-win-rocm-10.0-x64.zip)\n\n**openEuler:**\n- [DISABLED](https://github.com/ggml-org/llama.cpp/pull/23705)\n- openEuler x86 (310p)\n- openEuler x86 (910b, ACL Graph)\n- openEuler aarch64 (310"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "openvino",
+   "kind": "github-releases",
+   "url": "https://github.com/openvinotoolkit/openvino",
+   "why": "the Intel NPU and iGPU lane",
+   "latest": {
+    "key": "2026.4.1",
+    "title": "2026.4.1",
+    "date": "2026-10-01T13:45:59Z",
+    "url": "https://github.com/openvinotoolkit/openvino/releases/tag/2026.4.1"
+   },
+   "latest_prerelease": null,
+   "new": [],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "pytorch",
+   "kind": "github-releases",
+   "url": "https://github.com/pytorch/pytorch",
+   "why": "training and GPU work; CUDA support changes",
+   "latest": {
+    "key": "v2.14.1",
+    "title": "PyTorch 2.14.1 Release",
+    "date": "2026-09-30T19:14:48Z",
+    "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.1"
+   },
+   "latest_prerelease": null,
+   "new": [],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "comfyui",
+   "kind": "github-releases",
+   "url": "https://github.com/comfyanonymous/ComfyUI",
+   "why": "the image pipeline",
+   "latest": {
+    "key": "v0.42.1",
+    "title": "v0.42.1",
+    "date": "2026-10-19T01:33:54Z",
+    "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "v0.42.1",
+     "title": "v0.42.1",
+     "date": "2026-10-19T01:33:54Z",
+     "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1",
+     "prerelease": false,
+     "body": "Fix some crashing issues a few users experienced when running the MOSS image template workflow."
+    },
+    {
+     "key": "v0.42.0",
+     "title": "v0.42.0",
+     "date": "2026-10-18T22:10:38Z",
+     "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0",
+     "prerelease": false,
+     "body": "## What's Changed\r\n* [Partner Nodes] feat(Krea): add Krea 3 Image node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17067\r\n* Update workflow templates to v0.11.85 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/17068\r\n* Use FLUX 3 Image in node display labels by @MaanavD in https://github.com/Comfy-Org/ComfyUI/pull/17075\r\n* Better documentation about the comfy quant format. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17078\r\n* Update workflow templates to v0.11.86 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/17083\r\n* feat: Add MOSS-image support by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/17095\r\n* [Partner Nodes] chore(Quiver): remove retired Arrow 1.x models by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/17102\r\n* Update comfy-kitchen version to 0.2.38 by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17107\r\n* Use fused situ with MOSS-image by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/17099\r\n* Performance improvements for qwen 3.x (Part 2) by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/17007\r\n* Update workflow templates to v0.11.87 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/17110\r\n* Fix Qwen think-block templates in TextGenerate by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/17121\r\n* Update workflow templates to v0.11.89 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/17138\r\n* Add ARM Linux to execution and unit tests. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17139\r\n* Refactor 3D model remeshing (CORE-560) by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/16805\r\n* Fix crash issue with solid mode + empty mesh. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17140\r\n* Bump comfyui-frontend-package to 1.55.18 by @comfy-pr-bot in https://github.com/Comfy-Org/ComfyUI/pull/16859\r\n* Fix webcam node no longer working. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17144\r\n* add support for loading embeddings models onto Qwen3.5 by @silveroxides in https://github.com/Comfy-Org/ComfyUI/pull/17159\r\n* Support models with PDD baked in by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/17157\r\n* Make NAF neighborhood attention work per LR cell by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/17155\r\n* Fix text generation not properly cleaning itself up. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17169\r\n* CPU device doesn't support fp8, nvfp4, mxfp8 or int8. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17170\r\n* Update comfy-kitchen version to 0.2.39 by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17171\r\n\r\n## New Contributors\r\n* @MaanavD made their first contribution in https://github.com/Comfy-Org/ComfyUI/pull/17075\r\n\r\n**Full Changelog**: https://github.com/Comfy-Org/ComfyUI/compare/v0.41.0...v0.42.0"
+    },
+    {
+     "key": "v0.41.0",
+     "title": "v0.41.0",
+     "date": "2026-10-15T22:57:45Z",
+     "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0",
+     "prerelease": false,
+     "body": "## What's Changed\r\n* Add ImageSDRToHDR node. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16990\r\n* feat: Add a core route for the default workflow (CORE-340) by @alexisrolland in https://github.com/Comfy-Org/ComfyUI/pull/16956\r\n* Add ReferenceMultiLatent node. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17009\r\n* Disable the LoRA stack nodes until the frontend supports DynamicGroup by @jaeone94 in https://github.com/Comfy-Org/ComfyUI/pull/17050\r\n* Improve ReferenceMultiLatent UX a bit. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17053\r\n* Revert \"Disable the LoRA stack nodes until the frontend supports DynamicGroup\" by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/17054\r\n* Support MiniMax-H3 LightVAE by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/17049\r\n* Add nodes to get Latent Geometries by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/16093\r\n* feat: Add Flux3-image model support (CORE-388) by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/17064\r\n* Update workflow templates to v0.11.84 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/17065\r\n\r\n\r\n**Full Changelog**: https://github.com/Comfy-Org/ComfyUI/compare/v0.40.0...v0.41.0"
+    },
+    {
+     "key": "v0.40.0",
+     "title": "v0.40.0",
+     "date": "2026-10-13T21:29:16Z",
+     "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.40.0",
+     "prerelease": false,
+     "body": "## What's Changed\r\n* [Server.py] Update CSP to allow `blob:` and `data:` by @S0yKaf in https://github.com/Comfy-Org/ComfyUI/pull/15565\r\n* Add comfy_attention and AttentionTensorContainer support to rest of models by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16806\r\n* Implement the asset export API locally (CORE-454) by @jtydhr88 in https://github.com/Comfy-Org/ComfyUI/pull/16578\r\n* Report 3D models from every 3D node as a standard 3d output item by @jtydhr88 in https://github.com/Comfy-Org/ComfyUI/pull/16200\r\n* feat(camera-info): CreateCameraInfo node + CameraInfoState widget input by @jtydhr88 in https://github.com/Comfy-Org/ComfyUI/pull/14964\r\n* feat(assets): extract video metadata into system_metadata on ingest and scan by @jtydhr88 in https://github.com/Comfy-Org/ComfyUI/pull/15180\r\n* Add a way to attach metadata to the websocket messages of a prompt. by @christian-byrne in https://github.com/Comfy-Org/ComfyUI/pull/16763\r\n* fix: preserve dynamic input validation and lazy execution by @jaeone94 in https://github.com/Comfy-Org/ComfyUI/pull/16377\r\n* refactor: keep DynamicGroup internal while stabilizing by @jaeone94 in https://github.com/Comfy-Org/ComfyUI/pull/16811\r\n* feat: add CameraAngle node with camera_info and shot prompt outputs by @jtydhr88 in https://github.com/Comfy-Org/ComfyUI/pull/16251\r\n* [Partner Nodes] feat(Google): add Nano Banana 2.1 model by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/16822\r\n* Update workflow templates to v0.11.77 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/16823\r\n* Improve low VRAM performance of qwen 3.5 LLM by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/16820\r\n* Make k/v contiguous before SDPA on gfx1151 when they don't fit in L2 by @tvukovic-amd in https://github.com/Comfy-Org/ComfyUI/pull/16726\r\n* Consolidate Linear forward API with prologue/epilogue fusion paths by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/16816\r\n* Also attach the metadata to a prompt's preview image frames. by @christian-byrne in https://github.com/Comfy-Org/ComfyUI/pull/16809\r\n* Add governance enforcement for custom nodes by @guill in https://github.com/Comfy-Org/ComfyUI/pull/16167\r\n* comfy_attention configs in model files can now use kitchen sol attention. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16831\r\n* Bump comfyui-frontend-package to 1.55.14 by @comfy-pr-bot in https://github.com/Comfy-Org/ComfyUI/pull/16736\r\n* [Partner Nodes] feat(Quiver): add V2 SVG nodes with per-model inputs and deprecate the originals by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/16775\r\n* [Partner Nodes] feat(Vidu): add nodes for Vidu Q4 model by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/16849\r\n* [Partner Nodes] feat(ClarityAI): add Crystal Upscaler node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/16817\r\n* [Partner Nodes] feat(Kling): add Kling Virtual Try-On node by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/16844\r\n* Update workflow templates to v0.11.78 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/16851\r\n* Change model code to use function wrappers for Linear calls by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/16861\r\n* Fix issue with bypass loras and fused paths. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16862\r\n* Use PNG compress level 4 for GLB textures for faster saving by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/16867\r\n* Comfy Aimdo 0.5.6 + Fix qwen 2.1 rogues in low VRAM conditions by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/16870\r\n* Fix Qwen3.5 MTP embedding offload by @rattus128 in https://github.com/Comfy-Org/ComfyUI/pull/16877\r\n* Loras can now replace the per layer attention config on a model. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16880\r\n* Link related repositories in CodeRabbit reviews by @christian-byrne in https://github.com/Comfy-Org/ComfyUI/pull/16769\r\n* feat: add native LoRA stack loader nodes (CORE-186) by @jaeone94 in https://github.com/Comfy-Org/ComfyUI/pull/16309\r\n* Turn the assets system on by default; add --disable-assets by @synap5e in https://github.com/Comfy-Org/ComfyUI/pull/16884\r\n* [Partner Nodes] feat(HeyGen): add 2k resolution to HeyGen Video 1.0 nodes by @bigcat88 in https://github.com/Comfy-Org/ComfyUI/pull/16876\r\n* Add LatentOperationBlend and start/end percent to LatentApplyOperatio… by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16923\r\n* Disable the output assets scanning. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16926\r\n* Enable MTP with images on Qwen3.5 by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/16922\r\n* Decode MiniMax H3 single images as the first latent of a clip by @kijai in https://github.com/Comfy-Org/ComfyUI/pull/16881\r\n* fix(assets): date scanned assets by their file's mtime by @synap5e in https://github.com/Comfy-Org/ComfyUI/pull/16810\r\n* Enable compression on saved EXR. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16948\r\n* Fix issues with loading half float files with pyav. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16949\r\n* Keep linked repository findings focused by @christian-byrne in https://github.com/Comfy-Org/ComfyUI/pull/16920\r\n* Remove some outdated code. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16960\r\n* Turn assets off unless --enable-assets, and scan the output folder again by @synap5e in https://github.com/Comfy-Org/ComfyUI/pull/16929\r\n* Turn the assets system on for the Windows standalone build by @synap5e in https://github.com/Comfy-Org/ComfyUI/pull/16928\r\n* Add a ARM64 nvidia portable. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16985\r\n* Remove the cryptography package dependency. by @comfyanonymous in https://github.com/Comfy-Org/ComfyUI/pull/16988\r\n* Update embedded docs to v0.5.14 by @comfyui-wiki in https://github.com/Comfy-Org/ComfyUI/pull/16981\r\n* [Partner No"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "claude-code",
+   "kind": "github-releases",
+   "url": "https://github.com/anthropics/claude-code",
+   "why": "the agent CLI every harness and experiment runs on; flags and permission rules change",
+   "latest": {
+    "key": "v2.1.303",
+    "title": "v2.1.303",
+    "date": "2026-10-18T22:26:54Z",
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "v2.1.303",
+     "title": "v2.1.303",
+     "date": "2026-10-18T22:26:54Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
+     "prerelease": false,
+     "body": "## What's changed\n\n- Bug fixes and reliability improvements\n"
+    },
+    {
+     "key": "v2.1.302",
+     "title": "v2.1.302",
+     "date": "2026-10-16T20:53:06Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
+     "prerelease": false,
+     "body": "## What's changed\n\n- Added `CLAUDE_CODE_AUTO_MODE_MODEL` to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode\n- Added an `Idle compaction` row to `/config` for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off\n- Added a notice to `/design-sync` and `/design-login` that standalone Claude Design (claude.ai/design) closes by December 14, 2026\n- Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted\n- Fixed requests failing with \"diagnostics: Extra inputs are not permitted\" after switching to Vertex or Bedrock mid-session\n- Fixed the Read tool loading an image file of any size, or a pipe or device named like an image, entirely into memory; image sources over 128 MB are now refused\n- Fixed `/autocompact` and `/effort` saving to the wrong model when a gateway names Opus 4 or 4.1 with a prefix, such as `anthropic/claude-opus-4-1`\n- Fixed a prompt cache miss when a tool added mid-session was loaded again through ToolSearch or after compaction\n- Fixed `claude plugin` and other subcommands sometimes exiting before a queued settings or config write finished, which could lose the change or leave a `.tmp` file behind\n- Fixed plugin marketplaces re-cloning on every refresh, and newly installed git plugins showing version \"unknown\", when git defaults to the reftable ref format\n- Fixed the PowerShell tool not finding commands in a plugin's `bin/` folder, and reporting an error when a search that finds nothing (rg, grep, findstr, git grep) is piped into `Select-Object` or another formatting cmdlet\n- Fixed Claude in the desktop app pointing you to claude.ai settings or `/mcp` to authorize or reconnect an MCP server where that option isn't available\n- Fixed artifact publishes sometimes failing when Claude sent an empty list of edits, and Claude retrying an artifact update the wrong way after a newer version of the artifact turned it away\n- Fixed `classifier_category` missing from OpenTelemetry `tool_decision` events for most auto mode classifier blocks, and new `tool_decision` attributes pushing out `tool_use_id`, `tool_source` and `tool_parameters` when `OTEL_LOGRECORD_ATTRIBUTE_COUNT_LIMIT` is low\n- Fixed rows in the agents view staying blank after moving down a long list or folding a section\n- Fixed `claude remote-control --help` not printing its usage and exiting when not signed in\n- Fixed `/design consent` and `/design revoke` suggesting `/design-login` when they fail in a cloud session, where it isn't available; the message now points to claude.ai/design/settings\n- Fixed MCP servers showing no tools, or every tool call failing, when the server negotiates protocol version 2026-07-28 but omits `resultType`, `ttlMs` or `cacheScope`\n- Fixed prompt suggestions spending usage credits on models your plan pays for only with credits: they are now skipped after a reply billed to credits\n- Fixed URLs written in backticks being clickable only on their first row when they wrap; the whole URL is now one link in terminals that support hyperlinks\n- Fixed `claude plugin details <name>@builtin` suggesting `claude plugin list`, which never shows built-in plugins, when the plugin isn't found; it now points to `/plugin`\n- Fixed an emoji that a link starts inside wrapping one column too wide, which hid it in question previews and turned tables into lists\n- Fixed worktree isolation refusing to create or resume worktrees under git 2.56 or later when a stray `.git` file points at a directory that doesn't exist\n- Fixed a cloud session's cost and usage restarting from zero after the session resumed in a new process\n- Self-hosted runner: Fixed git fetches failing with \"bad object refs/heads\" in sessions that reuse a checkout stored in git's reftable format\n- Windows: Fixed every file write being refused or asked about for projects on exFAT or FAT32 drives, including in sessions started with `--plugin-dir`\n- Improved startup time with many plugins enabled: plugin command and agent files now take far fewer file system calls to load, most of all on Windows\n- Improved auto mode with the server-side classifier: a conversation too long for the safety check is now compacted, instead of every checked tool call being denied\n- Improved the message when a background session reopened from another folder has no LLM gateway: it now says why, instead of \"Not logged in\"\n- Changed `claude -p` and Agent SDK sessions with no permission mode to start in `default` mode on third-party providers, with telemetry off or on a fresh install; `--permission-mode auto` keeps auto\n- Changed fork subagents (`subagent_type: \"fork\"`) to be on by default in `claude -p`, the Agent SDK, the desktop app and VS Code, as they already are in the terminal; `CLAUDE_CODE_FORK_SUBAGENT=0` turns them off, and `claude mcp serve` never offers them\n- Changed the desktop app and VS Code to always run the main conversation's subagents in the background, as the terminal does, rather than let Claude choose; a subagent's own Agent calls in `claude -p`, the Agent SDK, the desktop app and VS Code now run in the foreground by default\n- Changed the `← for agents` footer hint to hide 10 seconds after a session opens; the count of agents waiting on you still shows\n- Changed where the Claude in Chrome instructions sit in the system prompt so that new conversations can read them from the shared prompt cache\n- Changed prompt and agent hooks so that at most 12 of one event run at a time; the rest wait their turn\n- Changed the message shown when your organization's policy turns off `/feedback`: it now points to GitHub issues instead of an organization admin\n- [VSCode] Fixed text after an unclosed code block in a list showing as plain text while a reply streams, then turning into code\n- [VSCode] Fixed MCP server sign-in from the panel opening a broken authorization page when the server URL contains a query string\n- [VSCode] Fi"
+    },
+    {
+     "key": "v2.1.301",
+     "title": "v2.1.301",
+     "date": "2026-10-15T19:22:06Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
+     "prerelease": false,
+     "body": "## What's changed\n\n- Added `CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS` so unattended retry mode (`CLAUDE_CODE_RETRY_WATCHDOG`) ends a request at a usage limit that resets too far away instead of waiting\n- Added OpenTelemetry tracing guidance to the `claude-api` skill, including setting up trace destinations with the `ant` CLI\n- Added the `%` motion to vim mode: jump to the matching bracket, alone or with d/c/y\n- Added `rows` to a mod's `Input`: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line\n- Added `classifier_verdict` and `permission_mode` to OpenTelemetry `tool_decision` events, so auto mode classifier decisions can be told apart from permission rules\n- Added `classifier_category` to OpenTelemetry `tool_decision` events, naming the built-in rule a classifier block matched, when `OTEL_LOG_TOOL_DETAILS=1`\n- Fixed quitting removing a worktree made by a `WorktreeCreate` hook without asking when it may hold unpushed commits\n- Fixed the `fable` (and `best`) model alias erroring on the Anthropic API when the newest Fable model is not available to your organization: Claude Code now retries once on the previous Fable model\n- Fixed a misleading \"Please run /login\" error when a full disk keeps the login from being refreshed; the error now names the disk and says to delete files\n- Fixed Grep and Glob reporting no matches when the search program failed unexpectedly before returning any results; they now return an error saying the search failed\n- Fixed workflow agents sometimes skipping their step, and the run still reporting success, after reading the harness note that their task text carries no user authority\n- Fixed artifact updates being refused where a PreToolUse hook covers Edit or Write; Claude now edits the file and then republishes instead of changing it in the publish call\n- Fixed skills and commands with very many or very long argument names stalling for seconds when invoked; only the first 64 names, each up to 64 characters, are now filled in\n- Fixed skills, commands and hooks using very large amounts of memory when their arguments fill many placeholders\n- Fixed stray characters such as `>0q` covering the folder trust prompt, and `>4m` before the shell prompt at exit, in terminals built on VTE older than 0.53 such as MATE Terminal on RHEL 8\n- Fixed stray `GOK` text appearing in the prompt at startup in some versions of iTerm2\n- Fixed switching to a model whose name contains `application-inference-profile` running your `awsAuthRefresh` command and delaying model-switch hooks when the provider is not Bedrock\n- Fixed sign-in refresh timeouts and unexpected sign-outs after a short command such as `claude auth status` or `claude plugin list` exited in the middle of a token refresh\n- Fixed a tool call cut off by a message sent mid-turn during its permission check being reported to the model as rejected by the user\n- Fixed a case where switching to a model with a smaller context window could spend usage credits on a summary by the previous model without asking first\n- Fixed conversations being compacted over and over, on a model you didn't pick, behind an LLM gateway whose responses name a different model than the one requested\n- Fixed vim mode sometimes staying in INSERT after Escape on a slow or busy machine\n- Fixed Esc discarding a typed AskUserQuestion answer in vim mode: the free-text field now supports vim NORMAL mode, and Esc cancels only from NORMAL\n- Fixed the Read tool reading binary files such as .xlsm, .parquet, .epub and .heic as text\n- Fixed a Markdown table with only a header row drawing nothing when too wide for the terminal, including in plans on the plan approval card\n- Fixed the /claude-api skill saying CMEK external-key endpoints aren't available on Claude Platform on AWS\n- Fixed skills no longer being listed to the model after using `/rewind`\n- Fixed the compaction row in a resumed session offering ctrl+o for history that is not loaded; it now says where the earlier messages are saved, and also shows in fullscreen\n- Fixed the \"new task? /clear to save tokens\" hint coming back right after you interrupt a response\n- Fixed the permission prompt for a plugin or skill hook's `ask` decision not showing which plugin or skill the hook comes from\n- Fixed `/diff` not noticing a conflicted cherry-pick or revert in reftable repositories when one of its git checks timed out or failed\n- Fixed workflow scripts asking for permission or being refused when read, edited or re-run after a Bash `cd` in the same session\n- Fixed dim text on the dark ANSI theme and 16-color terminals: faint inside filled boxes, not faint under selection and search highlights, and list descriptions dimmed like other secondary text\n- Fixed a mod's `$.model.fork` returning `nothing-to-fork` when called before the first response of a new Claude Code process had finished, as in `claude -p` runs and cloud sessions\n- Fullscreen mode: Fixed `/compact` and auto-compact briefly freezing the UI while the visible transcript is rebuilt\n- Self-hosted runner: Fixed sessions started from Slack being unable to find or attach a repository when managed settings restrict MCP servers; use `deniedMcpServers` to keep those tools off\n- Self-hosted runner: Fixed sessions being reported as having a deleted source branch, and not retried, when an unrelated setup or session failure quoted git's missing-ref wording\n- Self-hosted runner: Fixed the log promising a retry of a failed or declined session release for a session that is ending; repeated failures now show a count\n- Windows: Fixed stopped background PowerShell commands missing the closing `[killed]` line in their output file\n- Improved switching to a model with a smaller context window: a conversation too long for the new model is now summarized by the previous model first\n- Improved rendering performance while a long-running subagent works: its progress trail now updates incrementally instead of"
+    },
+    {
+     "key": "v2.1.300",
+     "title": "v2.1.300",
+     "date": "2026-10-14T18:24:25Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.300",
+     "prerelease": false,
+     "body": "## What's changed\n\n- Added `virtualText` to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt\n- Added `cache_creation_5m_tokens` and `cache_creation_1h_tokens` to the OpenTelemetry `api_request` event, splitting cache writes by lifetime\n- Added `$.ui.view({ agentId })` for mods: shows an agent's transcript in the main view when you ask, and `$.ui.view({})` goes back\n- Added a `dir` prop on a mod's `Text` for right-to-left text: on Windows and in VS Code's terminal its rows read in that direction and sit flush right\n- Added `/advisor` on Claude Platform on AWS; no advisor runs until you pick one with `/advisor`, `advisorModel` or `--advisor`, and `CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1` turns it off\n- Added OpenTelemetry GenAI semantic-convention attributes to trace spans, such as `gen_ai.provider.name`, `gen_ai.conversation.id`, `gen_ai.tool.name` and `error.type`\n- Added support for rewriting a workflow agent's `prompt` and `model` in the `agent.spawn` mod hook, which could only refuse workflow agents before\n- Added the `prompt.change` mod hook, raised when the prompt box's text changes without a typed edit: a recalled history entry, a clear, an undo, or a plugin's fill\n- Fixed cloud sessions telling Claude that an organization policy blocked a host when the session's own network settings did\n- Fixed `/autocompact` warning about high token usage when you choose a smaller auto-compact window\n- Fixed SessionEnd hooks sometimes not running when you exit while a background command is still running\n- Fixed `claude --help` naming a removed tool in its description of `--restricted`\n- Fixed `claude agents` not refreshing any pull request's status when the data for one of them came back incomplete\n- Fixed Claude being told a background agent was lost, not resumable, after a cloud session's container was replaced, when the agent had already been resumed once\n- Fixed subagents you had typed messages to disappearing from `/tasks` shortly after finishing, leaving no way back to the conversation\n- Fixed a completed parent agent dropping off the breadcrumb (its child shown re-rooted at top level) while you were viewing the child\n- Fixed the agents view taking a typed word such as \"up\", \"down\" or \"escape\" for that key when input arrived in a burst, which could move the peek mid-reply or clear a draft\n- Fixed automatic tool search (`ENABLE_TOOL_SEARCH=auto`) turning off part-way through a conversation, for example while MCP servers reconnect after a resume\n- Fixed a login refused by `forceLoginOrgUUID` leaving the refused organization's token stored, or live after `/login`\n- Fixed the diff view in Claude Desktop and Remote Control sessions not noticing a conflicted cherry-pick or revert in reftable repositories\n- Fixed the Artifact tool's verbose and ctrl+o line reading `Artifact(\"(unprintable path)\")` while a call's input arrives; its row now shows \"Waiting…\" and \"Running…\" as Bash's does\n- Fixed the first transcript entry written after resuming a session being lost when a crash had cut the transcript's last line short\n- Fixed `/branch` dropping messages, and `claude purge` skipping subfolder projects, when they contain a Unicode line or paragraph separator (U+2028, U+2029)\n- Fixed plugin `WorktreeCreate` and `WorktreeRemove` hooks not running when Claude Code starts with `--worktree` (not yet with `--tmux`)\n- Fixed OpenTelemetry `tool_result` events missing `git_commit_id` after `git commit -q` in repositories using reftable ref storage\n- Fixed a prompt that a mod's `prompt.submit` hook rewrote or dropped still being recorded as typed in the OpenTelemetry `user_prompt` event and interaction span, and in session title requests\n- Fixed a note meant for Claude about mod hot-reloading appearing in the transcript as if you had typed it\n- Fixed agent hooks ignoring their `model`: aliases like `haiku` now resolve, a subagent's model no longer overrides it, and an unavailable model falls back to the caller's instead of allowing the action\n- Fixed `--worktree` sessions sometimes starting from the wrong commit when a tag or branch was named like a commit ID, and their starting git status naming a branch other than the new worktree's\n- Fixed the branch showing as \".invalid\" and `--worktree` failing to reopen a worktree in repositories using git's reftable ref storage\n- Fixed Claude naming files in the session scratchpad by a bare filename or relative path instead of their full path\n- Fixed `claude remote-control` servers giving up on renewing their connection after a brief sign-in error, such as a locked keychain; they now retry, and warn when you need to run `claude /login`\n- Fixed `--worktree` failing in a worktree of a bare repository when origin's default branch can't be fetched; the fallback base is now the current checkout's HEAD, not the main repository's\n- Fixed starting Claude Code in a VS Code, Cursor or Devin Desktop integrated terminal launching the editor's command-line tool twice to check for the extension; it now launches it once\n- Fixed a mod's `prompt.edit` hook not being raised for a newline entered with the `chat:newline` keybinding (Ctrl+J, or a rebound Enter)\n- Fixed a conversation failing on every turn with a 400 error when the API rejected an MCP tool's input schema; Claude Code now sends that tool without parameters for the rest of the conversation\n- Fixed resuming a headless or Agent SDK session losing the recent messages a compaction had kept, when the compaction followed a reply cut at the output token limit (compactions from this version on)\n- Fixed Claude not being told about an MCP server's tools and instructions until its next tool call, when the server finished connecting after a compaction\n- Fixed Remote Control sessions being marked stopped while still running, on a computer serving several sessions at once\n- Fixed resuming a headless or Agent SDK session losing its compaction summary or bringing back pre-compaction history,"
+    },
+    {
+     "key": "v2.1.299",
+     "title": "v2.1.299",
+     "date": "2026-10-14T02:49:42Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299",
+     "prerelease": false,
+     "body": "## What's changed\n\n- Added `CLAUDE_CODE_DISABLE_FILE_MENTIONS` environment variable: Claude gets the paths of `@` file mentions to read with its file tools, not the files' contents\n- Added idle compaction in the terminal: a 200K+ token conversation left idle for about 54 minutes is compacted before its one-hour prompt cache expires, so your next message doesn't reprocess it all\n- Added `CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS` to change idle compaction's 200K-token minimum; `\"idleCompaction\": false` in settings.json turns it off. Both need v2.1.290 or later\n- Added `$.prompt.media` so a `prompt.submit` hook of a mod installed by managed settings can read the bytes of an image or document attached to the prompt\n- Added `$.session.identity()` for mods installed by managed settings: how the session is signed in, and its organization and email when managed `forceLoginOrgUUID` lists that organization\n- Added `size`, `weight`, `mono` and `tabular` to a mod's `Text` and named spacing steps (`xs` to `xl`) to its `Box`; `bold` is deprecated in favor of `weight`\n- Added `--shutdown-drain-sec` to `claude self-hosted-runner orchestrator`: on SIGTERM it stops polling and gives the poll in flight and running spawn hooks up to that many seconds to finish\n- Added the skill's frontmatter, source, plugin name and file path to what a mod's `skill.prompt` hook receives\n- Added `/effort` and `/fast` in agent view to set what new sessions start with; a bare `/model`, `/effort` or `/fast` there now opens a picker\n- Added a \"safe mode\" line to the agents view peek panel for background sessions started with `--safe-mode`\n- Added a one-time note when plan mode won't ask before most edits or commands because bypass permissions is available\n- Added `--disallow-tools` and a `disallowed_tools` case field to `claude plugin eval` to keep specific built-in tools, such as Agent, out of eval runs\n- Added support for turning off the attribution block in Claude Desktop's Code tab: set `CLAUDE_CODE_ATTRIBUTION_HEADER=0` in the `env` of a Claude apps gateway's `code` policy\n- Added a field to the attribution block in Claude Code sessions behind a Claude apps gateway; remove the block with `CLAUDE_CODE_ATTRIBUTION_HEADER=0`\n- Added a `queue` door to the `session.append` mod hook, so a mod can make the transcript's queue records differ from the prompt as sent\n- Added a note in `/plugin` and `claude plugin validate` naming a mod's hooks that are skipped where an organization manages Claude Code\n- Added `/usage` warnings for max effort, workflows, always-on context and large tool results\n- Fixed the error for a denied cloud session, which could point to the wrong organization when a key from `apiKeyHelper` was in use\n- Fixed sessions on a gateway-specific model name behind a custom `ANTHROPIC_BASE_URL` ending with \"Prompt is too long · automatic compaction failed\" near 200K tokens instead of sending the request\n- Fixed a mod that submits a prompt at the end of every turn keeping a headless run going past `--max-turns`, `--max-budget-usd`, an interrupt, or the end of the host's conversation\n- Fixed cloud sessions sometimes showing the model's follow-up text after a tool group's one-line label\n- Fixed the Write and Edit tools creating a mod in a session's mods folder without asking in accept-edits mode when the config directory's path has no `.claude` in it\n- Fixed installed mods that kept running in an open session after being turned off remotely; they now unload between turns\n- Fixed Edit and Retry in Cowork and claude.ai cloud sessions failing on a message stopped while its `UserPromptSubmit` or mod `prompt.submit` hooks were still running (regression in 2.1.296)\n- Fixed an agent teammate started without a description keeping part of a credential from its prompt in the task description shown for it\n- Fixed the claude.ai view of a Remote Control or cloud session freezing when a large batch of events could not finish uploading over a slow connection\n- Fixed a sandboxed shell command being able to write into a `--plugin-dir` folder, whose code Claude Code reloads and runs outside the sandbox\n- Fixed memory growth under heavy debug logging (`--debug`, `--debug-file`), and a hang on exit when the debug log is on a disk or network mount that stops accepting writes\n- Fixed memory growing without bound when debug output goes to stderr and the parent process stops reading it\n- Fixed rm prompts on shell `-c` scripts that don't run `rm`. An rm built at run time in a script Claude Code can't read no longer prompts unless `CLAUDE_CODE_STRICT_INLINE_SHELL_RM_PROMPT=1`\n- Fixed double-clicking a word in an expanded transcript row in fullscreen mode collapsing the row instead of selecting the word\n- Fixed `claude mcp list`, `claude doctor` and `/status` reporting an empty `.mcp.json` as invalid\n- Fixed `/btw` jumping the transcript to the bottom when asked while scrolled up in fullscreen\n- Fixed sandboxed commands failing on WSL2 with `bwrap: Can't mkdir /mnt/c/Program Files/ClaudeCode` when the sandbox can write to the Windows drive\n- Fixed scheduled wakeups (ScheduleWakeup) not firing while a background task was running in Agent SDK, IDE and `claude remote-control` sessions\n- Fixed a mod's `prompt.submit` rewrite being silently dropped, sending the prompt as typed, for some prompts with a pasted image or an image that can't be read\n- Fixed a Remote Control prompt being lost when another queued prompt in the same batch failed to deliver\n- Fixed a Remote Control prompt that had passed its hooks being dropped from prompt history when Stop interrupted the next queued prompt's hook\n- Fixed sign-in, MCP servers and project trust appearing lost on Linux after a sandboxed command left an empty `.config.json` in the config directory\n- Fixed `/sandbox` reporting success when its setting could not be saved because the project folder is not writable; it now says nothing changed and why\n- Fixed SDK and headless sessions staying in auto mode after the host swit"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "docker-blog",
+   "kind": "feed",
+   "url": "https://www.docker.com/blog/feed/",
+   "why": "Docker's posts: Sandboxes, Model Runner, agent permissions, and Hub security advisories (Director, 2026-10-13)",
+   "latest": {
+    "key": "https://www.docker.com/?p=94981",
+    "title": "From Containers to Sandboxes: Developer Trust in the Agentic Era",
+    "date": "Fri, 16 Oct 2026 16:00:00 +0000",
+    "url": "https://www.docker.com/blog/stack-overflow-survey-2026-ai-agent-trust/"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "https://www.docker.com/?p=94981",
+     "title": "From Containers to Sandboxes: Developer Trust in the Agentic Era",
+     "date": "Fri, 16 Oct 2026 16:00:00 +0000",
+     "url": "https://www.docker.com/blog/stack-overflow-survey-2026-ai-agent-trust/"
+    },
+    {
+     "key": "https://www.docker.com/?p=94888",
+     "title": "AI Agent Security Risks: What Can Go Wrong When Agents Act on Their Own",
+     "date": "Wed, 14 Oct 2026 22:08:33 +0000",
+     "url": "https://www.docker.com/blog/ai-agent-security-risks/"
+    },
+    {
+     "key": "https://www.docker.com/?p=94820",
+     "title": "Harbor + Docker Sandboxes: Run Safe, Reproducible Agent Evals",
+     "date": "Wed, 14 Oct 2026 21:45:27 +0000",
+     "url": "https://www.docker.com/blog/harbor-docker-sandboxes-run-safe-reproducible-agent-evals/"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "docker-sandboxes",
+   "kind": "page",
+   "url": "https://docs.docker.com/ai/sandboxes/release-notes/",
+   "why": "the sbx CLI and cloud sandboxes, the isolated machines an agent experiment can run in; candidate for the $250 credit offer",
+   "latest": {
+    "key": "0.48.0",
+    "title": "0.48.0",
+    "date": null,
+    "url": "https://docs.docker.com/ai/sandboxes/release-notes/"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "0.48.0",
+     "title": "0.48.0",
+     "date": null,
+     "url": "https://docs.docker.com/ai/sandboxes/release-notes/"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "docker-desktop",
+   "kind": "page",
+   "url": "https://docs.docker.com/desktop/release-notes/",
+   "why": "Docker Desktop on the rig: WSL 2, GPU support and Model Runner changes",
+   "latest": {
+    "key": "4.96.0",
+    "title": "4.96.0",
+    "date": null,
+    "url": "https://docs.docker.com/desktop/release-notes/"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "4.96.0",
+     "title": "4.96.0",
+     "date": null,
+     "url": "https://docs.docker.com/desktop/release-notes/"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "docker-engine",
+   "kind": "github-releases",
+   "url": "https://github.com/moby/moby",
+   "why": "the container engine under Docker Desktop and the Linux hosts (RunPod pods run containers)",
+   "latest": {
+    "key": "docker-v29.9.1",
+    "title": "v29.9.1",
+    "date": "2026-10-14T19:28:37Z",
+    "url": "https://github.com/moby/moby/releases/tag/docker-v29.9.1"
+   },
+   "latest_prerelease": null,
+   "new": [
+    {
+     "key": "docker-v29.9.1",
+     "title": "v29.9.1",
+     "date": "2026-10-14T19:28:37Z",
+     "url": "https://github.com/moby/moby/releases/tag/docker-v29.9.1",
+     "prerelease": false,
+     "body": "## 29.9.1\r\n\r\nFor a full list of pull requests and changes in this release, refer to the relevant GitHub milestones:\r\n\r\n- [docker/cli, 29.9.1 milestone](https://github.com/docker/cli/issues?q=is%3Aclosed+milestone%3A29.9.1)\r\n- [moby/moby, 29.9.1 milestone](https://github.com/moby/moby/issues?q=is%3Aclosed+milestone%3A29.9.1)\r\n\r\n### Security\r\n\r\nThe containerd update to v2.4.2 includes fixes for the following security vulnerabilities:\r\n\r\n- [CVE-2026-95839](https://github.com/containerd/containerd/security/advisories/GHSA-vwhp-8p66-mq4f): Pulling or importing an image through containerd's transfer service could crash containerd if a child descriptor contained the `io.containerd.manifest.subject` annotation and a malformed digest.\r\n- [GHSA-8647-2jxj-p2rc](https://github.com/containerd/containerd/security/advisories/GHSA-8647-2jxj-p2rc): An untrusted registry returning a crafted `Content-Length` header could crash containerd when parallel layer fetching was enabled with `concurrent_layer_fetch_buffer`.\r\n- [GHSA-hc94-p972-ch66](https://github.com/containerd/containerd/security/advisories/GHSA-hc94-p972-ch66): Pulling a crafted image or pulling from a malicious registry could exhaust host disk space because containerd did not limit incoming layer data to the declared size before validation.\r\n\r\n### Bug fixes and enhancements\r\n\r\n- Fix `--link-local-ip` accepting addresses that are not link-local (169.254.0.0/16 or fe80::/10) when creating a container or connecting it to a network, which  made the container fail to start. [moby/moby#53923](https://github.com/moby/moby/pull/53923)\r\n- Fix `COPY --from` in the classic builder failing for files not owned by root when userns-remap is enabled. [moby/moby#53859](https://github.com/moby/moby/pull/53859)\r\n- Fix `docker ps -s` and container listing with sizes failing entirely when the size of one container cannot be computed. [moby/moby#53921](https://github.com/moby/moby/pull/53921)\r\n- Fix `docker save` leaving image layers on disk after the image is removed, when the image contains the same layer more than once (graph-driver image store). [moby/moby#53927](https://github.com/moby/moby/pull/53927)\r\n- Fix a daemon panic when using the `fluentd` log driver with a TLS address that cannot be connected to and `fluentd-async` enabled. [moby/moby#53922](https://github.com/moby/moby/pull/53922)\r\n- Fix image digest resolution failing when a registry mirror succeeds but a subsequent registry lookup fails. [moby/moby#53933](https://github.com/moby/moby/pull/53933)\r\n- Fix plugin privilege lookup reporting success when fetching the plugin fails. [moby/moby#53934](https://github.com/moby/moby/pull/53934)\r\n\r\n### Packaging updates\r\n\r\n- Update containerd (static binaries) to [v2.4.2](https://github.com/containerd/containerd/releases/tag/v2.4.2). [moby/moby#53936](https://github.com/moby/moby/pull/53936)\r\n\r\n### Networking\r\n\r\n- Don't add bridge network interfaces to firewalld's `docker` zone when `iptables` and `ip6tables` are both disabled. [moby/moby#53907](https://github.com/moby/moby/pull/53907)\r\n- Fix bridge networks failing to restore on daemon startup when their bridge is bound to a firewalld zone other than `docker`. [moby/moby#53907](https://github.com/moby/moby/pull/53907)\r\n\r\n### Rootless\r\n\r\n- Fix `--domainname` with user namespaces and rootless mode; this requires an OCI runtime supporting the `domainname` field (such as runc >= v1.2.0). [moby/moby#53899](https://github.com/moby/moby/pull/53899)\r\n- Update RootlessKit to [v3.3.0](https://github.com/rootless-containers/rootlesskit/releases/tag/v3.3.0). [moby/moby#53942](https://github.com/moby/moby/pull/53942)"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "docker-model-runner",
+   "kind": "github-releases",
+   "url": "https://github.com/docker/model-runner",
+   "why": "Docker's local model serving; a possible lane beside Ollama on the 5090",
+   "latest": {
+    "key": "v1.2.8",
+    "title": "Docker Model Runner v1.2.8",
+    "date": "2026-08-12T12:16:41Z",
+    "url": "https://github.com/docker/model-runner/releases/tag/v1.2.8"
+   },
+   "latest_prerelease": null,
+   "new": [],
+   "baseline": false,
+   "unknown": null
+  }
+ ],
+ "new_total": 101,
+ "unknown": [],
+ "state": "saved"
+}

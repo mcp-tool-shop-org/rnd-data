@@ -1,0 +1,622 @@
+{
+ "checked": "2026-10-13T18:13:52+00:00",
+ "sources": [
+  {
+   "id": "nvidia-tech-blog",
+   "kind": "feed",
+   "url": "https://developer.nvidia.com/blog/feed/",
+   "why": "NVIDIA's developer posts: models, tools and techniques; the NVIDIA newsletter draws on it",
+   "latest": {
+    "key": "https://developer.nvidia.com/blog/?p=123356",
+    "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
+    "date": "2026-10-13T14:19:40Z",
+    "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/"
+   },
+   "new": [
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123356",
+     "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
+     "date": "2026-10-13T14:19:40Z",
+     "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123513",
+     "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
+     "date": "2026-10-12T16:00:54Z",
+     "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123534",
+     "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
+     "date": "2026-10-08T20:57:55Z",
+     "url": "https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123426",
+     "title": "Building Reliable Data Analytics Agents: Lessons from the KDD Cup",
+     "date": "2026-10-08T18:30:02Z",
+     "url": "https://developer.nvidia.com/blog/building-reliable-data-analytics-agents-lessons-from-the-kdd-cup/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123177",
+     "title": "The Machines that Make the Machines",
+     "date": "2026-10-07T18:21:03Z",
+     "url": "https://developer.nvidia.com/blog/the-machines-that-make-the-machines/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123195",
+     "title": "Validate AI Factory Changes with Digital Twins and AI Agents",
+     "date": "2026-10-07T16:00:00Z",
+     "url": "https://developer.nvidia.com/blog/validate-ai-factory-changes-with-digital-twins-and-ai-agents/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123156",
+     "title": "Scaling Decision Optimization to 100 Million Variables and Beyond with mPDLP in NVIDIA cuOpt",
+     "date": "2026-10-07T15:45:00Z",
+     "url": "https://developer.nvidia.com/blog/scaling-decision-optimization-to-100-million-variables-and-beyond-with-mpdlp-in-nvidia-cuopt/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123330",
+     "title": "Faster Scientific Image Analysis with NVIDIA cuPhoton",
+     "date": "2026-10-07T15:00:00Z",
+     "url": "https://developer.nvidia.com/blog/faster-scientific-image-analysis-with-nvidia-cuphoton/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123415",
+     "title": "Scale Bitwise-Deterministic Pretraining with NVIDIA Megatron Core",
+     "date": "2026-10-06T19:58:03Z",
+     "url": "https://developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123253",
+     "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
+     "date": "2026-10-06T19:07:02Z",
+     "url": "https://developer.nvidia.com/blog/doca-gpunetio-gda-ki-unified-gpu-networking/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123387",
+     "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration",
+     "date": "2026-10-06T16:13:47Z",
+     "url": "https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration/"
+    },
+    {
+     "key": "https://developer.nvidia.com/blog/?p=123334",
+     "title": "Control How Your GPU Shares Work with Green Contexts",
+     "date": "2026-10-06T15:00:00Z",
+     "url": "https://developer.nvidia.com/blog/control-how-your-gpu-shares-work-with-green-contexts/"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "cuda-toolkit",
+   "kind": "page",
+   "url": "https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html",
+   "why": "the current CUDA toolkit version; driver minimums and Blackwell support for the RTX 5090",
+   "latest": {
+    "key": "CUDA Toolkit 13.4 Update 2",
+    "title": "CUDA Toolkit 13.4 Update 2",
+    "date": null,
+    "url": "https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html"
+   },
+   "new": [],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "nvidia-hf-models",
+   "kind": "huggingface",
+   "url": "https://huggingface.co/api/models?author=nvidia&sort=createdAt&direction=-1&limit=30",
+   "why": "new NVIDIA open models (Nemotron and others) that might fit the 5090",
+   "latest": {
+    "key": "nvidia/agile_one_s_pick_ssd_n2_1120",
+    "title": "nvidia/agile_one_s_pick_ssd_n2_1120",
+    "date": "2026-10-10T00:20:17.000Z",
+    "url": "https://huggingface.co/nvidia/agile_one_s_pick_ssd_n2_1120"
+   },
+   "new": [
+    {
+     "key": "nvidia/agile_one_s_pick_ssd_n2_1120",
+     "title": "nvidia/agile_one_s_pick_ssd_n2_1120",
+     "date": "2026-10-10T00:20:17.000Z",
+     "url": "https://huggingface.co/nvidia/agile_one_s_pick_ssd_n2_1120"
+    },
+    {
+     "key": "nvidia/agile_one_s_place_ssd_n2_1260",
+     "title": "nvidia/agile_one_s_place_ssd_n2_1260",
+     "date": "2026-10-10T00:18:56.000Z",
+     "url": "https://huggingface.co/nvidia/agile_one_s_place_ssd_n2_1260"
+    },
+    {
+     "key": "nvidia/agile_one_s_pickplace_ssd_n2_18200",
+     "title": "nvidia/agile_one_s_pickplace_ssd_n2_18200",
+     "date": "2026-10-10T00:17:13.000Z",
+     "url": "https://huggingface.co/nvidia/agile_one_s_pickplace_ssd_n2_18200"
+    },
+    {
+     "key": "nvidia/Qwen-Image-NVFP4",
+     "title": "nvidia/Qwen-Image-NVFP4",
+     "date": "2026-10-09T23:37:43.000Z",
+     "url": "https://huggingface.co/nvidia/Qwen-Image-NVFP4"
+    },
+    {
+     "key": "nvidia/agile_one_s_place_ssd_n17_24050",
+     "title": "nvidia/agile_one_s_place_ssd_n17_24050",
+     "date": "2026-10-09T08:29:13.000Z",
+     "url": "https://huggingface.co/nvidia/agile_one_s_place_ssd_n17_24050"
+    },
+    {
+     "key": "nvidia/agile_one_s_walk_n2_1680",
+     "title": "nvidia/agile_one_s_walk_n2_1680",
+     "date": "2026-10-09T08:28:59.000Z",
+     "url": "https://huggingface.co/nvidia/agile_one_s_walk_n2_1680"
+    },
+    {
+     "key": "nvidia/agile_one_s_pick_ssd_n17_58000",
+     "title": "nvidia/agile_one_s_pick_ssd_n17_58000",
+     "date": "2026-10-09T08:28:36.000Z",
+     "url": "https://huggingface.co/nvidia/agile_one_s_pick_ssd_n17_58000"
+    },
+    {
+     "key": "nvidia/agile_one_s_pick_ssd_n17_40000",
+     "title": "nvidia/agile_one_s_pick_ssd_n17_40000",
+     "date": "2026-10-09T08:28:25.000Z",
+     "url": "https://huggingface.co/nvidia/agile_one_s_pick_ssd_n17_40000"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "nvidia-skills",
+   "kind": "github-commits",
+   "url": "https://github.com/NVIDIA/skills",
+   "why": "the skills catalogue mirrored in catalogs/nvidia-skills; run `rnd catalog sync` when it moves",
+   "latest": {
+    "key": "14a98ae278ce",
+    "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+    "date": "2026-10-09T15:27:17Z",
+    "url": "https://github.com/NVIDIA/skills/commit/14a98ae278cec7e867695189d0f4003c08e4f765"
+   },
+   "new": [
+    {
+     "key": "14a98ae278ce",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-09T15:27:17Z",
+     "url": "https://github.com/NVIDIA/skills/commit/14a98ae278cec7e867695189d0f4003c08e4f765"
+    },
+    {
+     "key": "329cfc63d21b",
+     "title": "chore: sync skills (BioNeMo Open Models,NeMo Fabric)",
+     "date": "2026-10-09T15:14:32Z",
+     "url": "https://github.com/NVIDIA/skills/commit/329cfc63d21bcd6294fa2c4d6ed8b73bbab98df7"
+    },
+    {
+     "key": "f0540d597b15",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-09T15:06:44Z",
+     "url": "https://github.com/NVIDIA/skills/commit/f0540d597b150734ecf59c9a59b470e4f394a784"
+    },
+    {
+     "key": "e14560bc0e25",
+     "title": "Add Auto Ontology to product taxonomy enum",
+     "date": "2026-10-09T15:02:55Z",
+     "url": "https://github.com/NVIDIA/skills/commit/e14560bc0e25c075dab1df108d83aec1fa3134c9"
+    },
+    {
+     "key": "6d3523563914",
+     "title": "fix(ci): restore required status wait limits",
+     "date": "2026-10-09T09:40:38Z",
+     "url": "https://github.com/NVIDIA/skills/commit/6d3523563914a577e26425854988c7d3f02ed0b7"
+    },
+    {
+     "key": "4a5398f413d7",
+     "title": "fix: keep fork branches subject to required validation",
+     "date": "2026-10-09T09:40:38Z",
+     "url": "https://github.com/NVIDIA/skills/commit/4a5398f413d75df3d77f3524986439da7d275d88"
+    },
+    {
+     "key": "2759ccd464e5",
+     "title": "feat(ci): restore fork pull request support",
+     "date": "2026-10-09T09:40:38Z",
+     "url": "https://github.com/NVIDIA/skills/commit/2759ccd464e568a1b8dc5703ac79af509ca54292"
+    },
+    {
+     "key": "dfdd0805a7a2",
+     "title": "chore: sync skills (Auto Ontology)",
+     "date": "2026-10-08T22:28:25Z",
+     "url": "https://github.com/NVIDIA/skills/commit/dfdd0805a7a2e217742aa17cc941d8d7d5f8f728"
+    },
+    {
+     "key": "5e46839c0270",
+     "title": "Sync condonfm skill",
+     "date": "2026-10-08T22:25:37Z",
+     "url": "https://github.com/NVIDIA/skills/commit/5e46839c0270086a92715698b1b444cdb22b8cae"
+    },
+    {
+     "key": "c409c92f47ee",
+     "title": "Onboard Auto Ontology skills",
+     "date": "2026-10-08T22:09:29Z",
+     "url": "https://github.com/NVIDIA/skills/commit/c409c92f47ee23b9aaf6407db5092ebd3013614f"
+    },
+    {
+     "key": "4c141a9a2b8b",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-08T21:44:20Z",
+     "url": "https://github.com/NVIDIA/skills/commit/4c141a9a2b8b0210724fa68b9b0d52709a33548f"
+    },
+    {
+     "key": "de8fe184e89e",
+     "title": "chore: sync skills (cuDF)",
+     "date": "2026-10-08T21:27:53Z",
+     "url": "https://github.com/NVIDIA/skills/commit/de8fe184e89e6f84e525d8b347b7c4298d255e11"
+    },
+    {
+     "key": "9a34cebdb2be",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-08T21:25:22Z",
+     "url": "https://github.com/NVIDIA/skills/commit/9a34cebdb2be442699533b909237c2154d3f6e4f"
+    },
+    {
+     "key": "cf5224d14250",
+     "title": "chore: sync skills (NVFlare)",
+     "date": "2026-10-08T18:00:59Z",
+     "url": "https://github.com/NVIDIA/skills/commit/cf5224d142509fe6dd435c0581fee216758c21f3"
+    },
+    {
+     "key": "67a13c0b6b3e",
+     "title": "chore(metadata): regenerate metadata.json, skills.sh.json, benchmarks.json, and versions.json",
+     "date": "2026-10-07T17:51:24Z",
+     "url": "https://github.com/NVIDIA/skills/commit/67a13c0b6b3eecef1398f72aeeb9b27f39a7722f"
+    },
+    {
+     "key": "2c188f5bb27c",
+     "title": "chore: sync skills (NeMo AutoModel,RTX Remix)",
+     "date": "2026-10-07T15:54:01Z",
+     "url": "https://github.com/NVIDIA/skills/commit/2c188f5bb27cb9c48baa7e57ab73e2434f15e38e"
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "nemo-relay",
+   "kind": "github-releases",
+   "url": "https://github.com/NVIDIA/NeMo-Relay",
+   "why": "planned instrument: agent tracing (instruments/nemo-relay.md)",
+   "latest": {
+    "key": "0.10.0",
+    "title": "0.10.0",
+    "date": "2026-10-08T22:25:20Z",
+    "url": "https://github.com/NVIDIA/NeMo-Relay/releases/tag/0.10.0"
+   },
+   "new": [
+    {
+     "key": "0.10.0",
+     "title": "0.10.0",
+     "date": "2026-10-08T22:25:20Z",
+     "url": "https://github.com/NVIDIA/NeMo-Relay/releases/tag/0.10.0",
+     "prerelease": false
+    },
+    {
+     "key": "0.10.0-rc.4",
+     "title": "0.10.0 RC 4",
+     "date": "2026-10-08T00:54:12Z",
+     "url": "https://github.com/NVIDIA/NeMo-Relay/releases/tag/0.10.0-rc.4",
+     "prerelease": true
+    },
+    {
+     "key": "0.10.0-rc.3",
+     "title": "0.10.0 RC 3",
+     "date": "2026-10-07T01:37:08Z",
+     "url": "https://github.com/NVIDIA/NeMo-Relay/releases/tag/0.10.0-rc.3",
+     "prerelease": true
+    },
+    {
+     "key": "0.10.0-rc.2",
+     "title": "0.10.0 RC 2",
+     "date": "2026-10-06T03:06:48Z",
+     "url": "https://github.com/NVIDIA/NeMo-Relay/releases/tag/0.10.0-rc.2",
+     "prerelease": true
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "nvidia-pair",
+   "kind": "github-releases",
+   "url": "https://github.com/NVIDIA/Personal-AI-Router",
+   "why": "the LAN router compared with interlock (briefs/pair-and-interlock)",
+   "latest": {
+    "key": "v1.0.0",
+    "title": "NVIDIA PAIR 1.0.0",
+    "date": "2026-10-13T12:08:25Z",
+    "url": "https://github.com/NVIDIA/Personal-AI-Router/releases/tag/v1.0.0"
+   },
+   "new": [
+    {
+     "key": "v1.0.0",
+     "title": "NVIDIA PAIR 1.0.0",
+     "date": "2026-10-13T12:08:25Z",
+     "url": "https://github.com/NVIDIA/Personal-AI-Router/releases/tag/v1.0.0",
+     "prerelease": false
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "ollama",
+   "kind": "github-releases",
+   "url": "https://github.com/ollama/ollama",
+   "why": "the 5090 serving engine; a new version can change behaviour the experiments depend on",
+   "latest": {
+    "key": "v0.40.4-rc1",
+    "title": "v0.40.4",
+    "date": "2026-10-12T19:00:12Z",
+    "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4-rc1"
+   },
+   "new": [
+    {
+     "key": "v0.40.4-rc1",
+     "title": "v0.40.4",
+     "date": "2026-10-12T19:00:12Z",
+     "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4-rc1",
+     "prerelease": true
+    },
+    {
+     "key": "v0.40.3",
+     "title": "v0.40.3",
+     "date": "2026-10-11T01:39:04Z",
+     "url": "https://github.com/ollama/ollama/releases/tag/v0.40.3",
+     "prerelease": false
+    },
+    {
+     "key": "v0.40.2",
+     "title": "v0.40.2",
+     "date": "2026-10-08T16:53:47Z",
+     "url": "https://github.com/ollama/ollama/releases/tag/v0.40.2",
+     "prerelease": false
+    },
+    {
+     "key": "v0.40.1",
+     "title": "v0.40.1",
+     "date": "2026-10-07T23:22:59Z",
+     "url": "https://github.com/ollama/ollama/releases/tag/v0.40.1",
+     "prerelease": false
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "llama-cpp",
+   "kind": "github-releases",
+   "url": "https://github.com/ggml-org/llama.cpp",
+   "why": "the engine under Ollama; report notable releases only",
+   "latest": {
+    "key": "b11588",
+    "title": "b11588",
+    "date": "2026-10-13T15:20:38Z",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11588"
+   },
+   "new": [
+    {
+     "key": "b11588",
+     "title": "b11588",
+     "date": "2026-10-13T15:20:38Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11588",
+     "prerelease": true
+    },
+    {
+     "key": "b11583",
+     "title": "b11583",
+     "date": "2026-10-13T09:34:36Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11583",
+     "prerelease": true
+    },
+    {
+     "key": "b11582",
+     "title": "b11582",
+     "date": "2026-10-13T08:29:12Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11582",
+     "prerelease": true
+    },
+    {
+     "key": "b11581",
+     "title": "b11581",
+     "date": "2026-10-13T07:54:11Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11581",
+     "prerelease": true
+    },
+    {
+     "key": "b11580",
+     "title": "b11580",
+     "date": "2026-10-13T04:02:51Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11580",
+     "prerelease": true
+    },
+    {
+     "key": "b11577",
+     "title": "b11577",
+     "date": "2026-10-12T22:55:51Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11577",
+     "prerelease": true
+    },
+    {
+     "key": "b11576",
+     "title": "b11576",
+     "date": "2026-10-12T21:30:50Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11576",
+     "prerelease": true
+    },
+    {
+     "key": "b11575",
+     "title": "b11575",
+     "date": "2026-10-12T20:43:00Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11575",
+     "prerelease": true
+    },
+    {
+     "key": "b11574",
+     "title": "b11574",
+     "date": "2026-10-12T15:13:57Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11574",
+     "prerelease": true
+    },
+    {
+     "key": "b11573",
+     "title": "b11573",
+     "date": "2026-10-12T14:48:31Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11573",
+     "prerelease": true
+    },
+    {
+     "key": "b11572",
+     "title": "b11572",
+     "date": "2026-10-12T14:23:33Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11572",
+     "prerelease": true
+    },
+    {
+     "key": "b11571",
+     "title": "b11571",
+     "date": "2026-10-12T13:56:51Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11571",
+     "prerelease": true
+    },
+    {
+     "key": "b11570",
+     "title": "b11570",
+     "date": "2026-10-12T13:40:59Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11570",
+     "prerelease": true
+    },
+    {
+     "key": "b11569",
+     "title": "b11569",
+     "date": "2026-10-12T13:16:20Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11569",
+     "prerelease": true
+    },
+    {
+     "key": "b11567",
+     "title": "b11567",
+     "date": "2026-10-12T12:26:17Z",
+     "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11567",
+     "prerelease": true
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "openvino",
+   "kind": "github-releases",
+   "url": "https://github.com/openvinotoolkit/openvino",
+   "why": "the Intel NPU and iGPU lane",
+   "latest": {
+    "key": "2026.4.1",
+    "title": "2026.4.1",
+    "date": "2026-10-01T13:45:59Z",
+    "url": "https://github.com/openvinotoolkit/openvino/releases/tag/2026.4.1"
+   },
+   "new": [],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "pytorch",
+   "kind": "github-releases",
+   "url": "https://github.com/pytorch/pytorch",
+   "why": "training and GPU work; CUDA support changes",
+   "latest": {
+    "key": "v2.14.1",
+    "title": "PyTorch 2.14.1 Release",
+    "date": "2026-09-30T19:14:48Z",
+    "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.1"
+   },
+   "new": [],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "comfyui",
+   "kind": "github-releases",
+   "url": "https://github.com/comfyanonymous/ComfyUI",
+   "why": "the image pipeline",
+   "latest": {
+    "key": "v0.39.0",
+    "title": "v0.39.0",
+    "date": "2026-10-05T22:49:43Z",
+    "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0"
+   },
+   "new": [],
+   "baseline": false,
+   "unknown": null
+  },
+  {
+   "id": "claude-code",
+   "kind": "github-releases",
+   "url": "https://github.com/anthropics/claude-code",
+   "why": "the agent CLI every harness and experiment runs on; flags and permission rules change",
+   "latest": {
+    "key": "v2.1.296",
+    "title": "v2.1.296",
+    "date": "2026-10-09T19:28:59Z",
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296"
+   },
+   "new": [
+    {
+     "key": "v2.1.296",
+     "title": "v2.1.296",
+     "date": "2026-10-09T19:28:59Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296",
+     "prerelease": false
+    },
+    {
+     "key": "v2.1.295",
+     "title": "v2.1.295",
+     "date": "2026-10-08T19:48:38Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295",
+     "prerelease": false
+    },
+    {
+     "key": "v2.1.294",
+     "title": "v2.1.294",
+     "date": "2026-10-08T05:03:54Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.294",
+     "prerelease": false
+    },
+    {
+     "key": "v2.1.293",
+     "title": "v2.1.293",
+     "date": "2026-10-07T18:10:20Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+     "prerelease": false
+    },
+    {
+     "key": "v2.1.292",
+     "title": "v2.1.292",
+     "date": "2026-10-06T18:59:30Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+     "prerelease": false
+    },
+    {
+     "key": "v2.1.291",
+     "title": "v2.1.291",
+     "date": "2026-10-06T03:55:19Z",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
+     "prerelease": false
+    }
+   ],
+   "baseline": false,
+   "unknown": null
+  }
+ ],
+ "new_total": 66,
+ "unknown": [],
+ "state": "saved"
+}

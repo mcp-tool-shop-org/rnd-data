@@ -1,0 +1,40 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "rnd-watch",
+ "source": "rnd-watch",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "state.json",
+   "sha256": "0c9985147d7a0fb055861493711207f75f19662810bda85fac1dfd2d610588ae",
+   "bytes": 16146,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "state.json.bak",
+   "sha256": "a6d4ebe3d22e26319dfac5dc1967e0a6ef5ed50bb98c31fe9470a3a52d6a3295",
+   "bytes": 13117,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "0c9985147d7a0fb055861493711207f75f19662810bda85fac1dfd2d610588ae",
+   "store": "rnd-data",
+   "location": "runs/rnd-watch/files/state.json"
+  },
+  {
+   "sha256": "a6d4ebe3d22e26319dfac5dc1967e0a6ef5ed50bb98c31fe9470a3a52d6a3295",
+   "store": "rnd-data",
+   "location": "runs/rnd-watch/files/state.json.bak"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "96f1277c83728b5b78b849304c0a16e043161d40"
+}

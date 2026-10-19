@@ -1,0 +1,40 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "rnd-watch--reports",
+ "source": "rnd-watch/reports",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "2026-10-13.md",
+   "sha256": "e5c9dde683ab40534933f12244fe6309a05b47d9ec6fe2444ef1d4100f9185ea",
+   "bytes": 12074,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "2026-10-19.md",
+   "sha256": "fba9fbc0b54450b4d5046d385378d1de4dac19114a186f43749f3b7ef18f108a",
+   "bytes": 11960,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "e5c9dde683ab40534933f12244fe6309a05b47d9ec6fe2444ef1d4100f9185ea",
+   "store": "rnd-data",
+   "location": "runs/rnd-watch--reports/files/2026-10-13.md"
+  },
+  {
+   "sha256": "fba9fbc0b54450b4d5046d385378d1de4dac19114a186f43749f3b7ef18f108a",
+   "store": "rnd-data",
+   "location": "runs/rnd-watch--reports/files/2026-10-19.md"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "96f1277c83728b5b78b849304c0a16e043161d40"
+}

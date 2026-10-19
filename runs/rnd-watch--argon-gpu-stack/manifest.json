@@ -1,0 +1,27 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "rnd-watch--argon-gpu-stack",
+ "source": "rnd-watch/argon-gpu-stack",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "2026-10-19.md",
+   "sha256": "cd2a010aea49deaa1d1b9f0fb3d585ed7aad37d04536e87c97489b279e8f08a4",
+   "bytes": 4476,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "cd2a010aea49deaa1d1b9f0fb3d585ed7aad37d04536e87c97489b279e8f08a4",
+   "store": "rnd-data",
+   "location": "runs/rnd-watch--argon-gpu-stack/files/2026-10-19.md"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "96f1277c83728b5b78b849304c0a16e043161d40"
+}

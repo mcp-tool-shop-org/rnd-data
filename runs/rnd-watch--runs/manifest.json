@@ -1,0 +1,40 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "rnd-watch--runs",
+ "source": "rnd-watch/runs",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "2026-10-13.json",
+   "sha256": "05e74ef9ca788b3de644cc2f5d100d8a49aedff664ee1a10a3b9826a056d0ddb",
+   "bytes": 21615,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "2026-10-19.json",
+   "sha256": "b25e96e9553658a574d46c683fad18de8190a8e7955fe720dbe4640f6a480988",
+   "bytes": 171560,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "05e74ef9ca788b3de644cc2f5d100d8a49aedff664ee1a10a3b9826a056d0ddb",
+   "store": "rnd-data",
+   "location": "runs/rnd-watch--runs/files/2026-10-13.json"
+  },
+  {
+   "sha256": "b25e96e9553658a574d46c683fad18de8190a8e7955fe720dbe4640f6a480988",
+   "store": "rnd-data",
+   "location": "runs/rnd-watch--runs/files/2026-10-19.json"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-19",
+ "rnd_commit": "96f1277c83728b5b78b849304c0a16e043161d40"
+}
