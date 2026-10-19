@@ -1,0 +1,18 @@
+summary: "The raw data behind the studio's research: every run's receipts and outputs, with a manifest per run (rnd-data-run/v1) that pins each file by SHA-256. No code: rnd writes and checks it."
+boundaries:
+  - name: .github
+    globs:
+      - .github/**
+    role: config
+  - name: root
+    globs:
+      - "*"
+    role: config
+  - name: runs
+    globs:
+      - runs/**
+    role: data
+  - name: site
+    globs:
+      - site/**
+    role: docs

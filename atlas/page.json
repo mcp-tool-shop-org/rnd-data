@@ -1,0 +1,122 @@
+{
+  "authored": [
+    ".github/",
+    "root",
+    "runs/",
+    "site/"
+  ],
+  "breaks": [],
+  "changes": {
+    "first": true
+  },
+  "changesTogether": [],
+  "changesTogetherNote": [
+    "Window: 180 days; a pair counts from 3 shared commits, since the window holds fewer than 30 qualifying commits."
+  ],
+  "changesTogetherWithTests": 0,
+  "commit": "bae30ba06b6e794d052cf76e0e5e2b5f5d93ac53",
+  "defaultBranch": "main",
+  "derived": "4 parts, mostly shell (78 files), Python (61), CSS (2), TypeScript (2), Astro (1) and JavaScript (1). Work enters through 2 doors; CI and Deploy site to GitHub Pages each reach 1 part, and CI is followed because a pull request goes through it. It deploys a site to GitHub Pages.",
+  "doors": [
+    {
+      "checks": [],
+      "checksCount": 0,
+      "checksMore": 0,
+      "file": ".github/workflows/ci.yml",
+      "id": ".github/workflows/ci.yml",
+      "landings": [],
+      "name": "CI",
+      "pushes": false,
+      "reach": [
+        {
+          "boundary": "root",
+          "depth": 0,
+          "files": 1
+        }
+      ],
+      "runs": [
+        "verify.sh"
+      ],
+      "runsCount": 1,
+      "runsMore": 0,
+      "sends": [],
+      "stages": [],
+      "triggers": [
+        "on a pull request to main",
+        "on a push to main touching 5 paths",
+        "or by hand"
+      ]
+    },
+    {
+      "checks": [],
+      "checksCount": 0,
+      "checksMore": 0,
+      "file": ".github/workflows/pages.yml",
+      "id": ".github/workflows/pages.yml",
+      "landings": [],
+      "name": "Deploy site to GitHub Pages",
+      "pushes": false,
+      "reach": [
+        {
+          "boundary": "site",
+          "depth": 0,
+          "files": 5
+        }
+      ],
+      "runs": [
+        "site/astro.config.mjs",
+        "site/src/"
+      ],
+      "runsCount": 2,
+      "runsMore": 0,
+      "sends": [
+        "deploys the site"
+      ],
+      "stages": [],
+      "triggers": [
+        "on a push to main touching 2 paths",
+        "or by hand"
+      ]
+    }
+  ],
+  "duplicates": [],
+  "duplicatesLead": null,
+  "duplicatesNote": [],
+  "edges": [],
+  "engine": "1.24.0",
+  "generated": [],
+  "generatedAt": "2026-10-19T23:49:46.583Z",
+  "limits": [
+    "14 imports could not be resolved: `runs/receipts--colab--rung-prestep-muse-20261019--try5/files/prestep_fit_tokenizer.py` imports `pin_window`, which is no module on its import path and no declared dependency; `runs/receipts--colab--rung-prestep-muse-20261019--try5/files/rung_prestep_muse.py` imports `pin_window`, which is no module on its import path and no declared dependency; `runs/receipts--colab--rung-prestep-muse-20261019/files/derive_allow.py` imports `pin_window`, which is no module on its import path and no declared dependency; and 11 more.",
+    "83 writes and 143 reads use paths built at run time and are not named here.",
+    "6 writes and 84 reads go to a path their caller passes, not to this repository.",
+    "Statistics confidence is low: fewer than 30 qualifying commits in the window, and fewer than 20 source files reach 10 revisions."
+  ],
+  "mainDoor": ".github/workflows/ci.yml",
+  "partLabels": {
+    ".github": ".github",
+    "root": "the repository root",
+    "runs": "runs",
+    "site": "site"
+  },
+  "parts": 4,
+  "readers": [],
+  "repo": "mcp-tool-shop-org/rnd-data",
+  "sequences": [],
+  "startDoor": ".github/workflows/ci.yml",
+  "startHere": [],
+  "startNote": "CI runs no code this map can follow, so there is no path of files to read in order.",
+  "summary": "The raw data behind the studio's research: every run's receipts and outputs, with a manifest per run (rnd-data-run/v1) that pins each file by SHA-256. No code: rnd writes and checks it.",
+  "summaryFrom": "person",
+  "testFiles": 0,
+  "testedBy": {},
+  "unnamedWrites": 83,
+  "unread": [],
+  "unreadFiles": 0,
+  "unreadNote": [],
+  "untested": [],
+  "untestedNote": [
+    "No test files were found by name."
+  ],
+  "written": 0
+}
