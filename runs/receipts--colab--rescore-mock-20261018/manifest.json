@@ -1,0 +1,25 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--rescore-mock-20261018",
+ "kind": "collection",
+ "source": "receipts/colab/rescore-mock-20261018",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "run.sh",
+   "sha256": null,
+   "bytes": 2160,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  }
+ ],
+ "copies": [],
+ "private_files": {
+  "item-text": 6
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

@@ -1,0 +1,212 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--window13p-rung-deadline-20261018",
+ "kind": "run",
+ "source": "receipts/colab/window13p-rung-deadline-20261018",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": ".end",
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "bytes": 5,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".exec.pid",
+   "sha256": "858330c1a39fdc51dec55fc80a4ee41ce50ccdabc6e07aab1c9ec549038be70e",
+   "bytes": 4,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".fetch.out",
+   "sha256": "c4bd262cce3fc1956040e12476e3281918b97170257315d588021778ab084133",
+   "bytes": 134,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "card-values.json",
+   "sha256": "36cd89bbd95f2918528ae40b6ebfc1b91c3f17daccc0db708f36251b0bc9e207",
+   "bytes": 11011,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "gate.jsonl",
+   "sha256": "4b197b2ed434a8d69e6922f043209bbca63969e73cc80d8534cedd57f1ae6eb0",
+   "bytes": 1167,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "launch.out",
+   "sha256": "83fd5453d25a394283413aa0b94f46111a177864e53463a8bf60c0155e0c7989",
+   "bytes": 2067,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "launch.sh",
+   "sha256": "0caa9cf14824357477e85538b27be873dc005f3bfefb7065baf64c7af5b88d91",
+   "bytes": 2608,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "mock_job.py",
+   "sha256": "98f73e3c69a72014afcf11017d9b0db14cc81a2e83723f4912caeeb13142eaa8",
+   "bytes": 7378,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "outcome.draft.json",
+   "sha256": "61c0051cf25a3b29d0a6f22eb4080d8e81f2fd91b320c2aa6daf47c4e5437d34",
+   "bytes": 238,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "outcome.json",
+   "sha256": "b0c092f3a2b61ce03ed50822ab963bdc75dde5adf8ae46bb3be230e3f58a8212",
+   "bytes": 519,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result.json",
+   "sha256": "70ce5de01dcd24e59d381be077a2b97eff9e141d76c189ca09d2dbdc53a08ffe",
+   "bytes": 7313,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "rig.log",
+   "sha256": "83fd5453d25a394283413aa0b94f46111a177864e53463a8bf60c0155e0c7989",
+   "bytes": 2067,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke_window.sh",
+   "sha256": "fcb5aeffda24a20b0074600ad03fed32475d57dd1e51ecda1f4e92fe3545a991",
+   "bytes": 19758,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "status.log",
+   "sha256": "5e2c259898ee3cabedfcbb902a0ff5a5952f092667149992de3bd80a0edee67b",
+   "bytes": 1240,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "vm_gate.py",
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "bytes": 6116,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/.end"
+  },
+  {
+   "sha256": "858330c1a39fdc51dec55fc80a4ee41ce50ccdabc6e07aab1c9ec549038be70e",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/.exec.pid"
+  },
+  {
+   "sha256": "c4bd262cce3fc1956040e12476e3281918b97170257315d588021778ab084133",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/.fetch.out"
+  },
+  {
+   "sha256": "36cd89bbd95f2918528ae40b6ebfc1b91c3f17daccc0db708f36251b0bc9e207",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/card-values.json"
+  },
+  {
+   "sha256": "4b197b2ed434a8d69e6922f043209bbca63969e73cc80d8534cedd57f1ae6eb0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/gate.jsonl"
+  },
+  {
+   "sha256": "83fd5453d25a394283413aa0b94f46111a177864e53463a8bf60c0155e0c7989",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/launch.out"
+  },
+  {
+   "sha256": "0caa9cf14824357477e85538b27be873dc005f3bfefb7065baf64c7af5b88d91",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/launch.sh"
+  },
+  {
+   "sha256": "98f73e3c69a72014afcf11017d9b0db14cc81a2e83723f4912caeeb13142eaa8",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/mock_job.py"
+  },
+  {
+   "sha256": "61c0051cf25a3b29d0a6f22eb4080d8e81f2fd91b320c2aa6daf47c4e5437d34",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/outcome.draft.json"
+  },
+  {
+   "sha256": "b0c092f3a2b61ce03ed50822ab963bdc75dde5adf8ae46bb3be230e3f58a8212",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/outcome.json"
+  },
+  {
+   "sha256": "70ce5de01dcd24e59d381be077a2b97eff9e141d76c189ca09d2dbdc53a08ffe",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/pin-result.json"
+  },
+  {
+   "sha256": "83fd5453d25a394283413aa0b94f46111a177864e53463a8bf60c0155e0c7989",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/rig.log"
+  },
+  {
+   "sha256": "fcb5aeffda24a20b0074600ad03fed32475d57dd1e51ecda1f4e92fe3545a991",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/smoke_window.sh"
+  },
+  {
+   "sha256": "5e2c259898ee3cabedfcbb902a0ff5a5952f092667149992de3bd80a0edee67b",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/status.log"
+  },
+  {
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13p-rung-deadline-20261018/files/vm_gate.py"
+  }
+ ],
+ "private_files": {
+  "item-text": 7
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

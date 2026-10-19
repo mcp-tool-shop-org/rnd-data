@@ -1,0 +1,14 @@
+{
+ "run": {
+  "id": "publisher-plan1",
+  "venue": "runpod",
+  "hardware": "NVIDIA A100-SXM4-80GB",
+  "date": "2026-10-19",
+  "cost": 3.05,
+  "cost_unit": "usd",
+  "cost_basis": "balance",
+  "cap": 6.27,
+  "outcome": "tooling-fault",
+  "why": "the convert step's flat 3600 s timeout (sized for 30B models) killed Super-VL's direct q8_0 conversion at 54.8 of ~127 GB (mistakes #45); nothing usable"
+ }
+}

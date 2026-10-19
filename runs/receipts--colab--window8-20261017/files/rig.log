@@ -1,0 +1,24 @@
+start balance 1189.18 2026-10-17T11:20:02Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+[colab] Creating session 'pinw8'...
+[colab] Session READY.
+Usage rate: 10.60/hr
+Active assignments: 2
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+CAP REACHED (1189.18 -> 1180.78)
+stopping pinw8
+[colab] Session terminated.
+sessions after stop:
+[pinw7b] gpu-a100-s-kkb-usc1c2-1asilfe8e9wpk | Hardware: A100 | Shape: Standard | Variant: GPU
+exec exit=124 wall=7200s
+[colab] Session 'pinw8' not found.
+[colab] Session 'pinw8' not found.
+[colab] Session 'pinw8' not found.
+end balance 1175.05 (start 1189.18)
+stopping pinw8
+[colab] Session 'pinw8' not found.
+sessions after stop:
+[pinw9] gpu-a100-s-kkb-ass1c1-2xh0y85f8h98f | Hardware: A100 | Shape: Standard | Variant: GPU

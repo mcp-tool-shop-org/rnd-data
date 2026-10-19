@@ -1,0 +1,160 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--window2-20261017",
+ "kind": "run",
+ "source": "receipts/colab/window2-20261017",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "outcome.json",
+   "sha256": "c1c3706606ed772b185755c787c59f5bf53f8fa6f1cc6114fd23ca898e76774a",
+   "bytes": 279,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result-attempt1.json",
+   "sha256": "6c665ddac0fba78898085082a790b5c94759b3e7c612a96c0691e70e40210203",
+   "bytes": 477,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result.json",
+   "sha256": "e91f004e06aa62401549832cd9f164c3327bf93db68e35bf0e55d53ea408989e",
+   "bytes": 25329,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "rig-attempt1.log",
+   "sha256": "36b257a6f1f72f1671b0316920a18b03904d34562dc18ef1cfca5b5280f83d26",
+   "bytes": 1283,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "rig.log",
+   "sha256": "54c1a6d21f317920aa913b5bd682a20529f1a00c167811dd64668a76e7fd3807",
+   "bytes": 1534,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke-window.log",
+   "sha256": "3579eb11873bb31af66e2a15ac42afac6c5972c6d9f84ce51de81e2d390c58fa",
+   "bytes": 23500,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "upload/llama-server.gz",
+   "sha256": "b35cb0bb3d0a5c28d31d5b4cd88c1068e72d8ad0571d8d87b3fdcf3adf4a0729",
+   "bytes": 127456485,
+   "tier": "T4",
+   "licence": "MIT (llama.cpp, commit 620d2225)",
+   "visibility": "public"
+  },
+  {
+   "path": "upload/llama-server.gz.part00",
+   "sha256": "0746213cc44db5388bae3827fee0fab0defcb5ceb2983d8614c9ddf3b364a2b2",
+   "bytes": 41943040,
+   "tier": "T4",
+   "licence": "MIT (llama.cpp, commit 620d2225)",
+   "visibility": "public"
+  },
+  {
+   "path": "upload/llama-server.gz.part01",
+   "sha256": "78b51dbe9cb1dd574cffbbb8f4d3582624a96d3d0a06a6a5b462c0c20d8e4ece",
+   "bytes": 41943040,
+   "tier": "T4",
+   "licence": "MIT (llama.cpp, commit 620d2225)",
+   "visibility": "public"
+  },
+  {
+   "path": "upload/llama-server.gz.part02",
+   "sha256": "57797381332d24aee754d1cf6e34316ba673b0e276fffe11e372cda6fd271036",
+   "bytes": 41943040,
+   "tier": "T4",
+   "licence": "MIT (llama.cpp, commit 620d2225)",
+   "visibility": "public"
+  },
+  {
+   "path": "upload/llama-server.gz.part03",
+   "sha256": "1325ab9fb19e58aaf882c9be839e11c7e05d4f9bb6fa3d69fe7e552e26d59ca8",
+   "bytes": 1627365,
+   "tier": "T4",
+   "licence": "MIT (llama.cpp, commit 620d2225)",
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "c1c3706606ed772b185755c787c59f5bf53f8fa6f1cc6114fd23ca898e76774a",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window2-20261017/files/outcome.json"
+  },
+  {
+   "sha256": "6c665ddac0fba78898085082a790b5c94759b3e7c612a96c0691e70e40210203",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window2-20261017/files/pin-result-attempt1.json"
+  },
+  {
+   "sha256": "e91f004e06aa62401549832cd9f164c3327bf93db68e35bf0e55d53ea408989e",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window2-20261017/files/pin-result.json"
+  },
+  {
+   "sha256": "36b257a6f1f72f1671b0316920a18b03904d34562dc18ef1cfca5b5280f83d26",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window2-20261017/files/rig-attempt1.log"
+  },
+  {
+   "sha256": "54c1a6d21f317920aa913b5bd682a20529f1a00c167811dd64668a76e7fd3807",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window2-20261017/files/rig.log"
+  },
+  {
+   "sha256": "3579eb11873bb31af66e2a15ac42afac6c5972c6d9f84ce51de81e2d390c58fa",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window2-20261017/files/smoke-window.log"
+  },
+  {
+   "sha256": "b35cb0bb3d0a5c28d31d5b4cd88c1068e72d8ad0571d8d87b3fdcf3adf4a0729",
+   "store": "d",
+   "location": "blobs/b3/b35cb0bb3d0a5c28d31d5b4cd88c1068e72d8ad0571d8d87b3fdcf3adf4a0729"
+  },
+  {
+   "sha256": "0746213cc44db5388bae3827fee0fab0defcb5ceb2983d8614c9ddf3b364a2b2",
+   "store": "d",
+   "location": "blobs/07/0746213cc44db5388bae3827fee0fab0defcb5ceb2983d8614c9ddf3b364a2b2"
+  },
+  {
+   "sha256": "78b51dbe9cb1dd574cffbbb8f4d3582624a96d3d0a06a6a5b462c0c20d8e4ece",
+   "store": "d",
+   "location": "blobs/78/78b51dbe9cb1dd574cffbbb8f4d3582624a96d3d0a06a6a5b462c0c20d8e4ece"
+  },
+  {
+   "sha256": "57797381332d24aee754d1cf6e34316ba673b0e276fffe11e372cda6fd271036",
+   "store": "d",
+   "location": "blobs/57/57797381332d24aee754d1cf6e34316ba673b0e276fffe11e372cda6fd271036"
+  },
+  {
+   "sha256": "1325ab9fb19e58aaf882c9be839e11c7e05d4f9bb6fa3d69fe7e552e26d59ca8",
+   "store": "d",
+   "location": "blobs/13/1325ab9fb19e58aaf882c9be839e11c7e05d4f9bb6fa3d69fe7e552e26d59ca8"
+  }
+ ],
+ "private_files": {
+  "item-text": 2
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

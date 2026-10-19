@@ -1,0 +1,22 @@
+start balance 1146.99, account rate 5.30/hr 2026-10-17T16:51:23Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+[colab] Creating session 'pinw12a'...
+[colab] Session READY.
+Usage rate: 10.60/hr
+Active assignments: 2
+own rate 5.3/hr
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+uploaded pack.tar aa11101c9d47e45f
+uploaded card-values.json 36cd89bbd95f2918
+SESSION GONE (pinw12a) 18:10:06
+exec exit=124 wall=4622s
+[colab] Session 'pinw12a' not found.
+[colab] Session 'pinw12a' not found.
+end balance 1134.18 (start 1146.99)
+stopping pinw12a
+[colab] Session 'pinw12a' not found.
+sessions after stop:
+[colab] No active sessions found on server.

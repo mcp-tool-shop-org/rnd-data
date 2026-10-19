@@ -1,0 +1,842 @@
+version: 0.7.0-dev (build 11669, commit 620d2225c)
+built with GNU 11.4.0 for Linux x86_64
+llama_quantize: quantizing 'nemotron-3.5-super-vl-120b-a12b-BF16.gguf' to 'clean-Q8_0.gguf' as Q8_0
+llama_model_loader: loaded meta data with 49 key-value pairs and 781 tensors from nemotron-3.5-super-vl-120b-a12b-BF16.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = nemotron_h_moe
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                     general.sampling.top_p f32              = 0.950000
+llama_model_loader: - kv   3:                      general.sampling.temp f32              = 1.000000
+llama_model_loader: - kv   4:                               general.name str              = Nemotron 3.5 Super Vl 120b A12B Bf16
+llama_model_loader: - kv   5:                           general.basename str              = nemotron-3.5-super-vl
+llama_model_loader: - kv   6:                         general.size_label str              = 120B-a12B
+llama_model_loader: - kv   7:                 nemotron_h_moe.block_count u32              = 89
+llama_model_loader: - kv   8:              nemotron_h_moe.context_length u32              = 1048576
+llama_model_loader: - kv   9:            nemotron_h_moe.embedding_length u32              = 4096
+llama_model_loader: - kv  10:         nemotron_h_moe.feed_forward_length arr[i32,89]      = [0, 2688, 0, 2688, 0, 2688, 0, 0, 268...
+llama_model_loader: - kv  11:        nemotron_h_moe.attention.head_count u32              = 32
+llama_model_loader: - kv  12:     nemotron_h_moe.attention.head_count_kv arr[i32,89]      = [0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, ...
+llama_model_loader: - kv  13: nemotron_h_moe.attention.layer_norm_epsilon f32              = 0.000010
+llama_model_loader: - kv  14:                nemotron_h_moe.expert_count u32              = 512
+llama_model_loader: - kv  15:           nemotron_h_moe.expert_used_count u32              = 22
+llama_model_loader: - kv  16:          nemotron_h_moe.expert_group_count u32              = 1
+llama_model_loader: - kv  17:     nemotron_h_moe.expert_group_used_count u32              = 1
+llama_model_loader: - kv  18:                          general.file_type u32              = 32
+llama_model_loader: - kv  19:                  nemotron_h_moe.vocab_size u32              = 131072
+llama_model_loader: - kv  20:        nemotron_h_moe.rope.dimension_count u32              = 128
+llama_model_loader: - kv  21:             nemotron_h_moe.ssm.conv_kernel u32              = 4
+llama_model_loader: - kv  22:              nemotron_h_moe.ssm.state_size u32              = 128
+llama_model_loader: - kv  23:             nemotron_h_moe.ssm.group_count u32              = 8
+llama_model_loader: - kv  24:              nemotron_h_moe.ssm.inner_size u32              = 8192
+llama_model_loader: - kv  25:          nemotron_h_moe.ssm.time_step_rank u32              = 128
+llama_model_loader: - kv  26:      nemotron_h_moe.rope.scaling.finetuned bool             = false
+llama_model_loader: - kv  27:        nemotron_h_moe.attention.key_length u32              = 128
+llama_model_loader: - kv  28:      nemotron_h_moe.attention.value_length u32              = 128
+llama_model_loader: - kv  29:  nemotron_h_moe.expert_feed_forward_length u32              = 2688
+llama_model_loader: - kv  30: nemotron_h_moe.expert_shared_feed_forward_length u32              = 5376
+llama_model_loader: - kv  31:         nemotron_h_moe.expert_shared_count u32              = 1
+llama_model_loader: - kv  32:         nemotron_h_moe.expert_weights_norm bool             = true
+llama_model_loader: - kv  33:        nemotron_h_moe.expert_weights_scale f32              = 5.000000
+llama_model_loader: - kv  34:             nemotron_h_moe.moe_latent_size u32              = 1024
+llama_model_loader: - kv  35:        nemotron_h_moe.nextn_predict_layers u32              = 1
+llama_model_loader: - kv  36:               general.quantization_version u32              = 2
+llama_model_loader: - kv  37:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  38:                         tokenizer.ggml.pre str              = pixtral
+llama_model_loader: - kv  39:                      tokenizer.ggml.tokens arr[str,131072]  = ["<unk>", "<s>", "</s>", "[INST]", "[...
+llama_model_loader: - kv  40:                  tokenizer.ggml.token_type arr[i32,131072]  = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, ...
+llama_model_loader: - kv  41:                      tokenizer.ggml.merges arr[str,269443]  = ["Ġ Ġ", "Ġ t", "e r", "i n", "Ġ �...
+llama_model_loader: - kv  42:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv  43:                tokenizer.ggml.eos_token_id u32              = 11
+llama_model_loader: - kv  44:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv  45:            tokenizer.ggml.padding_token_id u32              = 11
+llama_model_loader: - kv  46:               tokenizer.ggml.add_bos_token bool             = false
+llama_model_loader: - kv  47:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  48:                    tokenizer.chat_template str              = {% macro render_extra_keys(json_dict,...
+llama_model_loader: - type  f32:  415 tensors
+llama_model_loader: - type bf16:  366 tensors
+[   1/ 781] output.weight                        - [  4096, 131072,      1,      1], type =   bf16, converting to q8_0 .. size =  1024.00 MiB ->   544.00 MiB
+[   2/ 781] output_norm.weight                   - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[   3/ 781] token_embd.weight                    - [  4096, 131072,      1,      1], type =   bf16, converting to q8_0 .. size =  1024.00 MiB ->   544.00 MiB
+[   4/ 781] blk.0.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[   5/ 781] blk.0.ssm_a                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[   6/ 781] blk.0.ssm_conv1d.bias                - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[   7/ 781] blk.0.ssm_conv1d.weight              - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[   8/ 781] blk.0.ssm_d                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[   9/ 781] blk.0.ssm_dt.bias                    - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[  10/ 781] blk.0.ssm_in.weight                  - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[  11/ 781] blk.0.ssm_norm.weight                - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[  12/ 781] blk.0.ssm_out.weight                 - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[  13/ 781] blk.1.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  14/ 781] blk.1.exp_probs_b.bias               - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[  15/ 781] blk.1.ffn_down_exps.weight           - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  16/ 781] blk.1.ffn_down_shexp.weight          - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  17/ 781] blk.1.ffn_gate_inp.weight            - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[  18/ 781] blk.1.ffn_latent_down.weight         - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  19/ 781] blk.1.ffn_latent_up.weight           - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  20/ 781] blk.1.ffn_up_exps.weight             - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  21/ 781] blk.1.ffn_up_shexp.weight            - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  22/ 781] blk.2.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  23/ 781] blk.2.ssm_a                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[  24/ 781] blk.2.ssm_conv1d.bias                - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[  25/ 781] blk.2.ssm_conv1d.weight              - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[  26/ 781] blk.2.ssm_d                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[  27/ 781] blk.2.ssm_dt.bias                    - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[  28/ 781] blk.2.ssm_in.weight                  - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[  29/ 781] blk.2.ssm_norm.weight                - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[  30/ 781] blk.2.ssm_out.weight                 - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[  31/ 781] blk.3.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  32/ 781] blk.3.exp_probs_b.bias               - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[  33/ 781] blk.3.ffn_down_exps.weight           - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  34/ 781] blk.3.ffn_down_shexp.weight          - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  35/ 781] blk.3.ffn_gate_inp.weight            - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[  36/ 781] blk.3.ffn_latent_down.weight         - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  37/ 781] blk.3.ffn_latent_up.weight           - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  38/ 781] blk.3.ffn_up_exps.weight             - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  39/ 781] blk.3.ffn_up_shexp.weight            - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  40/ 781] blk.4.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  41/ 781] blk.4.ssm_a                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[  42/ 781] blk.4.ssm_conv1d.bias                - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[  43/ 781] blk.4.ssm_conv1d.weight              - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[  44/ 781] blk.4.ssm_d                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[  45/ 781] blk.4.ssm_dt.bias                    - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[  46/ 781] blk.4.ssm_in.weight                  - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[  47/ 781] blk.4.ssm_norm.weight                - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[  48/ 781] blk.4.ssm_out.weight                 - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[  49/ 781] blk.5.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  50/ 781] blk.5.exp_probs_b.bias               - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[  51/ 781] blk.5.ffn_down_exps.weight           - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  52/ 781] blk.5.ffn_down_shexp.weight          - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  53/ 781] blk.5.ffn_gate_inp.weight            - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[  54/ 781] blk.5.ffn_latent_down.weight         - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  55/ 781] blk.5.ffn_latent_up.weight           - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  56/ 781] blk.5.ffn_up_exps.weight             - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  57/ 781] blk.5.ffn_up_shexp.weight            - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  58/ 781] blk.6.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  59/ 781] blk.6.ssm_a                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[  60/ 781] blk.6.ssm_conv1d.bias                - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[  61/ 781] blk.6.ssm_conv1d.weight              - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[  62/ 781] blk.6.ssm_d                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[  63/ 781] blk.6.ssm_dt.bias                    - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[  64/ 781] blk.6.ssm_in.weight                  - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[  65/ 781] blk.6.ssm_norm.weight                - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[  66/ 781] blk.6.ssm_out.weight                 - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[  67/ 781] blk.7.attn_k.weight                  - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[  68/ 781] blk.7.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  69/ 781] blk.7.attn_output.weight             - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[  70/ 781] blk.7.attn_q.weight                  - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[  71/ 781] blk.7.attn_v.weight                  - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[  72/ 781] blk.8.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  73/ 781] blk.8.exp_probs_b.bias               - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[  74/ 781] blk.8.ffn_down_exps.weight           - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  75/ 781] blk.8.ffn_down_shexp.weight          - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  76/ 781] blk.8.ffn_gate_inp.weight            - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[  77/ 781] blk.8.ffn_latent_down.weight         - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  78/ 781] blk.8.ffn_latent_up.weight           - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  79/ 781] blk.8.ffn_up_exps.weight             - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  80/ 781] blk.8.ffn_up_shexp.weight            - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  81/ 781] blk.9.attn_norm.weight               - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  82/ 781] blk.9.ssm_a                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[  83/ 781] blk.9.ssm_conv1d.bias                - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[  84/ 781] blk.9.ssm_conv1d.weight              - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[  85/ 781] blk.9.ssm_d                          - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[  86/ 781] blk.9.ssm_dt.bias                    - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[  87/ 781] blk.9.ssm_in.weight                  - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[  88/ 781] blk.9.ssm_norm.weight                - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[  89/ 781] blk.9.ssm_out.weight                 - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[  90/ 781] blk.10.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[  91/ 781] blk.10.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[  92/ 781] blk.10.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  93/ 781] blk.10.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  94/ 781] blk.10.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[  95/ 781] blk.10.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  96/ 781] blk.10.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[  97/ 781] blk.10.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[  98/ 781] blk.10.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[  99/ 781] blk.11.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 100/ 781] blk.11.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 101/ 781] blk.11.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 102/ 781] blk.11.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 103/ 781] blk.11.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 104/ 781] blk.11.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 105/ 781] blk.11.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 106/ 781] blk.11.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 107/ 781] blk.11.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 108/ 781] blk.12.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 109/ 781] blk.12.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 110/ 781] blk.12.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 111/ 781] blk.12.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 112/ 781] blk.12.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 113/ 781] blk.12.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 114/ 781] blk.12.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 115/ 781] blk.12.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 116/ 781] blk.12.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 117/ 781] blk.13.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 118/ 781] blk.13.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 119/ 781] blk.13.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 120/ 781] blk.13.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 121/ 781] blk.13.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 122/ 781] blk.13.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 123/ 781] blk.13.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 124/ 781] blk.13.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 125/ 781] blk.13.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 126/ 781] blk.14.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 127/ 781] blk.14.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 128/ 781] blk.14.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 129/ 781] blk.14.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 130/ 781] blk.14.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 131/ 781] blk.14.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 132/ 781] blk.14.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 133/ 781] blk.14.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 134/ 781] blk.14.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 135/ 781] blk.15.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 136/ 781] blk.15.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 137/ 781] blk.15.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 138/ 781] blk.15.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 139/ 781] blk.15.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 140/ 781] blk.15.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 141/ 781] blk.15.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 142/ 781] blk.15.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 143/ 781] blk.15.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 144/ 781] blk.16.attn_k.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 145/ 781] blk.16.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 146/ 781] blk.16.attn_output.weight            - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 147/ 781] blk.16.attn_q.weight                 - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 148/ 781] blk.16.attn_v.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 149/ 781] blk.17.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 150/ 781] blk.17.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 151/ 781] blk.17.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 152/ 781] blk.17.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 153/ 781] blk.17.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 154/ 781] blk.17.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 155/ 781] blk.17.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 156/ 781] blk.17.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 157/ 781] blk.17.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 158/ 781] blk.18.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 159/ 781] blk.18.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 160/ 781] blk.18.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 161/ 781] blk.18.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 162/ 781] blk.18.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 163/ 781] blk.18.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 164/ 781] blk.18.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 165/ 781] blk.18.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 166/ 781] blk.18.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 167/ 781] blk.19.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 168/ 781] blk.19.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 169/ 781] blk.19.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 170/ 781] blk.19.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 171/ 781] blk.19.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 172/ 781] blk.19.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 173/ 781] blk.19.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 174/ 781] blk.19.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 175/ 781] blk.19.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 176/ 781] blk.20.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 177/ 781] blk.20.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 178/ 781] blk.20.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 179/ 781] blk.20.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 180/ 781] blk.20.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 181/ 781] blk.20.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 182/ 781] blk.20.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 183/ 781] blk.20.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 184/ 781] blk.20.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 185/ 781] blk.21.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 186/ 781] blk.21.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 187/ 781] blk.21.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 188/ 781] blk.21.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 189/ 781] blk.21.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 190/ 781] blk.21.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 191/ 781] blk.21.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 192/ 781] blk.21.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 193/ 781] blk.21.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 194/ 781] blk.22.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 195/ 781] blk.22.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 196/ 781] blk.22.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 197/ 781] blk.22.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 198/ 781] blk.22.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 199/ 781] blk.22.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 200/ 781] blk.22.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 201/ 781] blk.22.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 202/ 781] blk.22.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 203/ 781] blk.23.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 204/ 781] blk.23.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 205/ 781] blk.23.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 206/ 781] blk.23.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 207/ 781] blk.23.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 208/ 781] blk.23.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 209/ 781] blk.23.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 210/ 781] blk.23.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 211/ 781] blk.23.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 212/ 781] blk.24.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 213/ 781] blk.24.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 214/ 781] blk.24.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 215/ 781] blk.24.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 216/ 781] blk.24.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 217/ 781] blk.24.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 218/ 781] blk.24.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 219/ 781] blk.24.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 220/ 781] blk.24.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 221/ 781] blk.25.attn_k.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 222/ 781] blk.25.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 223/ 781] blk.25.attn_output.weight            - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 224/ 781] blk.25.attn_q.weight                 - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 225/ 781] blk.25.attn_v.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 226/ 781] blk.26.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 227/ 781] blk.26.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 228/ 781] blk.26.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 229/ 781] blk.26.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 230/ 781] blk.26.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 231/ 781] blk.26.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 232/ 781] blk.26.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 233/ 781] blk.26.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 234/ 781] blk.26.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 235/ 781] blk.27.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 236/ 781] blk.27.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 237/ 781] blk.27.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 238/ 781] blk.27.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 239/ 781] blk.27.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 240/ 781] blk.27.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 241/ 781] blk.27.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 242/ 781] blk.27.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 243/ 781] blk.27.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 244/ 781] blk.28.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 245/ 781] blk.28.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 246/ 781] blk.28.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 247/ 781] blk.28.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 248/ 781] blk.28.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 249/ 781] blk.28.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 250/ 781] blk.28.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 251/ 781] blk.28.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 252/ 781] blk.28.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 253/ 781] blk.29.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 254/ 781] blk.29.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 255/ 781] blk.29.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 256/ 781] blk.29.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 257/ 781] blk.29.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 258/ 781] blk.29.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 259/ 781] blk.29.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 260/ 781] blk.29.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 261/ 781] blk.29.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 262/ 781] blk.30.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 263/ 781] blk.30.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 264/ 781] blk.30.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 265/ 781] blk.30.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 266/ 781] blk.30.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 267/ 781] blk.30.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 268/ 781] blk.30.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 269/ 781] blk.30.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 270/ 781] blk.30.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 271/ 781] blk.31.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 272/ 781] blk.31.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 273/ 781] blk.31.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 274/ 781] blk.31.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 275/ 781] blk.31.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 276/ 781] blk.31.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 277/ 781] blk.31.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 278/ 781] blk.31.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 279/ 781] blk.31.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 280/ 781] blk.32.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 281/ 781] blk.32.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 282/ 781] blk.32.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 283/ 781] blk.32.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 284/ 781] blk.32.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 285/ 781] blk.32.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 286/ 781] blk.32.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 287/ 781] blk.32.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 288/ 781] blk.32.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 289/ 781] blk.33.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 290/ 781] blk.33.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 291/ 781] blk.33.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 292/ 781] blk.33.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 293/ 781] blk.33.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 294/ 781] blk.33.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 295/ 781] blk.33.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 296/ 781] blk.33.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 297/ 781] blk.33.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 298/ 781] blk.34.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 299/ 781] blk.34.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 300/ 781] blk.34.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 301/ 781] blk.34.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 302/ 781] blk.34.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 303/ 781] blk.34.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 304/ 781] blk.34.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 305/ 781] blk.34.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 306/ 781] blk.34.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 307/ 781] blk.35.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 308/ 781] blk.35.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 309/ 781] blk.35.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 310/ 781] blk.35.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 311/ 781] blk.35.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 312/ 781] blk.35.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 313/ 781] blk.35.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 314/ 781] blk.35.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 315/ 781] blk.35.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 316/ 781] blk.36.attn_k.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 317/ 781] blk.36.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 318/ 781] blk.36.attn_output.weight            - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 319/ 781] blk.36.attn_q.weight                 - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 320/ 781] blk.36.attn_v.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 321/ 781] blk.37.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 322/ 781] blk.37.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 323/ 781] blk.37.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 324/ 781] blk.37.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 325/ 781] blk.37.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 326/ 781] blk.37.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 327/ 781] blk.37.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 328/ 781] blk.37.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 329/ 781] blk.37.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 330/ 781] blk.38.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 331/ 781] blk.38.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 332/ 781] blk.38.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 333/ 781] blk.38.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 334/ 781] blk.38.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 335/ 781] blk.38.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 336/ 781] blk.38.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 337/ 781] blk.38.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 338/ 781] blk.38.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 339/ 781] blk.39.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 340/ 781] blk.39.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 341/ 781] blk.39.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 342/ 781] blk.39.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 343/ 781] blk.39.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 344/ 781] blk.39.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 345/ 781] blk.39.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 346/ 781] blk.39.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 347/ 781] blk.39.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 348/ 781] blk.40.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 349/ 781] blk.40.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 350/ 781] blk.40.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 351/ 781] blk.40.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 352/ 781] blk.40.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 353/ 781] blk.40.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 354/ 781] blk.40.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 355/ 781] blk.40.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 356/ 781] blk.40.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 357/ 781] blk.41.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 358/ 781] blk.41.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 359/ 781] blk.41.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 360/ 781] blk.41.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 361/ 781] blk.41.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 362/ 781] blk.41.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 363/ 781] blk.41.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 364/ 781] blk.41.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 365/ 781] blk.41.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 366/ 781] blk.42.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 367/ 781] blk.42.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 368/ 781] blk.42.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 369/ 781] blk.42.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 370/ 781] blk.42.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 371/ 781] blk.42.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 372/ 781] blk.42.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 373/ 781] blk.42.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 374/ 781] blk.42.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 375/ 781] blk.43.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 376/ 781] blk.43.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 377/ 781] blk.43.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 378/ 781] blk.43.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 379/ 781] blk.43.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 380/ 781] blk.43.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 381/ 781] blk.43.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 382/ 781] blk.43.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 383/ 781] blk.43.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 384/ 781] blk.44.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 385/ 781] blk.44.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 386/ 781] blk.44.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 387/ 781] blk.44.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 388/ 781] blk.44.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 389/ 781] blk.44.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 390/ 781] blk.44.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 391/ 781] blk.44.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 392/ 781] blk.44.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 393/ 781] blk.45.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 394/ 781] blk.45.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 395/ 781] blk.45.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 396/ 781] blk.45.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 397/ 781] blk.45.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 398/ 781] blk.45.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 399/ 781] blk.45.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 400/ 781] blk.45.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 401/ 781] blk.45.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 402/ 781] blk.46.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 403/ 781] blk.46.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 404/ 781] blk.46.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 405/ 781] blk.46.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 406/ 781] blk.46.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 407/ 781] blk.46.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 408/ 781] blk.46.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 409/ 781] blk.46.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 410/ 781] blk.46.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 411/ 781] blk.47.attn_k.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 412/ 781] blk.47.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 413/ 781] blk.47.attn_output.weight            - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 414/ 781] blk.47.attn_q.weight                 - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 415/ 781] blk.47.attn_v.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 416/ 781] blk.48.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 417/ 781] blk.48.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 418/ 781] blk.48.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 419/ 781] blk.48.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 420/ 781] blk.48.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 421/ 781] blk.48.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 422/ 781] blk.48.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 423/ 781] blk.48.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 424/ 781] blk.48.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 425/ 781] blk.49.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 426/ 781] blk.49.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 427/ 781] blk.49.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 428/ 781] blk.49.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 429/ 781] blk.49.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 430/ 781] blk.49.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 431/ 781] blk.49.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 432/ 781] blk.49.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 433/ 781] blk.49.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 434/ 781] blk.50.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 435/ 781] blk.50.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 436/ 781] blk.50.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 437/ 781] blk.50.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 438/ 781] blk.50.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 439/ 781] blk.50.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 440/ 781] blk.50.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 441/ 781] blk.50.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 442/ 781] blk.50.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 443/ 781] blk.51.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 444/ 781] blk.51.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 445/ 781] blk.51.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 446/ 781] blk.51.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 447/ 781] blk.51.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 448/ 781] blk.51.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 449/ 781] blk.51.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 450/ 781] blk.51.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 451/ 781] blk.51.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 452/ 781] blk.52.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 453/ 781] blk.52.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 454/ 781] blk.52.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 455/ 781] blk.52.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 456/ 781] blk.52.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 457/ 781] blk.52.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 458/ 781] blk.52.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 459/ 781] blk.52.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 460/ 781] blk.52.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 461/ 781] blk.53.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 462/ 781] blk.53.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 463/ 781] blk.53.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 464/ 781] blk.53.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 465/ 781] blk.53.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 466/ 781] blk.53.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 467/ 781] blk.53.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 468/ 781] blk.53.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 469/ 781] blk.53.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 470/ 781] blk.54.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 471/ 781] blk.54.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 472/ 781] blk.54.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 473/ 781] blk.54.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 474/ 781] blk.54.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 475/ 781] blk.54.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 476/ 781] blk.54.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 477/ 781] blk.54.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 478/ 781] blk.54.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 479/ 781] blk.55.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 480/ 781] blk.55.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 481/ 781] blk.55.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 482/ 781] blk.55.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 483/ 781] blk.55.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 484/ 781] blk.55.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 485/ 781] blk.55.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 486/ 781] blk.55.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 487/ 781] blk.55.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 488/ 781] blk.56.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 489/ 781] blk.56.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 490/ 781] blk.56.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 491/ 781] blk.56.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 492/ 781] blk.56.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 493/ 781] blk.56.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 494/ 781] blk.56.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 495/ 781] blk.56.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 496/ 781] blk.56.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 497/ 781] blk.57.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 498/ 781] blk.57.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 499/ 781] blk.57.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 500/ 781] blk.57.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 501/ 781] blk.57.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 502/ 781] blk.57.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 503/ 781] blk.57.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 504/ 781] blk.57.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 505/ 781] blk.57.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 506/ 781] blk.58.attn_k.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 507/ 781] blk.58.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 508/ 781] blk.58.attn_output.weight            - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 509/ 781] blk.58.attn_q.weight                 - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 510/ 781] blk.58.attn_v.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 511/ 781] blk.59.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 512/ 781] blk.59.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 513/ 781] blk.59.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 514/ 781] blk.59.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 515/ 781] blk.59.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 516/ 781] blk.59.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 517/ 781] blk.59.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 518/ 781] blk.59.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 519/ 781] blk.59.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 520/ 781] blk.60.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 521/ 781] blk.60.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 522/ 781] blk.60.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 523/ 781] blk.60.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 524/ 781] blk.60.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 525/ 781] blk.60.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 526/ 781] blk.60.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 527/ 781] blk.60.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 528/ 781] blk.60.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 529/ 781] blk.61.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 530/ 781] blk.61.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 531/ 781] blk.61.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 532/ 781] blk.61.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 533/ 781] blk.61.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 534/ 781] blk.61.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 535/ 781] blk.61.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 536/ 781] blk.61.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 537/ 781] blk.61.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 538/ 781] blk.62.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 539/ 781] blk.62.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 540/ 781] blk.62.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 541/ 781] blk.62.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 542/ 781] blk.62.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 543/ 781] blk.62.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 544/ 781] blk.62.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 545/ 781] blk.62.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 546/ 781] blk.62.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 547/ 781] blk.63.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 548/ 781] blk.63.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 549/ 781] blk.63.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 550/ 781] blk.63.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 551/ 781] blk.63.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 552/ 781] blk.63.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 553/ 781] blk.63.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 554/ 781] blk.63.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 555/ 781] blk.63.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 556/ 781] blk.64.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 557/ 781] blk.64.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 558/ 781] blk.64.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 559/ 781] blk.64.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 560/ 781] blk.64.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 561/ 781] blk.64.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 562/ 781] blk.64.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 563/ 781] blk.64.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 564/ 781] blk.64.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 565/ 781] blk.65.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 566/ 781] blk.65.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 567/ 781] blk.65.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 568/ 781] blk.65.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 569/ 781] blk.65.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 570/ 781] blk.65.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 571/ 781] blk.65.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 572/ 781] blk.65.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 573/ 781] blk.65.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 574/ 781] blk.66.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 575/ 781] blk.66.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 576/ 781] blk.66.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 577/ 781] blk.66.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 578/ 781] blk.66.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 579/ 781] blk.66.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 580/ 781] blk.66.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 581/ 781] blk.66.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 582/ 781] blk.66.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 583/ 781] blk.67.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 584/ 781] blk.67.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 585/ 781] blk.67.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 586/ 781] blk.67.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 587/ 781] blk.67.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 588/ 781] blk.67.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 589/ 781] blk.67.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 590/ 781] blk.67.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 591/ 781] blk.67.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 592/ 781] blk.68.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 593/ 781] blk.68.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 594/ 781] blk.68.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 595/ 781] blk.68.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 596/ 781] blk.68.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 597/ 781] blk.68.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 598/ 781] blk.68.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 599/ 781] blk.68.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 600/ 781] blk.68.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 601/ 781] blk.69.attn_k.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 602/ 781] blk.69.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 603/ 781] blk.69.attn_output.weight            - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 604/ 781] blk.69.attn_q.weight                 - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 605/ 781] blk.69.attn_v.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 606/ 781] blk.70.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 607/ 781] blk.70.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 608/ 781] blk.70.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 609/ 781] blk.70.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 610/ 781] blk.70.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 611/ 781] blk.70.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 612/ 781] blk.70.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 613/ 781] blk.70.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 614/ 781] blk.70.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 615/ 781] blk.71.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 616/ 781] blk.71.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 617/ 781] blk.71.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 618/ 781] blk.71.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 619/ 781] blk.71.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 620/ 781] blk.71.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 621/ 781] blk.71.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 622/ 781] blk.71.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 623/ 781] blk.71.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 624/ 781] blk.72.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 625/ 781] blk.72.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 626/ 781] blk.72.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 627/ 781] blk.72.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 628/ 781] blk.72.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 629/ 781] blk.72.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 630/ 781] blk.72.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 631/ 781] blk.72.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 632/ 781] blk.72.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 633/ 781] blk.73.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 634/ 781] blk.73.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 635/ 781] blk.73.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 636/ 781] blk.73.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 637/ 781] blk.73.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 638/ 781] blk.73.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 639/ 781] blk.73.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 640/ 781] blk.73.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 641/ 781] blk.73.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 642/ 781] blk.74.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 643/ 781] blk.74.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 644/ 781] blk.74.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 645/ 781] blk.74.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 646/ 781] blk.74.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 647/ 781] blk.74.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 648/ 781] blk.74.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 649/ 781] blk.74.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 650/ 781] blk.74.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 651/ 781] blk.75.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 652/ 781] blk.75.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 653/ 781] blk.75.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 654/ 781] blk.75.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 655/ 781] blk.75.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 656/ 781] blk.75.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 657/ 781] blk.75.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 658/ 781] blk.75.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 659/ 781] blk.75.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 660/ 781] blk.76.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 661/ 781] blk.76.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 662/ 781] blk.76.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 663/ 781] blk.76.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 664/ 781] blk.76.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 665/ 781] blk.76.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 666/ 781] blk.76.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 667/ 781] blk.76.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 668/ 781] blk.76.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 669/ 781] blk.77.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 670/ 781] blk.77.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 671/ 781] blk.77.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 672/ 781] blk.77.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 673/ 781] blk.77.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 674/ 781] blk.77.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 675/ 781] blk.77.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 676/ 781] blk.77.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 677/ 781] blk.77.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 678/ 781] blk.78.attn_k.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 679/ 781] blk.78.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 680/ 781] blk.78.attn_output.weight            - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 681/ 781] blk.78.attn_q.weight                 - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 682/ 781] blk.78.attn_v.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 683/ 781] blk.79.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 684/ 781] blk.79.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 685/ 781] blk.79.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 686/ 781] blk.79.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 687/ 781] blk.79.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 688/ 781] blk.79.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 689/ 781] blk.79.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 690/ 781] blk.79.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 691/ 781] blk.79.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 692/ 781] blk.80.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 693/ 781] blk.80.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 694/ 781] blk.80.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 695/ 781] blk.80.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 696/ 781] blk.80.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 697/ 781] blk.80.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 698/ 781] blk.80.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 699/ 781] blk.80.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 700/ 781] blk.80.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 701/ 781] blk.81.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 702/ 781] blk.81.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 703/ 781] blk.81.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 704/ 781] blk.81.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 705/ 781] blk.81.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 706/ 781] blk.81.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 707/ 781] blk.81.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 708/ 781] blk.81.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 709/ 781] blk.81.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 710/ 781] blk.82.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 711/ 781] blk.82.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 712/ 781] blk.82.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 713/ 781] blk.82.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 714/ 781] blk.82.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 715/ 781] blk.82.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 716/ 781] blk.82.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 717/ 781] blk.82.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 718/ 781] blk.82.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 719/ 781] blk.83.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 720/ 781] blk.83.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 721/ 781] blk.83.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 722/ 781] blk.83.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 723/ 781] blk.83.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 724/ 781] blk.83.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 725/ 781] blk.83.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 726/ 781] blk.83.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 727/ 781] blk.83.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 728/ 781] blk.84.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 729/ 781] blk.84.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 730/ 781] blk.84.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 731/ 781] blk.84.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 732/ 781] blk.84.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 733/ 781] blk.84.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 734/ 781] blk.84.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 735/ 781] blk.84.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 736/ 781] blk.84.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 737/ 781] blk.85.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 738/ 781] blk.85.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 739/ 781] blk.85.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 740/ 781] blk.85.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 741/ 781] blk.85.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 742/ 781] blk.85.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 743/ 781] blk.85.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 744/ 781] blk.85.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 745/ 781] blk.85.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 746/ 781] blk.86.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 747/ 781] blk.86.ssm_a                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 748/ 781] blk.86.ssm_conv1d.bias               - [ 10240,      1,      1,      1], type =    f32, size =    0.039 MiB
+[ 749/ 781] blk.86.ssm_conv1d.weight             - [     4,  10240,      1,      1], type =    f32, size =    0.156 MiB
+[ 750/ 781] blk.86.ssm_d                         - [     1,    128,      1,      1], type =    f32, size =    0.000 MiB
+[ 751/ 781] blk.86.ssm_dt.bias                   - [   128,      1,      1,      1], type =    f32, size =    0.000 MiB
+[ 752/ 781] blk.86.ssm_in.weight                 - [  4096,  18560,      1,      1], type =   bf16, converting to q8_0 .. size =   145.00 MiB ->    77.03 MiB
+[ 753/ 781] blk.86.ssm_norm.weight               - [  1024,      8,      1,      1], type =    f32, size =    0.031 MiB
+[ 754/ 781] blk.86.ssm_out.weight                - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 755/ 781] blk.87.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 756/ 781] blk.87.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 757/ 781] blk.87.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 758/ 781] blk.87.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 759/ 781] blk.87.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =    f32, size =    8.000 MiB
+[ 760/ 781] blk.87.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 761/ 781] blk.87.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 762/ 781] blk.87.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 763/ 781] blk.87.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 764/ 781] blk.88.attn_k.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 765/ 781] blk.88.attn_norm.weight              - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 766/ 781] blk.88.attn_output.weight            - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 767/ 781] blk.88.attn_q.weight                 - [  4096,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    32.00 MiB ->    17.00 MiB
+[ 768/ 781] blk.88.attn_v.weight                 - [  4096,    256,      1,      1], type =   bf16, converting to q8_0 .. size =     2.00 MiB ->     1.06 MiB
+[ 769/ 781] blk.88.exp_probs_b.bias              - [   512,      1,      1,      1], type =    f32, size =    0.002 MiB
+[ 770/ 781] blk.88.ffn_down_exps.weight          - [  2688,   1024,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 771/ 781] blk.88.ffn_down_shexp.weight         - [  5376,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 772/ 781] blk.88.ffn_gate_inp.weight           - [  4096,    512,      1,      1], type =   bf16, size =    4.000 MiB
+[ 773/ 781] blk.88.ffn_latent_down.weight        - [  4096,   1024,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 774/ 781] blk.88.ffn_latent_up.weight          - [  1024,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =     8.00 MiB ->     4.25 MiB
+[ 775/ 781] blk.88.ffn_up_exps.weight            - [  1024,   2688,    512,      1], type =   bf16, converting to q8_0 .. size =  2688.00 MiB ->  1428.00 MiB
+[ 776/ 781] blk.88.ffn_up_shexp.weight           - [  4096,   5376,      1,      1], type =   bf16, converting to q8_0 .. size =    42.00 MiB ->    22.31 MiB
+[ 777/ 781] blk.88.nextn.eh_proj.weight          - [  8192,   4096,      1,      1], type =   bf16, converting to q8_0 .. size =    64.00 MiB ->    34.00 MiB
+[ 778/ 781] blk.88.nextn.enorm.weight            - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 779/ 781] blk.88.nextn.hnorm.weight            - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 780/ 781] blk.88.nextn.shared_head_norm.weight - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+[ 781/ 781] blk.88.post_attention_norm.weight    - [  4096,      1,      1,      1], type =    f32, size =    0.016 MiB
+llama_model_quantize_impl: model size  = 235934.67 MiB (16.01 BPW)
+llama_model_quantize_impl: quant size  = 125497.17 MiB (8.52 BPW)
+
+llama_quantize: quantize time = 111548.79 ms
+llama_quantize:    total time = 111548.79 ms

@@ -1,0 +1,16 @@
+{
+ "run": {
+  "id": "14e-try1",
+  "venue": "colab",
+  "hardware": "A100",
+  "date": "2026-10-19",
+  "cost": 0.11,
+  "cost_unit": "colab_units",
+  "cost_basis": "estimate",
+  "outcome": "gate-reject",
+  "why": "3 A100 VMs read Hugging Face at 98-100 MB/s under the old flat 129 floor",
+  "pins": {
+   "role-set": "6f1000b"
+  }
+ }
+}

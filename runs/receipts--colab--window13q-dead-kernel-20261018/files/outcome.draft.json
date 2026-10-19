@@ -1,0 +1,1 @@
+{"window": "window13q-dead-kernel-20261018", "date": "2026-10-18", "commit": "eb990bc09b93c2bb7a32a0ff3f606cf031c04d60", "card": "CPU", "cap": 0.1, "spent": 0.04, "basis": "rate_x_runtime", "end": "stall", "outcome": null, "why": null}

@@ -1,0 +1,5 @@
+[18:12:33] probe: implicit token {'env_set_before_import': False, 'hub_imported_before': False, 'env': '1', 'constant': True, 'hub_version': '1.33.0'}
+[18:12:34] resources {'at': 'nemotron-3.5-bolt-74b-a9b: before download', 'time': '18:12:34', 'disk_free_gb': 220.5, 'ram_available_mb': 50919, 'ram_total_mb': 52214}
+[18:12:34] downloading NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
+[18:13:35] hashing NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
+PIN_RESULT {"probe": "bolt-fetch", "job_token": "probe13o-1792347150", "pin_window_sha256": "dc204e1922afd9cb11ec7e437348b478c0e90f3b1c79de47f341c7c96e8f091b", "implicit_token": {"env_set_before_import": false, "hub_imported_before": false, "env": "1", "constant": true, "hub_version": "1.33.0"}, "seconds": 152, "gguf_sha256": "91d63363e782c8a3d5f4be42816eba8e0d42dd2530bd07a7d0d2dc440599af75", "gguf_bytes": 22018326528, "reproduced": true, "ok": true, "resources": [{"at": "nemotron-3.5-bolt-74b-a9b: before download", "time": "18:12:34", "disk_free_gb": 220.5, "ram_available_mb": 50919, "ram_total_mb": 52214}]}

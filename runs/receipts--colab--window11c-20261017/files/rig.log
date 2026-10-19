@@ -1,0 +1,20 @@
+start balance 1155.35, account rate 5.30/hr 2026-10-17T16:11:48Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+[colab] Creating session 'pinw11c'...
+[colab] Session READY.
+Usage rate: 10.60/hr
+Active assignments: 2
+own rate 5.3/hr
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+exec exit=15 wall=2080s
+[colab] Download failed: File or directory not found: /content/pin/pin-result.json
+[colab] Download failed: File or directory not found: /content/pin/lib.tar
+[colab] Download failed: File or directory not found: /content/pin/generations.jsonl
+end balance 1146.99 (start 1155.35)
+stopping pinw11c
+[colab] Session terminated.
+sessions after stop:
+[pinw10d] gpu-a100-s-kkb-usw4b0-372kt2qvhdd5d | Hardware: A100 | Shape: Standard | Variant: GPU

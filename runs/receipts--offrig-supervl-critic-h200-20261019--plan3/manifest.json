@@ -1,0 +1,30 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--offrig-supervl-critic-h200-20261019--plan3",
+ "kind": "run",
+ "source": "receipts/offrig-supervl-critic-h200-20261019/plan3",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "outcome.json",
+   "sha256": "ac5c39e29054b068fee94b146af9579fa958dc061dbfd784e927893ae42a8076",
+   "bytes": 403,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "ac5c39e29054b068fee94b146af9579fa958dc061dbfd784e927893ae42a8076",
+   "store": "rnd-data",
+   "location": "runs/receipts--offrig-supervl-critic-h200-20261019--plan3/files/outcome.json"
+  }
+ ],
+ "private_files": {
+  "unapproved": 1
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

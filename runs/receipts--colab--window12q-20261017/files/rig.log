@@ -1,0 +1,18 @@
+start balance 1134.16, account rate 0.00/hr 2026-10-17T18:51:31Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+[colab] Creating session 'pinw12q'...
+[colab] Session READY.
+Usage rate: 0.08/hr
+Active assignments: 1
+own rate 0.08/hr
+JOB DONE (PIN_RESULT in job.log) 18:57:58
+exec exit=124 wall=366s end=done
+fetched job.log (314 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window12q-20261017/pin-result.json'
+exit fetch took 2s
+PIN_RESULT {"ok": true, "mock": true, "steps": 10, "seconds": 300, "silent": true}
+end balance 1134.15 (start 1134.16)
+stopping pinw12q
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

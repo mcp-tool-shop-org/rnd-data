@@ -1,0 +1,27 @@
+start balance 1165.42, account rate 5.30/hr 2026-10-17T15:27:22Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+[colab] Creating session 'pinw11a'...
+[colab] Session READY.
+Usage rate: 15.90/hr
+Active assignments: 3
+own rate 10.6/hr
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+CAP REACHED (own spend 6.04 of 6)
+stopping pinw11a
+[colab] Session terminated.
+sessions after stop:
+[pinw11b] gpu-a100-s-kkb-ass1b2-3kixtslq3qm06 | Hardware: A100 | Shape: Standard | Variant: GPU
+[pinw10d] gpu-a100-s-kkb-usw4b0-372kt2qvhdd5d | Hardware: A100 | Shape: Standard | Variant: GPU
+exec exit=15 wall=4751s
+[colab] Session 'pinw11a' not found.
+[colab] Session 'pinw11a' not found.
+[colab] Session 'pinw11a' not found.
+end balance 1146.99 (start 1165.42)
+stopping pinw11a
+[colab] Session 'pinw11a' not found.
+sessions after stop:
+[pinw11c] gpu-a100-s-kkb-ass1c2-3mywm8t8ut4hz | Hardware: A100 | Shape: Standard | Variant: GPU
+[pinw10d] gpu-a100-s-kkb-usw4b0-372kt2qvhdd5d | Hardware: A100 | Shape: Standard | Variant: GPU

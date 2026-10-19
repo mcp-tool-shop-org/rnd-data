@@ -1,0 +1,20 @@
+start balance 1107.44, account rate 5.30/hr 2026-10-19T17:52:50Z
+98f73e3c69a72014afcf11017d9b0db14cc81a2e83723f4912caeeb13142eaa8  scripts/colab/mock_job.py
+[colab] Creating session 'rungfloor'...
+[colab] Session READY.
+VM gate rejected try 1: "why": ["RAM 12.4 GB available < 50"]
+[colab] Session terminated.
+[colab] Creating session 'rungfloor'...
+[colab] Session READY.
+VM gate rejected try 2: "why": ["RAM 12.4 GB available < 50"]
+[colab] Session terminated.
+[colab] Creating session 'rungfloor'...
+[colab] Session READY.
+VM gate rejected try 3: "why": ["RAM 12.3 GB available < 50"]
+[colab] Session terminated.
+VM GATE: no healthy CPU in 3 tries
+stopping rungfloor
+[colab] Session 'rungfloor' not found.
+sessions after stop:
+[rungpre] gpu-a100-s-kkb-ass1c2-qcqrksc5cnk | Hardware: A100 | Shape: Standard | Variant: GPU
+rc=4

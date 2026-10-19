@@ -1,0 +1,108 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--window12s3-20261017",
+ "kind": "collection",
+ "source": "receipts/colab/window12s3-20261017",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": ".end",
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "bytes": 5,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".exec.pid",
+   "sha256": "81cefc93f919492f3f64e7cad7950454980221534f84c96330d3f29f5ed92200",
+   "bytes": 6,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".fetch.out",
+   "sha256": "1fcee48db5069d8050b0b653679093e765fac6133646946de2f374ef8545cf1f",
+   "bytes": 121,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "card-values.json",
+   "sha256": "36cd89bbd95f2918528ae40b6ebfc1b91c3f17daccc0db708f36251b0bc9e207",
+   "bytes": 11011,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result.json",
+   "sha256": "6dcc436cf096c0b19703c4d5beb5d571ab0c4ff85aab9c461e460b6157f2e675",
+   "bytes": 10700,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "rig.log",
+   "sha256": "c5720f053501705c0f8354c9c86dace62d87602a3d7cb3196152c1482d14ffeb",
+   "bytes": 1712,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke_window.sh",
+   "sha256": "81787ff9993470919f9782f2416462f23d55867dda130a9ea02720bb8532c175",
+   "bytes": 11420,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window12s3-20261017/files/.end"
+  },
+  {
+   "sha256": "81cefc93f919492f3f64e7cad7950454980221534f84c96330d3f29f5ed92200",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window12s3-20261017/files/.exec.pid"
+  },
+  {
+   "sha256": "1fcee48db5069d8050b0b653679093e765fac6133646946de2f374ef8545cf1f",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window12s3-20261017/files/.fetch.out"
+  },
+  {
+   "sha256": "36cd89bbd95f2918528ae40b6ebfc1b91c3f17daccc0db708f36251b0bc9e207",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window12s3-20261017/files/card-values.json"
+  },
+  {
+   "sha256": "6dcc436cf096c0b19703c4d5beb5d571ab0c4ff85aab9c461e460b6157f2e675",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window12s3-20261017/files/pin-result.json"
+  },
+  {
+   "sha256": "c5720f053501705c0f8354c9c86dace62d87602a3d7cb3196152c1482d14ffeb",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window12s3-20261017/files/rig.log"
+  },
+  {
+   "sha256": "81787ff9993470919f9782f2416462f23d55867dda130a9ea02720bb8532c175",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window12s3-20261017/files/smoke_window.sh"
+  }
+ ],
+ "private_files": {
+  "item-text": 5
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

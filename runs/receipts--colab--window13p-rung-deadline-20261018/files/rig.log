@@ -1,0 +1,34 @@
+start balance 1141.14, account rate 0.00/hr 2026-10-18T18:00:12Z
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /dev/null
+[colab] Creating session 'pinw13p'...
+[colab] Session READY.
+VM gate rejected try 1: "why": ["Hugging Face 46.1 MB/s < 60.0"]
+[colab] Session terminated.
+[colab] Creating session 'pinw13p'...
+[colab] Session READY.
+VM gate rejected try 2: "why": ["Hugging Face 43.0 MB/s < 60.0"]
+[colab] Session terminated.
+[colab] Creating session 'pinw13p'...
+[colab] Session READY.
+VM gate passed (try 3)
+Usage rate: 0.26/hr
+Active assignments: 1
+own rate 0.26/hr
+deadline 18:11:10 (cap 0.07 less 0.03 at 0.26/hr); grace 180s
+uploaded pack.tar aa11101c9d47e45f
+uploaded card-values.json 36cd89bbd95f2918
+uploaded resume.tar 3d8b7ed583a3d23a
+uploaded prior.tar ed8263776dc09b7e
+exec exit=0 wall=548s end=exec
+fetched job.log (279743 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window13p-rung-deadline-20261018/pin-result.json'
+[colab] Downloaded '/content/pin/pilot-out.tar' to '/mnt/e/AI/Publisher/receipts/colab/window13p-rung-deadline-20261018/pilot-out.tar'
+[colab] Download failed: File or directory not found: /content/pin/lib.tar
+[colab] Download failed: File or directory not found: /content/pin/generations.jsonl
+exit fetch took 4s
+PIN_RESULT {"started": "2026-10-18T18:02:03Z", "job_token": "pinw13p-1792346517", "stub": true, "machine": {"card": "STUB (CPU)", "memory": "0 MiB", "driver": "stub", "compat": false, "driver_cuda": "stub", "colab_release_tag": "release-colab-external-images_20261014-060047_RC00", "cores": 8, "disk_free_gb": 205.3, "runtime": "13.4", "stub": true}, "role": "pilot", "llama_server": {"commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab", "sha256": "b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3", "path": "stub", "stub": true}, "role_set": {"commit": "eb990bc09b93c2bb7a32a0ff3f60
+end balance 1141.11 (start 1141.14)
+stopping pinw13p
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

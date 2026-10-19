@@ -1,0 +1,43 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--offrig-supervl-convert-20261019",
+ "kind": "collection",
+ "source": "receipts/colab/offrig-supervl-convert-20261019",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "convert.log",
+   "sha256": "74cc80b6e496c263a4f372e86f2bc43fb156398b9f8c601f9c6393fbdd8c8236",
+   "bytes": 10695,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "job.log",
+   "sha256": "5a3ed1d2565b483d94264084f1364c7bcf8272ff329007d446874f50e40ef6fb",
+   "bytes": 9902,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "74cc80b6e496c263a4f372e86f2bc43fb156398b9f8c601f9c6393fbdd8c8236",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--offrig-supervl-convert-20261019/files/convert.log"
+  },
+  {
+   "sha256": "5a3ed1d2565b483d94264084f1364c7bcf8272ff329007d446874f50e40ef6fb",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--offrig-supervl-convert-20261019/files/job.log"
+  }
+ ],
+ "private_files": {
+  "unapproved": 1
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

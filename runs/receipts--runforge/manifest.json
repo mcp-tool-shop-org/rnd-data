@@ -1,0 +1,15 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--runforge",
+ "kind": "collection",
+ "source": "receipts/runforge",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [],
+ "copies": [],
+ "private_files": {
+  "unapproved": 6
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

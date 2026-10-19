@@ -1,0 +1,26 @@
+start balance 1100.18, account rate 5.38/hr 2026-10-17T22:09:34Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+[colab] Creating session 'pinw12g'...
+[colab] Session READY.
+Usage rate: 10.68/hr
+Active assignments: 3
+own rate 5.3/hr
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+uploaded pack.tar aa11101c9d47e45f
+uploaded card-values.json 36cd89bbd95f2918
+uploaded resume.tar de6c6b1ed47e0067
+CAP REACHED (own spend 6.743 of 7; 0.3 kept back to fetch the results) 23:26:18
+exec exit=124 wall=4456s end=cap
+fetched job.log (259374 bytes)
+[colab] Download failed: File or directory not found: /content/pin/pin-result.json
+[colab] Download failed: File or directory not found: /content/pin/pilot-out.tar
+exit fetch took 4s
+end balance 1087.05 (start 1100.18)
+stopping pinw12g
+[colab] Session terminated.
+sessions after stop:
+[pinw12f] gpu-a100-s-kkb-usc1f0-2xdr0k6adsc7j | Hardware: A100 | Shape: Standard | Variant: GPU
+[?] m-s-kkb-use4c2-6m9457t198lt | Hardware: CPU | Shape: Standard | Variant: DEFAULT

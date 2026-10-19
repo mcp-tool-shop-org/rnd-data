@@ -1,0 +1,16 @@
+{
+ "run": {
+  "id": "14f",
+  "venue": "colab",
+  "hardware": "A100-SXM4-40GB",
+  "date": "2026-10-19",
+  "cost": 0.54,
+  "cost_unit": "colab_units",
+  "cost_basis": "estimate",
+  "outcome": "test",
+  "why": "pre-step a250464a with the 32-38 allowance: normal ok with 38 allowed, tamper, impossible ctx and no_content all stop",
+  "pins": {
+   "role-set": "89b5f2e"
+  }
+ }
+}

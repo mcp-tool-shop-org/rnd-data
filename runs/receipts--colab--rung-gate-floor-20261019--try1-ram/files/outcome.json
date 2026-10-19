@@ -1,0 +1,16 @@
+{
+ "run": {
+  "id": "14d-try1",
+  "venue": "colab",
+  "hardware": "CPU",
+  "date": "2026-10-19",
+  "cost": 0.01,
+  "cost_unit": "colab_units",
+  "cost_basis": "estimate",
+  "outcome": "gate-reject",
+  "why": "3 standard CPU VMs rejected on RAM (12.3 GB < the 50 GB default; my setup); the computed HF floor 24.2 was read back",
+  "pins": {
+   "role-set": "89b5f2e"
+  }
+ }
+}

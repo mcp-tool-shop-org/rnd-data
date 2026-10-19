@@ -1,0 +1,16 @@
+{
+ "run": {
+  "id": "14d-try2",
+  "venue": "colab",
+  "hardware": "CPU",
+  "date": "2026-10-19",
+  "cost": 0.01,
+  "cost_unit": "colab_units",
+  "cost_basis": "estimate",
+  "outcome": "test",
+  "why": "gate-floor rung: computed floor 24.2, HF 91.5, gate ok, mock job ok",
+  "pins": {
+   "role-set": "89b5f2e"
+  }
+ }
+}

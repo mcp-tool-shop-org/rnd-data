@@ -1,0 +1,171 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--window13k-prebuild-granite-a100-20261018",
+ "kind": "run",
+ "source": "receipts/colab/window13k-prebuild-granite-a100-20261018",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": ".end",
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "bytes": 5,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".exec.pid",
+   "sha256": "9bdb4e34580088bd3098fa737e12b270f8fff0ff5e9e754be366d7d9339ff7ba",
+   "bytes": 7,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": ".fetch.out",
+   "sha256": "182c7c03303b433cfa5c80e7c4477e989be1742e9ae7febb181b1c920781acd7",
+   "bytes": 142,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "gate.jsonl",
+   "sha256": "a9bd6ba911304b226dd43af2a4cf19413605a82f20b22281805f0001450e7172",
+   "bytes": 467,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "job.log",
+   "sha256": null,
+   "bytes": 22035,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "launch.sh",
+   "sha256": null,
+   "bytes": 1303,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "outcome.json",
+   "sha256": "85dadfb430e093c958fbbd1c7a1491c7b31178bdbec7934c16b1f22049cd3f68",
+   "bytes": 368,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "pin-result.json",
+   "sha256": null,
+   "bytes": 26089,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "rig.log",
+   "sha256": "c2e891a7244e58503a86dd55e859788c03113287747e0c89f19671a8b36453c2",
+   "bytes": 1420,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke-window.log",
+   "sha256": null,
+   "bytes": 22691,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "smoke_window.sh",
+   "sha256": "4ed04741ce13677379921347e48a0f4a8338e2c327d9e0ce6b551ef1dfc32ca2",
+   "bytes": 16009,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "status.log",
+   "sha256": "b5985647c1f0f3748f8810c73ecb71d0ba581aa49660b2ae3f5e589ee69e70fe",
+   "bytes": 3100,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "vm_gate.py",
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "bytes": 6116,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/.end"
+  },
+  {
+   "sha256": "9bdb4e34580088bd3098fa737e12b270f8fff0ff5e9e754be366d7d9339ff7ba",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/.exec.pid"
+  },
+  {
+   "sha256": "182c7c03303b433cfa5c80e7c4477e989be1742e9ae7febb181b1c920781acd7",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/.fetch.out"
+  },
+  {
+   "sha256": "a9bd6ba911304b226dd43af2a4cf19413605a82f20b22281805f0001450e7172",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/gate.jsonl"
+  },
+  {
+   "sha256": "85dadfb430e093c958fbbd1c7a1491c7b31178bdbec7934c16b1f22049cd3f68",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/outcome.json"
+  },
+  {
+   "sha256": "c2e891a7244e58503a86dd55e859788c03113287747e0c89f19671a8b36453c2",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/rig.log"
+  },
+  {
+   "sha256": "4ed04741ce13677379921347e48a0f4a8338e2c327d9e0ce6b551ef1dfc32ca2",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/smoke_window.sh"
+  },
+  {
+   "sha256": "b5985647c1f0f3748f8810c73ecb71d0ba581aa49660b2ae3f5e589ee69e70fe",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/status.log"
+  },
+  {
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/vm_gate.py"
+  }
+ ],
+ "private_files": {
+  "item-text": 1,
+  "unapproved": 1
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

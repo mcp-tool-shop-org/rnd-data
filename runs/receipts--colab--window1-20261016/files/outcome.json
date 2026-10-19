@@ -1,0 +1,10 @@
+{
+ "window": "1",
+ "card": "A100",
+ "cap": null,
+ "spent": 2.37,
+ "basis": "estimate",
+ "outcome": "partial",
+ "why": "build: llama-server built (b4659b3f, the binary every later window runs) after three tries; Muse's maker GGUF repo had no Q8_0 (fixed by converting); convert: Lightning converted and pinned. Outside the 200-unit budget",
+ "spent_note": "at most 2.37: the balance was 1207.67 at window 1's start and 1205.30 at window 2's start; window 1 logged no end balance (backfilled 2026-10-19 for rnd P2)"
+}

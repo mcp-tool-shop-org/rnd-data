@@ -1,0 +1,25 @@
+start balance 1086.19, account rate 5.38/hr 2026-10-17T23:28:16Z
+b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3  /mnt/e/AI/Publisher/receipts/colab/window1-20261016/build/llama-server
+[colab] Creating session 'pinw12h'...
+[colab] Session READY.
+Usage rate: 10.68/hr
+Active assignments: 3
+own rate 5.3/hr
+uploaded llama-server.gz.part00
+uploaded llama-server.gz.part01
+uploaded llama-server.gz.part02
+uploaded llama-server.gz.part03
+uploaded pack.tar aa11101c9d47e45f
+uploaded card-values.json 36cd89bbd95f2918
+uploaded resume.tar 076c3af21754b0c7
+exec exit=0 wall=5822s end=exec
+fetched job.log (266136 bytes)
+[colab] Downloaded '/content/pin/pin-result.json' to '/mnt/e/AI/Publisher/receipts/colab/window12h-20261017/pin-result.json'
+[colab] Downloaded '/content/pin/pilot-out.tar' to '/mnt/e/AI/Publisher/receipts/colab/window12h-20261017/pilot-out.tar'
+exit fetch took 68s
+PIN_RESULT {"started": "2026-10-17T23:30:42Z", "machine": {"card": "NVIDIA A100-SXM4-40GB", "memory": "40960 MiB", "driver": "580.82.07", "compat": false, "driver_cuda": "13.0", "colab_release_tag": "release-colab-external-images_20261014-060047_RC00", "cores": 12, "disk_free_gb": 193.2, "runtime": "13.4"}, "role": "pilot", "llama_server": {"commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab", "sha256": "b4659b3fc74037deb96b2148c455753121fa21dde174d7124547e2bf9ffd37c3", "path": "/content/pin/llama-server", "src": "/content/pin/llama.cpp", "cuda_wheels": ["nvidia-cublas==13.8.0.4", "nvidia-cubl
+end balance 1071.67 (start 1086.19)
+stopping pinw12h
+[colab] Session terminated.
+sessions after stop:
+[colab] No active sessions found on server.

@@ -1,0 +1,69 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--window13w-critic-eval-muse-s0-20261019--try1",
+ "kind": "run",
+ "source": "receipts/colab/window13w-critic-eval-muse-s0-20261019/try1",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "job.log",
+   "sha256": "6aae8441c67a5f373856b3c14ddc3aad2b86a74eb4e060f62d18a6d1b234cb03",
+   "bytes": 782,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "launch.out",
+   "sha256": "38cdb14194edc6518b7e38536209d76b637e3970bd73cca0de7e17a2fb2b8b4b",
+   "bytes": 1714,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "rig.log",
+   "sha256": "1feb19a2de275f2b0e371be06eda4c452b5d6618254f317a2ca221e8d453de06",
+   "bytes": 1702,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke-window.log",
+   "sha256": "4e731b93b9d26f226ca53b73b877ce467393dab93aedefa8c7f06587a321194c",
+   "bytes": 1077,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "6aae8441c67a5f373856b3c14ddc3aad2b86a74eb4e060f62d18a6d1b234cb03",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019--try1/files/job.log"
+  },
+  {
+   "sha256": "38cdb14194edc6518b7e38536209d76b637e3970bd73cca0de7e17a2fb2b8b4b",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019--try1/files/launch.out"
+  },
+  {
+   "sha256": "1feb19a2de275f2b0e371be06eda4c452b5d6618254f317a2ca221e8d453de06",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019--try1/files/rig.log"
+  },
+  {
+   "sha256": "4e731b93b9d26f226ca53b73b877ce467393dab93aedefa8c7f06587a321194c",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019--try1/files/smoke-window.log"
+  }
+ ],
+ "private_files": {
+  "item-text": 4
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}

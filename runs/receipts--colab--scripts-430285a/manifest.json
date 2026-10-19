@@ -1,0 +1,57 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "receipts--colab--scripts-430285a",
+ "kind": "collection",
+ "source": "receipts/colab/scripts-430285a",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "COMMIT",
+   "sha256": "d237028b878d631aa6be37e767110f3d66a06cebcadd2db0ea1aed107dbabdf8",
+   "bytes": 41,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "smoke_window.sh",
+   "sha256": "4ed04741ce13677379921347e48a0f4a8338e2c327d9e0ce6b551ef1dfc32ca2",
+   "bytes": 16009,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  },
+  {
+   "path": "vm_gate.py",
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "bytes": 6116,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "d237028b878d631aa6be37e767110f3d66a06cebcadd2db0ea1aed107dbabdf8",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--scripts-430285a/files/COMMIT"
+  },
+  {
+   "sha256": "4ed04741ce13677379921347e48a0f4a8338e2c327d9e0ce6b551ef1dfc32ca2",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--scripts-430285a/files/smoke_window.sh"
+  },
+  {
+   "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
+   "store": "rnd-data",
+   "location": "runs/receipts--colab--scripts-430285a/files/vm_gate.py"
+  }
+ ],
+ "private_files": {
+  "item-text": 1,
+  "unapproved": 1
+ },
+ "ingested": "2026-10-19",
+ "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+}
