@@ -1,0 +1,10 @@
+{
+ "schema": "rnd-data-store/v1",
+ "stores": {
+  "rnd-data": {"about": "this repository's git (GitHub, private)", "kind": "git"},
+  "d": {"about": "the studio rig's backup drive (AI-BACKUP), blob store by SHA-256", "kind": "blobs",
+        "root_from": ["$RND_DATA_STORE_D", "store.local.json:d"]}
+ },
+ "small_file_limit": 262144,
+ "blob_layout": "blobs/<sha256[0:2]>/<sha256>"
+}

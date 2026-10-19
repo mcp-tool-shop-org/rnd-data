@@ -1,0 +1,3 @@
+store.local.json
+*.tmp
+__pycache__/
