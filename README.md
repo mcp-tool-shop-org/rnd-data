@@ -1,24 +1,23 @@
 # rnd-data
 
-The studio's private raw-data store: tier T4 (raw run outputs) and T5 (private files) of the rnd data layout. **It's
-private, and never public.** It holds no code: rnd writes and reads it (`rnd raw ingest`, `rnd raw verify`,
-`rnd where`), and rnd's index reads its manifests when this checkout sits beside the rnd library, or is named by
-`$RND_DATA`.
+The raw data behind the studio's research: every run's receipts and outputs, with a manifest that pins each file by
+SHA-256. **It's public, because the studio's research is open by default.** The few files with a named reason to
+be private are listed here by path and hash, and held in the private companion, rnd-data-private.
+
+It holds no code. rnd writes and reads it (`rnd raw ingest`, `rnd raw verify`, `rnd where`). rnd's index reads its
+manifests when this checkout sits beside the rnd library, or is named by `$RND_DATA`.
 
 ## What's here
 
 | Path | What |
 |---|---|
-| `runs/<id>/manifest.json` | One run's files (schema `rnd-data-run/v1`): each file's path, SHA-256, size, tier and licence, and every copy |
-| `runs/<id>/files/…` | That run's small files (256 KB or less), in git |
-| `private/manifest.json` | The private files (schema `rnd-data-private/v1`) |
-| `private/<source>/…` | The private files themselves, in git |
-| `store.json` | The stores that hold bytes outside git, and how a machine finds each one |
+| `runs/<id>/manifest.json` | One run's files (schema `rnd-data-run/v1`): each file's path, SHA-256, size, tier, licence and visibility, and every copy |
+| `runs/<id>/files/…` | That run's small public files (256 KB or less), in git |
+| `store.json` | The stores that hold bytes outside this repository, and how a machine finds each one |
 
-**What isn't in git:** files over 256 KB. Each is stored once, by content, in the blob store at
-`<store root>/blobs/<sha256[:2]>/<sha256>`, and every run that has it names it in its manifest by hash.
-- The same 122 MB build used by four windows is stored once.
-- No run points inside another run's folder.
+- **Files over 256 KB** are stored once, by content, at `blobs/<sha256[:2]>/<sha256>`. Every run that has one names it
+  by hash, so a build several windows used is stored once.
+- **They go public as a Hugging Face dataset** at the next phase. Until then they're on the studio's backup drive.
 
 ## A run id
 
@@ -28,19 +27,26 @@ Publisher's `receipts/colab/window14b-…-20261019`.
   (`try1/`) is its own run.
 - **Files outside a run folder** are grouped under their window folder (for Colab), or under their top folder.
 
-An experiment's `runs[].raw_manifest_id` in rnd names one of these ids.
+An experiment's `runs[].raw_manifest_id` in [rnd](https://github.com/mcp-tool-shop-org/rnd) names one of these ids.
 
-## Copies
+## Private files
 
-A file's copies are listed in its manifest's `copies`:
-- `rnd-data` is this repository's git;
-- `d` is the backup drive's store. Its root is found per machine, through `store.local.json` (gitignored) or
-  `$RND_DATA_STORE_D`, so no machine path is committed.
+A file is private only for a named reason: sealed or held-out keys, blind files, item text, unapproved plans,
+private projects, or content the studio's identity scan flags. Its manifest entry says `"visibility": "private"` and
+gives the reason, and its copy is in rnd-data-private. Everything else is public.
 
-**An off-site copy is the next phase (P4).** Nothing here is deleted from the rig until two verified copies exist, a
-restore test has passed, and the Director has given the go.
+## Copies and verifying
+
+A file's copies are listed in its manifest's `copies`. Each store's root is found per machine, through
+`store.local.json` (gitignored) or `$RND_DATA_STORE_<NAME>`, so no machine path is committed.
+
+Every file's SHA-256 is in its run's manifest, so a downloaded copy can be checked without rnd, or with
+`rnd raw verify`.
+
+Nothing is deleted from the studio rig until two verified copies exist, a restore test has passed, and the Director
+has given the go.
 
 ## Owners
 
 - **R&D** owns the layout and the tooling.
-- **The Publisher** owns its receipts. Every ingest of them is reviewed by the Publisher before it lands.
+- **The Publisher** owns its receipts, and reviews every ingest of them.
