@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mcp-tool-shop-org/brand/main/logos/rnd-data/readme.png" alt="rnd-data" width="400">
+</p>
+
 # rnd-data
 
 The raw data behind the studio's research: every run's receipts and outputs, with a manifest that pins each file by
 SHA-256. **It's public, because the studio's research is open by default.** The few files with a named reason to
-be private are listed here by path and hash, and held in the private companion, rnd-data-private.
+be private are held in the private companion, rnd-data-private, and no private file's hash is published here.
 
 It holds no code. rnd writes and reads it (`rnd raw ingest`, `rnd raw verify`, `rnd where`). rnd's index reads its
 manifests when this checkout sits beside the rnd library, or is named by `$RND_DATA`.
@@ -32,15 +36,20 @@ An experiment's `runs[].raw_manifest_id` in [rnd](https://github.com/mcp-tool-sh
 ## Private files
 
 A file is private only for a named reason: sealed or held-out keys, blind files, item text, unapproved plans,
-private projects, or content the studio's identity scan flags. Its manifest entry says `"visibility": "private"` and
-gives the reason, and its copy is in rnd-data-private. Everything else is public.
+private projects, or content the studio's identity scan flags. Its copy is in rnd-data-private, and its run's
+manifest says only this much about it:
+- **Private for its content:** it's left out, and counted by reason in the manifest's `private_files`.
+- **Private only for identity:** it's listed by path and size, with `"visibility": "private"`, `"private_why": "identity"` and `"sha256": null`.
+
+No private file's hash is published, since a short label file's hash could be matched by guessing. Everything else
+is public.
 
 ## Copies and verifying
 
 A file's copies are listed in its manifest's `copies`. Each store's root is found per machine, through
 `store.local.json` (gitignored) or `$RND_DATA_STORE_<NAME>`, so no machine path is committed.
 
-Every file's SHA-256 is in its run's manifest, so a downloaded copy can be checked without rnd, or with
+Every public file's SHA-256 is in its run's manifest, so a downloaded copy can be checked without rnd, or with
 `rnd raw verify`.
 
 Nothing is deleted from the studio rig until two verified copies exist, a restore test has passed, and the Director
