@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "runs/**"
+      - "store.json"
+      - "verify.sh"
+      - "atlas/**"
+      - ".github/workflows/**"
+      - "README.md"
+      - "SECURITY.md"
+      - "CHANGELOG.md"
+      - "LICENSE*"
+      - "site/**"
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Install rnd (pinned to a commit)
+        run: python -m pip install "git+https://github.com/mcp-tool-shop-org/rnd@77978647b10b191a15490826860592da8f436961"  # rnd 1.1.22.0.0, tag v1.1.22.0.0
+
+      - name: Verify (every git copy against its manifest; the private-file rules)
+        run: bash verify.sh
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+
+      - name: Atlas check
+        run: npx --yes @dogfood-lab/atlas@1.24.0 check

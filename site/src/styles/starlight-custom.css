@@ -1,0 +1,12 @@
+/* The rnd-data badge's navy. */
+:root {
+  --sl-color-accent-low: #14233f;
+  --sl-color-accent: #3b6fb6;
+  --sl-color-accent-high: #b9d0f0;
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: #dbe6f5;
+  --sl-color-accent: #1b4f9c;
+  --sl-color-accent-high: #13284d;
+}
