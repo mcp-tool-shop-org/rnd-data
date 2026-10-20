@@ -65,7 +65,7 @@
       "confidence": "low",
       "highWater": null,
       "name": "site",
-      "qualifyingSourceCommits": 1,
+      "qualifyingSourceCommits": 2,
       "rebaseline": null
     },
     {
@@ -83,7 +83,7 @@
       "confidence": "low",
       "highWater": null,
       "name": "src",
-      "qualifyingSourceCommits": 0,
+      "qualifyingSourceCommits": 1,
       "rebaseline": null
     },
     {
@@ -99,7 +99,7 @@
       "confidence": "low",
       "highWater": null,
       "name": "tests",
-      "qualifyingSourceCommits": 0,
+      "qualifyingSourceCommits": 1,
       "rebaseline": null
     }
   ],
@@ -112,8 +112,8 @@
         "path": ".gitattributes"
       },
       {
-        "commits": 1,
-        "lines": 52,
+        "commits": 2,
+        "lines": 75,
         "path": ".github/workflows/ci.yml"
       },
       {
@@ -122,8 +122,8 @@
         "path": ".github/workflows/pages.yml"
       },
       {
-        "commits": 2,
-        "lines": 7,
+        "commits": 3,
+        "lines": 20,
         "path": ".gitignore"
       },
       {
@@ -142,8 +142,8 @@
         "path": "LICENSE-MIT"
       },
       {
-        "commits": 4,
-        "lines": 165,
+        "commits": 5,
+        "lines": 179,
         "path": "README.md"
       },
       {
@@ -152,8 +152,8 @@
         "path": "SCORECARD.md"
       },
       {
-        "commits": 1,
-        "lines": 56,
+        "commits": 2,
+        "lines": 61,
         "path": "SECURITY.md"
       },
       {
@@ -162,29 +162,34 @@
         "path": "SHIP_GATE.md"
       },
       {
-        "commits": 1,
-        "lines": 73,
+        "commits": 2,
+        "lines": 113,
         "path": "atlas/README.md"
       },
       {
-        "commits": 1,
-        "lines": 18,
+        "commits": 2,
+        "lines": 28,
         "path": "atlas/boundaries.yaml"
       },
       {
-        "commits": 1,
-        "lines": 122,
+        "commits": 2,
+        "lines": 323,
         "path": "atlas/page.json"
       },
       {
-        "commits": 1,
-        "lines": 4131,
+        "commits": 2,
+        "lines": 4722,
         "path": "atlas/statistics.json"
       },
       {
-        "commits": 1,
-        "lines": 15905,
+        "commits": 2,
+        "lines": 16776,
         "path": "atlas/structure.json"
+      },
+      {
+        "commits": 1,
+        "lines": 77,
+        "path": "pyproject.toml"
       },
       {
         "commits": 1,
@@ -4187,8 +4192,8 @@
         "path": "site/src/content/docs/handbook/getting-started.md"
       },
       {
-        "commits": 1,
-        "lines": 63,
+        "commits": 2,
+        "lines": 79,
         "path": "site/src/content/docs/handbook/index.md"
       },
       {
@@ -4198,12 +4203,17 @@
       },
       {
         "commits": 1,
+        "lines": 116,
+        "path": "site/src/content/docs/handbook/package.md"
+      },
+      {
+        "commits": 1,
         "lines": 92,
         "path": "site/src/content/docs/handbook/private-files.md"
       },
       {
-        "commits": 1,
-        "lines": 49,
+        "commits": 2,
+        "lines": 52,
         "path": "site/src/content/docs/handbook/security.md"
       },
       {
@@ -4217,8 +4227,8 @@
         "path": "site/src/pages/index.astro"
       },
       {
-        "commits": 1,
-        "lines": 124,
+        "commits": 2,
+        "lines": 132,
         "path": "site/src/site-config.ts"
       },
       {
@@ -4237,13 +4247,53 @@
         "path": "site/tsconfig.json"
       },
       {
+        "commits": 1,
+        "lines": 38,
+        "path": "src/rnd_data/__init__.py"
+      },
+      {
+        "commits": 1,
+        "lines": 8,
+        "path": "src/rnd_data/__main__.py"
+      },
+      {
+        "commits": 1,
+        "lines": 228,
+        "path": "src/rnd_data/cli.py"
+      },
+      {
+        "commits": 1,
+        "lines": 204,
+        "path": "src/rnd_data/schema.py"
+      },
+      {
+        "commits": 1,
+        "lines": 264,
+        "path": "src/rnd_data/schemas/run-v1.schema.json"
+      },
+      {
+        "commits": 1,
+        "lines": 102,
+        "path": "src/rnd_data/schemas/store-v1.schema.json"
+      },
+      {
+        "commits": 1,
+        "lines": 356,
+        "path": "src/rnd_data/store.py"
+      },
+      {
         "commits": 2,
         "lines": 32,
         "path": "store.json"
       },
       {
         "commits": 1,
-        "lines": 23,
+        "lines": 842,
+        "path": "tests/test_rnd_data.py"
+      },
+      {
+        "commits": 2,
+        "lines": 25,
         "path": "verify.sh"
       }
     ]
@@ -4252,9 +4302,9 @@
     "level": "low",
     "reason": "fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions"
   },
-  "generatedAt": "2026-10-20T16:28:13.031Z",
+  "generatedAt": "2026-10-20T16:32:13.338Z",
   "generatedFrom": {
-    "commit": "e8a7689209d3f2288c84582da8328202ef6bc310"
+    "commit": "d0bea5ec2bee5ba830abadeb1c5974411f6c84d7"
   },
   "pairs": [],
   "parameters": {
@@ -4267,16 +4317,16 @@
     "floor": "fallen",
     "floorHeld": false,
     "floorTrigger": "both",
-    "headDate": "2026-10-19T21:41:42-04:00",
+    "headDate": "2026-10-20T12:28:36-04:00",
     "inScopeFiles": 838,
     "pinnedStart": null,
     "priorFloor": "fallen",
-    "qualifyingCommits": 8,
+    "qualifyingCommits": 9,
     "qualifyingMinimum": 30,
     "revisions": 5,
     "shared": 10,
     "sharedFloorUsed": 3,
-    "since": "2026-04-23T01:41:42.000Z",
+    "since": "2026-04-23T16:28:36.000Z",
     "sourceExtensions": [
       ".js",
       ".mjs",

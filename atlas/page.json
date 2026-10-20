@@ -19,114 +19,31 @@
   ],
   "changes": {
     "fileCounts": {
-      "added": 10,
-      "changed": 102,
+      "added": 0,
+      "changed": 1,
       "moved": 0,
-      "parts": 6,
-      "removed": 4
+      "parts": 1,
+      "removed": 0
     },
     "items": [
       {
-        "kind": "import-added",
-        "sentence": "tests now imports src.",
-        "subjects": [
-          "tests",
-          "src"
-        ]
-      },
-      {
-        "kind": "door",
-        "sentence": "CI's push trigger now also names `CHANGELOG.md`, `LICENSE*`, `README.md`, `SECURITY.md`, `pyproject.toml`, `site/**`, `src/**` and `tests/**`.",
-        "subjects": [
-          ".github/workflows/ci.yml"
-        ]
-      },
-      {
-        "kind": "door",
-        "sentence": "CI now also runs src/rnd_data/cli.py and tests/.",
-        "subjects": [
-          ".github/workflows/ci.yml",
-          "src/rnd_data/cli.py",
-          "tests/"
-        ]
-      },
-      {
-        "kind": "door",
-        "sentence": "CI now also checks src/.",
-        "subjects": [
-          ".github/workflows/ci.yml",
-          "src/"
-        ]
-      },
-      {
-        "kind": "door",
-        "sentence": "And 1 more change to a door.",
-        "subjects": []
-      },
-      {
-        "kind": "landing",
-        "sentence": "LICENSE-MIT is now read by pyproject.toml and tests/test_rnd_data.py.",
-        "subjects": [
-          "LICENSE-MIT",
-          "pyproject.toml",
-          "tests/test_rnd_data.py"
-        ]
-      },
-      {
-        "kind": "landing",
-        "sentence": "README.md is now also read by pyproject.toml.",
-        "subjects": [
-          "README.md",
-          "pyproject.toml"
-        ]
-      },
-      {
-        "kind": "landing",
-        "sentence": "runs/ is now read by src/rnd_data/schema.py, src/rnd_data/store.py and tests/test_rnd_data.py.",
-        "subjects": [
-          "runs/",
-          "src/rnd_data/schema.py",
-          "src/rnd_data/store.py",
-          "tests/test_rnd_data.py"
-        ]
-      },
-      {
-        "kind": "landing",
-        "sentence": "And 4 more new writers and readers of places.",
-        "subjects": []
-      },
-      {
-        "kind": "part",
-        "sentence": "src is a new part, drawn from `src/**`.",
-        "subjects": [
-          "src"
-        ]
-      },
-      {
-        "kind": "part",
-        "sentence": "tests is a new part, drawn from `tests/**`.",
-        "subjects": [
-          "tests"
-        ]
-      },
-      {
         "kind": "counts",
-        "sentence": "10 files added, 4 removed and 102 changed content, across 6 parts.",
+        "sentence": "Nothing structural changed since 2026-10-20; 1 file changed content.",
         "subjects": []
       }
     ],
     "since": {
-      "commit": "bae30ba06b6e794d052cf76e0e5e2b5f5d93ac53",
-      "generatedAt": "2026-10-19T23:49:46.583Z"
+      "commit": "e8a7689209d3f2288c84582da8328202ef6bc310",
+      "generatedAt": "2026-10-20T16:28:13.031Z"
     },
-    "unchanged": false
+    "unchanged": true
   },
   "changesTogether": [],
   "changesTogetherNote": [
     "Window: 180 days; a pair counts from 3 shared commits, since the window holds fewer than 30 qualifying commits."
   ],
   "changesTogetherWithTests": 0,
-  "commit": "e8a7689209d3f2288c84582da8328202ef6bc310",
+  "commit": "d0bea5ec2bee5ba830abadeb1c5974411f6c84d7",
   "defaultBranch": "main",
   "derived": "6 parts, mostly shell (78 files), Python (67), CSS (2), TypeScript (2), Astro (1) and JavaScript (1). Work enters through 3 doors; the busiest is CI, which reaches 3 parts. It deploys a site to GitHub Pages. People run rnd-data.",
   "doors": [
@@ -237,7 +154,7 @@
   "edges": [],
   "engine": "1.24.0",
   "generated": [],
-  "generatedAt": "2026-10-20T16:28:13.031Z",
+  "generatedAt": "2026-10-20T16:32:13.338Z",
   "limits": [
     "14 imports could not be resolved: `runs/receipts--colab--rung-prestep-muse-20261019--try5/files/prestep_fit_tokenizer.py` imports `pin_window`, which is no module on its import path and no declared dependency; `runs/receipts--colab--rung-prestep-muse-20261019--try5/files/rung_prestep_muse.py` imports `pin_window`, which is no module on its import path and no declared dependency; `runs/receipts--colab--rung-prestep-muse-20261019/files/derive_allow.py` imports `pin_window`, which is no module on its import path and no declared dependency; and 11 more.",
     "83 writes and 143 reads use paths built at run time and are not named here.",

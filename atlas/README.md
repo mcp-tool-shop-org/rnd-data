@@ -1,6 +1,6 @@
 # rnd-data: how it works
 
-Mapped at 2026-10-20 from commit e8a7689 by Atlas 1.24.0.
+Mapped at 2026-10-20 from commit d0bea5e by Atlas 1.24.0.
 
 ## What this is
 
@@ -8,20 +8,9 @@ The raw data behind the studio's research: every run's receipts and outputs, wit
 
 6 parts, mostly shell (78 files), Python (67), CSS (2), TypeScript (2), Astro (1) and JavaScript (1). Work enters through 3 doors; the busiest is CI, which reaches 3 parts. It deploys a site to GitHub Pages. People run rnd-data.
 
-## What changed since 2026-10-19 (bae30ba)
+## What changed since 2026-10-20 (e8a7689)
 
-- tests now imports src.
-- CI's push trigger now also names `CHANGELOG.md`, `LICENSE*`, `README.md`, `SECURITY.md`, `pyproject.toml`, `site/**`, `src/**` and `tests/**`.
-- CI now also runs src/rnd_data/cli.py and tests/.
-- CI now also checks src/.
-- And 1 more change to a door.
-- LICENSE-MIT is now read by pyproject.toml and tests/test_rnd_data.py.
-- README.md is now also read by pyproject.toml.
-- runs/ is now read by src/rnd_data/schema.py, src/rnd_data/store.py and tests/test_rnd_data.py.
-- And 4 more new writers and readers of places.
-- src is a new part, drawn from `src/**`.
-- tests is a new part, drawn from `tests/**`.
-- 10 files added, 4 removed and 102 changed content, across 6 parts.
+Nothing structural changed since 2026-10-20; 1 file changed content.
 
 ## What comes in
 
