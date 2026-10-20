@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Check rnd-data against its manifests, with rnd's own checker. rnd-data holds no code: every check is rnd's.
+# Check rnd-data against its manifests, with rnd's own checker.
 #
 #   bash verify.sh          the public check (CI): re-hash every git copy, skip the blob store and the private companion
 #   bash verify.sh --full   the full check (the rig, where the blob store is configured)

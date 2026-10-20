@@ -6,6 +6,9 @@ on:
     paths:
       - "runs/**"
       - "store.json"
+      - "pyproject.toml"
+      - "src/**"
+      - "tests/**"
       - "verify.sh"
       - "atlas/**"
       - ".github/workflows/**"
@@ -43,6 +46,26 @@ jobs:
 
       - name: Verify (every git copy against its manifest; the private-file rules)
         run: bash verify.sh
+
+      - name: Install package and dev dependencies
+        run: python -m pip install -e ".[dev]"
+
+      - name: Lint (ruff)
+        run: ruff check src tests
+
+      - name: Test with coverage
+        run: pytest --cov=rnd_data --cov-report=term-missing --cov-fail-under=90
+
+      - name: Build and twine check
+        run: |
+          python -m build
+          twine check dist/*
+
+      - name: Fresh-venv wheel install and ls check
+        run: |
+          python -m venv /tmp/rnd-data-venv
+          /tmp/rnd-data-venv/bin/pip install dist/*.whl
+          /tmp/rnd-data-venv/bin/rnd-data --root . ls
 
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:

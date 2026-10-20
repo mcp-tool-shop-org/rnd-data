@@ -1,4 +1,4 @@
-summary: "The raw data behind the studio's research: every run's receipts and outputs, with a manifest per run (rnd-data-run/v1) that pins each file by SHA-256. No code: rnd writes and checks it."
+summary: "The raw data behind the studio's research: every run's receipts and outputs, with a manifest per run (rnd-data-run/v1) that pins each file by SHA-256, plus its MIT read-only Python package under src/."
 boundaries:
   - name: .github
     globs:
@@ -16,3 +16,11 @@ boundaries:
     globs:
       - site/**
     role: docs
+  - name: src
+    globs:
+      - src/**
+    role: code
+  - name: tests
+    globs:
+      - tests/**
+    role: test

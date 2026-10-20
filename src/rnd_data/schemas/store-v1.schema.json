@@ -1,0 +1,102 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://mcp-tool-shop-org.github.io/rnd-data/schemas/store-v1.schema.json",
+ "title": "rnd-data store manifest (v1)",
+ "description": "Schema for store.json (rnd-data-store/v1).",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "schema",
+  "stores",
+  "small_file_limit",
+  "blob_layout",
+  "public_blobs"
+ ],
+ "properties": {
+  "schema": {
+   "type": "string",
+   "const": "rnd-data-store/v1"
+  },
+  "stores": {
+   "type": "object",
+   "minProperties": 1,
+   "propertyNames": {
+    "type": "string",
+    "minLength": 1
+   },
+   "additionalProperties": {
+    "$ref": "#/$defs/store_entry"
+   }
+  },
+  "small_file_limit": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "blob_layout": {
+   "type": "string",
+   "minLength": 1
+  },
+  "public_blobs": {
+   "type": "string",
+   "minLength": 1
+  },
+  "attribution": {
+   "$ref": "#/$defs/attribution"
+  }
+ },
+ "$defs": {
+  "store_entry": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "about",
+    "kind"
+   ],
+   "properties": {
+    "about": {
+     "type": "string",
+     "minLength": 1
+    },
+    "kind": {
+     "type": "string",
+     "enum": [
+      "git",
+      "blobs"
+     ]
+    },
+    "root_from": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "string",
+      "minLength": 1
+     }
+    }
+   }
+  },
+  "attribution": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "creator": {
+     "type": "string",
+     "minLength": 1,
+     "default": "mcp-tool-shop"
+    },
+    "copyright": {
+     "type": "string",
+     "minLength": 1,
+     "default": "Copyright (c) 2026 mcp-tool-shop"
+    },
+    "licence": {
+     "type": "string",
+     "minLength": 1
+    },
+    "licence_uri": {
+     "type": "string",
+     "minLength": 1
+    }
+   }
+  }
+ }
+}

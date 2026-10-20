@@ -20,15 +20,20 @@ rnd-data-private, and **no private file's hash is ever published** here.
 | `runs/<id>/manifest.json` | One run's files (schema `rnd-data-run/v1`): each file's path, SHA-256, size, tier, licence and visibility, and every copy |
 | `runs/<id>/files/…` | That run's small public files (256 KB or less), in git |
 | `store.json` | The stores that hold bytes outside this repository, and how a machine finds each one |
+| `src/rnd_data/` | The MIT read-only Python package (`rnd-data`: `ls`, `show`, `where`, `schema`) and the manifest JSON Schemas |
 | `verify.sh` | The check CI runs, through rnd |
 | `site/` | This handbook and the landing page |
 
 Files over 256 KB are stored once, by content, in a blob store, and every run that has one names it by hash. They go
 public as a Hugging Face dataset at the next phase; until then they're on the studio's backup drive.
 
-## It holds no code
+## Data, plus its read-only package under `src/`
 
-Everything that writes or checks the data is [rnd](https://github.com/mcp-tool-shop-org/rnd)'s:
+The repository holds data, plus its MIT read-only Python package under `src/` (`rnd-data`, import name `rnd_data`):
+`rnd-data ls`, `rnd-data show`, `rnd-data where` and `rnd-data schema`. See [The Python package](./package/) for
+installing and using it.
+
+Everything that writes the data or checks the private companion is [rnd](https://github.com/mcp-tool-shop-org/rnd)'s:
 - `rnd raw ingest` writes runs into rnd-data, and their private files into rnd-data-private;
 - `rnd raw verify` re-hashes every copy against its manifest;
 - `rnd where <sha256 or path>` names every copy of a file, and rnd's index reads the manifests when this checkout sits
@@ -46,9 +51,9 @@ receipts: the scripts a run used, kept as data.
 
 ## Licence
 
-The data is [CC BY 4.0](https://github.com/mcp-tool-shop-org/rnd-data/blob/main/LICENSE), and the scripts (`*.sh`,
-`*.py`) are [MIT](https://github.com/mcp-tool-shop-org/rnd-data/blob/main/LICENSE-MIT). A third-party file keeps
-the licence its manifest names: the llama.cpp build is MIT (commit 620d2225).
+The data is [CC BY 4.0](https://github.com/mcp-tool-shop-org/rnd-data/blob/main/LICENSE), and the read-only package
+under `src/` and scripts (`*.sh`, `*.py`) are [MIT](https://github.com/mcp-tool-shop-org/rnd-data/blob/main/LICENSE-MIT).
+A third-party file keeps the licence its manifest names: the llama.cpp build is MIT (commit 620d2225).
 
 A file's manifest `licence` field is the final word for that file. Every public file's manifest names its licence
 (`CC-BY-4.0`, `MIT`, or the llama.cpp build's MIT); private entries carry `"licence": null`, because they aren't
@@ -57,6 +62,7 @@ published.
 ## Where next
 
 - [Getting started](./getting-started/): clone, find a run, and check a file.
+- [The Python package](./package/): install `rnd-data` and use `ls`, `show`, `where` and `schema`.
 - [Layout](./layout/): the manifest, field by field.
 - [Private files](./private-files/): the reasons, and what a manifest says about each.
 - [Verifying](./verifying/): what CI checks, and the full check on the rig.

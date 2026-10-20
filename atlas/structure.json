@@ -9,7 +9,7 @@
       "externals": 0,
       "files": [
         {
-          "hash": "ce7fafc5127585ea07ed7f321755342989312f1c37e6f5dafa229351df671253",
+          "hash": "42bae69db3ea688cece26cfec3aab893479e0459f93a03206ba21cab49fa4297",
           "path": ".github/workflows/ci.yml"
         },
         {
@@ -40,11 +40,11 @@
           "path": ".gitattributes"
         },
         {
-          "hash": "7ee7239d1a73f03d261597e6a2be04e3f17cc793a0bdd7c465a77f8cc8b8300a",
+          "hash": "8b5c35356644c53d66b3530402e2edb9007fd7051e7360937650b2081a6a03a6",
           "path": ".gitignore"
         },
         {
-          "hash": "318ed534efa3318f4eba25b8216b707283db3cc4b7ba55b1653d8e10f6ce05a3",
+          "hash": "00e248d102f81a17444be2a23abc74398e445e70b01d136b0e857464f094c03e",
           "path": "CHANGELOG.md"
         },
         {
@@ -56,7 +56,7 @@
           "path": "LICENSE-MIT"
         },
         {
-          "hash": "e6bbdb1a4d54c6bb74314e85c8b81ac3b0c9e893d85a33b9249700345bb4329f",
+          "hash": "dc9aa03df979b17bbd743b6516e42ed77a85b7ac90cbe7d8a78057996af443ef",
           "path": "README.md"
         },
         {
@@ -64,7 +64,7 @@
           "path": "SCORECARD.md"
         },
         {
-          "hash": "ba0dc388f21e5abfdd43a95b33962846357ee52bfe14e84bdba3152a48df1675",
+          "hash": "dd98693e5f2bde67ff0e0c41c5f11ae40b87b535880fde6e2c9f43bb347dde99",
           "path": "SECURITY.md"
         },
         {
@@ -72,11 +72,15 @@
           "path": "SHIP_GATE.md"
         },
         {
+          "hash": "0c5d89ef7ecad3a719e557b883ec2396f2b5d269d5478b04d81d61f46e08b874",
+          "path": "pyproject.toml"
+        },
+        {
           "hash": "b71040864845bfa3c457772bf55c1373500d215655c4661e40a8058d842004ae",
           "path": "store.json"
         },
         {
-          "hash": "5fe9579dff0eacd9dd0dd97aca98b055dc5f1f3b8781f4ebe48adb845e7fca52",
+          "hash": "b6fe250c4691368f474bd7fce956f8809c2b0a526dd93c5a8ddf0cfb88165866",
           "path": "verify.sh"
         }
       ],
@@ -111,7 +115,7 @@
           "path": "runs/receipts--colab--cpu-measure-20261018/files/outcome.json"
         },
         {
-          "hash": "2239b4a79ae4cbe0069dacaca98ffded71671d0e53b9571f8d620c70009a1c62",
+          "hash": "11e4245881e381ca0238e9f5630cef3d31daf0b659e777c31f7865e4adf57801",
           "path": "runs/receipts--colab--cpu-measure-20261018/manifest.json"
         },
         {
@@ -123,7 +127,7 @@
           "path": "runs/receipts--colab--offrig-supervl-convert-20261019/files/job.log"
         },
         {
-          "hash": "53f9405d86c0328d069133dbf6d20f84cdf0725e6bf61e183be0dc39ea1ccf38",
+          "hash": "37c94153a0d6c92ff349c640fe7aa2333242ff511caf605fa12ab18e7dd4b22e",
           "path": "runs/receipts--colab--offrig-supervl-convert-20261019/manifest.json"
         },
         {
@@ -163,7 +167,7 @@
           "path": "runs/receipts--colab--rung-gate-floor-20261019--out/files/smoke-window.log"
         },
         {
-          "hash": "514b92753ce9f814e90f20267029540daa9a25a155afc24d2edddfa675a61712",
+          "hash": "051c487fd3d974aacdfdd7e7210ab7bd1712471ead30fba22142267a2fb8f06b",
           "path": "runs/receipts--colab--rung-gate-floor-20261019--out/manifest.json"
         },
         {
@@ -179,7 +183,7 @@
           "path": "runs/receipts--colab--rung-gate-floor-20261019--try1-ram/files/window.log"
         },
         {
-          "hash": "3012aeb30160e9018ca82bb9f165e84b254b254425a5292d4c8df23ae01c555f",
+          "hash": "e43db0f0bbf9ebab154c2eed7a91933816c2dd2441da3d0641191a95b121b6ab",
           "path": "runs/receipts--colab--rung-gate-floor-20261019--try1-ram/manifest.json"
         },
         {
@@ -191,7 +195,7 @@
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try1-gate/files/outcome.json"
         },
         {
-          "hash": "4826f2aafa919230f767a703a11c1c1573cd684c1f012f6610edd36c5d425e6d",
+          "hash": "9ee9ae92df3d1a8dc5ae4925271668375370f9d210e996895680a91de54c7056",
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try1-gate/manifest.json"
         },
         {
@@ -231,7 +235,7 @@
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try2-content-path/files/smoke-window.log"
         },
         {
-          "hash": "f385f24d59c4489ffe45549ea416f23ceae5e76a7882bc5d2e0518393520c106",
+          "hash": "446cc659d5033639531dd272df81a8ae0402440be8c69bae075677801afb1e51",
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try2-content-path/manifest.json"
         },
         {
@@ -239,7 +243,7 @@
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try3-stopped/files/outcome.json"
         },
         {
-          "hash": "d9ff399a2c15d686dc1a3155295e110ea75efdd72ddf2d09b4ff28ecde98b222",
+          "hash": "6f6fd40780d5bdb85081ec097f3aaae4c483ec4dec2382c5e7a0af148d150718",
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try3-stopped/manifest.json"
         },
         {
@@ -279,7 +283,7 @@
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try4/files/smoke-window.log"
         },
         {
-          "hash": "000d7af0bf9b55609a6f2ee4861f0465592b98202deb59ad9fd50e7437153b45",
+          "hash": "c636e970a444eb8e1eebc52aa8b4e4f893c87f2f1f9449ca83df10bdb5aeade7",
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try4/manifest.json"
         },
         {
@@ -363,7 +367,7 @@
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/smoke-window.log"
         },
         {
-          "hash": "7dafa78ca9093810e3e629bc9e38c02a406134cc7c8a70ad7e7e3a3eaf649ac8",
+          "hash": "2dcd87a0354f92cf02fc67f15b3d4c228a2007241bb62d12c7873739473d95b0",
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try5/manifest.json"
         },
         {
@@ -443,7 +447,7 @@
           "path": "runs/receipts--colab--rung-prestep-muse-20261019/files/rung_prestep_muse.py"
         },
         {
-          "hash": "63e0a43b756f58addcbed54138e41d6a34d5ea78610b137fa9ff4cd0a1721d7e",
+          "hash": "e2393454330106326dfe88f4a9198a51b13a49109ef58bc7cea2d0accc2cf9cb",
           "path": "runs/receipts--colab--rung-prestep-muse-20261019/manifest.json"
         },
         {
@@ -487,7 +491,7 @@
           "path": "runs/receipts--colab--rung-via-bf16-20261019--out/files/window.log"
         },
         {
-          "hash": "d28543d01509eda4690528302cc1d1ca64595adfe44a32284d69716598bbbcf7",
+          "hash": "d8e254c052cfd4b5c54779185d9f7fa90f9763942ac5ee16190083d3b7f65c07",
           "path": "runs/receipts--colab--rung-via-bf16-20261019--out/manifest.json"
         },
         {
@@ -503,7 +507,7 @@
           "path": "runs/receipts--colab--rung-via-bf16-20261019--try1-gate/files/window.log"
         },
         {
-          "hash": "73050f4200293e3bff06dfd8425b99b814807646ab4b92c88a0266294091b77d",
+          "hash": "8bd859df831665fd7ba3425a40dd47ee0b4c328c7eb5c78b9abb22c69c87d0ae",
           "path": "runs/receipts--colab--rung-via-bf16-20261019--try1-gate/manifest.json"
         },
         {
@@ -517,7 +521,7 @@
           "path": "runs/receipts--colab--rung-via-bf16-20261019/files/rung_via_bf16.py"
         },
         {
-          "hash": "2738f25622c60336e06fd13d4e2be640ab18ea3ab02564236c286df63d8005e7",
+          "hash": "19e4216a3c2bf13cc48364a7d037d274b6cf3e21f4c46f0f7b7ef2763c9da680",
           "path": "runs/receipts--colab--rung-via-bf16-20261019/manifest.json"
         },
         {
@@ -548,7 +552,7 @@
           "path": "runs/receipts--colab--scripts-430285a/files/vm_gate.py"
         },
         {
-          "hash": "b8c05111e9cdfa43bf9dda3d7e104bdbf781076f1f4bd1908bcbcfe25630e6bb",
+          "hash": "76c634d40d653557fd93ae0789d9938773679aa5fe99b850ab4fc1b75c41606e",
           "path": "runs/receipts--colab--scripts-430285a/manifest.json"
         },
         {
@@ -556,7 +560,7 @@
           "path": "runs/receipts--colab--token-scope-check/files/run.sh"
         },
         {
-          "hash": "cc6d2cf986698da742049f33b929bcc2facce4dcc1c63767429002aaf6637a9e",
+          "hash": "ae334034d5900a133822b59e67922a86a484c5881a9abee7436500e2415108a1",
           "path": "runs/receipts--colab--token-scope-check/manifest.json"
         },
         {
@@ -641,7 +645,7 @@
           "path": "runs/receipts--colab--window1-20261016/files/rig.log"
         },
         {
-          "hash": "bb74b01820b1acac2163e603c11f50b4003acb742e79ca725078ee4578b76443",
+          "hash": "976eb7d018772a87e7792aeb1008a6b42a616b3ea59af4f92dc9bb18e593e402",
           "path": "runs/receipts--colab--window1-20261016/manifest.json"
         },
         {
@@ -857,7 +861,7 @@
           "path": "runs/receipts--colab--window10-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "b625b12474994d2f7dc5d94b75d5f9c436463acbc69c0a77946a2cfff7e59fd9",
+          "hash": "65fb82c8791038ec509885ce4a8a42133fd5102bb25d309ea485428bb048041a",
           "path": "runs/receipts--colab--window10-20261017/manifest.json"
         },
         {
@@ -1081,7 +1085,7 @@
           "path": "runs/receipts--colab--window10b-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "f674eed87c026333b60966ce4bd19b7454ca2305601f2cd739491cc14e1e9489",
+          "hash": "8a6a4120f9c0d65079d0ff04d27ae811a6f12916c577b7ae4ecdd24acb18c9a1",
           "path": "runs/receipts--colab--window10b-20261017/manifest.json"
         },
         {
@@ -1313,7 +1317,7 @@
           "path": "runs/receipts--colab--window10c-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "f8b86c680005195b5d0e37ee4780cfa1d2f1f6326a9ec1e5e6699154429962a3",
+          "hash": "e1401845a2eed3444e2f597e75106ea8746ec4937650a79950fe6e3bedd324e2",
           "path": "runs/receipts--colab--window10c-20261017/manifest.json"
         },
         {
@@ -1544,15 +1548,11 @@
           "path": "runs/receipts--colab--window10d-20261017/files/rig.log"
         },
         {
-          "hash": "91386887ab4c1978a1bcd24baf68371faad7dc215afc3e0f0bd70e05d31c1cf1",
-          "path": "runs/receipts--colab--window10d-20261017/files/smoke-window.log"
-        },
-        {
           "hash": "960e6baa1c3e2f8904b9e0c80afd1e233340e8f6eba2b772b4e97b702b781643",
           "path": "runs/receipts--colab--window10d-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "fbf894fdd812423db52ce2e93b159abb57d87aef06370c4b90dacdfbfae91092",
+          "hash": "0f087a6e153cb20c34c9080383557b7ca2106d8c916753708c78207c71476f01",
           "path": "runs/receipts--colab--window10d-20261017/manifest.json"
         },
         {
@@ -1796,7 +1796,7 @@
           "path": "runs/receipts--colab--window11a-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "15f10ce9c17c90d447208c58da47fc0be6c3ac0af925fa4b0f456c3b4034fc13",
+          "hash": "b5c0bfe023e1ba81ef7793a5476db7461cda9f4c180ffda937b18ce8944b0281",
           "path": "runs/receipts--colab--window11a-20261017/manifest.json"
         },
         {
@@ -2044,7 +2044,7 @@
           "path": "runs/receipts--colab--window11b-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "785c22e11867bdbd8d5f1b2a435588a433a9dc58d070ddf638bf392db3a479b7",
+          "hash": "162f42d1a44c26368c77b34098edf430bac31479ec89bddb4c0ca363c4235235",
           "path": "runs/receipts--colab--window11b-20261017/manifest.json"
         },
         {
@@ -2280,15 +2280,11 @@
           "path": "runs/receipts--colab--window11c-20261017/files/rig.log"
         },
         {
-          "hash": "f5181b8878c1667767b70e2058ccc64571972cb6f7e6367f520fc64afa320860",
-          "path": "runs/receipts--colab--window11c-20261017/files/smoke-window.log"
-        },
-        {
           "hash": "9ad4b629faf3c0d6e54b68ea7a8630ecbbd8caebf573e99b184d360d054c9648",
           "path": "runs/receipts--colab--window11c-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "0d108416844d49dcb525d34339aa413a25e79ed87e11dd0913029c94c6504c31",
+          "hash": "3e77fe5ba96b704a88f882169bf50de91a43182ae6f6731ddeaaba08a35d485c",
           "path": "runs/receipts--colab--window11c-20261017/manifest.json"
         },
         {
@@ -2536,7 +2532,7 @@
           "path": "runs/receipts--colab--window11d-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "0ed5659684bba5dd394bf2451f50cd2b53c60c727ae13554171b7fb2d594a3e7",
+          "hash": "5cc22039d48b422211554e587d737f5cc5ca252d9d54b566cf75670b1967c946",
           "path": "runs/receipts--colab--window11d-20261017/manifest.json"
         },
         {
@@ -2564,7 +2560,7 @@
           "path": "runs/receipts--colab--window12a-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "e837a54f59964b75c19e4cbd89dc3d8cbedc0ac80cc80f84933419247e9a1392",
+          "hash": "27910249f86535fd9b83c0e5dad1810debde1189164a6b93c5175d66f5e587e6",
           "path": "runs/receipts--colab--window12a-20261017/manifest.json"
         },
         {
@@ -2604,7 +2600,7 @@
           "path": "runs/receipts--colab--window12b-20261017/files/status.log"
         },
         {
-          "hash": "ed15807e30977d2525de1ce9fb78f29388bee646adfd388204f930271ae21043",
+          "hash": "3166959532e260ebddd21d6569732f43a80b743a509cdcb0d833ebd131a8e8c2",
           "path": "runs/receipts--colab--window12b-20261017/manifest.json"
         },
         {
@@ -2644,7 +2640,7 @@
           "path": "runs/receipts--colab--window12c-20261017/files/status.log"
         },
         {
-          "hash": "4465f3f60f33555828373bba332660f1a13ffa3cc9bd4b0c6293b9f14dff3d3d",
+          "hash": "c021632a032b9827bc9ba3563929aea0508bc791390b5a091819a62e51252485",
           "path": "runs/receipts--colab--window12c-20261017/manifest.json"
         },
         {
@@ -2684,7 +2680,7 @@
           "path": "runs/receipts--colab--window12d-20261017/files/status.log"
         },
         {
-          "hash": "b23da2b91b097ecaf4dbfd68831afcae25b9e2652af9612cf682b0e97fcffc3f",
+          "hash": "4e8f3e08a3dc922a156478a8afa1091ddd74cc9a575d168463e3c0c1ba83b5b6",
           "path": "runs/receipts--colab--window12d-20261017/manifest.json"
         },
         {
@@ -2712,10 +2708,6 @@
           "path": "runs/receipts--colab--window12e-20261017/files/rig.log"
         },
         {
-          "hash": "f5181b8878c1667767b70e2058ccc64571972cb6f7e6367f520fc64afa320860",
-          "path": "runs/receipts--colab--window12e-20261017/files/smoke-window.log"
-        },
-        {
           "hash": "a55ceddaf6c6db2c54fa389d4736bd44d3ef48ac9996e0496eb21f9e856293c7",
           "path": "runs/receipts--colab--window12e-20261017/files/smoke_window.sh"
         },
@@ -2724,7 +2716,7 @@
           "path": "runs/receipts--colab--window12e-20261017/files/status.log"
         },
         {
-          "hash": "5dfc1c808fbc32cbbc9ecd22b4e067aa76445c269be6e6cdb3f0699095ee9d7c",
+          "hash": "1c300d822027cea301c2794179005f1b7e73f845781045e3a07756ce7421d108",
           "path": "runs/receipts--colab--window12e-20261017/manifest.json"
         },
         {
@@ -2764,7 +2756,7 @@
           "path": "runs/receipts--colab--window12f-20261017/files/status.log"
         },
         {
-          "hash": "8b6cab688178c8bf24555ed327546d4c410e26b5007aeebff64e87e5768356f9",
+          "hash": "871524eef516e125a1fab2a7a7b70b94dcb1b360f3bf68a0c60d6506ea990bfc",
           "path": "runs/receipts--colab--window12f-20261017/manifest.json"
         },
         {
@@ -2816,7 +2808,7 @@
           "path": "runs/receipts--colab--window12g-20261017/files/status.log"
         },
         {
-          "hash": "c13358322977a6ebb1c56f329004c135b3e0ab372ef6fd639e0fd7189aca3e3e",
+          "hash": "22286e4d59965c0f040838b5086ab7cabbbb26a08cbc137af29ba1bd1a867397",
           "path": "runs/receipts--colab--window12g-20261017/manifest.json"
         },
         {
@@ -2864,7 +2856,7 @@
           "path": "runs/receipts--colab--window12h-20261017/files/status.log"
         },
         {
-          "hash": "b0a18545733024d0a72bf1e7d93ba4f8738df536a81a4adaeabe0b9b340adea4",
+          "hash": "40004b3834426c9038fe4451b166ce816de91be1816ebd12d64de271928e3d3d",
           "path": "runs/receipts--colab--window12h-20261017/manifest.json"
         },
         {
@@ -2911,7 +2903,7 @@
           "path": "runs/receipts--colab--window12p-20261017/files/status.log"
         },
         {
-          "hash": "4855004750a2f8578e5d61af96652d4e3a89ddc895f79acde983e818a54e612e",
+          "hash": "69cb14d3d77fe7db124212db3305ae3c8688688a463359b89e18e9c2a40e7b78",
           "path": "runs/receipts--colab--window12p-20261017/manifest.json"
         },
         {
@@ -2958,7 +2950,7 @@
           "path": "runs/receipts--colab--window12q-20261017/files/status.log"
         },
         {
-          "hash": "031e8680a87cbbd9dcec5a4dfbdca061024da82d3ed5ff713077f21a8f3f9fd3",
+          "hash": "2f52324c176ef1e3334854b8b6b5ee17d845c0a293ccf80c25fc7428fe3b344c",
           "path": "runs/receipts--colab--window12q-20261017/manifest.json"
         },
         {
@@ -2998,7 +2990,7 @@
           "path": "runs/receipts--colab--window12s-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "9a315afc66f335d502a9696702b51397f9da60033a5bce2f8c6c2ebc7093e7a7",
+          "hash": "d06f32e427b1b4f70bb48cb0d50942b56362ce6a08c414a8faf5b7791a450de0",
           "path": "runs/receipts--colab--window12s-20261017/manifest.json"
         },
         {
@@ -3038,7 +3030,7 @@
           "path": "runs/receipts--colab--window12s2-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "fb08a58915b7c13ef98a1ef9e091ced10c410b3dc5d5db05c7bbcbf7fade68b8",
+          "hash": "bf01d33785d7b9b35f675ba955cdc5008e1612013bd88090c100716dee402001",
           "path": "runs/receipts--colab--window12s2-20261017/manifest.json"
         },
         {
@@ -3070,7 +3062,7 @@
           "path": "runs/receipts--colab--window12s3-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "e7699ab45ecf864c938adb5d8ef90861f06d2833c52a7e9d0c4de19ed0023f08",
+          "hash": "f91b67a613413c8060b01bc911ebffeaf607b0d891f1563778ae60246f362753",
           "path": "runs/receipts--colab--window12s3-20261017/manifest.json"
         },
         {
@@ -3102,7 +3094,7 @@
           "path": "runs/receipts--colab--window12s4-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "e7ca864c92839168b4900d3cfbe1f8d3aaf137f2b6366a15f5d2c3e1489b9c06",
+          "hash": "e420c562de3b841541a9f6498bebec94da82d53506c7d0f993966e95116d836b",
           "path": "runs/receipts--colab--window12s4-20261017/manifest.json"
         },
         {
@@ -3134,7 +3126,7 @@
           "path": "runs/receipts--colab--window12s5a-20261018/files/stub_rung.sh"
         },
         {
-          "hash": "cf36fcbee3031988942f1839255427a7a3bdb57e4383b7dfa8d2388948570635",
+          "hash": "c04160ac825e0dd9efefba7bde3e80a03a38dca7ebe6745f761e56f1dca092d9",
           "path": "runs/receipts--colab--window12s5a-20261018/manifest.json"
         },
         {
@@ -3166,7 +3158,7 @@
           "path": "runs/receipts--colab--window12s5b-20261018/files/stub_rung.sh"
         },
         {
-          "hash": "b408d83c1993b4b10697742688cb6397cee54df54402d568f98cc16c33caf408",
+          "hash": "33c84cf3e219bf4f1fd0d2aeb56458e238f95105efe41c90059a974d7c057b1d",
           "path": "runs/receipts--colab--window12s5b-20261018/manifest.json"
         },
         {
@@ -3198,7 +3190,7 @@
           "path": "runs/receipts--colab--window12s6a-20261018/files/stub_rung.sh"
         },
         {
-          "hash": "b706c382fd3a9354c509f272c3bafba49c9b601aefdebb9501134cc1c68d896d",
+          "hash": "4b66aee387206b3b2881ee3f1cc386984fdf0f38d008caef99fd230116c3d508",
           "path": "runs/receipts--colab--window12s6a-20261018/manifest.json"
         },
         {
@@ -3230,7 +3222,7 @@
           "path": "runs/receipts--colab--window12s6b-20261018/files/stub_rung.sh"
         },
         {
-          "hash": "04ff036cd7b1af9e68df10852b238d1f0a804c887df0898b9baa2893e4c471f0",
+          "hash": "de9c3589b8359682e6d7f0688c9eb665defced29be585d1c48a1eaa93d3f6287",
           "path": "runs/receipts--colab--window12s6b-20261018/manifest.json"
         },
         {
@@ -3274,7 +3266,7 @@
           "path": "runs/receipts--colab--window13b-20261018/files/status.log"
         },
         {
-          "hash": "5b654a1beedacb5387a7d48e08dae1e387291332a5e9af543ac74fabe81ff22b",
+          "hash": "995822a7f411c8b731a611d99d76475ca0310b6ec9b5a9c87311a3d292f5ec14",
           "path": "runs/receipts--colab--window13b-20261018/manifest.json"
         },
         {
@@ -3371,7 +3363,7 @@
           "path": "runs/receipts--colab--window13c-survival-20261018/files/vm_gate.py"
         },
         {
-          "hash": "3d3ac70c8641ca743857ca568c0a3de954e35ebcaed2bfa01e02cd530b0b4029",
+          "hash": "ac8a0e7d9b7cd4dd61bd84deef9b7633f97f850a3259029d947f29dcd8affaf2",
           "path": "runs/receipts--colab--window13c-survival-20261018/manifest.json"
         },
         {
@@ -3464,7 +3456,7 @@
           "path": "runs/receipts--colab--window13d-cpusmoke-20261018/files/vm_gate.py"
         },
         {
-          "hash": "45bd3f85b2fb27ef806f79eef6904cbc4a8699fd89ff35edae75e85e736be40e",
+          "hash": "d38ddf32426b13ec18d8baebd1549d24649785c728d48cc8f01e8ef2da3909c2",
           "path": "runs/receipts--colab--window13d-cpusmoke-20261018/manifest.json"
         },
         {
@@ -3523,7 +3515,7 @@
           "path": "runs/receipts--colab--window13e-prebuild-muse-20261018/files/vm_gate.py"
         },
         {
-          "hash": "0f30a7a04c1cdd565f4aed62929453123cbd973c879b953a5228147e5993428b",
+          "hash": "79e7bc4f4f8a1c0291747d03c803e098f589b564c706d768887fe6e76bba9e9e",
           "path": "runs/receipts--colab--window13e-prebuild-muse-20261018/manifest.json"
         },
         {
@@ -3598,7 +3590,7 @@
           "path": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/vm_gate.py"
         },
         {
-          "hash": "70035b2416b4f28f9bcb3d79927c8423bce897e884d01e063bcc2db76d9ca39d",
+          "hash": "6d2374486294e3c92aea9e81f8a95c802ca7c4b048e516545a8b460009225ba1",
           "path": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/manifest.json"
         },
         {
@@ -3653,7 +3645,7 @@
           "path": "runs/receipts--colab--window13g-prebuild-gemma-20261018/files/vm_gate.py"
         },
         {
-          "hash": "f76fc1bd8da903d852de82b066ed294e50e9325267d3890429cad8de6cc92303",
+          "hash": "e73117311cdd478032a3b0738fb202be70071068df1d1494e034e16fed9e8165",
           "path": "runs/receipts--colab--window13g-prebuild-gemma-20261018/manifest.json"
         },
         {
@@ -3720,7 +3712,7 @@
           "path": "runs/receipts--colab--window13i-prebuild-qwen3.8-a100-20261018/files/vm_gate.py"
         },
         {
-          "hash": "b2293b068c01fe809e027d2bcd5d91bdd121d6153c915cebf188c38c8d1f19b3",
+          "hash": "21400a25db9d3ec5837c748e814250883f897c16108b27c3014b1f389858617c",
           "path": "runs/receipts--colab--window13i-prebuild-qwen3.8-a100-20261018/manifest.json"
         },
         {
@@ -3775,7 +3767,7 @@
           "path": "runs/receipts--colab--window13j-prebuild-qwen3.8-a100-20261018/files/vm_gate.py"
         },
         {
-          "hash": "fc00602808fcf84891f84f32f253bd2c120527821011c2056609ad51ccbab96c",
+          "hash": "473d860b3893a32df6f5e44940898137b77ed96f9e99a3bea906c355ae5edb60",
           "path": "runs/receipts--colab--window13j-prebuild-qwen3.8-a100-20261018/manifest.json"
         },
         {
@@ -3830,7 +3822,7 @@
           "path": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/vm_gate.py"
         },
         {
-          "hash": "20d4e5f4078dc4114b1726a4a6dbd6468d102b2a54fda88336eac429ca4a77ac",
+          "hash": "a9ece12dff52c790020c6b7e50b4654f6b345e15ee954e5f66dd38def8fdc96f",
           "path": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/manifest.json"
         },
         {
@@ -3897,7 +3889,7 @@
           "path": "runs/receipts--colab--window13l-20261018/files/vm_gate.py"
         },
         {
-          "hash": "52ed06ee1e060bb9a56c97e1a7e08b6db564bb7410c7cade029927c4a1fb8e75",
+          "hash": "38ba33ccabdcd608dd2fb9c1abd74eb2b9ec3c1ac60943c7a785267cd1d3f7bd",
           "path": "runs/receipts--colab--window13l-20261018/manifest.json"
         },
         {
@@ -3960,7 +3952,7 @@
           "path": "runs/receipts--colab--window13m-rung-wa-20261018/files/vm_gate.py"
         },
         {
-          "hash": "ee8eb0f07b5d84764f42a101db387c63378dfa3542f1b16f9f6c869407bc4a87",
+          "hash": "0da24f86ad7d74901d22d02564e3287afa692cef899ba019250df2389bf40551",
           "path": "runs/receipts--colab--window13m-rung-wa-20261018/manifest.json"
         },
         {
@@ -4088,7 +4080,7 @@
           "path": "runs/receipts--colab--window13o-probe-bolt-20261018/files/vm_gate.py"
         },
         {
-          "hash": "52b4d82b182fdf2c34db794d105813e84678049f7be613199fed22036a42f62f",
+          "hash": "16a91163de2d0088e32f911427070c63b2114a3620021fdb519e2655bc92b119",
           "path": "runs/receipts--colab--window13o-probe-bolt-20261018/manifest.json"
         },
         {
@@ -4194,7 +4186,7 @@
           "path": "runs/receipts--colab--window13p-rung-deadline-20261018/files/vm_gate.py"
         },
         {
-          "hash": "b4ff1e7d8dc19d97a52720427b701a4bdc6dca077cc8209c966769ec223a8dac",
+          "hash": "3927a2b56661f954629f7a854ed83c182f493a70f82c43ab6427bf3dccdb6324",
           "path": "runs/receipts--colab--window13p-rung-deadline-20261018/manifest.json"
         },
         {
@@ -4304,7 +4296,7 @@
           "path": "runs/receipts--colab--window13q-dead-kernel-20261018/files/vm_gate.py"
         },
         {
-          "hash": "279f88db4f3347d1e20e5761ae8d4389058734b198f958f531d9e5ef618edd23",
+          "hash": "ceb323ea5bfab992ea1013b1aaf583308743d4d2849f95a0e28de2814830d469",
           "path": "runs/receipts--colab--window13q-dead-kernel-20261018/manifest.json"
         },
         {
@@ -4414,7 +4406,7 @@
           "path": "runs/receipts--colab--window13r-dead-kernel-stall600-20261018/files/vm_gate.py"
         },
         {
-          "hash": "e8dfdbe0049f59eb18b94c44defd3bfcbbbcc243f942c61253c2e9dbbbb3e024",
+          "hash": "d8f04154e82529893d181d95bce2d3687aba38865e84a1f723f288152fabdac5",
           "path": "runs/receipts--colab--window13r-dead-kernel-stall600-20261018/manifest.json"
         },
         {
@@ -4514,10 +4506,6 @@
           "path": "runs/receipts--colab--window13u-probe-xet-20261019/files/rig.log"
         },
         {
-          "hash": "74832afa9af78692f0f68527b8a4419d9c523001662f49f486e97b7645274cae",
-          "path": "runs/receipts--colab--window13u-probe-xet-20261019/files/smoke-window.log"
-        },
-        {
           "hash": "fabc476066a13bf5d5102d0763f8083ccc8d01e1bb1d085653ca32a0d8b24b43",
           "path": "runs/receipts--colab--window13u-probe-xet-20261019/files/smoke_window.sh"
         },
@@ -4545,7 +4533,7 @@
           "path": "runs/receipts--colab--window13u-probe-xet-20261019/files/vm_gate.py"
         },
         {
-          "hash": "0d75a7c217128fea3b7a9ff1aecebb092cc24bf73eb1ce08eac726f8ff37e4e2",
+          "hash": "c8b8eb3151a72e747a3b643515b9b1418b6836de24a084a200bc9d83ec315f24",
           "path": "runs/receipts--colab--window13u-probe-xet-20261019/manifest.json"
         },
         {
@@ -4608,7 +4596,7 @@
           "path": "runs/receipts--colab--window13v-rung-critic-eval-a-20261019/files/vm_gate.py"
         },
         {
-          "hash": "dcfe9b4f1d52b15016ce87e8064b72f3b259430024598d4d077aeacc4534f930",
+          "hash": "4d200a5659818b770772ef38209fa80db05d95901018c07855d6c0767af5573e",
           "path": "runs/receipts--colab--window13v-rung-critic-eval-a-20261019/manifest.json"
         },
         {
@@ -4667,7 +4655,7 @@
           "path": "runs/receipts--colab--window13v-rung-critic-eval-b-20261019/files/vm_gate.py"
         },
         {
-          "hash": "6ddadeab6d84bb3844b43326c36af5fd542bd2fbe70a90b3acaaa25e3da75f2f",
+          "hash": "ab34c74f79f7008d73fee20f58a1cdccaaccae2e82ee586f73ec4a1c1cac35db",
           "path": "runs/receipts--colab--window13v-rung-critic-eval-b-20261019/manifest.json"
         },
         {
@@ -4730,7 +4718,7 @@
           "path": "runs/receipts--colab--window13v-rung-critic-eval-c-20261019/files/vm_gate.py"
         },
         {
-          "hash": "a5c9b190b48b67e183c8af1d5078ea4aef205237fb790fabaaaccd356a8af57c",
+          "hash": "a7026b37d0546f96eafd1c360242324475f8172a3af38cf9e2aefd105690df49",
           "path": "runs/receipts--colab--window13v-rung-critic-eval-c-20261019/manifest.json"
         },
         {
@@ -4750,7 +4738,7 @@
           "path": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019--try1/files/smoke-window.log"
         },
         {
-          "hash": "05b87fc0aaa3adde22c41ce44bda6729c97eb854836a33d6a25e5240398ea67c",
+          "hash": "021eba2214bfb73ed4a788a8229a608000eb6845dc579b1b1c0cfcefe664b541",
           "path": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019--try1/manifest.json"
         },
         {
@@ -4805,7 +4793,7 @@
           "path": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019/files/vm_gate.py"
         },
         {
-          "hash": "84465a6ef707e35d09eef610f62b4cd7f3d3109954b1596f6206509e6e0c8eed",
+          "hash": "c59ce35c4b2fbb1e3173e20f95c543667a13b370570edf5a4af520fbc699d786",
           "path": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019/manifest.json"
         },
         {
@@ -4860,7 +4848,7 @@
           "path": "runs/receipts--colab--window13x-critic-eval-muse-s1-20261019/files/vm_gate.py"
         },
         {
-          "hash": "560d0ceea13f5a5c2c3f8a56aa81f1783a69062943838b6e7ca1659242a9c884",
+          "hash": "4e497d92a88d2002533cbcd872d8f155b3828661854fbd8d5cbe3d61c5114b21",
           "path": "runs/receipts--colab--window13x-critic-eval-muse-s1-20261019/manifest.json"
         },
         {
@@ -4919,7 +4907,7 @@
           "path": "runs/receipts--colab--window13y-critic-eval-lightning-s0-20261019/files/vm_gate.py"
         },
         {
-          "hash": "1bdc371c2115042fd39e1cf88d489ba26fa631aed2fdc870b2579102f8013d63",
+          "hash": "60150e51e94b319cbc9fc5c7b40b14fcdd6eafd15536ede8b7d5abc59be0e5f7",
           "path": "runs/receipts--colab--window13y-critic-eval-lightning-s0-20261019/manifest.json"
         },
         {
@@ -4986,7 +4974,7 @@
           "path": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/vm_gate.py"
         },
         {
-          "hash": "2b5cca2aeaa6e3825dde53c5398b51ab9a22a3e4bfcf3dde43f74d492badb21f",
+          "hash": "0bb7d5d55340e5091a84458581cf32020622b7632aec91d533f68583038041d7",
           "path": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/manifest.json"
         },
         {
@@ -5053,7 +5041,7 @@
           "path": "runs/receipts--colab--window14a-c-confirm-write-20261019/files/vm_gate.py"
         },
         {
-          "hash": "8129df955b9f2f4826a2efa1eefd747b8ff966ef3837f69e025974b1c13ad37a",
+          "hash": "428bae4c72608b7a2668c9c0f7a693335a8772b11a8cb3cbe0db555dd913fc3c",
           "path": "runs/receipts--colab--window14a-c-confirm-write-20261019/manifest.json"
         },
         {
@@ -5108,7 +5096,7 @@
           "path": "runs/receipts--colab--window14b-critic-eval-confirm-muse-s0-20261019/files/vm_gate.py"
         },
         {
-          "hash": "463e5b322f7258f7212dc507266d3a3f705d0678c67158686ed5aa3887b982f8",
+          "hash": "ee47c16f8b1f8e062219d30a69def4ad866f1712d3f8e44f93e73e86a7347662",
           "path": "runs/receipts--colab--window14b-critic-eval-confirm-muse-s0-20261019/manifest.json"
         },
         {
@@ -5136,7 +5124,7 @@
           "path": "runs/receipts--colab--window2-20261017/files/smoke-window.log"
         },
         {
-          "hash": "73e2a2c874bf00abee2683700a1e1950188b428fe2559cf677b233960f481889",
+          "hash": "2c01d6b132fbaf3f4214ba842417680dd047c2d341e82e99745bfcb23bd67b2a",
           "path": "runs/receipts--colab--window2-20261017/manifest.json"
         },
         {
@@ -5156,7 +5144,7 @@
           "path": "runs/receipts--colab--window3-20261017/files/smoke-window.log"
         },
         {
-          "hash": "a1d3d5ce0e153403135643ea6a00995a965f3886d1a31f049aab51339297a599",
+          "hash": "633bde33e8da88496d6e469880f1a8449b040c9805246bc69bfa746f5e0ea195",
           "path": "runs/receipts--colab--window3-20261017/manifest.json"
         },
         {
@@ -5176,7 +5164,7 @@
           "path": "runs/receipts--colab--window4-20261017/files/smoke-window.log"
         },
         {
-          "hash": "0010f353621a71b76992a7b48cd8b298c7646c02fe0939ea2d0fc93f5a4baacd",
+          "hash": "0882d2253079e72090111feae820905d216e4a7c5f62b9f484aa215823f9688a",
           "path": "runs/receipts--colab--window4-20261017/manifest.json"
         },
         {
@@ -5312,7 +5300,7 @@
           "path": "runs/receipts--colab--window5-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "04c8fa70cd3a4bdd504bce960951ef6437e7533cac932d782b8b270078e7e569",
+          "hash": "26d391c8bac48b1045b423afa52ceaaa0f3bee7db75b745317fa075b58a3d172",
           "path": "runs/receipts--colab--window5-20261017/manifest.json"
         },
         {
@@ -5449,7 +5437,7 @@
           "path": "runs/receipts--colab--window6-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "c63cb77cdd0c018fe87550ac9aafbe01cbdc84e328b5fd56af88b2166502bc9b",
+          "hash": "6adfb82ed3a7256f70327eef2ea71ac5e2f05cc9714edddc099456cb09f4b94d",
           "path": "runs/receipts--colab--window6-20261017/manifest.json"
         },
         {
@@ -5620,7 +5608,7 @@
           "path": "runs/receipts--colab--window6b-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "93e740cabf4b7d888123054a5925d03128d3e97f21e359f1e68366f6640325dc",
+          "hash": "1353ed953cc720bb260e6f488ec94d8fa3b222d318d318191e8fd709a39ca468",
           "path": "runs/receipts--colab--window6b-20261017/manifest.json"
         },
         {
@@ -5800,7 +5788,7 @@
           "path": "runs/receipts--colab--window6c-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "0314b69090c1603abb3a3d7c6624abeb8f289829f85edc3ac9d668412b5e69a9",
+          "hash": "212d4f2f07cbf89dd1ff3bfe8f15476193b47fdcb540acd93bcce9c5b704ecab",
           "path": "runs/receipts--colab--window6c-20261017/manifest.json"
         },
         {
@@ -5983,7 +5971,7 @@
           "path": "runs/receipts--colab--window7-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "9165558ab976d3c9cb8482e9c1b681fde1c736e6cf97216815ada18c8e58e3e9",
+          "hash": "78a742de3b2e755f1283348b060864d7566fbe5b55f046c1ea7275adcf54bef9",
           "path": "runs/receipts--colab--window7-20261017/manifest.json"
         },
         {
@@ -6175,7 +6163,7 @@
           "path": "runs/receipts--colab--window7b-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "ad7416e072119e74f19933402049f29d8451f86d64a1e683c0a1748f39743c0b",
+          "hash": "e3969375e35a875fdf1330ecd8bd1a4cd98db6208c9d0319047a7f83fcb77a6e",
           "path": "runs/receipts--colab--window7b-20261017/manifest.json"
         },
         {
@@ -6359,7 +6347,7 @@
           "path": "runs/receipts--colab--window8-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "79cdc23e3f69024424003ca2133c359d56d31a6d2bca6ec7bc1f98f6bc9614f1",
+          "hash": "611cef7d237a12d84f24d58d27d30887ad5d5b442670e49ac7b82ff4857ced17",
           "path": "runs/receipts--colab--window8-20261017/manifest.json"
         },
         {
@@ -6543,7 +6531,7 @@
           "path": "runs/receipts--colab--window9-20261017/files/smoke_window.sh"
         },
         {
-          "hash": "53f9070d9b403d45296b3c9d714556022265da93560079cc23e22b6533db7d36",
+          "hash": "3f3a5fffbefcb41509cddce662a763bd85886fd78740ac6025b1bd4f9464a2c5",
           "path": "runs/receipts--colab--window9-20261017/manifest.json"
         },
         {
@@ -6595,7 +6583,7 @@
           "path": "runs/receipts--colab/files/units-ledger.md"
         },
         {
-          "hash": "257e65c65acf164053dcfd6e446b756e5dcb0e2085f9f2b418c0373beb7ca70a",
+          "hash": "5a305b423e45f5b8c89c4dce3e235e51b0069dda1986f81d42bec79880631add",
           "path": "runs/receipts--colab/manifest.json"
         },
         {
@@ -6611,7 +6599,7 @@
           "path": "runs/receipts--offrig-supervl-convert-20261019--plan1/files/outcome.json"
         },
         {
-          "hash": "d58e08a93133b3f339e7b6cecf97aec2d7b558b991b3a17a4bcda1108d015c62",
+          "hash": "a04dc10b7f6743d0f9345e8fa53d0aefb4e4baa83c827174e3107db44563cfe3",
           "path": "runs/receipts--offrig-supervl-convert-20261019--plan1/manifest.json"
         },
         {
@@ -6635,7 +6623,7 @@
           "path": "runs/receipts--offrig-supervl-convert-20261019--plan2/files/upload-job.log"
         },
         {
-          "hash": "f1fb4723d50aba197b7c31492fa54c191eee173a219095e6c8fed1ba70b39f9f",
+          "hash": "62a803397f9fc670322a6ba6e87a0a6d860ffc49faee9fa13ccbf2adb868c917",
           "path": "runs/receipts--offrig-supervl-convert-20261019--plan2/manifest.json"
         },
         {
@@ -6643,7 +6631,7 @@
           "path": "runs/receipts--offrig-supervl-critic-h200-20261019--plan3/files/outcome.json"
         },
         {
-          "hash": "1937270ebda67f718257a712a4d8e60e516e92bf0390270abe0b3035c9311f28",
+          "hash": "3a7b26aaf59d7f29dd5b6c5e40f425d1f466cd923a58f9675890310516ec7ace",
           "path": "runs/receipts--offrig-supervl-critic-h200-20261019--plan3/manifest.json"
         },
         {
@@ -6651,7 +6639,7 @@
           "path": "runs/receipts--offrig-supervl-critic-h200-20261019--plan4/files/outcome.json"
         },
         {
-          "hash": "0be7a506708806450dc81969bd88042fc299eda7a9a22ebfddb14061720ec39f",
+          "hash": "6fa32758f18d964b401f927b8e402d1257e3e72ea90d72296c88dc6653f3438e",
           "path": "runs/receipts--offrig-supervl-critic-h200-20261019--plan4/manifest.json"
         },
         {
@@ -6659,7 +6647,7 @@
           "path": "runs/receipts--offrig-supervl-critic-h200-20261019/files/summary.json"
         },
         {
-          "hash": "8fdcbeee66db02802952259b33fbc289a2d10e351ee15dfed5d6a5e19e4b9499",
+          "hash": "00c5a68ca54ce283e3af47077b3ce29cee76bfd093aecdd60d5ae6c381a0af55",
           "path": "runs/receipts--offrig-supervl-critic-h200-20261019/manifest.json"
         },
         {
@@ -6683,7 +6671,7 @@
           "path": "runs/receipts--verifier-gold/files/reasoning-diffs-hard-2026-10.jsonl"
         },
         {
-          "hash": "2b9a73fa9d10e4ca9e8f16be9db9bb1fde1620e2c72638e19bc42c6971029d90",
+          "hash": "f65fc9d2e933888a4ba051ae40953cfa54b87e7d6bcf0190d2b66555a8fabb45",
           "path": "runs/receipts--verifier-gold/manifest.json"
         },
         {
@@ -6695,7 +6683,7 @@
           "path": "runs/rnd-watch--argon-gpu-stack/files/2026-10-19.md"
         },
         {
-          "hash": "86bbc55ffbe1c2c797bba73d512db84bfe21ad47d4a1356b20dee69b6dc3ee30",
+          "hash": "aecb367418b8d5c42b5845bfd67c5fb7b4fc881bffc4acfce3f8049e41d5a364",
           "path": "runs/rnd-watch--argon-gpu-stack/manifest.json"
         },
         {
@@ -6707,7 +6695,7 @@
           "path": "runs/rnd-watch--reports/files/2026-10-19.md"
         },
         {
-          "hash": "cffc74beca24a93ddf5d2980b2c8afacff05f6769833f08f8aa323db110f26d1",
+          "hash": "ddc83a6b12874fa59971964342026c79a439ae13b0e3851163d5949576979ba3",
           "path": "runs/rnd-watch--reports/manifest.json"
         },
         {
@@ -6719,7 +6707,7 @@
           "path": "runs/rnd-watch--runs/files/2026-10-19.json"
         },
         {
-          "hash": "13f5883b3486af1ac7ff3abababb146705ad6483d9512efd800a2ba33b56f3eb",
+          "hash": "9092a23a56c3845dc35f3d3fcad461ea65fde1f0b6c7b5dbce82e10ab231877e",
           "path": "runs/rnd-watch--runs/manifest.json"
         },
         {
@@ -6731,7 +6719,7 @@
           "path": "runs/rnd-watch/files/state.json.bak"
         },
         {
-          "hash": "96e4051f2cfd71942e07d020d404356bb253dfde47181ebfdd7f34fcd50456e0",
+          "hash": "fd43193263674b136a08376c7c559144aac4c876dd5aca06eda81cd06283df0d",
           "path": "runs/rnd-watch/manifest.json"
         }
       ],
@@ -6794,11 +6782,11 @@
           "path": "site/package.json"
         },
         {
-          "hash": "d399decf1807abefab995b2d23a086f6527a47802610e9ad46bf4292ead1c340",
+          "hash": "39c436aa8521fa5c662e904210bcc8dbfdb58d9ba25da7fe7d4b3dc9394e5882",
           "path": "site/public/favicon.svg"
         },
         {
-          "hash": "920162930964d66f546a40a2b8cabac1e836d7f2b6edcdf0658cf3b616c41be9",
+          "hash": "56755a62856489a813592bf7445b063271a5fec4b9b4fbf7d7fcbd60c4715e86",
           "path": "site/src/assets/logo.png"
         },
         {
@@ -6811,19 +6799,23 @@
           "path": "site/src/content/docs/handbook/getting-started.md"
         },
         {
-          "hash": "1dd0fc1a4edd8a053cd71582ff4ea3c6e8d904fab9d8a8a99ff9751c7b50b53d",
+          "hash": "66236eb4a83844db2ff90b5d20b4e0600aea5114f385461404ccde3af287d157",
           "path": "site/src/content/docs/handbook/index.md"
         },
         {
-          "hash": "31a1fc17f8a18b10cd59453740094f8e68b7f346c9b8361034f32baabd26b2dc",
+          "hash": "698f8adf6536120ed129dd5930290a8d5fe25d8b752bea8296619c5c64597898",
           "path": "site/src/content/docs/handbook/layout.md"
+        },
+        {
+          "hash": "e93b7f65fad681199a254b7a08269a59452f2d5b6c40a6f63b2ac7896b1a7308",
+          "path": "site/src/content/docs/handbook/package.md"
         },
         {
           "hash": "125b4ddadfa919dcd850292812706ab42e190f5c5d3042f778a9f77efe17c24a",
           "path": "site/src/content/docs/handbook/private-files.md"
         },
         {
-          "hash": "293baac4d5b2b519a557fb9e26e5f0108942e7268ec7bddc6f588a6547bdabfd",
+          "hash": "d8cd17a918fb1de3e8a048a30e75757371d1a179bde7ce54c9315f065db2882b",
           "path": "site/src/content/docs/handbook/security.md"
         },
         {
@@ -6844,7 +6836,7 @@
         },
         {
           "constantOnly": true,
-          "hash": "03ebb27ce526ea70b3311c0464855483fc7c49e3780382ac723684a12ef1c8e0",
+          "hash": "2577486b32bad7ed64bc3e67dfa91d74e850e9d2f939989fc06550a9c87293ad",
           "path": "site/src/site-config.ts"
         },
         {
@@ -6869,11 +6861,353 @@
       "role": "docs",
       "testedBy": 0,
       "unresolvedSites": 0
+    },
+    {
+      "dynamicReads": 0,
+      "dynamicSpawns": 0,
+      "dynamicSpawnsInTests": 0,
+      "dynamicWrites": 0,
+      "entryPoints": [
+        "src/rnd_data/cli.py"
+      ],
+      "externals": 0,
+      "files": [
+        {
+          "hash": "7453f6a61859e52cb7fd61a83d536bb5e0da9a7bea87382e4581c5b0ca78253c",
+          "importsFiles": [
+            "src/rnd_data/schema.py",
+            "src/rnd_data/store.py"
+          ],
+          "path": "src/rnd_data/__init__.py"
+        },
+        {
+          "hash": "65868cbd07268a046f8e6bfdcde4d7ccd47d5ed076d2fc3d3b469fed43c4c4eb",
+          "importsFiles": [
+            "src/rnd_data/cli.py"
+          ],
+          "path": "src/rnd_data/__main__.py"
+        },
+        {
+          "entry": "main",
+          "entryRule": 0,
+          "exports": [
+            "build_parser",
+            "cmd_ls",
+            "cmd_schema",
+            "cmd_show",
+            "cmd_where",
+            "fail",
+            "main"
+          ],
+          "failurePaths": [
+            {
+              "in": "error",
+              "kind": "raise",
+              "line": 29
+            },
+            {
+              "in": "main",
+              "kind": "except",
+              "line": 226
+            },
+            {
+              "in": "main",
+              "kind": "except",
+              "line": 231
+            }
+          ],
+          "hash": "292718b1b9d31b2e6e999b7226c0fb33bfc1fb840178dbdd1fe22191fe9dba3d",
+          "importsFiles": [
+            "src/rnd_data/__init__.py",
+            "src/rnd_data/schema.py",
+            "src/rnd_data/store.py"
+          ],
+          "path": "src/rnd_data/cli.py",
+          "sequences": [
+            {
+              "calls": [
+                {
+                  "line": 33,
+                  "name": "Store",
+                  "target": {
+                    "file": "src/rnd_data/store.py"
+                  }
+                }
+              ],
+              "exported": false,
+              "invokedAtTopLevel": false,
+              "isDefaultExport": false,
+              "name": "_open_store"
+            },
+            {
+              "calls": [
+                {
+                  "line": 33,
+                  "name": "Store",
+                  "target": {
+                    "file": "src/rnd_data/store.py"
+                  },
+                  "via": "_open_store"
+                }
+              ],
+              "exported": true,
+              "invokedAtTopLevel": false,
+              "isDefaultExport": false,
+              "name": "cmd_ls"
+            },
+            {
+              "calls": [
+                {
+                  "line": 33,
+                  "name": "Store",
+                  "target": {
+                    "file": "src/rnd_data/store.py"
+                  },
+                  "via": "_open_store"
+                }
+              ],
+              "exported": true,
+              "invokedAtTopLevel": false,
+              "isDefaultExport": false,
+              "name": "cmd_show"
+            },
+            {
+              "calls": [
+                {
+                  "line": 33,
+                  "name": "Store",
+                  "target": {
+                    "file": "src/rnd_data/store.py"
+                  },
+                  "via": "_open_store"
+                }
+              ],
+              "exported": true,
+              "invokedAtTopLevel": false,
+              "isDefaultExport": false,
+              "name": "cmd_where"
+            },
+            {
+              "calls": [
+                {
+                  "line": 33,
+                  "name": "Store",
+                  "target": {
+                    "file": "src/rnd_data/store.py"
+                  },
+                  "via": "_open_store"
+                },
+                {
+                  "branch": "args.check",
+                  "line": 132,
+                  "name": "validate_file",
+                  "target": {
+                    "file": "src/rnd_data/schema.py"
+                  }
+                },
+                {
+                  "line": 143,
+                  "name": "schema",
+                  "target": {
+                    "file": "src/rnd_data/store.py"
+                  }
+                }
+              ],
+              "exported": true,
+              "invokedAtTopLevel": false,
+              "isDefaultExport": false,
+              "name": "cmd_schema"
+            }
+          ]
+        },
+        {
+          "exports": [
+            "is_legacy_rnd_watch_id",
+            "is_safe_rel_posix_path",
+            "load_schemas",
+            "validate_document",
+            "validate_file"
+          ],
+          "failurePaths": [
+            {
+              "in": "_resolve_ref",
+              "kind": "raise",
+              "line": 70
+            },
+            {
+              "in": "validate_file",
+              "kind": "except",
+              "line": 276
+            },
+            {
+              "in": "validate_file",
+              "kind": "except",
+              "line": 280
+            }
+          ],
+          "hash": "c241ada8e9e113ddaa32f10ef9e8ae443ce739409c44bf3f3c9f971140bec0be",
+          "path": "src/rnd_data/schema.py"
+        },
+        {
+          "hash": "f51960c413e9d1c5c225f1ee8de0631611dfef2b1b4d3bd7229fe626ed4dea3a",
+          "path": "src/rnd_data/schemas/run-v1.schema.json"
+        },
+        {
+          "hash": "d148602f7a39b8325fb93b9fc2fcf6869cb543498593623a5700073fca7af45d",
+          "path": "src/rnd_data/schemas/store-v1.schema.json"
+        },
+        {
+          "exports": [
+            "blob_rel",
+            "leading_licence_id",
+            "resolve_root"
+          ],
+          "failurePaths": [
+            {
+              "in": "blob_rel",
+              "kind": "raise",
+              "line": 47
+            },
+            {
+              "in": "resolve_root",
+              "kind": "raise",
+              "line": 68
+            },
+            {
+              "in": "resolve_root",
+              "kind": "raise",
+              "line": 80
+            },
+            {
+              "in": "_load_store_json",
+              "kind": "raise",
+              "line": 106
+            },
+            {
+              "in": "manifest",
+              "kind": "raise",
+              "line": 128
+            },
+            {
+              "in": "manifest",
+              "kind": "raise",
+              "line": 136
+            },
+            {
+              "in": "manifest",
+              "kind": "raise",
+              "line": 145
+            },
+            {
+              "in": "manifest",
+              "kind": "raise",
+              "line": 153
+            },
+            {
+              "in": "runs",
+              "kind": "raise",
+              "line": 180
+            },
+            {
+              "in": "where",
+              "kind": "raise",
+              "line": 237
+            },
+            {
+              "in": "schema",
+              "kind": "raise",
+              "line": 351
+            }
+          ],
+          "hash": "f0a29b71c809f9a0f99ed056d7404968e9824db3b8b03ce7d9b7fb012c8aa828",
+          "importsFiles": [
+            "src/rnd_data/schema.py"
+          ],
+          "path": "src/rnd_data/store.py"
+        }
+      ],
+      "globs": [
+        "src/**"
+      ],
+      "importConfidence": "full",
+      "name": "src",
+      "origin": "authored",
+      "outsidePlaces": [
+        {
+          "reads": 1,
+          "where": [
+            "caller"
+          ],
+          "writes": 0
+        }
+      ],
+      "outsideReads": 1,
+      "role": "code",
+      "testRunners": [
+        "pytest"
+      ],
+      "testedBy": 1,
+      "unresolvedSites": 0
+    },
+    {
+      "dynamicReads": 0,
+      "dynamicSpawns": 0,
+      "dynamicSpawnsInTests": 0,
+      "dynamicWrites": 0,
+      "entryPoints": [],
+      "externals": 0,
+      "files": [
+        {
+          "exports": [
+            "make_run_manifest",
+            "make_store_json",
+            "run_cli",
+            "test_leading_licence_id_all_four_forms",
+            "test_live_repo_ls_counts",
+            "test_live_repo_manifests_and_store_validate",
+            "test_ls_filters_mixed_private_only_and_no_match",
+            "test_root_resolution_and_error_shape",
+            "test_schema_api_and_cli_check",
+            "test_seeded_bad_manifests_are_refused",
+            "test_seeded_path_and_copy_location_rules",
+            "test_show_command_and_errors",
+            "test_wheel_and_sdist_ship_no_data",
+            "test_where_declared_and_undeclared_never_touches_blobs",
+            "write_fixture_store"
+          ],
+          "hash": "244e2cb1ef9b1ec391125df4fc4e4b723a9db349818752aab6f8e718fa79c349",
+          "importsFiles": [
+            "src/rnd_data/__init__.py",
+            "src/rnd_data/cli.py"
+          ],
+          "path": "tests/test_rnd_data.py",
+          "spawns": [
+            "src/rnd_data/__init__.py",
+            "src/rnd_data/__main__.py",
+            "src/rnd_data/cli.py",
+            "src/rnd_data/schema.py",
+            "src/rnd_data/store.py"
+          ],
+          "testFramework": "unittest"
+        }
+      ],
+      "globs": [
+        "tests/**"
+      ],
+      "importConfidence": "full",
+      "name": "tests",
+      "origin": "authored",
+      "role": "test",
+      "testRunners": [
+        "pytest"
+      ],
+      "testedBy": 0,
+      "unresolvedSites": 0
     }
   ],
   "doors": [
     {
-      "checksCount": 0,
+      "checksCount": 1,
       "commands": [
         {
           "dir": "",
@@ -6890,6 +7224,47 @@
             "bash"
           ],
           "step": "Verify (every git copy against its manifest; the private-file rules)"
+        },
+        {
+          "dir": "",
+          "job": "ci",
+          "programs": [
+            "python"
+          ],
+          "step": "Install package and dev dependencies"
+        },
+        {
+          "dir": "",
+          "job": "ci",
+          "programs": [
+            "ruff"
+          ],
+          "step": "Lint (ruff)"
+        },
+        {
+          "dir": "",
+          "job": "ci",
+          "programs": [
+            "pytest"
+          ],
+          "step": "Test with coverage"
+        },
+        {
+          "dir": "",
+          "job": "ci",
+          "programs": [
+            "python",
+            "twine"
+          ],
+          "step": "Build and twine check"
+        },
+        {
+          "dir": "",
+          "job": "ci",
+          "programs": [
+            "python"
+          ],
+          "step": "Fresh-venv wheel install and ls check"
         },
         {
           "dir": "",
@@ -6937,7 +7312,7 @@
                   "range": ">=22.0.0 <23.0.0-0"
                 }
               ],
-              "step": "4",
+              "step": "9",
               "uses": "actions/setup-node",
               "version": "22"
             }
@@ -6956,17 +7331,44 @@
           "boundary": "root",
           "depth": 0,
           "files": 1
+        },
+        {
+          "boundary": "src",
+          "depth": 0,
+          "files": 5
+        },
+        {
+          "boundary": "tests",
+          "depth": 0,
+          "files": 1
         }
       ],
       "readers": [],
       "runs": [
+        {
+          "directory": true,
+          "job": "ci",
+          "path": "src/",
+          "runKind": "checks"
+        },
+        {
+          "job": "ci",
+          "path": "src/rnd_data/cli.py",
+          "runKind": "executes"
+        },
+        {
+          "directory": true,
+          "job": "ci",
+          "path": "tests/",
+          "runKind": "executes"
+        },
         {
           "job": "ci",
           "path": "verify.sh",
           "runKind": "executes"
         }
       ],
-      "runsCount": 1,
+      "runsCount": 4,
       "secrets": [],
       "sends": {
         "deploysPages": false,
@@ -6979,6 +7381,16 @@
         "releases": false
       },
       "stages": [],
+      "tests": [
+        {
+          "config": "pyproject.toml",
+          "coverage": true,
+          "files": 1,
+          "job": "ci",
+          "runner": "pytest",
+          "step": "Test with coverage"
+        }
+      ],
       "triggers": [
         {
           "branches": [
@@ -6993,9 +7405,17 @@
           "event": "push",
           "paths": [
             ".github/workflows/**",
+            "CHANGELOG.md",
+            "LICENSE*",
+            "README.md",
+            "SECURITY.md",
             "atlas/**",
+            "pyproject.toml",
             "runs/**",
+            "site/**",
+            "src/**",
             "store.json",
+            "tests/**",
             "verify.sh"
           ]
         },
@@ -7151,17 +7571,88 @@
         "actions/upload-pages-artifact"
       ],
       "usesWorkflowToken": false
+    },
+    {
+      "checksCount": 0,
+      "commands": [],
+      "elsewhere": [],
+      "file": "pyproject.toml",
+      "kind": "command",
+      "landings": [],
+      "mentions": [],
+      "name": "rnd-data",
+      "permissions": [],
+      "pushes": false,
+      "reach": [
+        {
+          "boundary": "src",
+          "depth": 0,
+          "files": 4
+        }
+      ],
+      "readers": [],
+      "runs": [
+        {
+          "path": "src/rnd_data/cli.py",
+          "runKind": "executes"
+        }
+      ],
+      "runsCount": 1,
+      "secrets": [],
+      "sends": {
+        "deploysPages": false,
+        "dispatchesTo": [],
+        "opensIssues": false,
+        "opensIssuesOnFailure": false,
+        "opensPullRequests": false,
+        "publishes": false,
+        "publishesTo": [],
+        "releases": false
+      },
+      "stages": [],
+      "triggers": [],
+      "uses": [],
+      "usesWorkflowToken": false
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "from": "tests",
+      "fromTests": true,
+      "kind": "file",
+      "to": "src"
+    }
+  ],
   "engine": "1.24.0",
   "generatedFrom": {
-    "commit": "bae30ba06b6e794d052cf76e0e5e2b5f5d93ac53",
-    "tracked": 827
+    "commit": "479d6513dde67d96d7b75772e26e61d496864694",
+    "tracked": 833
   },
   "landings": [
     {
       "readers": [
+        {
+          "by": "pyproject.toml",
+          "call": "configuration",
+          "confidence": "config"
+        },
+        {
+          "by": "tests/test_rnd_data.py",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "LICENSE-MIT",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "pyproject.toml",
+          "call": "configuration",
+          "confidence": "config"
+        },
         {
           "by": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/manifest.json",
           "call": "configuration",
@@ -7204,6 +7695,33 @@
         }
       ],
       "target": "README.md",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "src/rnd_data/schema.py",
+          "call": "read_text",
+          "confidence": "ast"
+        },
+        {
+          "by": "src/rnd_data/store.py",
+          "call": "glob",
+          "confidence": "ast"
+        },
+        {
+          "by": "src/rnd_data/store.py",
+          "call": "read_text",
+          "confidence": "ast"
+        },
+        {
+          "by": "tests/test_rnd_data.py",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "runs",
       "writers": []
     },
     {
@@ -8765,17 +9283,6 @@
           "confidence": "config"
         }
       ],
-      "target": "runs/receipts--colab--window10d-20261017/files/smoke-window.log",
-      "writers": []
-    },
-    {
-      "readers": [
-        {
-          "by": "runs/receipts--colab--window10d-20261017/manifest.json",
-          "call": "configuration",
-          "confidence": "config"
-        }
-      ],
       "target": "runs/receipts--colab--window10d-20261017/files/smoke_window.sh",
       "writers": []
     },
@@ -8997,17 +9504,6 @@
         }
       ],
       "target": "runs/receipts--colab--window11c-20261017/files/rig.log",
-      "writers": []
-    },
-    {
-      "readers": [
-        {
-          "by": "runs/receipts--colab--window11c-20261017/manifest.json",
-          "call": "configuration",
-          "confidence": "config"
-        }
-      ],
-      "target": "runs/receipts--colab--window11c-20261017/files/smoke-window.log",
       "writers": []
     },
     {
@@ -9591,17 +10087,6 @@
         }
       ],
       "target": "runs/receipts--colab--window12e-20261017/files/rig.log",
-      "writers": []
-    },
-    {
-      "readers": [
-        {
-          "by": "runs/receipts--colab--window12e-20261017/manifest.json",
-          "call": "configuration",
-          "confidence": "config"
-        }
-      ],
-      "target": "runs/receipts--colab--window12e-20261017/files/smoke-window.log",
       "writers": []
     },
     {
@@ -12346,6 +12831,17 @@
     {
       "readers": [
         {
+          "by": "site/src/content/docs/handbook/package.md",
+          "call": "--check",
+          "confidence": "text"
+        }
+      ],
+      "target": "runs/receipts--colab--window13l-20261018/manifest.json",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
           "by": "runs/receipts--colab--window13m-rung-wa-20261018/manifest.json",
           "call": "configuration",
           "confidence": "config"
@@ -13386,17 +13882,6 @@
         }
       ],
       "target": "runs/receipts--colab--window13u-probe-xet-20261019/files/rig.log",
-      "writers": []
-    },
-    {
-      "readers": [
-        {
-          "by": "runs/receipts--colab--window13u-probe-xet-20261019/manifest.json",
-          "call": "configuration",
-          "confidence": "config"
-        }
-      ],
-      "target": "runs/receipts--colab--window13u-probe-xet-20261019/files/smoke-window.log",
       "writers": []
     },
     {
@@ -15895,11 +16380,61 @@
       ],
       "target": "site/src/content/docs/handbook",
       "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "tests/test_rnd_data.py",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "src/rnd_data",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "src/rnd_data/schema.py",
+          "call": "read_text",
+          "confidence": "ast"
+        }
+      ],
+      "target": "src/rnd_data/schemas",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "site/src/content/docs/handbook/package.md",
+          "call": "--check",
+          "confidence": "text"
+        },
+        {
+          "by": "src/rnd_data/schema.py",
+          "call": "read_text",
+          "confidence": "weak"
+        },
+        {
+          "by": "src/rnd_data/store.py",
+          "call": "read_text",
+          "confidence": "weak"
+        },
+        {
+          "by": "tests/test_rnd_data.py",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "store.json",
+      "writers": []
     }
   ],
   "overlaps": [],
   "submodules": [],
   "symlinks": [],
-  "testFiles": 0,
+  "testFiles": 1,
   "unassigned": []
 }
