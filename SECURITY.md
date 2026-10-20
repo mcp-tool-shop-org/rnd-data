@@ -38,7 +38,11 @@ Include:
 |--------|--------|
 | Acknowledge report | 48 hours |
 | Assess severity | 7 days |
-| Release fix | 30 days |
+| Remove from `main` | 7 days |
+| Rewrite history, if the file must not stay reachable | on the Director's go (a force-push) |
+
+GitHub may keep a removed file reachable by its commit for a time; the report should say if it needs a history
+rewrite.
 
 ## Scope
 
