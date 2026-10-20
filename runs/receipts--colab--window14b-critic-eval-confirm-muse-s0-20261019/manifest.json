@@ -11,7 +11,7 @@
    "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
    "bytes": 5,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -19,7 +19,7 @@
    "sha256": "d3c6ac9fafb61163200a886287bfe703a9b308f9858de43ffacda029ee38861d",
    "bytes": 4,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -27,7 +27,7 @@
    "sha256": "e9927479b12f49fac72f99f48fbe82f998b96f46b8657e732fe512ab9fe4bb5a",
    "bytes": 148,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -44,7 +44,7 @@
    "sha256": "4e01bb8412c367ff14e8bf8c0dd4032d2c45c6559597f6e9f8a730ab8686ebaf",
    "bytes": 2190,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -61,7 +61,7 @@
    "sha256": "6ed55a51749cd0874721972695f1a48858b028113b8572236c335179d90dd439",
    "bytes": 2694698,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -69,7 +69,7 @@
    "sha256": "09fa4d7c934e77ea9f83c0d444ef0b2c47207f49d8a96fbf0a3cd5d0747b5038",
    "bytes": 1705,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -86,7 +86,7 @@
    "sha256": "8c0403f6d150ae6ac84b435302dc6447042c4b5736df73483af9f29a3f738a5b",
    "bytes": 2178,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -103,7 +103,7 @@
    "sha256": "a74821aa2d6aef573277147f427dafb6f5d4f3b1559824ef1bf06eb3f977336d",
    "bytes": 20189,
    "tier": "T4",
-   "licence": null,
+   "licence": "MIT",
    "visibility": "public"
   },
   {
@@ -111,7 +111,7 @@
    "sha256": "edb340175586c5dd500b6e459780e57e1367026dc58b8ade1923bcb018bdb510",
    "bytes": 10540,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -159,7 +159,7 @@
    "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
    "bytes": 6116,
    "tier": "T4",
-   "licence": null,
+   "licence": "MIT",
    "visibility": "public"
   }
  ],
