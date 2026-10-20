@@ -50,8 +50,9 @@ The data is [CC BY 4.0](https://github.com/mcp-tool-shop-org/rnd-data/blob/main/
 `*.py`) are [MIT](https://github.com/mcp-tool-shop-org/rnd-data/blob/main/LICENSE-MIT). A third-party file keeps
 the licence its manifest names: the llama.cpp build is MIT (commit 620d2225).
 
-A file's manifest `licence` field is the final word for that file. Most public files don't name one yet
-(`"licence": null`); for those, the repository-level rule above applies.
+A file's manifest `licence` field is the final word for that file. Every public file's manifest names its licence
+(`CC-BY-4.0`, `MIT`, or the llama.cpp build's MIT); private entries carry `"licence": null`, because they aren't
+published.
 
 ## Where next
 

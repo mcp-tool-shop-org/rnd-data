@@ -100,8 +100,8 @@ rnd-data is licensed like rnd:
 - **The scripts** (`*.sh`, `*.py`) are [MIT](LICENSE-MIT).
 - **A third-party file** keeps the licence its manifest names. The llama.cpp build is MIT (commit 620d2225).
 
-A file's manifest `licence` field is the final word for that file. Most public files don't name one yet
-(`"licence": null`), and for those the rule above applies.
+A file's manifest `licence` field is the final word for that file. Every public file's manifest names its licence;
+private entries carry `"licence": null`, because they aren't published.
 
 ## Status
 

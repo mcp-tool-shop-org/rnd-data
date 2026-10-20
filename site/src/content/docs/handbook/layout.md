@@ -57,7 +57,7 @@ The four `rnd-watch` manifests were written by an earlier rnd (their `rnd_commit
 | `sha256` | Its SHA-256 in hex; `null` for a private file |
 | `bytes` | Its size in bytes |
 | `tier` | The data tier in rnd's scale plan. Every file here is `T4`, raw data |
-| `licence` | The file's licence, where one is named; `null` where the repository-level rule applies |
+| `licence` | The file's licence, such as `CC-BY-4.0` or `MIT`; `null` only on a private entry |
 | `visibility` | `public`, or `private` for a file listed without its hash |
 | `private_why` | Only on a private entry: why. In a public manifest this is always `identity` |
 
