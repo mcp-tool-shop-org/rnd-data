@@ -11,7 +11,7 @@
    "sha256": "bac650d34a7638bb0aeb5342646d24e3b9ad6b44c9b383621faa482b990a367d",
    "bytes": 5,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -19,7 +19,7 @@
    "sha256": "e0a13b394ab56e93b69fcd5666d01e68b80cf540b176c19a03d875ca8d773e04",
    "bytes": 6,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -27,7 +27,7 @@
    "sha256": "0fbb18e39e1a58d185bf3d872734612a7d00d81d7387260ffed584bc5b9dfc25",
    "bytes": 129,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -35,7 +35,7 @@
    "sha256": "f2eab020cda657a68cd16241e9278b665de5aae5de0c3065759939c21adfcc07",
    "bytes": 364,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -43,7 +43,7 @@
    "sha256": "a9d12774a728bdb7544a3bba4dc1e9a4d7e711130374b65c9dba1b3ec3281f80",
    "bytes": 6764,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -51,7 +51,7 @@
    "sha256": "ea283fb5aa4cf7960f1d257808e425438a240bc3e35e6a74868b36717e325c80",
    "bytes": 900,
    "tier": "T4",
-   "licence": null,
+   "licence": "MIT",
    "visibility": "public"
   },
   {
@@ -59,7 +59,7 @@
    "sha256": "f5b445e4b559568f3ccdf20d9ac635f1b0e0c93719ce1193b9f605be4fda4a61",
    "bytes": 6542,
    "tier": "T4",
-   "licence": null,
+   "licence": "MIT",
    "visibility": "public"
   },
   {
@@ -67,7 +67,7 @@
    "sha256": "5f8e291d3dc588df442498e51d82e9c86a64d02eba6fee7a9bcd12a59690e662",
    "bytes": 276,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -75,7 +75,7 @@
    "sha256": "ef175911070e29c79a46d89551f62eef754553e1c0e238c731e8754aa6ae8a44",
    "bytes": 118,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -83,7 +83,7 @@
    "sha256": "5d001b5b5cd863076962ef01e4515140e4eda4154f26a8564ed1a5858a8df8d2",
    "bytes": 767,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -91,7 +91,7 @@
    "sha256": "a9d12774a728bdb7544a3bba4dc1e9a4d7e711130374b65c9dba1b3ec3281f80",
    "bytes": 6764,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -99,7 +99,7 @@
    "sha256": "1e9b36d9f065b51a508ae914d1153e217229cfc5ace6190c0c2a27dc9887e324",
    "bytes": 15792,
    "tier": "T4",
-   "licence": null,
+   "licence": "MIT",
    "visibility": "public"
   },
   {
@@ -107,7 +107,7 @@
    "sha256": "9f723d8798212bc1b72bc5ea03938f814c190c371340ef7d0182029e06c7f57e",
    "bytes": 40920,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -115,7 +115,7 @@
    "sha256": "2c5a02b7de78929de12312d2dcb10ef11505a06a1bc38c5f29f699a5622858c0",
    "bytes": 6116,
    "tier": "T4",
-   "licence": null,
+   "licence": "MIT",
    "visibility": "public"
   }
  ],

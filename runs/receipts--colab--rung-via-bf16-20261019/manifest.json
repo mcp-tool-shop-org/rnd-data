@@ -11,7 +11,7 @@
    "sha256": "0ba0873b029fa07aa6384eec683f1c6ca7aec73d85cf8aa41e9b5f7bd0e7b60a",
    "bytes": 575,
    "tier": "T4",
-   "licence": null,
+   "licence": "MIT",
    "visibility": "public"
   }
  ],

@@ -11,7 +11,7 @@
    "sha256": "74cc80b6e496c263a4f372e86f2bc43fb156398b9f8c601f9c6393fbdd8c8236",
    "bytes": 10695,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   },
   {
@@ -19,7 +19,7 @@
    "sha256": "5a3ed1d2565b483d94264084f1364c7bcf8272ff329007d446874f50e40ef6fb",
    "bytes": 9902,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0",
    "visibility": "public"
   }
  ],
