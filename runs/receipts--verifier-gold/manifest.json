@@ -11,7 +11,7 @@
    "sha256": "01decf211be258cf63f639217ee312b2ec75c5aefe4f7aecf6ffadac3e88f430",
    "bytes": 36399,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0 (the code excerpts in `context` are MIT, from offrig, aspire-si and role-os)",
    "visibility": "public"
   },
   {
@@ -19,7 +19,7 @@
    "sha256": "4f5363c506d17ba9a767e15944b8b0081f636d050e911a2cdaeb31498b00371e",
    "bytes": 481580,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0 (the code excerpts in `context` are MIT, from offrig, aspire-si and role-os)",
    "visibility": "public"
   },
   {
@@ -27,7 +27,7 @@
    "sha256": "709eabbc38d5ef643094e0f23873810597356f981329ad86d8006b5abd76750b",
    "bytes": 685087,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0 (the code excerpts in `context` are MIT, from offrig, aspire-si and role-os)",
    "visibility": "public"
   },
   {
@@ -35,7 +35,7 @@
    "sha256": "e0f0bb956f422c2cd9e117861c3137760b92938de5f97471e85b2ece8312c201",
    "bytes": 180441,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0 (the code excerpts in `context` are MIT, from offrig, aspire-si and role-os)",
    "visibility": "public"
   },
   {
@@ -43,7 +43,7 @@
    "sha256": "95da4a69db0f8cdffa1a3f21e5d2511fd79cb91c2eeefc0b4b997ad6ebed1cc5",
    "bytes": 502982,
    "tier": "T4",
-   "licence": null,
+   "licence": "CC-BY-4.0 (the code excerpts in `context` are MIT, from offrig, aspire-si and role-os)",
    "visibility": "public"
   }
  ],
