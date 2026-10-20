@@ -40,11 +40,12 @@
   },
   {
    "path": "smoke-window.log",
-   "sha256": "f5181b8878c1667767b70e2058ccc64571972cb6f7e6367f520fc64afa320860",
+   "sha256": null,
    "bytes": 8658,
    "tier": "T4",
-   "licence": "CC-BY-4.0",
-   "visibility": "public"
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
   },
   {
    "path": "smoke_window.sh",
@@ -117,11 +118,6 @@
    "location": "runs/receipts--colab--window11c-20261017/files/rig.log"
   },
   {
-   "sha256": "f5181b8878c1667767b70e2058ccc64571972cb6f7e6367f520fc64afa320860",
-   "store": "rnd-data",
-   "location": "runs/receipts--colab--window11c-20261017/files/smoke-window.log"
-  },
-  {
    "sha256": "9ad4b629faf3c0d6e54b68ea7a8630ecbbd8caebf573e99b184d360d054c9648",
    "store": "rnd-data",
    "location": "runs/receipts--colab--window11c-20261017/files/smoke_window.sh"
@@ -156,5 +152,5 @@
   "unapproved": 1
  },
  "ingested": "2026-10-19",
- "rnd_commit": "6c0ec58768b4114ee81804b04b8b5ec8c39e2b0f"
+ "rnd_commit": "03a98506c612182221d1813e0ceb9d7d44b1d6a6"
 }
