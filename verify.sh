@@ -11,10 +11,10 @@ cd "$(dirname "$0")"
 
 case "${1:-}" in
   "")
-    RND_DATA="$PWD" rnd raw verify --public-only
+    RND_DATA="$PWD" rnd raw verify --public-only --public "$PWD"
     ;;
   --full)
-    RND_DATA="$PWD" rnd raw verify
+    RND_DATA="$PWD" rnd raw verify --public "$PWD"
     ;;
   *)
     echo "usage: bash verify.sh [--full]" >&2
