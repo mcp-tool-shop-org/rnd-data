@@ -41,9 +41,13 @@ every public licence in each manifest. The four early `rnd-watch` manifests (`rn
 rnd-data ls
 rnd-data ls --kind run
 rnd-data ls --source receipts
+rnd-data ls --source receipts/colab
 rnd-data ls --licence MIT
 rnd-data ls --licence CC-BY-4.0
 ```
+
+`--source <prefix>` matches by prefix: it lists every manifest whose `source` field equals `<prefix>` or begins with
+`<prefix>` (for example, `receipts`, `receipts/colab`, or `rnd-watch`).
 
 #### How `--licence` matches
 
@@ -78,7 +82,8 @@ rnd-data show receipts--colab--rung-prestep-muse-20261019--try1-gate
 
 ### `where <sha256|path>`
 
-Finds every manifest name and declared copy of a public file by SHA-256 (8+ lowercase hex characters) or file path.
+Finds every manifest name and declared copy of a public file by SHA-256 (a full 64-character digest or a hash prefix of
+8+ lowercase hex characters) or by file path.
 
 ```bash
 rnd-data where df19ad096ad0

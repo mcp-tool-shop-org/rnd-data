@@ -20,21 +20,21 @@
   "changes": {
     "fileCounts": {
       "added": 0,
-      "changed": 1,
+      "changed": 7,
       "moved": 0,
-      "parts": 1,
+      "parts": 4,
       "removed": 0
     },
     "items": [
       {
         "kind": "counts",
-        "sentence": "Nothing structural changed since 2026-10-20; 1 file changed content.",
+        "sentence": "Nothing structural changed since 2026-10-20; 7 files changed content.",
         "subjects": []
       }
     ],
     "since": {
-      "commit": "e8a7689209d3f2288c84582da8328202ef6bc310",
-      "generatedAt": "2026-10-20T16:28:13.031Z"
+      "commit": "d0bea5ec2bee5ba830abadeb1c5974411f6c84d7",
+      "generatedAt": "2026-10-20T16:32:13.338Z"
     },
     "unchanged": true
   },
@@ -43,7 +43,7 @@
     "Window: 180 days; a pair counts from 3 shared commits, since the window holds fewer than 30 qualifying commits."
   ],
   "changesTogetherWithTests": 0,
-  "commit": "d0bea5ec2bee5ba830abadeb1c5974411f6c84d7",
+  "commit": "479d6513dde67d96d7b75772e26e61d496864694",
   "defaultBranch": "main",
   "derived": "6 parts, mostly shell (78 files), Python (67), CSS (2), TypeScript (2), Astro (1) and JavaScript (1). Work enters through 3 doors; the busiest is CI, which reaches 3 parts. It deploys a site to GitHub Pages. People run rnd-data.",
   "doors": [
@@ -154,7 +154,7 @@
   "edges": [],
   "engine": "1.24.0",
   "generated": [],
-  "generatedAt": "2026-10-20T16:32:13.338Z",
+  "generatedAt": "2026-10-20T16:46:53.215Z",
   "limits": [
     "14 imports could not be resolved: `runs/receipts--colab--rung-prestep-muse-20261019--try5/files/prestep_fit_tokenizer.py` imports `pin_window`, which is no module on its import path and no declared dependency; `runs/receipts--colab--rung-prestep-muse-20261019--try5/files/rung_prestep_muse.py` imports `pin_window`, which is no module on its import path and no declared dependency; `runs/receipts--colab--rung-prestep-muse-20261019/files/derive_allow.py` imports `pin_window`, which is no module on its import path and no declared dependency; and 11 more.",
     "83 writes and 143 reads use paths built at run time and are not named here.",

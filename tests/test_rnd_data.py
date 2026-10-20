@@ -494,9 +494,121 @@ def test_seeded_bad_manifests_are_refused(tmp_path: Path) -> None:
     # 10. Copy naming private store is refused
     m_priv_copy = make_run_manifest(
         "run-priv-copy",
-        copies=[{"sha256": SHA_A, "store": "rnd-data-private", "location": "runs/run-priv-copy/outcome.json"}],
+        copies=[{"sha256": SHA_A, "store": "rnd-data-private", "location": "runs/run-priv-copy/files/outcome.json"}],
     )
     assert any("private store" in p for p in validate_document(m_priv_copy))
+
+
+def test_seeded_path_and_copy_location_rules(tmp_path: Path) -> None:
+    """Seeded path and copy-location tests: unsafe paths refused; duplicate-hash files accepted."""
+    bad_paths = [
+        "../..",
+        "../../etc/passwd",
+        "sub/../../outside.txt",
+        "C" + ":/folder/file.txt",
+        "/ho" + "me/someone/file.txt",
+        "sub\\notes.txt",
+    ]
+    for bad_path in bad_paths:
+        # Refused on public_file_entry.path, without echoing the path value
+        m_pub = make_run_manifest(
+            "run-bad-path",
+            files=[
+                {
+                    "path": bad_path,
+                    "sha256": SHA_A,
+                    "bytes": 10,
+                    "tier": "T4",
+                    "licence": LIC_CC,
+                    "visibility": "public",
+                }
+            ],
+            copies=[],
+        )
+        probs = validate_document(m_pub)
+        assert probs, f"expected refusal for public path {bad_path!r}"
+        assert any("unsafe path" in p for p in probs)
+        assert bad_path not in " ".join(probs)
+
+        # Refused on private_file_entry.path, without echoing the path value
+        m_priv = make_run_manifest(
+            "run-bad-priv-path",
+            files=[
+                {
+                    "path": bad_path,
+                    "sha256": None,
+                    "bytes": 10,
+                    "tier": "T4",
+                    "licence": None,
+                    "visibility": "private",
+                    "private_why": "identity",
+                }
+            ],
+            copies=[],
+        )
+        probs_priv = validate_document(m_priv)
+        assert probs_priv, f"expected refusal for private path {bad_path!r}"
+        assert any("unsafe path" in p for p in probs_priv)
+        assert bad_path not in " ".join(probs_priv)
+
+        # Refused on copy_entry.location, without echoing the location value
+        m_copy = make_run_manifest(
+            "run-bad-copy-loc",
+            copies=[{"sha256": SHA_A, "store": "rnd-data", "location": bad_path}],
+        )
+        probs_copy = validate_document(m_copy)
+        assert probs_copy, f"expected refusal for copy location {bad_path!r}"
+        assert any("unsafe path" in p for p in probs_copy)
+        assert bad_path not in " ".join(probs_copy)
+
+    # Refused: a `d` copy whose location hash is not its own sha256
+    m_bad_d_copy = make_run_manifest(
+        "run-bad-d-copy",
+        copies=[{"sha256": SHA_A, "store": "d", "location": blob_rel(SHA_B)}],
+    )
+    probs_d = validate_document(m_bad_d_copy)
+    assert any("store 'd' copy location must be blobs/<sha256[0:2]>/<sha256>" in p for p in probs_d)
+
+    # Refused: an `rnd-data` copy outside its own run (or pointing to a path not holding that sha256)
+    m_outside_run = make_run_manifest(
+        "run-a",
+        copies=[{"sha256": SHA_A, "store": "rnd-data", "location": "runs/run-other/files/outcome.json"}],
+    )
+    probs_out = validate_document(m_outside_run)
+    assert any("store 'rnd-data' copy location must be runs/<id>/files/<path>" in p for p in probs_out)
+
+    # Accepted: one run holding two identical files (same sha256, two different paths and two copies)
+    m_dup = make_run_manifest(
+        "run-dup-files",
+        files=[
+            {
+                "path": "job.log",
+                "sha256": SHA_A,
+                "bytes": 128,
+                "tier": "T4",
+                "licence": LIC_CC,
+                "visibility": "public",
+            },
+            {
+                "path": "sub/job-copy.log",
+                "sha256": SHA_A,
+                "bytes": 128,
+                "tier": "T4",
+                "licence": LIC_CC,
+                "visibility": "public",
+            },
+        ],
+        copies=[
+            {"sha256": SHA_A, "store": "rnd-data", "location": "runs/run-dup-files/files/job.log"},
+            {"sha256": SHA_A, "store": "rnd-data", "location": "runs/run-dup-files/files/sub/job-copy.log"},
+        ],
+    )
+    assert validate_document(m_dup) == []
+
+    # Verify CLI `schema --check` passes on all 100 real manifests
+    for mp in sorted((REPO_ROOT / "runs").glob("*/manifest.json")):
+        code, out, err = run_cli("schema", "--check", str(mp))
+        assert code == 0, f"{mp}: {err}"
 
 
 def test_schema_api_and_cli_check(tmp_path: Path) -> None:

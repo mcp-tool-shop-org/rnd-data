@@ -40,7 +40,7 @@
           "path": ".gitattributes"
         },
         {
-          "hash": "60260d8b84846058cc8aa65feaddf2cd5cb820bb3893c8cb8a2e3f546a1b1f9b",
+          "hash": "8b5c35356644c53d66b3530402e2edb9007fd7051e7360937650b2081a6a03a6",
           "path": ".gitignore"
         },
         {
@@ -6807,7 +6807,7 @@
           "path": "site/src/content/docs/handbook/layout.md"
         },
         {
-          "hash": "f202d357de579a3c3fd5145e46f10d389f9f2d05b7d442fbdb54831532925e64",
+          "hash": "e93b7f65fad681199a254b7a08269a59452f2d5b6c40a6f63b2ac7896b1a7308",
           "path": "site/src/content/docs/handbook/package.md"
         },
         {
@@ -6873,7 +6873,7 @@
       "externals": 0,
       "files": [
         {
-          "hash": "aad80d394379810457d386676468bffd2ae3a7fbceefbc206bdbfd6c74377eb9",
+          "hash": "7453f6a61859e52cb7fd61a83d536bb5e0da9a7bea87382e4581c5b0ca78253c",
           "importsFiles": [
             "src/rnd_data/schema.py",
             "src/rnd_data/store.py"
@@ -6908,15 +6908,15 @@
             {
               "in": "main",
               "kind": "except",
-              "line": 222
+              "line": 226
             },
             {
               "in": "main",
               "kind": "except",
-              "line": 227
+              "line": 231
             }
           ],
-          "hash": "922b34608876ad842f21504276fc32a9c2c845b5d1e856ebd5d68a051bc2d8c6",
+          "hash": "292718b1b9d31b2e6e999b7226c0fb33bfc1fb840178dbdd1fe22191fe9dba3d",
           "importsFiles": [
             "src/rnd_data/__init__.py",
             "src/rnd_data/schema.py",
@@ -7023,6 +7023,7 @@
         {
           "exports": [
             "is_legacy_rnd_watch_id",
+            "is_safe_rel_posix_path",
             "load_schemas",
             "validate_document",
             "validate_file"
@@ -7031,24 +7032,24 @@
             {
               "in": "_resolve_ref",
               "kind": "raise",
-              "line": 57
+              "line": 70
             },
             {
               "in": "validate_file",
               "kind": "except",
-              "line": 196
+              "line": 276
             },
             {
               "in": "validate_file",
               "kind": "except",
-              "line": 200
+              "line": 280
             }
           ],
-          "hash": "bfae9976517802240e3956db08ddda2c78706cf96d0ef81183ebbf5fc5558862",
+          "hash": "c241ada8e9e113ddaa32f10ef9e8ae443ce739409c44bf3f3c9f971140bec0be",
           "path": "src/rnd_data/schema.py"
         },
         {
-          "hash": "7072f7ab00827b106bc776ef999914e7f49a8d1429bf2223273b28d8116db786",
+          "hash": "f51960c413e9d1c5c225f1ee8de0631611dfef2b1b4d3bd7229fe626ed4dea3a",
           "path": "src/rnd_data/schemas/run-v1.schema.json"
         },
         {
@@ -7168,12 +7169,13 @@
             "test_root_resolution_and_error_shape",
             "test_schema_api_and_cli_check",
             "test_seeded_bad_manifests_are_refused",
+            "test_seeded_path_and_copy_location_rules",
             "test_show_command_and_errors",
             "test_wheel_and_sdist_ship_no_data",
             "test_where_declared_and_undeclared_never_touches_blobs",
             "write_fixture_store"
           ],
-          "hash": "b2780f8f331882734863682dba81df144e8a0773f9be4d54af8abcb4b123e05f",
+          "hash": "244e2cb1ef9b1ec391125df4fc4e4b723a9db349818752aab6f8e718fa79c349",
           "importsFiles": [
             "src/rnd_data/__init__.py",
             "src/rnd_data/cli.py"
@@ -7623,7 +7625,7 @@
   ],
   "engine": "1.24.0",
   "generatedFrom": {
-    "commit": "d0bea5ec2bee5ba830abadeb1c5974411f6c84d7",
+    "commit": "479d6513dde67d96d7b75772e26e61d496864694",
     "tracked": 833
   },
   "landings": [

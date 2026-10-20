@@ -19,6 +19,8 @@ SCHEMA_FILES = {
 
 _SCHEMAS_DIR = Path(__file__).resolve().parent / "schemas"
 _LEGACY_RND_WATCH_RE = re.compile(r"^rnd-watch(?:--.+)?$")
+_SAFE_REL_POSIX_RE = re.compile(r"^(?![A-Za-z]:)(?!.*(?:^|/)\.\.(?:/|$))[^/\\][^\\]*$")
+_DRIVE_RE = re.compile(r"^[A-Za-z]:")
 
 
 def load_schemas() -> dict[str, dict[str, Any]]:
@@ -32,6 +34,17 @@ def load_schemas() -> dict[str, dict[str, Any]]:
 def is_legacy_rnd_watch_id(run_id: object) -> bool:
     """True when `run_id` is one of the 4 early rnd-watch manifests without `kind`."""
     return isinstance(run_id, str) and bool(_LEGACY_RND_WATCH_RE.match(run_id))
+
+
+def is_safe_rel_posix_path(path: object) -> bool:
+    """True when `path` is a safe relative POSIX path (no leading '/', '..', backslash or drive)."""
+    if not isinstance(path, str) or not path:
+        return False
+    if path.startswith("/") or "\\" in path or _DRIVE_RE.match(path):
+        return False
+    if ".." in path.split("/"):
+        return False
+    return bool(_SAFE_REL_POSIX_RE.match(path))
 
 
 def _is_int(value: object) -> bool:
@@ -99,7 +112,13 @@ def _validate_node(
         if "minLength" in schema and len(value) < schema["minLength"]:
             problems.append(f"{where}: must be a non-empty string")
         if "pattern" in schema and not re.match(schema["pattern"], value):
-            problems.append(f"{where}: does not match required pattern {schema['pattern']}")
+            if where.endswith((".path", ".location")):
+                problems.append(
+                    f"{where}: unsafe path "
+                    "(must be a relative POSIX path with no leading '/', '..', backslash or drive)"
+                )
+            else:
+                problems.append(f"{where}: does not match required pattern {schema['pattern']}")
 
     if _is_int(value):
         if "minimum" in schema and value < schema["minimum"]:
@@ -180,10 +199,71 @@ def validate_document(data: Any) -> list[str]:
     schema = schemas[schema_id]
     problems = _validate_node(data, schema, schema, "<root>")
 
-    if schema_id == RUN_SCHEMA and isinstance(data.get("copies"), list):
-        for idx, copy in enumerate(data["copies"]):
-            if isinstance(copy, dict) and copy.get("store") == "rnd-data-private":
-                problems.append(f"copies[{idx}].store: public manifest must not name private store")
+    if schema_id == RUN_SCHEMA:
+        paths_by_sha: dict[str, set[str]] = {}
+        files = data.get("files")
+        if isinstance(files, list):
+            for idx, entry in enumerate(files):
+                if not isinstance(entry, dict):
+                    continue
+                p = entry.get("path")
+                where_path = f"files[{idx}].path"
+                if isinstance(p, str) and not is_safe_rel_posix_path(p):
+                    msg = (
+                        f"{where_path}: unsafe path "
+                        "(must be a relative POSIX path with no leading '/', '..', backslash or drive)"
+                    )
+                    if msg not in problems:
+                        problems.append(msg)
+                elif entry.get("visibility") == "public":
+                    sha = entry.get("sha256")
+                    if isinstance(sha, str) and isinstance(p, str):
+                        paths_by_sha.setdefault(sha, set()).add(p)
+
+        run_id = data.get("id")
+        copies = data.get("copies")
+        if isinstance(copies, list):
+            for idx, copy in enumerate(copies):
+                if not isinstance(copy, dict):
+                    continue
+                cloc = copy.get("location")
+                where_loc = f"copies[{idx}].location"
+                if isinstance(cloc, str) and not is_safe_rel_posix_path(cloc):
+                    msg = (
+                        f"{where_loc}: unsafe path "
+                        "(must be a relative POSIX path with no leading '/', '..', backslash or drive)"
+                    )
+                    if msg not in problems:
+                        problems.append(msg)
+                    continue
+
+                cstore = copy.get("store")
+                csha = copy.get("sha256")
+                if cstore == "rnd-data-private":
+                    problems.append(f"copies[{idx}].store: public manifest must not name private store")
+                elif cstore == "d":
+                    if isinstance(csha, str) and len(csha) == 64:
+                        if cloc != f"blobs/{csha[:2]}/{csha}":
+                            problems.append(
+                                f"{where_loc}: store 'd' copy location must be "
+                                "blobs/<sha256[0:2]>/<sha256> for its sha256"
+                            )
+                        if csha not in paths_by_sha:
+                            problems.append(
+                                f"copies[{idx}].sha256: copy sha256 is not declared on any "
+                                "public file entry in this manifest"
+                            )
+                elif cstore == "rnd-data":
+                    allowed_locs = (
+                        {f"runs/{run_id}/files/{p}" for p in paths_by_sha.get(csha, set())}
+                        if isinstance(run_id, str) and isinstance(csha, str)
+                        else set()
+                    )
+                    if cloc not in allowed_locs:
+                        problems.append(
+                            f"{where_loc}: store 'rnd-data' copy location must be "
+                            "runs/<id>/files/<path> for a public entry with this sha256"
+                        )
 
     return problems
 

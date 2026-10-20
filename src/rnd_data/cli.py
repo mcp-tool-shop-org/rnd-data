@@ -171,7 +171,11 @@ def build_parser() -> argparse.ArgumentParser:
     )
     ls_p.set_defaults(fn=cmd_ls)
     ls_p.add_argument("--kind", choices=("run", "collection"), help="filter by manifest kind (run or collection)")
-    ls_p.add_argument("--source", metavar="PREFIX", help="filter by source prefix (e.g. receipts or rnd-watch)")
+    ls_p.add_argument(
+        "--source",
+        metavar="PREFIX",
+        help="filter manifests whose source starts with PREFIX (e.g. receipts, receipts/colab, or rnd-watch)",
+    )
     ls_p.add_argument(
         "--licence",
         metavar="ID",

@@ -1,6 +1,6 @@
 # rnd-data: how it works
 
-Mapped at 2026-10-20 from commit d0bea5e by Atlas 1.24.0.
+Mapped at 2026-10-20 from commit 479d651 by Atlas 1.24.0.
 
 ## What this is
 
@@ -8,9 +8,9 @@ The raw data behind the studio's research: every run's receipts and outputs, wit
 
 6 parts, mostly shell (78 files), Python (67), CSS (2), TypeScript (2), Astro (1) and JavaScript (1). Work enters through 3 doors; the busiest is CI, which reaches 3 parts. It deploys a site to GitHub Pages. People run rnd-data.
 
-## What changed since 2026-10-20 (e8a7689)
+## What changed since 2026-10-20 (d0bea5e)
 
-Nothing structural changed since 2026-10-20; 1 file changed content.
+Nothing structural changed since 2026-10-20; 7 files changed content.
 
 ## What comes in
 
