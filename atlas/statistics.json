@@ -65,6 +65,40 @@
       "confidence": "low",
       "highWater": null,
       "name": "site",
+      "qualifyingSourceCommits": 1,
+      "rebaseline": null
+    },
+    {
+      "breakage": {
+        "coChangesOnly": [],
+        "collapsed": false,
+        "confidence": "low",
+        "importsAndCoChanges": [],
+        "importsOnly": [
+          "tests"
+        ]
+      },
+      "cohesion": null,
+      "cohesionDropped": false,
+      "confidence": "low",
+      "highWater": null,
+      "name": "src",
+      "qualifyingSourceCommits": 0,
+      "rebaseline": null
+    },
+    {
+      "breakage": {
+        "coChangesOnly": [],
+        "collapsed": false,
+        "confidence": "low",
+        "importsAndCoChanges": [],
+        "importsOnly": []
+      },
+      "cohesion": null,
+      "cohesionDropped": false,
+      "confidence": "low",
+      "highWater": null,
+      "name": "tests",
       "qualifyingSourceCommits": 0,
       "rebaseline": null
     }
@@ -79,13 +113,78 @@
       },
       {
         "commits": 1,
-        "lines": 3,
+        "lines": 52,
+        "path": ".github/workflows/ci.yml"
+      },
+      {
+        "commits": 1,
+        "lines": 50,
+        "path": ".github/workflows/pages.yml"
+      },
+      {
+        "commits": 2,
+        "lines": 7,
         "path": ".gitignore"
       },
       {
-        "commits": 3,
-        "lines": 113,
+        "commits": 1,
+        "lines": 43,
+        "path": "CHANGELOG.md"
+      },
+      {
+        "commits": 1,
+        "lines": 396,
+        "path": "LICENSE"
+      },
+      {
+        "commits": 1,
+        "lines": 21,
+        "path": "LICENSE-MIT"
+      },
+      {
+        "commits": 4,
+        "lines": 165,
         "path": "README.md"
+      },
+      {
+        "commits": 1,
+        "lines": 45,
+        "path": "SCORECARD.md"
+      },
+      {
+        "commits": 1,
+        "lines": 56,
+        "path": "SECURITY.md"
+      },
+      {
+        "commits": 1,
+        "lines": 84,
+        "path": "SHIP_GATE.md"
+      },
+      {
+        "commits": 1,
+        "lines": 73,
+        "path": "atlas/README.md"
+      },
+      {
+        "commits": 1,
+        "lines": 18,
+        "path": "atlas/boundaries.yaml"
+      },
+      {
+        "commits": 1,
+        "lines": 122,
+        "path": "atlas/page.json"
+      },
+      {
+        "commits": 1,
+        "lines": 4131,
+        "path": "atlas/statistics.json"
+      },
+      {
+        "commits": 1,
+        "lines": 15905,
+        "path": "atlas/structure.json"
       },
       {
         "commits": 1,
@@ -103,8 +202,8 @@
         "path": "runs/receipts--colab--cpu-measure-20261018/files/outcome.json"
       },
       {
-        "commits": 1,
-        "lines": 43,
+        "commits": 2,
+        "lines": 47,
         "path": "runs/receipts--colab--cpu-measure-20261018/manifest.json"
       },
       {
@@ -118,8 +217,8 @@
         "path": "runs/receipts--colab--offrig-supervl-convert-20261019/files/job.log"
       },
       {
-        "commits": 1,
-        "lines": 43,
+        "commits": 2,
+        "lines": 47,
         "path": "runs/receipts--colab--offrig-supervl-convert-20261019/manifest.json"
       },
       {
@@ -168,8 +267,8 @@
         "path": "runs/receipts--colab--rung-gate-floor-20261019--out/files/smoke-window.log"
       },
       {
-        "commits": 1,
-        "lines": 137,
+        "commits": 2,
+        "lines": 153,
         "path": "runs/receipts--colab--rung-gate-floor-20261019--out/manifest.json"
       },
       {
@@ -188,8 +287,8 @@
         "path": "runs/receipts--colab--rung-gate-floor-20261019--try1-ram/files/window.log"
       },
       {
-        "commits": 1,
-        "lines": 54,
+        "commits": 2,
+        "lines": 60,
         "path": "runs/receipts--colab--rung-gate-floor-20261019--try1-ram/manifest.json"
       },
       {
@@ -203,8 +302,8 @@
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try1-gate/files/outcome.json"
       },
       {
-        "commits": 1,
-        "lines": 50,
+        "commits": 2,
+        "lines": 54,
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try1-gate/manifest.json"
       },
       {
@@ -253,8 +352,8 @@
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try2-content-path/files/smoke-window.log"
       },
       {
-        "commits": 1,
-        "lines": 152,
+        "commits": 2,
+        "lines": 170,
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try2-content-path/manifest.json"
       },
       {
@@ -263,8 +362,8 @@
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try3-stopped/files/outcome.json"
       },
       {
-        "commits": 1,
-        "lines": 37,
+        "commits": 2,
+        "lines": 39,
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try3-stopped/manifest.json"
       },
       {
@@ -313,8 +412,8 @@
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try4/files/smoke-window.log"
       },
       {
-        "commits": 1,
-        "lines": 152,
+        "commits": 2,
+        "lines": 170,
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try4/manifest.json"
       },
       {
@@ -373,8 +472,8 @@
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/smoke-window.log"
       },
       {
-        "commits": 1,
-        "lines": 187,
+        "commits": 2,
+        "lines": 209,
         "path": "runs/receipts--colab--rung-prestep-muse-20261019--try5/manifest.json"
       },
       {
@@ -433,8 +532,8 @@
         "path": "runs/receipts--colab--rung-prestep-muse-20261019/files/rung_prestep_muse.py"
       },
       {
-        "commits": 1,
-        "lines": 187,
+        "commits": 2,
+        "lines": 209,
         "path": "runs/receipts--colab--rung-prestep-muse-20261019/manifest.json"
       },
       {
@@ -488,8 +587,8 @@
         "path": "runs/receipts--colab--rung-via-bf16-20261019--out/files/window.log"
       },
       {
-        "commits": 1,
-        "lines": 154,
+        "commits": 2,
+        "lines": 174,
         "path": "runs/receipts--colab--rung-via-bf16-20261019--out/manifest.json"
       },
       {
@@ -508,8 +607,8 @@
         "path": "runs/receipts--colab--rung-via-bf16-20261019--try1-gate/files/window.log"
       },
       {
-        "commits": 1,
-        "lines": 54,
+        "commits": 2,
+        "lines": 60,
         "path": "runs/receipts--colab--rung-via-bf16-20261019--try1-gate/manifest.json"
       },
       {
@@ -518,8 +617,8 @@
         "path": "runs/receipts--colab--rung-via-bf16-20261019/files/rung_via_bf16.py"
       },
       {
-        "commits": 1,
-        "lines": 28,
+        "commits": 2,
+        "lines": 30,
         "path": "runs/receipts--colab--rung-via-bf16-20261019/manifest.json"
       },
       {
@@ -538,8 +637,8 @@
         "path": "runs/receipts--colab--scripts-430285a/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 57,
+        "commits": 2,
+        "lines": 63,
         "path": "runs/receipts--colab--scripts-430285a/manifest.json"
       },
       {
@@ -548,8 +647,8 @@
         "path": "runs/receipts--colab--token-scope-check/files/run.sh"
       },
       {
-        "commits": 1,
-        "lines": 55,
+        "commits": 2,
+        "lines": 57,
         "path": "runs/receipts--colab--token-scope-check/manifest.json"
       },
       {
@@ -643,8 +742,8 @@
         "path": "runs/receipts--colab--window1-20261016/files/rig.log"
       },
       {
-        "commits": 1,
-        "lines": 262,
+        "commits": 2,
+        "lines": 298,
         "path": "runs/receipts--colab--window1-20261016/manifest.json"
       },
       {
@@ -683,8 +782,8 @@
         "path": "runs/receipts--colab--window10-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 173,
+        "commits": 2,
+        "lines": 187,
         "path": "runs/receipts--colab--window10-20261017/manifest.json"
       },
       {
@@ -718,8 +817,8 @@
         "path": "runs/receipts--colab--window10b-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 160,
+        "commits": 2,
+        "lines": 172,
         "path": "runs/receipts--colab--window10b-20261017/manifest.json"
       },
       {
@@ -763,8 +862,8 @@
         "path": "runs/receipts--colab--window10c-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 186,
+        "commits": 2,
+        "lines": 202,
         "path": "runs/receipts--colab--window10c-20261017/manifest.json"
       },
       {
@@ -794,17 +893,12 @@
       },
       {
         "commits": 1,
-        "lines": 134,
-        "path": "runs/receipts--colab--window10d-20261017/files/smoke-window.log"
-      },
-      {
-        "commits": 1,
         "lines": 83,
         "path": "runs/receipts--colab--window10d-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 174,
+        "commits": 3,
+        "lines": 202,
         "path": "runs/receipts--colab--window10d-20261017/manifest.json"
       },
       {
@@ -838,8 +932,8 @@
         "path": "runs/receipts--colab--window11a-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 160,
+        "commits": 2,
+        "lines": 172,
         "path": "runs/receipts--colab--window11a-20261017/manifest.json"
       },
       {
@@ -878,8 +972,8 @@
         "path": "runs/receipts--colab--window11b-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 173,
+        "commits": 2,
+        "lines": 187,
         "path": "runs/receipts--colab--window11b-20261017/manifest.json"
       },
       {
@@ -904,17 +998,12 @@
       },
       {
         "commits": 1,
-        "lines": 52,
-        "path": "runs/receipts--colab--window11c-20261017/files/smoke-window.log"
-      },
-      {
-        "commits": 1,
         "lines": 87,
         "path": "runs/receipts--colab--window11c-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 160,
+        "commits": 3,
+        "lines": 186,
         "path": "runs/receipts--colab--window11c-20261017/manifest.json"
       },
       {
@@ -953,8 +1042,8 @@
         "path": "runs/receipts--colab--window11d-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 174,
+        "commits": 2,
+        "lines": 188,
         "path": "runs/receipts--colab--window11d-20261017/manifest.json"
       },
       {
@@ -988,8 +1077,8 @@
         "path": "runs/receipts--colab--window12a-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 161,
+        "commits": 2,
+        "lines": 173,
         "path": "runs/receipts--colab--window12a-20261017/manifest.json"
       },
       {
@@ -1038,8 +1127,8 @@
         "path": "runs/receipts--colab--window12b-20261017/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 199,
+        "commits": 2,
+        "lines": 217,
         "path": "runs/receipts--colab--window12b-20261017/manifest.json"
       },
       {
@@ -1088,8 +1177,8 @@
         "path": "runs/receipts--colab--window12c-20261017/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 199,
+        "commits": 2,
+        "lines": 217,
         "path": "runs/receipts--colab--window12c-20261017/manifest.json"
       },
       {
@@ -1138,8 +1227,8 @@
         "path": "runs/receipts--colab--window12d-20261017/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 199,
+        "commits": 2,
+        "lines": 217,
         "path": "runs/receipts--colab--window12d-20261017/manifest.json"
       },
       {
@@ -1174,11 +1263,6 @@
       },
       {
         "commits": 1,
-        "lines": 52,
-        "path": "runs/receipts--colab--window12e-20261017/files/smoke-window.log"
-      },
-      {
-        "commits": 1,
         "lines": 150,
         "path": "runs/receipts--colab--window12e-20261017/files/smoke_window.sh"
       },
@@ -1188,8 +1272,8 @@
         "path": "runs/receipts--colab--window12e-20261017/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 200,
+        "commits": 3,
+        "lines": 232,
         "path": "runs/receipts--colab--window12e-20261017/manifest.json"
       },
       {
@@ -1238,8 +1322,8 @@
         "path": "runs/receipts--colab--window12f-20261017/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 199,
+        "commits": 2,
+        "lines": 217,
         "path": "runs/receipts--colab--window12f-20261017/manifest.json"
       },
       {
@@ -1303,8 +1387,8 @@
         "path": "runs/receipts--colab--window12g-20261017/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 239,
+        "commits": 2,
+        "lines": 263,
         "path": "runs/receipts--colab--window12g-20261017/manifest.json"
       },
       {
@@ -1363,8 +1447,8 @@
         "path": "runs/receipts--colab--window12h-20261017/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 226,
+        "commits": 2,
+        "lines": 248,
         "path": "runs/receipts--colab--window12h-20261017/manifest.json"
       },
       {
@@ -1418,8 +1502,8 @@
         "path": "runs/receipts--colab--window12p-20261017/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 147,
+        "commits": 2,
+        "lines": 167,
         "path": "runs/receipts--colab--window12p-20261017/manifest.json"
       },
       {
@@ -1473,8 +1557,8 @@
         "path": "runs/receipts--colab--window12q-20261017/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 147,
+        "commits": 2,
+        "lines": 167,
         "path": "runs/receipts--colab--window12q-20261017/manifest.json"
       },
       {
@@ -1523,8 +1607,8 @@
         "path": "runs/receipts--colab--window12s-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 134,
+        "commits": 2,
+        "lines": 152,
         "path": "runs/receipts--colab--window12s-20261017/manifest.json"
       },
       {
@@ -1573,8 +1657,8 @@
         "path": "runs/receipts--colab--window12s2-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 134,
+        "commits": 2,
+        "lines": 152,
         "path": "runs/receipts--colab--window12s2-20261017/manifest.json"
       },
       {
@@ -1613,8 +1697,8 @@
         "path": "runs/receipts--colab--window12s3-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 108,
+        "commits": 2,
+        "lines": 122,
         "path": "runs/receipts--colab--window12s3-20261017/manifest.json"
       },
       {
@@ -1653,8 +1737,8 @@
         "path": "runs/receipts--colab--window12s4-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 108,
+        "commits": 2,
+        "lines": 122,
         "path": "runs/receipts--colab--window12s4-20261017/manifest.json"
       },
       {
@@ -1693,8 +1777,8 @@
         "path": "runs/receipts--colab--window12s5a-20261018/files/stub_rung.sh"
       },
       {
-        "commits": 1,
-        "lines": 108,
+        "commits": 2,
+        "lines": 122,
         "path": "runs/receipts--colab--window12s5a-20261018/manifest.json"
       },
       {
@@ -1733,8 +1817,8 @@
         "path": "runs/receipts--colab--window12s5b-20261018/files/stub_rung.sh"
       },
       {
-        "commits": 1,
-        "lines": 108,
+        "commits": 2,
+        "lines": 122,
         "path": "runs/receipts--colab--window12s5b-20261018/manifest.json"
       },
       {
@@ -1773,8 +1857,8 @@
         "path": "runs/receipts--colab--window12s6a-20261018/files/stub_rung.sh"
       },
       {
-        "commits": 1,
-        "lines": 108,
+        "commits": 2,
+        "lines": 122,
         "path": "runs/receipts--colab--window12s6a-20261018/manifest.json"
       },
       {
@@ -1813,8 +1897,8 @@
         "path": "runs/receipts--colab--window12s6b-20261018/files/stub_rung.sh"
       },
       {
-        "commits": 1,
-        "lines": 108,
+        "commits": 2,
+        "lines": 122,
         "path": "runs/receipts--colab--window12s6b-20261018/manifest.json"
       },
       {
@@ -1868,8 +1952,8 @@
         "path": "runs/receipts--colab--window13b-20261018/files/status.log"
       },
       {
-        "commits": 1,
-        "lines": 212,
+        "commits": 2,
+        "lines": 232,
         "path": "runs/receipts--colab--window13b-20261018/manifest.json"
       },
       {
@@ -1943,8 +2027,8 @@
         "path": "runs/receipts--colab--window13c-survival-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 197,
+        "commits": 2,
+        "lines": 225,
         "path": "runs/receipts--colab--window13c-survival-20261018/manifest.json"
       },
       {
@@ -2013,8 +2097,8 @@
         "path": "runs/receipts--colab--window13d-cpusmoke-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 186,
+        "commits": 2,
+        "lines": 212,
         "path": "runs/receipts--colab--window13d-cpusmoke-20261018/manifest.json"
       },
       {
@@ -2068,8 +2152,8 @@
         "path": "runs/receipts--colab--window13e-prebuild-muse-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 184,
+        "commits": 2,
+        "lines": 204,
         "path": "runs/receipts--colab--window13e-prebuild-muse-20261018/manifest.json"
       },
       {
@@ -2143,8 +2227,8 @@
         "path": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 209,
+        "commits": 2,
+        "lines": 237,
         "path": "runs/receipts--colab--window13f-prebuild-qwen3.8-20261018/manifest.json"
       },
       {
@@ -2193,8 +2277,8 @@
         "path": "runs/receipts--colab--window13g-prebuild-gemma-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 171,
+        "commits": 2,
+        "lines": 189,
         "path": "runs/receipts--colab--window13g-prebuild-gemma-20261018/manifest.json"
       },
       {
@@ -2258,8 +2342,8 @@
         "path": "runs/receipts--colab--window13i-prebuild-qwen3.8-a100-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 183,
+        "commits": 2,
+        "lines": 207,
         "path": "runs/receipts--colab--window13i-prebuild-qwen3.8-a100-20261018/manifest.json"
       },
       {
@@ -2308,8 +2392,8 @@
         "path": "runs/receipts--colab--window13j-prebuild-qwen3.8-a100-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 171,
+        "commits": 2,
+        "lines": 189,
         "path": "runs/receipts--colab--window13j-prebuild-qwen3.8-a100-20261018/manifest.json"
       },
       {
@@ -2358,8 +2442,8 @@
         "path": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 171,
+        "commits": 2,
+        "lines": 189,
         "path": "runs/receipts--colab--window13k-prebuild-granite-a100-20261018/manifest.json"
       },
       {
@@ -2423,8 +2507,8 @@
         "path": "runs/receipts--colab--window13l-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 274,
+        "commits": 2,
+        "lines": 298,
         "path": "runs/receipts--colab--window13l-20261018/manifest.json"
       },
       {
@@ -2483,8 +2567,8 @@
         "path": "runs/receipts--colab--window13m-rung-wa-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 196,
+        "commits": 2,
+        "lines": 218,
         "path": "runs/receipts--colab--window13m-rung-wa-20261018/manifest.json"
       },
       {
@@ -2578,8 +2662,8 @@
         "path": "runs/receipts--colab--window13o-probe-bolt-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 251,
+        "commits": 2,
+        "lines": 287,
         "path": "runs/receipts--colab--window13o-probe-bolt-20261018/manifest.json"
       },
       {
@@ -2658,8 +2742,8 @@
         "path": "runs/receipts--colab--window13p-rung-deadline-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 212,
+        "commits": 2,
+        "lines": 242,
         "path": "runs/receipts--colab--window13p-rung-deadline-20261018/manifest.json"
       },
       {
@@ -2743,8 +2827,8 @@
         "path": "runs/receipts--colab--window13q-dead-kernel-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 226,
+        "commits": 2,
+        "lines": 258,
         "path": "runs/receipts--colab--window13q-dead-kernel-20261018/manifest.json"
       },
       {
@@ -2828,8 +2912,8 @@
         "path": "runs/receipts--colab--window13r-dead-kernel-stall600-20261018/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 225,
+        "commits": 2,
+        "lines": 257,
         "path": "runs/receipts--colab--window13r-dead-kernel-stall600-20261018/manifest.json"
       },
       {
@@ -2909,11 +2993,6 @@
       },
       {
         "commits": 1,
-        "lines": 54,
-        "path": "runs/receipts--colab--window13u-probe-xet-20261019/files/smoke-window.log"
-      },
-      {
-        "commits": 1,
         "lines": 286,
         "path": "runs/receipts--colab--window13u-probe-xet-20261019/files/smoke_window.sh"
       },
@@ -2928,8 +3007,8 @@
         "path": "runs/receipts--colab--window13u-probe-xet-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 247,
+        "commits": 3,
+        "lines": 295,
         "path": "runs/receipts--colab--window13u-probe-xet-20261019/manifest.json"
       },
       {
@@ -2988,8 +3067,8 @@
         "path": "runs/receipts--colab--window13v-rung-critic-eval-a-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 196,
+        "commits": 2,
+        "lines": 218,
         "path": "runs/receipts--colab--window13v-rung-critic-eval-a-20261019/manifest.json"
       },
       {
@@ -3043,8 +3122,8 @@
         "path": "runs/receipts--colab--window13v-rung-critic-eval-b-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 183,
+        "commits": 2,
+        "lines": 203,
         "path": "runs/receipts--colab--window13v-rung-critic-eval-b-20261019/manifest.json"
       },
       {
@@ -3103,8 +3182,8 @@
         "path": "runs/receipts--colab--window13v-rung-critic-eval-c-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 196,
+        "commits": 2,
+        "lines": 218,
         "path": "runs/receipts--colab--window13v-rung-critic-eval-c-20261019/manifest.json"
       },
       {
@@ -3128,8 +3207,8 @@
         "path": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019--try1/files/smoke-window.log"
       },
       {
-        "commits": 1,
-        "lines": 69,
+        "commits": 2,
+        "lines": 77,
         "path": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019--try1/manifest.json"
       },
       {
@@ -3178,8 +3257,8 @@
         "path": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 248,
+        "commits": 2,
+        "lines": 268,
         "path": "runs/receipts--colab--window13w-critic-eval-muse-s0-20261019/manifest.json"
       },
       {
@@ -3228,8 +3307,8 @@
         "path": "runs/receipts--colab--window13x-critic-eval-muse-s1-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 248,
+        "commits": 2,
+        "lines": 268,
         "path": "runs/receipts--colab--window13x-critic-eval-muse-s1-20261019/manifest.json"
       },
       {
@@ -3283,8 +3362,8 @@
         "path": "runs/receipts--colab--window13y-critic-eval-lightning-s0-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 225,
+        "commits": 2,
+        "lines": 247,
         "path": "runs/receipts--colab--window13y-critic-eval-lightning-s0-20261019/manifest.json"
       },
       {
@@ -3348,8 +3427,8 @@
         "path": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 210,
+        "commits": 2,
+        "lines": 234,
         "path": "runs/receipts--colab--window13z-rung-c-confirm-write-20261019/manifest.json"
       },
       {
@@ -3413,8 +3492,8 @@
         "path": "runs/receipts--colab--window14a-c-confirm-write-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 275,
+        "commits": 2,
+        "lines": 299,
         "path": "runs/receipts--colab--window14a-c-confirm-write-20261019/manifest.json"
       },
       {
@@ -3463,8 +3542,8 @@
         "path": "runs/receipts--colab--window14b-critic-eval-confirm-muse-s0-20261019/files/vm_gate.py"
       },
       {
-        "commits": 1,
-        "lines": 248,
+        "commits": 2,
+        "lines": 268,
         "path": "runs/receipts--colab--window14b-critic-eval-confirm-muse-s0-20261019/manifest.json"
       },
       {
@@ -3498,8 +3577,8 @@
         "path": "runs/receipts--colab--window2-20261017/files/smoke-window.log"
       },
       {
-        "commits": 1,
-        "lines": 160,
+        "commits": 2,
+        "lines": 172,
         "path": "runs/receipts--colab--window2-20261017/manifest.json"
       },
       {
@@ -3523,8 +3602,8 @@
         "path": "runs/receipts--colab--window3-20261017/files/smoke-window.log"
       },
       {
-        "commits": 1,
-        "lines": 134,
+        "commits": 2,
+        "lines": 142,
         "path": "runs/receipts--colab--window3-20261017/manifest.json"
       },
       {
@@ -3548,8 +3627,8 @@
         "path": "runs/receipts--colab--window4-20261017/files/smoke-window.log"
       },
       {
-        "commits": 1,
-        "lines": 132,
+        "commits": 2,
+        "lines": 140,
         "path": "runs/receipts--colab--window4-20261017/manifest.json"
       },
       {
@@ -3583,8 +3662,8 @@
         "path": "runs/receipts--colab--window5-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 170,
+        "commits": 2,
+        "lines": 182,
         "path": "runs/receipts--colab--window5-20261017/manifest.json"
       },
       {
@@ -3613,8 +3692,8 @@
         "path": "runs/receipts--colab--window6-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 156,
+        "commits": 2,
+        "lines": 166,
         "path": "runs/receipts--colab--window6-20261017/manifest.json"
       },
       {
@@ -3643,8 +3722,8 @@
         "path": "runs/receipts--colab--window6b-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 147,
+        "commits": 2,
+        "lines": 157,
         "path": "runs/receipts--colab--window6b-20261017/manifest.json"
       },
       {
@@ -3673,8 +3752,8 @@
         "path": "runs/receipts--colab--window6c-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 147,
+        "commits": 2,
+        "lines": 157,
         "path": "runs/receipts--colab--window6c-20261017/manifest.json"
       },
       {
@@ -3718,8 +3797,8 @@
         "path": "runs/receipts--colab--window7-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 187,
+        "commits": 2,
+        "lines": 203,
         "path": "runs/receipts--colab--window7-20261017/manifest.json"
       },
       {
@@ -3763,8 +3842,8 @@
         "path": "runs/receipts--colab--window7b-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 187,
+        "commits": 2,
+        "lines": 203,
         "path": "runs/receipts--colab--window7b-20261017/manifest.json"
       },
       {
@@ -3798,8 +3877,8 @@
         "path": "runs/receipts--colab--window8-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 160,
+        "commits": 2,
+        "lines": 172,
         "path": "runs/receipts--colab--window8-20261017/manifest.json"
       },
       {
@@ -3833,8 +3912,8 @@
         "path": "runs/receipts--colab--window9-20261017/files/smoke_window.sh"
       },
       {
-        "commits": 1,
-        "lines": 161,
+        "commits": 2,
+        "lines": 173,
         "path": "runs/receipts--colab--window9-20261017/manifest.json"
       },
       {
@@ -3898,8 +3977,8 @@
         "path": "runs/receipts--colab/files/units-ledger.md"
       },
       {
-        "commits": 1,
-        "lines": 182,
+        "commits": 2,
+        "lines": 206,
         "path": "runs/receipts--colab/manifest.json"
       },
       {
@@ -3918,8 +3997,8 @@
         "path": "runs/receipts--offrig-supervl-convert-20261019--plan1/files/outcome.json"
       },
       {
-        "commits": 1,
-        "lines": 28,
+        "commits": 2,
+        "lines": 30,
         "path": "runs/receipts--offrig-supervl-convert-20261019--plan1/manifest.json"
       },
       {
@@ -3948,8 +4027,8 @@
         "path": "runs/receipts--offrig-supervl-convert-20261019--plan2/files/upload-job.log"
       },
       {
-        "commits": 1,
-        "lines": 82,
+        "commits": 2,
+        "lines": 92,
         "path": "runs/receipts--offrig-supervl-convert-20261019--plan2/manifest.json"
       },
       {
@@ -3958,8 +4037,8 @@
         "path": "runs/receipts--offrig-supervl-critic-h200-20261019--plan3/files/outcome.json"
       },
       {
-        "commits": 1,
-        "lines": 30,
+        "commits": 2,
+        "lines": 32,
         "path": "runs/receipts--offrig-supervl-critic-h200-20261019--plan3/manifest.json"
       },
       {
@@ -3968,8 +4047,8 @@
         "path": "runs/receipts--offrig-supervl-critic-h200-20261019--plan4/files/outcome.json"
       },
       {
-        "commits": 1,
-        "lines": 30,
+        "commits": 2,
+        "lines": 32,
         "path": "runs/receipts--offrig-supervl-critic-h200-20261019--plan4/manifest.json"
       },
       {
@@ -3978,8 +4057,8 @@
         "path": "runs/receipts--offrig-supervl-critic-h200-20261019/files/summary.json"
       },
       {
-        "commits": 1,
-        "lines": 28,
+        "commits": 2,
+        "lines": 30,
         "path": "runs/receipts--offrig-supervl-critic-h200-20261019/manifest.json"
       },
       {
@@ -4008,8 +4087,8 @@
         "path": "runs/receipts--verifier-gold/files/reasoning-diffs-hard-2026-10.jsonl"
       },
       {
-        "commits": 1,
-        "lines": 80,
+        "commits": 2,
+        "lines": 90,
         "path": "runs/receipts--verifier-gold/manifest.json"
       },
       {
@@ -4023,8 +4102,8 @@
         "path": "runs/rnd-watch--argon-gpu-stack/files/2026-10-19.md"
       },
       {
-        "commits": 1,
-        "lines": 27,
+        "commits": 2,
+        "lines": 29,
         "path": "runs/rnd-watch--argon-gpu-stack/manifest.json"
       },
       {
@@ -4038,8 +4117,8 @@
         "path": "runs/rnd-watch--reports/files/2026-10-19.md"
       },
       {
-        "commits": 1,
-        "lines": 40,
+        "commits": 2,
+        "lines": 44,
         "path": "runs/rnd-watch--reports/manifest.json"
       },
       {
@@ -4053,8 +4132,8 @@
         "path": "runs/rnd-watch--runs/files/2026-10-19.json"
       },
       {
-        "commits": 1,
-        "lines": 40,
+        "commits": 2,
+        "lines": 44,
         "path": "runs/rnd-watch--runs/manifest.json"
       },
       {
@@ -4068,24 +4147,114 @@
         "path": "runs/rnd-watch/files/state.json.bak"
       },
       {
-        "commits": 1,
-        "lines": 40,
+        "commits": 2,
+        "lines": 44,
         "path": "runs/rnd-watch/manifest.json"
+      },
+      {
+        "commits": 1,
+        "lines": 36,
+        "path": "site/astro.config.mjs"
+      },
+      {
+        "commits": 1,
+        "lines": 5676,
+        "path": "site/package-lock.json"
+      },
+      {
+        "commits": 1,
+        "lines": 21,
+        "path": "site/package.json"
+      },
+      {
+        "commits": 1,
+        "lines": 4,
+        "path": "site/public/favicon.svg"
+      },
+      {
+        "commits": 1,
+        "lines": 0,
+        "path": "site/src/assets/logo.png"
+      },
+      {
+        "commits": 1,
+        "lines": 7,
+        "path": "site/src/content.config.ts"
+      },
+      {
+        "commits": 1,
+        "lines": 69,
+        "path": "site/src/content/docs/handbook/getting-started.md"
+      },
+      {
+        "commits": 1,
+        "lines": 63,
+        "path": "site/src/content/docs/handbook/index.md"
+      },
+      {
+        "commits": 1,
+        "lines": 115,
+        "path": "site/src/content/docs/handbook/layout.md"
+      },
+      {
+        "commits": 1,
+        "lines": 92,
+        "path": "site/src/content/docs/handbook/private-files.md"
+      },
+      {
+        "commits": 1,
+        "lines": 49,
+        "path": "site/src/content/docs/handbook/security.md"
+      },
+      {
+        "commits": 1,
+        "lines": 71,
+        "path": "site/src/content/docs/handbook/verifying.md"
+      },
+      {
+        "commits": 1,
+        "lines": 35,
+        "path": "site/src/pages/index.astro"
+      },
+      {
+        "commits": 1,
+        "lines": 124,
+        "path": "site/src/site-config.ts"
+      },
+      {
+        "commits": 1,
+        "lines": 3,
+        "path": "site/src/styles/global.css"
+      },
+      {
+        "commits": 1,
+        "lines": 12,
+        "path": "site/src/styles/starlight-custom.css"
+      },
+      {
+        "commits": 1,
+        "lines": 5,
+        "path": "site/tsconfig.json"
       },
       {
         "commits": 2,
         "lines": 32,
         "path": "store.json"
+      },
+      {
+        "commits": 1,
+        "lines": 23,
+        "path": "verify.sh"
       }
     ]
   },
   "confidence": {
     "level": "low",
-    "reason": "fewer than 30 qualifying commits in the window, and fewer than 20 source files reach 10 revisions"
+    "reason": "fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions"
   },
-  "generatedAt": "2026-10-19T23:49:46.583Z",
+  "generatedAt": "2026-10-20T16:28:13.031Z",
   "generatedFrom": {
-    "commit": "bae30ba06b6e794d052cf76e0e5e2b5f5d93ac53"
+    "commit": "e8a7689209d3f2288c84582da8328202ef6bc310"
   },
   "pairs": [],
   "parameters": {
@@ -4098,16 +4267,16 @@
     "floor": "fallen",
     "floorHeld": false,
     "floorTrigger": "both",
-    "headDate": "2026-10-19T19:32:36-04:00",
-    "inScopeFiles": 828,
+    "headDate": "2026-10-19T21:41:42-04:00",
+    "inScopeFiles": 838,
     "pinnedStart": null,
-    "priorFloor": null,
-    "qualifyingCommits": 6,
+    "priorFloor": "fallen",
+    "qualifyingCommits": 8,
     "qualifyingMinimum": 30,
     "revisions": 5,
     "shared": 10,
     "sharedFloorUsed": 3,
-    "since": "2026-04-22T23:32:36.000Z",
+    "since": "2026-04-23T01:41:42.000Z",
     "sourceExtensions": [
       ".js",
       ".mjs",

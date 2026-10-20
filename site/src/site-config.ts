@@ -8,10 +8,10 @@ export const config: SiteConfig = {
   brandName: 'rnd-data',
   repoUrl: 'https://github.com/mcp-tool-shop-org/rnd-data',
   footerText:
-    'CC BY 4.0 (data) · MIT (scripts) — Built by <a href="https://mcp-tool-shop.github.io/">MCP Tool Shop</a>',
+    'CC BY 4.0 (data) · MIT (package & scripts) — Built by <a href="https://mcp-tool-shop.github.io/">MCP Tool Shop</a>',
 
   hero: {
-    badge: 'Open research · raw data · no code',
+    badge: 'Open research · raw data · MIT read-only package',
     headline: 'The raw data.',
     headlineAccent: 'Every file pinned by SHA-256.',
     description:
@@ -49,8 +49,8 @@ export const config: SiteConfig = {
           desc: 'The source folder, with / written as --. A run is the nearest folder holding an outcome.json, so each retry is its own run; other files are grouped into a collection.',
         },
         {
-          title: 'No code',
-          desc: 'rnd writes it (rnd raw ingest) and reads it (rnd raw verify, rnd where, the index). The repo’s own scripts are verify.sh and two workflows; the .sh and .py files under runs/ are receipts of runs.',
+          title: 'Read-only package under src/',
+          desc: 'The repository holds data, plus its MIT read-only Python package under src/ (rnd-data: ls, show, where, schema). rnd writes it (rnd raw ingest) and checks it (rnd raw verify). The .sh and .py files under runs/ are receipts of runs.',
         },
         {
           title: 'No machine paths',

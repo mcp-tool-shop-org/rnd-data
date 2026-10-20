@@ -1,0 +1,264 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://mcp-tool-shop-org.github.io/rnd-data/schemas/run-v1.schema.json",
+ "title": "rnd-data run manifest (v1)",
+ "description": "Schema for runs/<id>/manifest.json (rnd-data-run/v1).",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "schema",
+  "id",
+  "source",
+  "models",
+  "licence_note",
+  "files",
+  "copies",
+  "private_files",
+  "ingested",
+  "rnd_commit"
+ ],
+ "properties": {
+  "schema": {
+   "type": "string",
+   "const": "rnd-data-run/v1"
+  },
+  "id": {
+   "type": "string",
+   "minLength": 1
+  },
+  "kind": {
+   "type": "string",
+   "enum": [
+    "run",
+    "collection"
+   ]
+  },
+  "source": {
+   "type": "string",
+   "minLength": 1
+  },
+  "models": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "minLength": 1
+   }
+  },
+  "licence_note": {
+   "type": "string",
+   "minLength": 1
+  },
+  "files": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/file_entry"
+   }
+  },
+  "copies": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/copy_entry"
+   }
+  },
+  "private_files": {
+   "type": "object",
+   "propertyNames": {
+    "enum": [
+     "sealed",
+     "blind",
+     "item-text",
+     "unapproved",
+     "private-project",
+     "identity"
+    ]
+   },
+   "additionalProperties": {
+    "type": "integer",
+    "minimum": 1
+   }
+  },
+  "ingested": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "rnd_commit": {
+   "type": "string",
+   "pattern": "^[0-9a-f]{7,40}$"
+  }
+ },
+ "if": {
+  "properties": {
+   "id": {
+    "not": {
+     "pattern": "^rnd-watch(?:--.+)?$"
+    }
+   }
+  },
+  "required": [
+   "id"
+  ]
+ },
+ "then": {
+  "required": [
+   "kind"
+  ]
+ },
+ "$defs": {
+  "file_entry": {
+   "type": "object",
+   "required": [
+    "path",
+    "visibility",
+    "bytes",
+    "tier"
+   ],
+   "properties": {
+    "visibility": {
+     "type": "string",
+     "enum": [
+      "public",
+      "private"
+     ]
+    }
+   },
+   "oneOf": [
+    {
+     "$ref": "#/$defs/public_file_entry"
+    },
+    {
+     "$ref": "#/$defs/private_file_entry"
+    }
+   ]
+  },
+  "public_file_entry": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "path",
+    "visibility",
+    "sha256",
+    "bytes",
+    "tier",
+    "licence"
+   ],
+   "properties": {
+    "path": {
+     "type": "string",
+     "minLength": 1
+    },
+    "visibility": {
+     "type": "string",
+     "const": "public"
+    },
+    "sha256": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{64}$"
+    },
+    "bytes": {
+     "type": "integer",
+     "minimum": 0
+    },
+    "tier": {
+     "type": "string",
+     "const": "T4"
+    },
+    "licence": {
+     "type": "string",
+     "minLength": 1
+    },
+    "creator": {
+     "type": "string",
+     "minLength": 1
+    },
+    "copyright": {
+     "type": "string",
+     "minLength": 1
+    },
+    "prior_modifications": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "minLength": 1
+     }
+    }
+   }
+  },
+  "private_file_entry": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "path",
+    "visibility",
+    "bytes",
+    "tier",
+    "private_why"
+   ],
+   "properties": {
+    "path": {
+     "type": "string",
+     "minLength": 1
+    },
+    "visibility": {
+     "type": "string",
+     "const": "private"
+    },
+    "sha256": {
+     "type": "null"
+    },
+    "bytes": {
+     "type": "integer",
+     "minimum": 0
+    },
+    "tier": {
+     "type": "string",
+     "const": "T4"
+    },
+    "licence": {
+     "type": "null"
+    },
+    "private_why": {
+     "type": "string",
+     "const": "identity"
+    },
+    "creator": {
+     "type": "string",
+     "minLength": 1
+    },
+    "copyright": {
+     "type": "string",
+     "minLength": 1
+    },
+    "prior_modifications": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "minLength": 1
+     }
+    }
+   }
+  },
+  "copy_entry": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "sha256",
+    "store",
+    "location"
+   ],
+   "properties": {
+    "sha256": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{64}$"
+    },
+    "store": {
+     "type": "string",
+     "minLength": 1
+    },
+    "location": {
+     "type": "string",
+     "minLength": 1
+    }
+   }
+  }
+ }
+}

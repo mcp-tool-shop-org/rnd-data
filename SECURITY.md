@@ -46,9 +46,10 @@ rewrite.
 
 ## Scope
 
-rnd-data holds data, not code.
+rnd-data holds data, plus its MIT read-only package under `src/`.
 
-- **Data held:** run manifests (`runs/<id>/manifest.json`), the runs' small public files, and `store.json`.
+- **Data and package held:** run manifests (`runs/<id>/manifest.json`), the runs' small public files, `store.json`,
+  and the MIT read-only Python package under `src/`.
 - **Never held:** credentials; private files' bytes or hashes; machine paths (each machine finds a store through its
   own gitignored `store.local.json` or `$RND_DATA_STORE_<NAME>`).
 - **What writes to it:** rnd's `rnd raw ingest`, with the Publisher's review of every ingest of its receipts. CI

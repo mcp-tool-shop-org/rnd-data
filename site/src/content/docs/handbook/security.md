@@ -7,7 +7,8 @@ sidebar:
 
 ## What it holds, and never holds
 
-- **Holds:** run manifests, the runs' small public files, `store.json`, `verify.sh`, the workflows and this site.
+- **Holds:** run manifests, the runs' small public files, `store.json`, the MIT read-only package under `src/`,
+  `verify.sh`, the workflows and this site.
 - **Never holds:**
   - credentials of any kind;
   - a private file's bytes, or its hash;

@@ -14,9 +14,10 @@ The raw data behind the studio's research: every run's receipts and outputs, wit
 SHA-256. **It's public, because the studio's research is open by default.** The few files with a named reason to
 be private are held in the private companion, rnd-data-private, and no private file's hash is published here.
 
-It holds no code. rnd writes and reads it (`rnd raw ingest`, `rnd raw verify`, `rnd where`). rnd's index reads its
-manifests when this checkout sits beside the rnd library, or is named by `$RND_DATA`. The repository's own scripts
-are `verify.sh` and its two workflows; the `.sh` and `.py` files under `runs/` are receipts of runs, kept as data.
+The repository holds data, plus its MIT read-only package under `src/` (`rnd-data`: `ls`, `show`, `where`, `schema`).
+rnd writes and checks it (`rnd raw ingest`, `rnd raw verify`, `rnd where`). rnd's index reads its manifests when this
+checkout sits beside the rnd library, or is named by `$RND_DATA`. The repository's own scripts are `verify.sh` and its
+two workflows; the `.sh` and `.py` files under `runs/` are receipts of runs, kept as data.
 
 The [handbook](https://mcp-tool-shop-org.github.io/rnd-data/handbook/) has the manifest field by field, the
 private-file rules and the checks.
@@ -28,6 +29,7 @@ private-file rules and the checks.
 | `runs/<id>/manifest.json` | One run's files (schema `rnd-data-run/v1`): each file's path, SHA-256, size, tier, licence and visibility, and every copy |
 | `runs/<id>/files/…` | That run's small public files (256 KB or less), in git |
 | `store.json` | The stores that hold bytes outside this repository, and how a machine finds each one |
+| `src/rnd_data/` | The MIT read-only Python package (`rnd-data`: `ls`, `show`, `where`, `schema`) and the manifest JSON Schemas |
 
 - **Files over 256 KB** are stored once, by content, at `blobs/<sha256[:2]>/<sha256>`. Every run that has one names it
   by hash, so a build several windows used is stored once.
@@ -83,8 +85,8 @@ has given the go.
 
 ## Security and trust
 
-- **What it holds:** run manifests, the runs' small public files, `store.json`, `verify.sh`, two workflows and the
-  site.
+- **What it holds:** run manifests, the runs' small public files, `store.json`, the MIT read-only package under
+  `src/`, `tests/`, `verify.sh`, two workflows and the site.
 - **What it never holds:** credentials; a private file's bytes or its hash; machine paths.
 - **What touches it:** rnd's ingest (`rnd raw ingest`) writes every manifest and every file under `runs/`, with the
   Publisher's review of every ingest of its receipts. CI checks every pull request with read-only permissions.
@@ -97,7 +99,7 @@ file, see [SECURITY.md](SECURITY.md).
 
 rnd-data is licensed like rnd:
 - **The data** is [CC BY 4.0](LICENSE).
-- **The scripts** (`*.sh`, `*.py`) are [MIT](LICENSE-MIT).
+- **The package and scripts** (`src/`, `tests/`, `*.sh`, `*.py`) are [MIT](LICENSE-MIT).
 - **A third-party file** keeps the licence its manifest names. The llama.cpp build is MIT (commit 620d2225).
 
 A file's manifest `licence` field is the final word for that file. Every public file's manifest names its licence;
