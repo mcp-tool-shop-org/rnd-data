@@ -278,7 +278,7 @@ def test_live_repo_manifests_and_store_validate() -> None:
     assert problems == []
 
     manifest_paths = sorted((REPO_ROOT / "runs").glob("*/manifest.json"))
-    assert len(manifest_paths) == 100
+    assert len(manifest_paths) == 111
     for mp in manifest_paths:
         s_id, probs = validate_file(mp)
         assert s_id == RUN_SCHEMA, f"{mp}: unexpected schema {s_id}"
@@ -286,12 +286,12 @@ def test_live_repo_manifests_and_store_validate() -> None:
 
 
 def test_live_repo_ls_counts() -> None:
-    """Gate 3 counts on live repo: 100 manifests (74 runs, 22 collections, 4 without kind); 69 MIT, 88 CC-BY-4.0."""
+    """Gate 3 counts on live repo: 111 manifests (74 runs, 33 collections, 4 without kind); 70 MIT, 98 CC-BY-4.0."""
     store = Store(REPO_ROOT)
     all_runs = store.runs()
-    assert len(all_runs) == 100
+    assert len(all_runs) == 111
     assert sum(1 for r in all_runs if r["kind"] == "run") == 74
-    assert sum(1 for r in all_runs if r["kind"] == "collection") == 22
+    assert sum(1 for r in all_runs if r["kind"] == "collection") == 33
     no_kind = [r for r in all_runs if r["kind"] is None]
     assert len(no_kind) == 4
     assert all(r["kind_label"] == "(no kind)" for r in no_kind)
@@ -304,23 +304,24 @@ def test_live_repo_ls_counts() -> None:
 
     mit_runs = store.runs(licence="MIT")
     cc_runs = store.runs(licence="CC-BY-4.0")
-    assert len(mit_runs) == 69
-    assert len(cc_runs) == 88
+    assert len(mit_runs) == 70
+    assert len(cc_runs) == 98
 
     mit_ids = {r["id"] for r in mit_runs}
     cc_ids = {r["id"] for r in cc_runs}
-    assert len(mit_ids & cc_ids) == 67
-    assert sum(1 for r in all_runs if r["public_files"] == 0) == 10
+    assert len(mit_ids & cc_ids) == 68
+    assert sum(1 for r in all_runs if r["public_files"] == 0) == 11
 
     assert len(store.runs(kind="run")) == 74
-    assert len(store.runs(kind="collection")) == 22
+    assert len(store.runs(kind="collection")) == 33
     assert len(store.runs(source="receipts")) == 96
     assert len(store.runs(source="rnd-watch")) == 4
+    assert len(store.runs(source="xrpl-lab-runs")) == 11
 
     code, out, err = run_cli("--root", str(REPO_ROOT), "ls")
     assert code == 0
     assert err == ""
-    assert "100 manifests: 74 runs, 22 collections and 4 without kind" in out
+    assert "111 manifests: 74 runs, 33 collections and 4 without kind" in out
 
 
 # ----------------------------------------------------------------------
