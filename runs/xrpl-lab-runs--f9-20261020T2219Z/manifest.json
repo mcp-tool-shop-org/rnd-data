@@ -1,0 +1,202 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "xrpl-lab-runs--f9-20261020T2219Z",
+ "kind": "collection",
+ "source": "xrpl-lab-runs/f9-20261020T2219Z",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "command.txt",
+   "sha256": "9e5384fc06577f81cced5af423082a185498b0a90702ae67b32c926254690b09",
+   "bytes": 486,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "env.txt",
+   "sha256": "b51ddcf07a3eab9730b289b3e312072f680d89d4df6e00463483d0a3fd99e1de",
+   "bytes": 172,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "ledger/account_info_issuer.json",
+   "sha256": "e8aa7fa59efe2d8084e7c7042cebcdd321fe679c7f7b536b08a3ac5ddf797c03",
+   "bytes": 1130,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "ledger/account_info_wallet.json",
+   "sha256": "ea76705680b18e3390c098f4152101fe62827ed4d27f5c588097a91d4574c386",
+   "bytes": 1125,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "ledger/account_lines_issuer.json",
+   "sha256": "b773740acc1e943660f9da286afc15dea846369253dbec3659722bcb8e4bc1f9",
+   "bytes": 458,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "ledger/account_lines_wallet.json",
+   "sha256": "a8f953a9eda086b138a9ac9cee6a15dc285cf4940837bda73c70f6633954e255",
+   "bytes": 457,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "ledger/account_tx_issuer.json",
+   "sha256": "e61532f60192b2d089f6787e106b672dc9746bc47f89f3948b28ebc8701382b6",
+   "bytes": 41990,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "ledger/account_tx_wallet.json",
+   "sha256": "37a87a0936f6adafe748222e94f3674fea659cbdf96f934a799b7d4e9f103a5c",
+   "bytes": 40309,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "ledger/amm_info_after.json",
+   "sha256": "4ebf4af0f35400df49d4a5e10da51f8f55a128e84f7aaa3a463edadb8dd81222",
+   "bytes": 489,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "ledger/server_state.json",
+   "sha256": "ff0c54dfae92c7e5f9e9538af971b21558a56a068afa7a07bc3739c736299492",
+   "bytes": 1864,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "module_report.md",
+   "sha256": "6adb3dc754b83befc0ac7ca437cbc8fa0d94ee62402bf97d416d55ee8523bcbc",
+   "bytes": 2258,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "preflight.txt",
+   "sha256": "7ba817f58c57c35ec414dc4733e5f95996fbde2907d4649edbfb728c7044c721",
+   "bytes": 391,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "state.json",
+   "sha256": null,
+   "bytes": 3244,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "stdout.txt",
+   "sha256": null,
+   "bytes": 17892,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "9e5384fc06577f81cced5af423082a185498b0a90702ae67b32c926254690b09",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/command.txt"
+  },
+  {
+   "sha256": "b51ddcf07a3eab9730b289b3e312072f680d89d4df6e00463483d0a3fd99e1de",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/env.txt"
+  },
+  {
+   "sha256": "e8aa7fa59efe2d8084e7c7042cebcdd321fe679c7f7b536b08a3ac5ddf797c03",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/ledger/account_info_issuer.json"
+  },
+  {
+   "sha256": "ea76705680b18e3390c098f4152101fe62827ed4d27f5c588097a91d4574c386",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/ledger/account_info_wallet.json"
+  },
+  {
+   "sha256": "b773740acc1e943660f9da286afc15dea846369253dbec3659722bcb8e4bc1f9",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/ledger/account_lines_issuer.json"
+  },
+  {
+   "sha256": "a8f953a9eda086b138a9ac9cee6a15dc285cf4940837bda73c70f6633954e255",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/ledger/account_lines_wallet.json"
+  },
+  {
+   "sha256": "e61532f60192b2d089f6787e106b672dc9746bc47f89f3948b28ebc8701382b6",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/ledger/account_tx_issuer.json"
+  },
+  {
+   "sha256": "37a87a0936f6adafe748222e94f3674fea659cbdf96f934a799b7d4e9f103a5c",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/ledger/account_tx_wallet.json"
+  },
+  {
+   "sha256": "4ebf4af0f35400df49d4a5e10da51f8f55a128e84f7aaa3a463edadb8dd81222",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/ledger/amm_info_after.json"
+  },
+  {
+   "sha256": "ff0c54dfae92c7e5f9e9538af971b21558a56a068afa7a07bc3739c736299492",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/ledger/server_state.json"
+  },
+  {
+   "sha256": "6adb3dc754b83befc0ac7ca437cbc8fa0d94ee62402bf97d416d55ee8523bcbc",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/module_report.md"
+  },
+  {
+   "sha256": "7ba817f58c57c35ec414dc4733e5f95996fbde2907d4649edbfb728c7044c721",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/preflight.txt"
+  },
+  {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--f9-20261020T2219Z/files/stderr.txt"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-20",
+ "rnd_commit": "7ba9f27440fbf2ba1180915f789b86ad9ed3aa94"
+}

@@ -1,0 +1,8 @@
+89FACDA947 {'TransactionType': 'AccountSet', 'Account': 'rfTJ8mD8mLqoQbP53RiKRU5ePLBABthtLt', 'Destination': None, 'validated': True, 'ledger_index': 21697068, 'Sequence': 21697065, 'TransactionResult': 'tesSUCCESS'}
+4CEA31A82D {'TransactionType': 'TrustSet', 'Account': 'rfByCoxQzBREFTzLCit1chsmW4y4LLEVGm', 'Destination': None, 'validated': True, 'ledger_index': 21697070, 'Sequence': 21697063, 'TransactionResult': 'tesSUCCESS'}
+BBF879FB2D {'TransactionType': 'Payment', 'Account': 'rfTJ8mD8mLqoQbP53RiKRU5ePLBABthtLt', 'Destination': 'rfByCoxQzBREFTzLCit1chsmW4y4LLEVGm', 'validated': True, 'ledger_index': 21697072, 'Sequence': 21697066, 'TransactionResult': 'tesSUCCESS'}
+7407F09D2B {'TransactionType': 'AMMCreate', 'Account': 'rfByCoxQzBREFTzLCit1chsmW4y4LLEVGm', 'Destination': None, 'validated': True, 'ledger_index': 21697075, 'Sequence': 21697064, 'TransactionResult': 'tesSUCCESS'}
+20A1F8D09B {'TransactionType': 'AMMDeposit', 'Account': 'rfByCoxQzBREFTzLCit1chsmW4y4LLEVGm', 'Destination': None, 'validated': True, 'ledger_index': 21697078, 'Sequence': 21697065, 'TransactionResult': 'tesSUCCESS'}
+2993219EE1 {'TransactionType': 'AMMWithdraw', 'Account': 'rfByCoxQzBREFTzLCit1chsmW4y4LLEVGm', 'Destination': None, 'validated': True, 'ledger_index': 21697081, 'Sequence': 21697066, 'TransactionResult': 'tesSUCCESS'}
+rfByCoxQzBREFTzLCit1chsmW4y4LLEVGm {'Balance': '99799970', 'Sequence': 21697067, 'OwnerCount': 1, 'error': None}
+rfTJ8mD8mLqoQbP53RiKRU5ePLBABthtLt {'Balance': '99999980', 'Sequence': 21697067, 'OwnerCount': 0, 'error': None}

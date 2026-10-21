@@ -1,0 +1,1076 @@
+{
+  "account": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+  "ledger_index_max": 21693295,
+  "ledger_index_min": 12929081,
+  "limit": 200,
+  "status": "success",
+  "transactions": [
+    {
+      "meta": {
+        "AffectedNodes": [
+          {
+            "DeletedNode": {
+              "FinalFields": {
+                "Flags": 0,
+                "Owner": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+                "PreviousTxnLgrSeq": 21693284,
+                "RootIndex": "87F5B9D77A95FE19CD1B85C2068EB83C97B314042228D19E008CFBE3CEC36989"
+              },
+              "LedgerEntryType": "DirectoryNode",
+              "LedgerIndex": "87F5B9D77A95FE19CD1B85C2068EB83C97B314042228D19E008CFBE3CEC36989"
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Flags": 0,
+                "Owner": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                "RootIndex": "9D5155F9C6C0B54C9E484D64E5D0EC73FEDA4C93B78D1C249C09E24CB603E60F"
+              },
+              "LedgerEntryType": "DirectoryNode",
+              "LedgerIndex": "9D5155F9C6C0B54C9E484D64E5D0EC73FEDA4C93B78D1C249C09E24CB603E60F",
+              "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+              "PreviousTxnLgrSeq": 21693284
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-1000"
+                },
+                "Flags": 131072,
+                "HighLimit": {
+                  "currency": "LAB",
+                  "issuer": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "value": "10000"
+                },
+                "HighNode": "0",
+                "LowLimit": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                  "value": "0"
+                },
+                "LowNode": "0"
+              },
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "9DF439F37D1E9BF7EC7508608929A78E66E413506944AD25A5CAF0E589739633",
+              "PreviousFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-970"
+                }
+              },
+              "PreviousTxnID": "2105787A476B40862A36A4634F7DFE091D0F5D576DE7B2CD24716A8706A0203F",
+              "PreviousTxnLgrSeq": 21693287
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                "Balance": "99799970",
+                "Flags": 0,
+                "OwnerCount": 1,
+                "Sequence": 21693277
+              },
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "B6C84A1DB5A6765992E1D5998294B8E215A01110FE0513C59A8E3601E730EA3A",
+              "PreviousFields": {
+                "Balance": "69799980",
+                "OwnerCount": 2,
+                "Sequence": 21693276
+              },
+              "PreviousTxnID": "2105787A476B40862A36A4634F7DFE091D0F5D576DE7B2CD24716A8706A0203F",
+              "PreviousTxnLgrSeq": 21693287
+            }
+          },
+          {
+            "DeletedNode": {
+              "FinalFields": {
+                "Balance": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "0"
+                },
+                "Flags": 2097152,
+                "HighLimit": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "value": "0"
+                },
+                "HighNode": "0",
+                "LowLimit": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "0"
+                },
+                "LowNode": "0",
+                "PreviousTxnID": "2105787A476B40862A36A4634F7DFE091D0F5D576DE7B2CD24716A8706A0203F",
+                "PreviousTxnLgrSeq": 21693287
+              },
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "D2EEB107F12B3176EE65FFAACE3FBC5976062E7F331747620F277D54D1835ABF",
+              "PreviousFields": {
+                "Balance": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-30000"
+                },
+                "Flags": 2228224
+              }
+            }
+          },
+          {
+            "ModifiedNode": {
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "DB5A28520401C0E5C1091A4AFAB04076602C35A5B2821F05348CCAC80C5147EB",
+              "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+              "PreviousTxnLgrSeq": 21693284
+            }
+          },
+          {
+            "DeletedNode": {
+              "FinalFields": {
+                "Account": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                "Asset": {
+                  "currency": "XRP"
+                },
+                "Asset2": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3"
+                },
+                "AuctionSlot": {
+                  "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "DiscountedFee": 50,
+                  "Expiration": 845934552,
+                  "Price": {
+                    "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                    "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                    "value": "0"
+                  }
+                },
+                "Flags": 0,
+                "LPTokenBalance": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "30000"
+                },
+                "OwnerNode": "0",
+                "PreviousTxnID": "2105787A476B40862A36A4634F7DFE091D0F5D576DE7B2CD24716A8706A0203F",
+                "PreviousTxnLgrSeq": 21693287,
+                "TradingFee": 500,
+                "VoteSlots": [
+                  {
+                    "VoteEntry": {
+                      "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                      "TradingFee": 500,
+                      "VoteWeight": 100000
+                    }
+                  }
+                ]
+              },
+              "LedgerEntryType": "AMM",
+              "LedgerIndex": "E1DCD9AF7FC29E72E48737E6260021FAC8362DD45EF5523F3304D481393FBF7D"
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Flags": 0,
+                "Owner": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                "RootIndex": "E2B5677F52C6F7FB84B7C9FC7D8B1D5375335906CC9FDBFE6326F3DFFD33A293"
+              },
+              "LedgerEntryType": "DirectoryNode",
+              "LedgerIndex": "E2B5677F52C6F7FB84B7C9FC7D8B1D5375335906CC9FDBFE6326F3DFFD33A293",
+              "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+              "PreviousTxnLgrSeq": 21693284
+            }
+          },
+          {
+            "DeletedNode": {
+              "FinalFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "0"
+                },
+                "Flags": 16777216,
+                "HighLimit": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                  "value": "0"
+                },
+                "HighNode": "0",
+                "LowLimit": {
+                  "currency": "LAB",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "0"
+                },
+                "LowNode": "0",
+                "PreviousTxnID": "2105787A476B40862A36A4634F7DFE091D0F5D576DE7B2CD24716A8706A0203F",
+                "PreviousTxnLgrSeq": 21693287
+              },
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "F8E6B77197A1C3FBD52E363872E4D9320C8B1D70064664378997EAE0BBC7AE5A",
+              "PreviousFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "30"
+                },
+                "Flags": 16842752
+              }
+            }
+          },
+          {
+            "DeletedNode": {
+              "FinalFields": {
+                "AMMID": "E1DCD9AF7FC29E72E48737E6260021FAC8362DD45EF5523F3304D481393FBF7D",
+                "Account": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                "Balance": "0",
+                "Flags": 26214400,
+                "OwnerCount": 0,
+                "PreviousTxnID": "2105787A476B40862A36A4634F7DFE091D0F5D576DE7B2CD24716A8706A0203F",
+                "PreviousTxnLgrSeq": 21693287,
+                "Sequence": 21693284
+              },
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "F97E0C7845A5FE706186198B45FFCE643708782B930E6C94E4F099D52281CD5A",
+              "PreviousFields": {
+                "Balance": "30000000",
+                "OwnerCount": 1
+              }
+            }
+          }
+        ],
+        "TransactionIndex": 17,
+        "TransactionResult": "tesSUCCESS"
+      },
+      "tx": {
+        "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+        "Asset": {
+          "currency": "XRP"
+        },
+        "Asset2": {
+          "currency": "LAB",
+          "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3"
+        },
+        "Fee": "10",
+        "Flags": 131072,
+        "LastLedgerSequence": 21693308,
+        "Sequence": 21693276,
+        "SigningPubKey": "ED493831385CE33258957F0291A5B09070404C5D92FD8D8A803A6D23271BFEF5B0",
+        "TransactionType": "AMMWithdraw",
+        "TxnSignature": "66EA0D50EB15C1452B1746D57EBD7E9466BBD7BC13D998E3D9C91DD7BBEF780D9891C761A4C419EA484E9D9E87EA479040D5AA207F31F744D5E5F22D8C642F01",
+        "ctid": "C14B036A00110001",
+        "date": 845848181,
+        "hash": "27CADA3FEB91833CFEA5792D62E0D6EF3A8292FB83C7C81B2254B9FF26CC84B5",
+        "inLedger": 21693290,
+        "ledger_index": 21693290
+      },
+      "validated": true
+    },
+    {
+      "meta": {
+        "AffectedNodes": [
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-970"
+                },
+                "Flags": 131072,
+                "HighLimit": {
+                  "currency": "LAB",
+                  "issuer": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "value": "10000"
+                },
+                "HighNode": "0",
+                "LowLimit": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                  "value": "0"
+                },
+                "LowNode": "0"
+              },
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "9DF439F37D1E9BF7EC7508608929A78E66E413506944AD25A5CAF0E589739633",
+              "PreviousFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-975"
+                }
+              },
+              "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+              "PreviousTxnLgrSeq": 21693284
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                "Balance": "69799980",
+                "Flags": 0,
+                "OwnerCount": 2,
+                "Sequence": 21693276
+              },
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "B6C84A1DB5A6765992E1D5998294B8E215A01110FE0513C59A8E3601E730EA3A",
+              "PreviousFields": {
+                "Balance": "74799990",
+                "Sequence": 21693275
+              },
+              "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+              "PreviousTxnLgrSeq": 21693284
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Balance": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-30000"
+                },
+                "Flags": 2228224,
+                "HighLimit": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "value": "0"
+                },
+                "HighNode": "0",
+                "LowLimit": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "0"
+                },
+                "LowNode": "0"
+              },
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "D2EEB107F12B3176EE65FFAACE3FBC5976062E7F331747620F277D54D1835ABF",
+              "PreviousFields": {
+                "Balance": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-25000"
+                }
+              },
+              "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+              "PreviousTxnLgrSeq": 21693284
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Account": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                "Asset": {
+                  "currency": "XRP"
+                },
+                "Asset2": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3"
+                },
+                "AuctionSlot": {
+                  "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "DiscountedFee": 50,
+                  "Expiration": 845934552,
+                  "Price": {
+                    "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                    "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                    "value": "0"
+                  }
+                },
+                "Flags": 0,
+                "LPTokenBalance": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "30000"
+                },
+                "OwnerNode": "0",
+                "TradingFee": 500,
+                "VoteSlots": [
+                  {
+                    "VoteEntry": {
+                      "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                      "TradingFee": 500,
+                      "VoteWeight": 100000
+                    }
+                  }
+                ]
+              },
+              "LedgerEntryType": "AMM",
+              "LedgerIndex": "E1DCD9AF7FC29E72E48737E6260021FAC8362DD45EF5523F3304D481393FBF7D",
+              "PreviousFields": {
+                "LPTokenBalance": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "25000"
+                }
+              },
+              "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+              "PreviousTxnLgrSeq": 21693284
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "30"
+                },
+                "Flags": 16842752,
+                "HighLimit": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                  "value": "0"
+                },
+                "HighNode": "0",
+                "LowLimit": {
+                  "currency": "LAB",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "0"
+                },
+                "LowNode": "0"
+              },
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "F8E6B77197A1C3FBD52E363872E4D9320C8B1D70064664378997EAE0BBC7AE5A",
+              "PreviousFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "25"
+                }
+              },
+              "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+              "PreviousTxnLgrSeq": 21693284
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "AMMID": "E1DCD9AF7FC29E72E48737E6260021FAC8362DD45EF5523F3304D481393FBF7D",
+                "Account": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                "Balance": "30000000",
+                "Flags": 26214400,
+                "OwnerCount": 1,
+                "Sequence": 21693284
+              },
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "F97E0C7845A5FE706186198B45FFCE643708782B930E6C94E4F099D52281CD5A",
+              "PreviousFields": {
+                "Balance": "25000000"
+              },
+              "PreviousTxnID": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+              "PreviousTxnLgrSeq": 21693284
+            }
+          }
+        ],
+        "TransactionIndex": 13,
+        "TransactionResult": "tesSUCCESS"
+      },
+      "tx": {
+        "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+        "Amount": "5000000",
+        "Amount2": {
+          "currency": "LAB",
+          "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+          "value": "5"
+        },
+        "Asset": {
+          "currency": "XRP"
+        },
+        "Asset2": {
+          "currency": "LAB",
+          "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3"
+        },
+        "Fee": "10",
+        "Flags": 1048576,
+        "LastLedgerSequence": 21693305,
+        "Sequence": 21693275,
+        "SigningPubKey": "ED493831385CE33258957F0291A5B09070404C5D92FD8D8A803A6D23271BFEF5B0",
+        "TransactionType": "AMMDeposit",
+        "TxnSignature": "7CDA7B2F3DBA6A081D5261D776409105F72BD874353E4946CFEE499605EAEBC01C9E756C2A6B8FFBE72DE622A4DA825A62B7D95937ED1C117B29ADC8D834C502",
+        "ctid": "C14B0367000D0001",
+        "date": 845848170,
+        "hash": "2105787A476B40862A36A4634F7DFE091D0F5D576DE7B2CD24716A8706A0203F",
+        "inLedger": 21693287,
+        "ledger_index": 21693287
+      },
+      "validated": true
+    },
+    {
+      "meta": {
+        "AffectedNodes": [
+          {
+            "CreatedNode": {
+              "LedgerEntryType": "DirectoryNode",
+              "LedgerIndex": "87F5B9D77A95FE19CD1B85C2068EB83C97B314042228D19E008CFBE3CEC36989",
+              "NewFields": {
+                "Owner": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                "RootIndex": "87F5B9D77A95FE19CD1B85C2068EB83C97B314042228D19E008CFBE3CEC36989"
+              }
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Flags": 0,
+                "Owner": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                "RootIndex": "9D5155F9C6C0B54C9E484D64E5D0EC73FEDA4C93B78D1C249C09E24CB603E60F"
+              },
+              "LedgerEntryType": "DirectoryNode",
+              "LedgerIndex": "9D5155F9C6C0B54C9E484D64E5D0EC73FEDA4C93B78D1C249C09E24CB603E60F",
+              "PreviousTxnID": "7E4BC208D2A586411511A501DDA9159614320B6C2AC52C3E99D07BE57716EF0D",
+              "PreviousTxnLgrSeq": 21693279
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-975"
+                },
+                "Flags": 131072,
+                "HighLimit": {
+                  "currency": "LAB",
+                  "issuer": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "value": "10000"
+                },
+                "HighNode": "0",
+                "LowLimit": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                  "value": "0"
+                },
+                "LowNode": "0"
+              },
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "9DF439F37D1E9BF7EC7508608929A78E66E413506944AD25A5CAF0E589739633",
+              "PreviousFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-1000"
+                }
+              },
+              "PreviousTxnID": "EDC401FCCE02FA5B21CC43B932E43EBF4383CE6D3F243C2031096F95846EE370",
+              "PreviousTxnLgrSeq": 21693281
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                "Balance": "74799990",
+                "Flags": 0,
+                "OwnerCount": 2,
+                "Sequence": 21693275
+              },
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "B6C84A1DB5A6765992E1D5998294B8E215A01110FE0513C59A8E3601E730EA3A",
+              "PreviousFields": {
+                "Balance": "99999990",
+                "OwnerCount": 1,
+                "Sequence": 21693274
+              },
+              "PreviousTxnID": "7E4BC208D2A586411511A501DDA9159614320B6C2AC52C3E99D07BE57716EF0D",
+              "PreviousTxnLgrSeq": 21693279
+            }
+          },
+          {
+            "CreatedNode": {
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "D2EEB107F12B3176EE65FFAACE3FBC5976062E7F331747620F277D54D1835ABF",
+              "NewFields": {
+                "Balance": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-25000"
+                },
+                "Flags": 2228224,
+                "HighLimit": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "value": "0"
+                },
+                "LowLimit": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "0"
+                }
+              }
+            }
+          },
+          {
+            "ModifiedNode": {
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "DB5A28520401C0E5C1091A4AFAB04076602C35A5B2821F05348CCAC80C5147EB",
+              "PreviousTxnID": "EDC401FCCE02FA5B21CC43B932E43EBF4383CE6D3F243C2031096F95846EE370",
+              "PreviousTxnLgrSeq": 21693281
+            }
+          },
+          {
+            "CreatedNode": {
+              "LedgerEntryType": "AMM",
+              "LedgerIndex": "E1DCD9AF7FC29E72E48737E6260021FAC8362DD45EF5523F3304D481393FBF7D",
+              "NewFields": {
+                "Account": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                "Asset2": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3"
+                },
+                "AuctionSlot": {
+                  "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "DiscountedFee": 50,
+                  "Expiration": 845934552,
+                  "Price": {
+                    "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                    "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                    "value": "0"
+                  }
+                },
+                "LPTokenBalance": {
+                  "currency": "039D7DCF11E9BD5D837A831D6585FF8E7846F34C",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "25000"
+                },
+                "TradingFee": 500,
+                "VoteSlots": [
+                  {
+                    "VoteEntry": {
+                      "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                      "TradingFee": 500,
+                      "VoteWeight": 100000
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Flags": 0,
+                "Owner": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                "RootIndex": "E2B5677F52C6F7FB84B7C9FC7D8B1D5375335906CC9FDBFE6326F3DFFD33A293"
+              },
+              "LedgerEntryType": "DirectoryNode",
+              "LedgerIndex": "E2B5677F52C6F7FB84B7C9FC7D8B1D5375335906CC9FDBFE6326F3DFFD33A293",
+              "PreviousTxnID": "7E4BC208D2A586411511A501DDA9159614320B6C2AC52C3E99D07BE57716EF0D",
+              "PreviousTxnLgrSeq": 21693279
+            }
+          },
+          {
+            "CreatedNode": {
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "F8E6B77197A1C3FBD52E363872E4D9320C8B1D70064664378997EAE0BBC7AE5A",
+              "NewFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "25"
+                },
+                "Flags": 16842752,
+                "HighLimit": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                  "value": "0"
+                },
+                "LowLimit": {
+                  "currency": "LAB",
+                  "issuer": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                  "value": "0"
+                }
+              }
+            }
+          },
+          {
+            "CreatedNode": {
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "F97E0C7845A5FE706186198B45FFCE643708782B930E6C94E4F099D52281CD5A",
+              "NewFields": {
+                "AMMID": "E1DCD9AF7FC29E72E48737E6260021FAC8362DD45EF5523F3304D481393FBF7D",
+                "Account": "r3RtFgfQMKSuj3EV59MeNUHfhRchxH5ywr",
+                "Balance": "25000000",
+                "Flags": 26214400,
+                "OwnerCount": 1,
+                "Sequence": 21693284
+              }
+            }
+          }
+        ],
+        "TransactionIndex": 15,
+        "TransactionResult": "tesSUCCESS"
+      },
+      "tx": {
+        "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+        "Amount": "25000000",
+        "Amount2": {
+          "currency": "LAB",
+          "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+          "value": "25"
+        },
+        "Fee": "200000",
+        "LastLedgerSequence": 21693302,
+        "Sequence": 21693274,
+        "SigningPubKey": "ED493831385CE33258957F0291A5B09070404C5D92FD8D8A803A6D23271BFEF5B0",
+        "TradingFee": 500,
+        "TransactionType": "AMMCreate",
+        "TxnSignature": "63C841387B95D3B783927F21FE4656045AA354D26DED1BEBD22F44E4AAF9A406733677548319AF51F5B90738A51C415AB559C90910022D3338D9B9E9044C290F",
+        "ctid": "C14B0364000F0001",
+        "date": 845848160,
+        "hash": "020B4543A6560B1E62312479A445A1DC67F85EBD588E3E31B970228184791104",
+        "inLedger": 21693284,
+        "ledger_index": 21693284
+      },
+      "validated": true
+    },
+    {
+      "meta": {
+        "AffectedNodes": [
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "-1000"
+                },
+                "Flags": 131072,
+                "HighLimit": {
+                  "currency": "LAB",
+                  "issuer": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "value": "10000"
+                },
+                "HighNode": "0",
+                "LowLimit": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                  "value": "0"
+                },
+                "LowNode": "0"
+              },
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "9DF439F37D1E9BF7EC7508608929A78E66E413506944AD25A5CAF0E589739633",
+              "PreviousFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "0"
+                }
+              },
+              "PreviousTxnID": "7E4BC208D2A586411511A501DDA9159614320B6C2AC52C3E99D07BE57716EF0D",
+              "PreviousTxnLgrSeq": 21693279
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Account": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                "Balance": "99999980",
+                "Flags": 8388608,
+                "OwnerCount": 0,
+                "Sequence": 21693277
+              },
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "DB5A28520401C0E5C1091A4AFAB04076602C35A5B2821F05348CCAC80C5147EB",
+              "PreviousFields": {
+                "Balance": "99999990",
+                "Sequence": 21693276
+              },
+              "PreviousTxnID": "7E4BC208D2A586411511A501DDA9159614320B6C2AC52C3E99D07BE57716EF0D",
+              "PreviousTxnLgrSeq": 21693279
+            }
+          }
+        ],
+        "TransactionIndex": 17,
+        "TransactionResult": "tesSUCCESS",
+        "delivered_amount": {
+          "currency": "LAB",
+          "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+          "value": "1000"
+        }
+      },
+      "tx": {
+        "Account": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+        "Amount": {
+          "currency": "LAB",
+          "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+          "value": "1000"
+        },
+        "DeliverMax": {
+          "currency": "LAB",
+          "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+          "value": "1000"
+        },
+        "Destination": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+        "Fee": "10",
+        "LastLedgerSequence": 21693300,
+        "Memos": [
+          {
+            "Memo": {
+              "MemoData": "5852504C4C41427C49535355457C4C41427C31303030",
+              "MemoType": "746578742F706C61696E"
+            }
+          }
+        ],
+        "Sequence": 21693276,
+        "SigningPubKey": "EDAA74F3EF2D502C8FB9B2ECB10C34DB1300FE42EF24E9068C1E76845565D75746",
+        "TransactionType": "Payment",
+        "TxnSignature": "6597BF567E4B443CAD1E70738E143CE0DDFFC382AFD36AA92A5DCA410EDE00906D1A8F2A70F92D570C7CF585B020C4B14665F05A49E78A80ABC2BF881197C700",
+        "ctid": "C14B036100110001",
+        "date": 845848150,
+        "hash": "EDC401FCCE02FA5B21CC43B932E43EBF4383CE6D3F243C2031096F95846EE370",
+        "inLedger": 21693281,
+        "ledger_index": 21693281
+      },
+      "validated": true
+    },
+    {
+      "meta": {
+        "AffectedNodes": [
+          {
+            "CreatedNode": {
+              "LedgerEntryType": "DirectoryNode",
+              "LedgerIndex": "9D5155F9C6C0B54C9E484D64E5D0EC73FEDA4C93B78D1C249C09E24CB603E60F",
+              "NewFields": {
+                "Owner": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                "RootIndex": "9D5155F9C6C0B54C9E484D64E5D0EC73FEDA4C93B78D1C249C09E24CB603E60F"
+              }
+            }
+          },
+          {
+            "CreatedNode": {
+              "LedgerEntryType": "RippleState",
+              "LedgerIndex": "9DF439F37D1E9BF7EC7508608929A78E66E413506944AD25A5CAF0E589739633",
+              "NewFields": {
+                "Balance": {
+                  "currency": "LAB",
+                  "issuer": "rrrrrrrrrrrrrrrrrrrrBZbvji",
+                  "value": "0"
+                },
+                "Flags": 131072,
+                "HighLimit": {
+                  "currency": "LAB",
+                  "issuer": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                  "value": "10000"
+                },
+                "LowLimit": {
+                  "currency": "LAB",
+                  "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                  "value": "0"
+                }
+              }
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+                "Balance": "99999990",
+                "Flags": 0,
+                "OwnerCount": 1,
+                "Sequence": 21693274
+              },
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "B6C84A1DB5A6765992E1D5998294B8E215A01110FE0513C59A8E3601E730EA3A",
+              "PreviousFields": {
+                "Balance": "100000000",
+                "OwnerCount": 0,
+                "Sequence": 21693273
+              },
+              "PreviousTxnID": "71497BEEDE82D054F673D6C0F20475C64D61B1CED457E307EE2FA14A33ADE145",
+              "PreviousTxnLgrSeq": 21693273
+            }
+          },
+          {
+            "ModifiedNode": {
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "DB5A28520401C0E5C1091A4AFAB04076602C35A5B2821F05348CCAC80C5147EB",
+              "PreviousTxnID": "A6917DA5B91DB6EEC0923E7BE866988C3FD8493DB45F34CF3E650039B8F12BB7",
+              "PreviousTxnLgrSeq": 21693277
+            }
+          },
+          {
+            "CreatedNode": {
+              "LedgerEntryType": "DirectoryNode",
+              "LedgerIndex": "E2B5677F52C6F7FB84B7C9FC7D8B1D5375335906CC9FDBFE6326F3DFFD33A293",
+              "NewFields": {
+                "Owner": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                "RootIndex": "E2B5677F52C6F7FB84B7C9FC7D8B1D5375335906CC9FDBFE6326F3DFFD33A293"
+              }
+            }
+          }
+        ],
+        "TransactionIndex": 2,
+        "TransactionResult": "tesSUCCESS"
+      },
+      "tx": {
+        "Account": "rEfzCXENKBBTQbs6TzVFBH4GAjXyjX61FS",
+        "Fee": "10",
+        "LastLedgerSequence": 21693297,
+        "LimitAmount": {
+          "currency": "LAB",
+          "issuer": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+          "value": "10000"
+        },
+        "Sequence": 21693273,
+        "SigningPubKey": "ED493831385CE33258957F0291A5B09070404C5D92FD8D8A803A6D23271BFEF5B0",
+        "TransactionType": "TrustSet",
+        "TxnSignature": "C9DA55F8C583F89ADFE64FBACC3E9A8B7E149DCC33245C7743A515832BD1B1D276C1464FF29F792DC9A27734159E6B24AA18E191A09A2A15F258AF3FCB5F480A",
+        "ctid": "C14B035F00020001",
+        "date": 845848141,
+        "hash": "7E4BC208D2A586411511A501DDA9159614320B6C2AC52C3E99D07BE57716EF0D",
+        "inLedger": 21693279,
+        "ledger_index": 21693279
+      },
+      "validated": true
+    },
+    {
+      "meta": {
+        "AffectedNodes": [
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Account": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                "Balance": "99999990",
+                "Flags": 8388608,
+                "OwnerCount": 0,
+                "Sequence": 21693276
+              },
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "DB5A28520401C0E5C1091A4AFAB04076602C35A5B2821F05348CCAC80C5147EB",
+              "PreviousFields": {
+                "Balance": "100000000",
+                "Flags": 0,
+                "Sequence": 21693275
+              },
+              "PreviousTxnID": "D8B77F0FC1F0DBC65538378DF1D888A19AFA0480C2885CF76AE06BA38E2DB2FA",
+              "PreviousTxnLgrSeq": 21693275
+            }
+          }
+        ],
+        "TransactionIndex": 5,
+        "TransactionResult": "tesSUCCESS"
+      },
+      "tx": {
+        "Account": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+        "Fee": "10",
+        "LastLedgerSequence": 21693295,
+        "Sequence": 21693275,
+        "SetFlag": 8,
+        "SigningPubKey": "EDAA74F3EF2D502C8FB9B2ECB10C34DB1300FE42EF24E9068C1E76845565D75746",
+        "TransactionType": "AccountSet",
+        "TxnSignature": "A69E8B35E2AC1AC8BF70D96E446231AF9BC3ABB2CC6C14DFCE631C1DBDE4EFB69F8710C360AFF627BFDF6198D5FA452DC2F8879AA07F48F05A83C90359DD6F04",
+        "ctid": "C14B035D00050001",
+        "date": 845848131,
+        "hash": "A6917DA5B91DB6EEC0923E7BE866988C3FD8493DB45F34CF3E650039B8F12BB7",
+        "inLedger": 21693277,
+        "ledger_index": 21693277
+      },
+      "validated": true
+    },
+    {
+      "meta": {
+        "AffectedNodes": [
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Account": "rJjHYTCPpNA3qAM8ZpCDtip3a8xg7B8PFo",
+                "Balance": "16148683948862327",
+                "Flags": 536870912,
+                "OwnerCount": 193,
+                "Sequence": 12038691,
+                "TicketCount": 193
+              },
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "30863A1FA4C1F456E94EBDFEBA293AEF1BD89FA5A7C5A8AAD3538BB1A87D61BA",
+              "PreviousFields": {
+                "Balance": "16148684048862339",
+                "OwnerCount": 194,
+                "TicketCount": 194
+              },
+              "PreviousTxnID": "71497BEEDE82D054F673D6C0F20475C64D61B1CED457E307EE2FA14A33ADE145",
+              "PreviousTxnLgrSeq": 21693273
+            }
+          },
+          {
+            "ModifiedNode": {
+              "FinalFields": {
+                "Flags": 0,
+                "IndexNext": "1db51",
+                "IndexPrevious": "1db4f",
+                "Owner": "rJjHYTCPpNA3qAM8ZpCDtip3a8xg7B8PFo",
+                "RootIndex": "5B4DA4491AB798C0D44E6FB1BA332CBBDCD572141F6FF184A21CE2E6EBA78F54"
+              },
+              "LedgerEntryType": "DirectoryNode",
+              "LedgerIndex": "7B0D1AAE70524665F1B16D4C39699AC1E88950CAD3C560A4C1A48068BC009343",
+              "PreviousTxnID": "72765FC0F9F685830AEED8054DDB3C843E92F3DC7C3E9091F94AC19EBF106502",
+              "PreviousTxnLgrSeq": 21693209
+            }
+          },
+          {
+            "DeletedNode": {
+              "FinalFields": {
+                "Account": "rJjHYTCPpNA3qAM8ZpCDtip3a8xg7B8PFo",
+                "Flags": 0,
+                "OwnerNode": "1db50",
+                "PreviousTxnID": "E91327FC7711933EB2D8F34DEA090F450F9AD430F44CEA0C803791AC703BA3C0",
+                "PreviousTxnLgrSeq": 21692713,
+                "TicketSequence": 12038459
+              },
+              "LedgerEntryType": "Ticket",
+              "LedgerIndex": "A40DD6E9BF45021E928F263C3283119D6FC0DAF3835CC81189E3C000033D8829"
+            }
+          },
+          {
+            "CreatedNode": {
+              "LedgerEntryType": "AccountRoot",
+              "LedgerIndex": "DB5A28520401C0E5C1091A4AFAB04076602C35A5B2821F05348CCAC80C5147EB",
+              "NewFields": {
+                "Account": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+                "Balance": "100000000",
+                "Sequence": 21693275
+              }
+            }
+          }
+        ],
+        "TransactionIndex": 5,
+        "TransactionResult": "tesSUCCESS",
+        "delivered_amount": "100000000"
+      },
+      "tx": {
+        "Account": "rJjHYTCPpNA3qAM8ZpCDtip3a8xg7B8PFo",
+        "Amount": "100000000",
+        "DeliverMax": "100000000",
+        "Destination": "r9hxLvtS9daHa57h2GTnqHWHCSz2opCrU3",
+        "Fee": "12",
+        "Flags": 0,
+        "LastLedgerSequence": 21693293,
+        "Sequence": 0,
+        "SigningPubKey": "EDA3952ACD931CCA26CC02AEA89037FCFD69821C428C8C3B6AB7A8E73C13E6926E",
+        "TicketSequence": 12038459,
+        "TransactionType": "Payment",
+        "TxnSignature": "36B7535A6E64B1ACF1C1296F1D38798C7A0428D56024D4C89307C4002EE5E9F33FF8C3F8049E4B98AF375525FC1323CA631A1977A1AB981DB70005ADC7007A0F",
+        "ctid": "C14B035B00050001",
+        "date": 845848122,
+        "hash": "D8B77F0FC1F0DBC65538378DF1D888A19AFA0480C2885CF76AE06BA38E2DB2FA",
+        "inLedger": 21693275,
+        "ledger_index": 21693275
+      },
+      "validated": true
+    }
+  ],
+  "validated": true
+}

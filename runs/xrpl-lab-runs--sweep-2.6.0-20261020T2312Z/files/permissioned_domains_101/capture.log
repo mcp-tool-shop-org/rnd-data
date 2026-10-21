@@ -1,0 +1,12 @@
+92DB9EB160 {'TransactionType': 'CredentialCreate', 'Account': 'rK21HLb8NxyKx8Z5QLiHNww7WRU7a7Jukz', 'Destination': None, 'validated': True, 'ledger_index': 21694969, 'Sequence': 21694966, 'TransactionResult': 'tesSUCCESS'}
+14DDB6BBE6 {'TransactionType': 'CredentialAccept', 'Account': 'r4Tyb2CvdQhwbt4DU9Jspr6dHNm5n8unGE', 'Destination': None, 'validated': True, 'ledger_index': 21694971, 'Sequence': 21694968, 'TransactionResult': 'tesSUCCESS'}
+CE3B009C3C {'TransactionType': 'PermissionedDomainSet', 'Account': 'rK21HLb8NxyKx8Z5QLiHNww7WRU7a7Jukz', 'Destination': None, 'validated': True, 'ledger_index': 21694973, 'Sequence': 21694967, 'TransactionResult': 'tesSUCCESS'}
+51C5E1CCA7 {'TransactionType': 'OfferCreate', 'Account': 'r4Tyb2CvdQhwbt4DU9Jspr6dHNm5n8unGE', 'Destination': None, 'validated': True, 'ledger_index': 21694975, 'Sequence': 21694969, 'TransactionResult': 'tesSUCCESS'}
+B94CAC1C92 {'error': 'txnNotFound'}
+72CC0448DA {'TransactionType': 'PermissionedDomainSet', 'Account': 'rfh6nXzjF7965tdsmW2E6yJY12c1jUwgwV', 'Destination': None, 'validated': True, 'ledger_index': 21694998, 'Sequence': 21694977, 'TransactionResult': 'tecNO_PERMISSION'}
+58BC8042A6 {'TransactionType': 'PermissionedDomainSet', 'Account': 'rK21HLb8NxyKx8Z5QLiHNww7WRU7a7Jukz', 'Destination': None, 'validated': True, 'ledger_index': 21695000, 'Sequence': 21694968, 'TransactionResult': 'tesSUCCESS'}
+9D965A2DAF {'TransactionType': 'PermissionedDomainDelete', 'Account': 'rK21HLb8NxyKx8Z5QLiHNww7WRU7a7Jukz', 'Destination': None, 'validated': True, 'ledger_index': 21695002, 'Sequence': 21694969, 'TransactionResult': 'tesSUCCESS'}
+FDC6EA14A9 {'error': 'txnNotFound'}
+rK21HLb8NxyKx8Z5QLiHNww7WRU7a7Jukz {'Balance': '99999960', 'Sequence': 21694970, 'OwnerCount': 0, 'error': None}
+r4Tyb2CvdQhwbt4DU9Jspr6dHNm5n8unGE {'Balance': '99999980', 'Sequence': 21694970, 'OwnerCount': 2, 'error': None}
+rfh6nXzjF7965tdsmW2E6yJY12c1jUwgwV {'Balance': '99999990', 'Sequence': 21694978, 'OwnerCount': 0, 'error': None}

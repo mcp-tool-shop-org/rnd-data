@@ -1,0 +1,12 @@
+954196A4C6 {'TransactionType': 'CredentialCreate', 'Account': 'r3oENjifhdMpQohVriRaeWfRT5LECwCoVs', 'Destination': None, 'validated': True, 'ledger_index': 21695656, 'Sequence': 21695652, 'TransactionResult': 'tesSUCCESS'}
+375BD353AC {'TransactionType': 'CredentialAccept', 'Account': 'rB4ydeXRdsxzDTF4bsAWrbA7RgSZpqJnsr', 'Destination': None, 'validated': True, 'ledger_index': 21695659, 'Sequence': 21695654, 'TransactionResult': 'tesSUCCESS'}
+2C3C7CE9D8 {'TransactionType': 'PermissionedDomainSet', 'Account': 'r3oENjifhdMpQohVriRaeWfRT5LECwCoVs', 'Destination': None, 'validated': True, 'ledger_index': 21695662, 'Sequence': 21695653, 'TransactionResult': 'tesSUCCESS'}
+765892B47B {'TransactionType': 'OfferCreate', 'Account': 'rB4ydeXRdsxzDTF4bsAWrbA7RgSZpqJnsr', 'Destination': None, 'validated': True, 'ledger_index': 21695665, 'Sequence': 21695655, 'TransactionResult': 'tesSUCCESS'}
+2C5E839A2C {'TransactionType': 'OfferCreate', 'Account': 'rKVYp723WZm3uV1JxJSmcuiFusximybBEw', 'Destination': None, 'validated': True, 'ledger_index': 21695669, 'Sequence': 21695667, 'TransactionResult': 'tecNO_PERMISSION'}
+0BF1DCAB99 {'TransactionType': 'PermissionedDomainSet', 'Account': 'rKVYp723WZm3uV1JxJSmcuiFusximybBEw', 'Destination': None, 'validated': True, 'ledger_index': 21695671, 'Sequence': 21695668, 'TransactionResult': 'tecNO_PERMISSION'}
+15EE029758 {'TransactionType': 'PermissionedDomainSet', 'Account': 'r3oENjifhdMpQohVriRaeWfRT5LECwCoVs', 'Destination': None, 'validated': True, 'ledger_index': 21695674, 'Sequence': 21695654, 'TransactionResult': 'tesSUCCESS'}
+9008FD17BB {'TransactionType': 'PermissionedDomainDelete', 'Account': 'r3oENjifhdMpQohVriRaeWfRT5LECwCoVs', 'Destination': None, 'validated': True, 'ledger_index': 21695676, 'Sequence': 21695655, 'TransactionResult': 'tesSUCCESS'}
+EB1E0676BD {'error': 'txnNotFound'}
+r3oENjifhdMpQohVriRaeWfRT5LECwCoVs {'Balance': '99999960', 'Sequence': 21695656, 'OwnerCount': 0, 'error': None}
+rB4ydeXRdsxzDTF4bsAWrbA7RgSZpqJnsr {'Balance': '99999980', 'Sequence': 21695656, 'OwnerCount': 2, 'error': None}
+rKVYp723WZm3uV1JxJSmcuiFusximybBEw {'Balance': '99999980', 'Sequence': 21695669, 'OwnerCount': 0, 'error': None}

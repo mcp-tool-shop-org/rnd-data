@@ -1,0 +1,12 @@
+E8278E180A {'TransactionType': 'AccountSet', 'Account': 'r9ytfQDHR6nkFGzGm8pWmnr4QxDT2NnYAM', 'Destination': None, 'validated': True, 'ledger_index': 21697230, 'Sequence': 21697227, 'TransactionResult': 'tesSUCCESS'}
+6DCBBE2811 {'TransactionType': 'DepositPreauth', 'Account': 'r9ytfQDHR6nkFGzGm8pWmnr4QxDT2NnYAM', 'Destination': None, 'validated': True, 'ledger_index': 21697238, 'Sequence': 21697228, 'TransactionResult': 'tesSUCCESS'}
+72052B3EB2 {'TransactionType': 'Payment', 'Account': 'rhZpegKfewXyjLaYZN4wPz8dGdZKAJDBhF', 'Destination': 'r9ytfQDHR6nkFGzGm8pWmnr4QxDT2NnYAM', 'validated': True, 'ledger_index': 21697242, 'Sequence': 21697233, 'TransactionResult': 'tesSUCCESS'}
+B2B703AD99 {'TransactionType': 'CredentialCreate', 'Account': 'r9ytfQDHR6nkFGzGm8pWmnr4QxDT2NnYAM', 'Destination': None, 'validated': True, 'ledger_index': 21697247, 'Sequence': 21697230, 'TransactionResult': 'tesSUCCESS'}
+747DA39A97 {'TransactionType': 'CredentialAccept', 'Account': 'r33eSwrLyoXuu6BTzZQTm7uTWGRTmSeCFJ', 'Destination': None, 'validated': True, 'ledger_index': 21697249, 'Sequence': 21697244, 'TransactionResult': 'tesSUCCESS'}
+51EFE39A08 {'TransactionType': 'DepositPreauth', 'Account': 'r9ytfQDHR6nkFGzGm8pWmnr4QxDT2NnYAM', 'Destination': None, 'validated': True, 'ledger_index': 21697251, 'Sequence': 21697231, 'TransactionResult': 'tesSUCCESS'}
+2AD75221AA {'TransactionType': 'Payment', 'Account': 'r33eSwrLyoXuu6BTzZQTm7uTWGRTmSeCFJ', 'Destination': 'r9ytfQDHR6nkFGzGm8pWmnr4QxDT2NnYAM', 'validated': True, 'ledger_index': 21697253, 'Sequence': 21697245, 'TransactionResult': 'tesSUCCESS'}
+DE9BC0FE2F {'TransactionType': 'DepositPreauth', 'Account': 'r9ytfQDHR6nkFGzGm8pWmnr4QxDT2NnYAM', 'Destination': None, 'validated': True, 'ledger_index': 21697260, 'Sequence': 21697232, 'TransactionResult': 'tesSUCCESS'}
+r9ytfQDHR6nkFGzGm8pWmnr4QxDT2NnYAM {'Balance': '119999930', 'Sequence': 21697234, 'OwnerCount': 1, 'error': None}
+rhZpegKfewXyjLaYZN4wPz8dGdZKAJDBhF {'Balance': '89999980', 'Sequence': 21697234, 'OwnerCount': 0, 'error': None}
+r33eSwrLyoXuu6BTzZQTm7uTWGRTmSeCFJ {'Balance': '89999980', 'Sequence': 21697246, 'OwnerCount': 1, 'error': None}
+rHTZgHck9cJ174pSa4zUXdD8p16ZjuXB7J {'Balance': '99999990', 'Sequence': 21697256, 'OwnerCount': 0, 'error': None}

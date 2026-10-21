@@ -1,0 +1,4 @@
+F54DD6E5E3 {'TransactionType': 'AccountSet', 'Account': 'rKgD677SoN7uS1WQnSBJjiE7jgMbtvekB2', 'Destination': None, 'validated': True, 'ledger_index': 21697338, 'Sequence': 21697335, 'TransactionResult': 'tesSUCCESS'}
+7BEE35DE0C {'TransactionType': 'Payment', 'Account': 'rQK6zUurxVKRaFRzWC6sRRG8PriQG66LBd', 'Destination': 'rKgD677SoN7uS1WQnSBJjiE7jgMbtvekB2', 'validated': True, 'ledger_index': 21697342, 'Sequence': 21697340, 'TransactionResult': 'tesSUCCESS'}
+rKgD677SoN7uS1WQnSBJjiE7jgMbtvekB2 {'Balance': '124999990', 'Sequence': 21697336, 'OwnerCount': 0, 'error': None}
+rQK6zUurxVKRaFRzWC6sRRG8PriQG66LBd {'Balance': '74999980', 'Sequence': 21697342, 'OwnerCount': 0, 'error': None}

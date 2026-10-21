@@ -1,0 +1,12 @@
+62CDC894A5 {'TransactionType': 'AccountSet', 'Account': 'rUV8jsP1e8BJCk59iLzo3EKyqXbQtgtkps', 'Destination': None, 'validated': True, 'ledger_index': 21695597, 'Sequence': 21695595, 'TransactionResult': 'tesSUCCESS'}
+E0FF3EBC8D {'TransactionType': 'DepositPreauth', 'Account': 'rUV8jsP1e8BJCk59iLzo3EKyqXbQtgtkps', 'Destination': None, 'validated': True, 'ledger_index': 21695605, 'Sequence': 21695596, 'TransactionResult': 'tesSUCCESS'}
+441EC4F057 {'TransactionType': 'Payment', 'Account': 'raKGb7vgty8YdDt4Cp2A7cVqLZrBky2Vhm', 'Destination': 'rUV8jsP1e8BJCk59iLzo3EKyqXbQtgtkps', 'validated': True, 'ledger_index': 21695609, 'Sequence': 21695600, 'TransactionResult': 'tesSUCCESS'}
+150513FBB0 {'TransactionType': 'CredentialCreate', 'Account': 'rUV8jsP1e8BJCk59iLzo3EKyqXbQtgtkps', 'Destination': None, 'validated': True, 'ledger_index': 21695614, 'Sequence': 21695598, 'TransactionResult': 'tesSUCCESS'}
+6DDC392803 {'TransactionType': 'CredentialAccept', 'Account': 'rLemXQ6aTyQevErT3Xs7QQLftRL93xpFji', 'Destination': None, 'validated': True, 'ledger_index': 21695616, 'Sequence': 21695611, 'TransactionResult': 'tesSUCCESS'}
+6A70CC09B5 {'TransactionType': 'DepositPreauth', 'Account': 'rUV8jsP1e8BJCk59iLzo3EKyqXbQtgtkps', 'Destination': None, 'validated': True, 'ledger_index': 21695618, 'Sequence': 21695599, 'TransactionResult': 'tesSUCCESS'}
+0E537561CC {'TransactionType': 'Payment', 'Account': 'rLemXQ6aTyQevErT3Xs7QQLftRL93xpFji', 'Destination': 'rUV8jsP1e8BJCk59iLzo3EKyqXbQtgtkps', 'validated': True, 'ledger_index': 21695621, 'Sequence': 21695612, 'TransactionResult': 'tesSUCCESS'}
+05F1FC083C {'TransactionType': 'DepositPreauth', 'Account': 'rUV8jsP1e8BJCk59iLzo3EKyqXbQtgtkps', 'Destination': None, 'validated': True, 'ledger_index': 21695627, 'Sequence': 21695600, 'TransactionResult': 'tesSUCCESS'}
+rUV8jsP1e8BJCk59iLzo3EKyqXbQtgtkps {'Balance': '119999930', 'Sequence': 21695602, 'OwnerCount': 1, 'error': None}
+raKGb7vgty8YdDt4Cp2A7cVqLZrBky2Vhm {'Balance': '89999980', 'Sequence': 21695601, 'OwnerCount': 0, 'error': None}
+rLemXQ6aTyQevErT3Xs7QQLftRL93xpFji {'Balance': '89999980', 'Sequence': 21695613, 'OwnerCount': 1, 'error': None}
+rMbHYydztxCQH8Ped1t1VAmiYsEoCi1chi {'Balance': '99999990', 'Sequence': 21695624, 'OwnerCount': 0, 'error': None}

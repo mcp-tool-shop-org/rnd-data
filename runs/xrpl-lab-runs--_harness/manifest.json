@@ -1,0 +1,89 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "xrpl-lab-runs--_harness",
+ "kind": "collection",
+ "source": "xrpl-lab-runs/_harness",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "README.md",
+   "sha256": "9d160c32e734dea4b88ff5822b68791c9151bd1b358e53f801ed020a84849dd7",
+   "bytes": 1969,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "capture_ledger.py",
+   "sha256": "5e16a6621f96ccfbabf78e84997666ef9303ca06a97d9e91d8668b3d92c8cad4",
+   "bytes": 2399,
+   "tier": "T4",
+   "licence": "MIT",
+   "visibility": "public"
+  },
+  {
+   "path": "capture_sweep.py",
+   "sha256": "b31efe4ee5d9b2b6bce20aa12b61465aa27f83fa39618c50b71f3dfaaf579810",
+   "bytes": 3612,
+   "tier": "T4",
+   "licence": "MIT",
+   "visibility": "public"
+  },
+  {
+   "path": "redact_tree.py",
+   "sha256": "8133704630b57169e5d474ec681d3bff320fe9d9a39e1a3d2984a8103ae7fb21",
+   "bytes": 582,
+   "tier": "T4",
+   "licence": "MIT",
+   "visibility": "public"
+  },
+  {
+   "path": "run_f9.sh",
+   "sha256": null,
+   "bytes": 3004,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "sweep.sh",
+   "sha256": "d2818d9c76148ce51b9cbe1f22eb0f0b7a6f9e4e35ac90acd9e2a63c1d6ed92a",
+   "bytes": 3554,
+   "tier": "T4",
+   "licence": "MIT",
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "9d160c32e734dea4b88ff5822b68791c9151bd1b358e53f801ed020a84849dd7",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--_harness/files/README.md"
+  },
+  {
+   "sha256": "5e16a6621f96ccfbabf78e84997666ef9303ca06a97d9e91d8668b3d92c8cad4",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--_harness/files/capture_ledger.py"
+  },
+  {
+   "sha256": "b31efe4ee5d9b2b6bce20aa12b61465aa27f83fa39618c50b71f3dfaaf579810",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--_harness/files/capture_sweep.py"
+  },
+  {
+   "sha256": "8133704630b57169e5d474ec681d3bff320fe9d9a39e1a3d2984a8103ae7fb21",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--_harness/files/redact_tree.py"
+  },
+  {
+   "sha256": "d2818d9c76148ce51b9cbe1f22eb0f0b7a6f9e4e35ac90acd9e2a63c1d6ed92a",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--_harness/files/sweep.sh"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-20",
+ "rnd_commit": "7ba9f27440fbf2ba1180915f789b86ad9ed3aa94"
+}

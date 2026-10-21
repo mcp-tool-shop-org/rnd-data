@@ -1,0 +1,6 @@
+4FAA7E1462 {'TransactionType': 'PaymentChannelCreate', 'Account': 'r3KhXa2sPcSwh7AHokKuuuPZ7Wj3761TT9', 'Destination': 'rUzCboMqtJTNTfBiD3xXhtxtU4RZfgmum9', 'validated': True, 'ledger_index': 21697109, 'Sequence': 21697104, 'TransactionResult': 'tesSUCCESS'}
+129C76FC68 {'TransactionType': 'PaymentChannelFund', 'Account': 'r3KhXa2sPcSwh7AHokKuuuPZ7Wj3761TT9', 'Destination': None, 'validated': True, 'ledger_index': 21697112, 'Sequence': 21697105, 'TransactionResult': 'tesSUCCESS'}
+CB4076C889 {'TransactionType': 'PaymentChannelClaim', 'Account': 'rUzCboMqtJTNTfBiD3xXhtxtU4RZfgmum9', 'Destination': None, 'validated': True, 'ledger_index': 21697114, 'Sequence': 21697106, 'TransactionResult': 'tesSUCCESS'}
+BF3DFCB2D3 {'error': 'txnNotFound'}
+r3KhXa2sPcSwh7AHokKuuuPZ7Wj3761TT9 {'Balance': '84999980', 'Sequence': 21697106, 'OwnerCount': 1, 'error': None}
+rUzCboMqtJTNTfBiD3xXhtxtU4RZfgmum9 {'Balance': '106999990', 'Sequence': 21697107, 'OwnerCount': 0, 'error': None}

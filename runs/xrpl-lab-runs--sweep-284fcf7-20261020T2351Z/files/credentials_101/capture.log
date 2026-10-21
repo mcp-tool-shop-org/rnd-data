@@ -1,0 +1,8 @@
+D52433366C {'TransactionType': 'CredentialCreate', 'Account': 'raqZf1dH68xDkM7ziDpGEvuPALyYsQuVZk', 'Destination': None, 'validated': True, 'ledger_index': 21695562, 'Sequence': 21695558, 'TransactionResult': 'tesSUCCESS'}
+6D79696E9F {'TransactionType': 'CredentialCreate', 'Account': 'raqZf1dH68xDkM7ziDpGEvuPALyYsQuVZk', 'Destination': None, 'validated': True, 'ledger_index': 21695564, 'Sequence': 21695559, 'TransactionResult': 'tesSUCCESS'}
+C9A3EAF641 {'TransactionType': 'CredentialCreate', 'Account': 'raqZf1dH68xDkM7ziDpGEvuPALyYsQuVZk', 'Destination': None, 'validated': True, 'ledger_index': 21695566, 'Sequence': 21695560, 'TransactionResult': 'tecDUPLICATE'}
+A3E4993D7E {'TransactionType': 'CredentialAccept', 'Account': 'raqZf1dH68xDkM7ziDpGEvuPALyYsQuVZk', 'Destination': None, 'validated': True, 'ledger_index': 21695568, 'Sequence': 21695561, 'TransactionResult': 'tecNO_ENTRY'}
+092AC87C7D {'TransactionType': 'CredentialAccept', 'Account': 'rNMftoHScvmhCuLPZxmmrYoDybMYdufAaG', 'Destination': None, 'validated': True, 'ledger_index': 21695570, 'Sequence': 21695560, 'TransactionResult': 'tesSUCCESS'}
+495C570AFB {'TransactionType': 'CredentialDelete', 'Account': 'rNMftoHScvmhCuLPZxmmrYoDybMYdufAaG', 'Destination': None, 'validated': True, 'ledger_index': 21695573, 'Sequence': 21695561, 'TransactionResult': 'tesSUCCESS'}
+raqZf1dH68xDkM7ziDpGEvuPALyYsQuVZk {'Balance': '99999960', 'Sequence': 21695562, 'OwnerCount': 1, 'error': None}
+rNMftoHScvmhCuLPZxmmrYoDybMYdufAaG {'Balance': '99999980', 'Sequence': 21695562, 'OwnerCount': 0, 'error': None}

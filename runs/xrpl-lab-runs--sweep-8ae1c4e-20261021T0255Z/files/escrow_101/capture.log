@@ -1,0 +1,2 @@
+76DCCC307E {'TransactionType': 'EscrowCreate', 'Account': 'rLznR9EvH8JL4W6YihHUwQAMaUCHTkRDxX', 'Destination': 'rLznR9EvH8JL4W6YihHUwQAMaUCHTkRDxX', 'validated': True, 'ledger_index': 21699340, 'Sequence': 21699338, 'TransactionResult': 'tesSUCCESS'}
+rLznR9EvH8JL4W6YihHUwQAMaUCHTkRDxX {'Balance': '89999990', 'Sequence': 21699339, 'OwnerCount': 1, 'error': None}

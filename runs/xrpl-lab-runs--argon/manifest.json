@@ -1,0 +1,15 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "xrpl-lab-runs--argon",
+ "kind": "collection",
+ "source": "xrpl-lab-runs/argon",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [],
+ "copies": [],
+ "private_files": {
+  "unapproved": 1
+ },
+ "ingested": "2026-10-20",
+ "rnd_commit": "7ba9f27440fbf2ba1180915f789b86ad9ed3aa94"
+}

@@ -1,0 +1,8 @@
+E68BEE93C7 {'TransactionType': 'AccountSet', 'Account': 'rfaVAPT9D4bDApdWDGPRihb1Q4E9HqdgDB', 'Destination': None, 'validated': True, 'ledger_index': 21697141, 'Sequence': 21697138, 'TransactionResult': 'tesSUCCESS'}
+1982E15D48 {'TransactionType': 'TrustSet', 'Account': 'rszQLbT7YNiENe4m4psiwuXv9JCqq38iti', 'Destination': None, 'validated': True, 'ledger_index': 21697143, 'Sequence': 21697136, 'TransactionResult': 'tesSUCCESS'}
+B0419427BC {'TransactionType': 'Payment', 'Account': 'rfaVAPT9D4bDApdWDGPRihb1Q4E9HqdgDB', 'Destination': 'rszQLbT7YNiENe4m4psiwuXv9JCqq38iti', 'validated': True, 'ledger_index': 21697145, 'Sequence': 21697139, 'TransactionResult': 'tesSUCCESS'}
+76CE11BDD6 {'TransactionType': 'EscrowCreate', 'Account': 'rszQLbT7YNiENe4m4psiwuXv9JCqq38iti', 'Destination': 'r91ktPrF2erG2ACZeQEkbuBAswiPXJ3fzq', 'validated': True, 'ledger_index': 21697153, 'Sequence': 21697137, 'TransactionResult': 'tesSUCCESS'}
+096BC773D4 {'TransactionType': 'EscrowFinish', 'Account': 'r91ktPrF2erG2ACZeQEkbuBAswiPXJ3fzq', 'Destination': None, 'validated': True, 'ledger_index': 21697164, 'Sequence': 21697148, 'TransactionResult': 'tesSUCCESS'}
+rszQLbT7YNiENe4m4psiwuXv9JCqq38iti {'Balance': '99999960', 'Sequence': 21697140, 'OwnerCount': 2, 'error': None}
+rfaVAPT9D4bDApdWDGPRihb1Q4E9HqdgDB {'Balance': '99999980', 'Sequence': 21697140, 'OwnerCount': 0, 'error': None}
+r91ktPrF2erG2ACZeQEkbuBAswiPXJ3fzq {'Balance': '99999980', 'Sequence': 21697149, 'OwnerCount': 1, 'error': None}

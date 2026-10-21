@@ -1,0 +1,7 @@
+92E6C59038 {'TransactionType': 'AccountSet', 'Account': 'rdzzywLKvRS1EdC15A7eoFgPkFAD3jWq6', 'Destination': None, 'validated': True, 'ledger_index': 21697372, 'Sequence': 21697369, 'TransactionResult': 'tesSUCCESS'}
+1FEBE2D074 {'TransactionType': 'TrustSet', 'Account': 'rUqKFibaUjtLhp8gHDXcRbDRj3dDqkVyzd', 'Destination': None, 'validated': True, 'ledger_index': 21697374, 'Sequence': 21697367, 'TransactionResult': 'tesSUCCESS'}
+80F193599D {'TransactionType': 'Payment', 'Account': 'rdzzywLKvRS1EdC15A7eoFgPkFAD3jWq6', 'Destination': 'rUqKFibaUjtLhp8gHDXcRbDRj3dDqkVyzd', 'validated': True, 'ledger_index': 21697376, 'Sequence': 21697370, 'TransactionResult': 'tesSUCCESS'}
+6488D5FC5C {'TransactionType': 'Clawback', 'Account': 'rdzzywLKvRS1EdC15A7eoFgPkFAD3jWq6', 'Destination': None, 'validated': True, 'ledger_index': 21697378, 'Sequence': 21697371, 'TransactionResult': 'tesSUCCESS'}
+77F0C8FC15 {'TransactionType': 'Clawback', 'Account': 'r43oWcCK91qoW3pkQBQ2j5uBhzoKx8H6zN', 'Destination': None, 'validated': True, 'ledger_index': 21697386, 'Sequence': 21697381, 'TransactionResult': 'tecNO_PERMISSION'}
+rUqKFibaUjtLhp8gHDXcRbDRj3dDqkVyzd {'Balance': '99999980', 'Sequence': 21697369, 'OwnerCount': 2, 'error': None}
+rdzzywLKvRS1EdC15A7eoFgPkFAD3jWq6 {'Balance': '99999970', 'Sequence': 21697372, 'OwnerCount': 0, 'error': None}

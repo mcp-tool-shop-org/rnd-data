@@ -1,0 +1,3 @@
+772E824CEE {'TransactionType': 'Payment', 'Account': 'r9f7H2aEKvfo8KgqHvWvyEFiD7CAQabuMy', 'Destination': 'rsHWecqbkBkbG2jn2eDGqzYe8VcSf8Dprn', 'validated': True, 'ledger_index': 21697013, 'Sequence': 21697009, 'TransactionResult': 'tesSUCCESS'}
+r9f7H2aEKvfo8KgqHvWvyEFiD7CAQabuMy {'Balance': '89999980', 'Sequence': 21697010, 'OwnerCount': 0, 'error': None}
+rsHWecqbkBkbG2jn2eDGqzYe8VcSf8Dprn {'Balance': '10000000', 'Sequence': 21697013, 'OwnerCount': 0, 'error': None}

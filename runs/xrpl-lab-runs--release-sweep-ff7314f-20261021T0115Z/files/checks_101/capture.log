@@ -1,0 +1,9 @@
+4AEA69A4E9 {'TransactionType': 'CheckCreate', 'Account': 'rKye5i14ZiWZaKDjY98Acp2GzSJMKyJm6A', 'Destination': 'rEagGktRtmnnNwjC84j5maPuvRjKGEextj', 'validated': True, 'ledger_index': 21697413, 'Sequence': 21697408, 'TransactionResult': 'tesSUCCESS'}
+B5DF2EA078 {'TransactionType': 'CheckCash', 'Account': 'rEagGktRtmnnNwjC84j5maPuvRjKGEextj', 'Destination': None, 'validated': True, 'ledger_index': 21697416, 'Sequence': 21697410, 'TransactionResult': 'tesSUCCESS'}
+5D1379171E {'TransactionType': 'CheckCreate', 'Account': 'rKye5i14ZiWZaKDjY98Acp2GzSJMKyJm6A', 'Destination': 'rEagGktRtmnnNwjC84j5maPuvRjKGEextj', 'validated': True, 'ledger_index': 21697418, 'Sequence': 21697409, 'TransactionResult': 'tesSUCCESS'}
+FD08A69302 {'TransactionType': 'CheckCancel', 'Account': 'rKye5i14ZiWZaKDjY98Acp2GzSJMKyJm6A', 'Destination': None, 'validated': True, 'ledger_index': 21697426, 'Sequence': 21697410, 'TransactionResult': 'tesSUCCESS'}
+F96523D40F {'error': 'txnNotFound'}
+87C6EDAC59 {'error': 'txnNotFound'}
+rKye5i14ZiWZaKDjY98Acp2GzSJMKyJm6A {'Balance': '49999970', 'Sequence': 21697411, 'OwnerCount': 0, 'error': None}
+rEagGktRtmnnNwjC84j5maPuvRjKGEextj {'Balance': '149999990', 'Sequence': 21697411, 'OwnerCount': 0, 'error': None}
+r3dKpYqhke6cQGQgkaFWj7ox5DfeMfPbip {'Balance': '99999990', 'Sequence': 21697421, 'OwnerCount': 0, 'error': None}

@@ -1,0 +1,8 @@
+6E765EBA1F {'TransactionType': 'NFTokenMint', 'Account': 'rUwjk1yaDj3WjD4LP2EBScuzgSFcmJs57V', 'Destination': None, 'validated': True, 'ledger_index': 21695162, 'Sequence': 21695159, 'TransactionResult': 'tesSUCCESS'}
+72CEAC49F3 {'TransactionType': 'NFTokenCreateOffer', 'Account': 'rUwjk1yaDj3WjD4LP2EBScuzgSFcmJs57V', 'Destination': 'rNaefkseV8HeHG6D6pZ3FBwQU6t5iqZ1Wx', 'validated': True, 'ledger_index': 21695165, 'Sequence': 21695160, 'TransactionResult': 'tesSUCCESS'}
+144C25BA5F {'TransactionType': 'NFTokenAcceptOffer', 'Account': 'rNaefkseV8HeHG6D6pZ3FBwQU6t5iqZ1Wx', 'Destination': None, 'validated': True, 'ledger_index': 21695168, 'Sequence': 21695161, 'TransactionResult': 'tecINSUFFICIENT_FUNDS'}
+1F2348F00A {'TransactionType': 'NFTokenCreateOffer', 'Account': 'rNaefkseV8HeHG6D6pZ3FBwQU6t5iqZ1Wx', 'Destination': 'rUwjk1yaDj3WjD4LP2EBScuzgSFcmJs57V', 'validated': True, 'ledger_index': 21695170, 'Sequence': 21695162, 'TransactionResult': 'tecNO_ENTRY'}
+2544DC53D1 {'TransactionType': 'NFTokenAcceptOffer', 'Account': 'rUwjk1yaDj3WjD4LP2EBScuzgSFcmJs57V', 'Destination': None, 'validated': True, 'ledger_index': 21695173, 'Sequence': 21695161, 'TransactionResult': 'tecCANT_ACCEPT_OWN_NFTOKEN_OFFER'}
+000813887A {'error': 'txnNotFound'}
+rUwjk1yaDj3WjD4LP2EBScuzgSFcmJs57V {'Balance': '99999960', 'Sequence': 21695163, 'OwnerCount': 2, 'error': None}
+rNaefkseV8HeHG6D6pZ3FBwQU6t5iqZ1Wx {'Balance': '99999980', 'Sequence': 21695163, 'OwnerCount': 0, 'error': None}

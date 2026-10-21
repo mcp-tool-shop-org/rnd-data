@@ -1,0 +1,8 @@
+6590870D45 {'TransactionType': 'AccountSet', 'Account': 'rMrCnKw9vW5GxcDE69yDegmC193NdNcsgr', 'Destination': None, 'validated': True, 'ledger_index': 21695514, 'Sequence': 21695512, 'TransactionResult': 'tesSUCCESS'}
+5CF1EDAC3C {'TransactionType': 'TrustSet', 'Account': 'rMuhcTQNiAUAt6mMKtUccHFT87jhEy6NZ3', 'Destination': None, 'validated': True, 'ledger_index': 21695517, 'Sequence': 21695510, 'TransactionResult': 'tesSUCCESS'}
+DBCE451DDF {'TransactionType': 'Payment', 'Account': 'rMrCnKw9vW5GxcDE69yDegmC193NdNcsgr', 'Destination': 'rMuhcTQNiAUAt6mMKtUccHFT87jhEy6NZ3', 'validated': True, 'ledger_index': 21695519, 'Sequence': 21695513, 'TransactionResult': 'tesSUCCESS'}
+594198B826 {'TransactionType': 'EscrowCreate', 'Account': 'rMuhcTQNiAUAt6mMKtUccHFT87jhEy6NZ3', 'Destination': 'rUUT1R9N7my9SoQXCom59cSmxu8ok2Cb1', 'validated': True, 'ledger_index': 21695526, 'Sequence': 21695511, 'TransactionResult': 'tesSUCCESS'}
+F32B7BF5D7 {'TransactionType': 'EscrowFinish', 'Account': 'rUUT1R9N7my9SoQXCom59cSmxu8ok2Cb1', 'Destination': None, 'validated': True, 'ledger_index': 21695536, 'Sequence': 21695522, 'TransactionResult': 'tesSUCCESS'}
+rMuhcTQNiAUAt6mMKtUccHFT87jhEy6NZ3 {'Balance': '99999960', 'Sequence': 21695514, 'OwnerCount': 2, 'error': None}
+rMrCnKw9vW5GxcDE69yDegmC193NdNcsgr {'Balance': '99999980', 'Sequence': 21695514, 'OwnerCount': 0, 'error': None}
+rUUT1R9N7my9SoQXCom59cSmxu8ok2Cb1 {'Balance': '99999980', 'Sequence': 21695523, 'OwnerCount': 1, 'error': None}

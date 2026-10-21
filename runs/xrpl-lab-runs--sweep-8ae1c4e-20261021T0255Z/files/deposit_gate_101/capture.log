@@ -1,0 +1,17 @@
+713D5219A9 {'TransactionType': 'AccountSet', 'Account': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'Destination': None, 'validated': True, 'ledger_index': 21698919, 'Sequence': 21698916, 'TransactionResult': 'tesSUCCESS'}
+9A20E05063 {'TransactionType': 'Payment', 'Account': 'rMuPn1EDtaxbphGejkWpHtTJ4haYn8Uerf', 'Destination': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'validated': True, 'ledger_index': 21698924, 'Sequence': 21698921, 'TransactionResult': 'tecNO_PERMISSION'}
+2EFBD2D48E {'error': 'txnNotFound'}
+B5CA6E1EC2 {'TransactionType': 'DepositPreauth', 'Account': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'Destination': None, 'validated': True, 'ledger_index': 21698927, 'Sequence': 21698917, 'TransactionResult': 'tesSUCCESS'}
+C1A1C5EE45 {'TransactionType': 'DepositPreauth', 'Account': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'Destination': None, 'validated': True, 'ledger_index': 21698929, 'Sequence': 21698918, 'TransactionResult': 'tecDUPLICATE'}
+59B0B4034D {'TransactionType': 'Payment', 'Account': 'rMuPn1EDtaxbphGejkWpHtTJ4haYn8Uerf', 'Destination': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'validated': True, 'ledger_index': 21698932, 'Sequence': 21698922, 'TransactionResult': 'tesSUCCESS'}
+6AC5D2B3C9 {'TransactionType': 'CredentialCreate', 'Account': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'Destination': None, 'validated': True, 'ledger_index': 21698936, 'Sequence': 21698919, 'TransactionResult': 'tesSUCCESS'}
+0F8AF82130 {'TransactionType': 'CredentialAccept', 'Account': 'r3mhUCp9h6cBY6SSLMbVdw8CMYxmrYKhiD', 'Destination': None, 'validated': True, 'ledger_index': 21698938, 'Sequence': 21698934, 'TransactionResult': 'tesSUCCESS'}
+BD56ACCE42 {'TransactionType': 'DepositPreauth', 'Account': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'Destination': None, 'validated': True, 'ledger_index': 21698940, 'Sequence': 21698920, 'TransactionResult': 'tesSUCCESS'}
+A1493A2329 {'TransactionType': 'Payment', 'Account': 'r3mhUCp9h6cBY6SSLMbVdw8CMYxmrYKhiD', 'Destination': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'validated': True, 'ledger_index': 21698942, 'Sequence': 21698935, 'TransactionResult': 'tesSUCCESS'}
+30986BB5B4 {'TransactionType': 'Payment', 'Account': 'rUZNDTZDAh4srG5p8Vx3i6PNXUbRZ71rLQ', 'Destination': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'validated': True, 'ledger_index': 21698947, 'Sequence': 21698944, 'TransactionResult': 'tecNO_PERMISSION'}
+AD01563D9E {'TransactionType': 'DepositPreauth', 'Account': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'Destination': None, 'validated': True, 'ledger_index': 21698949, 'Sequence': 21698921, 'TransactionResult': 'tesSUCCESS'}
+6ACEDE570F {'TransactionType': 'DepositPreauth', 'Account': 'rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9', 'Destination': None, 'validated': True, 'ledger_index': 21698951, 'Sequence': 21698922, 'TransactionResult': 'tecNO_ENTRY'}
+rnBtcoWEahQy2dhJ2HDUumofut9NCBaEV9 {'Balance': '119999930', 'Sequence': 21698923, 'OwnerCount': 1, 'error': None}
+rMuPn1EDtaxbphGejkWpHtTJ4haYn8Uerf {'Balance': '89999980', 'Sequence': 21698923, 'OwnerCount': 0, 'error': None}
+r3mhUCp9h6cBY6SSLMbVdw8CMYxmrYKhiD {'Balance': '89999980', 'Sequence': 21698936, 'OwnerCount': 1, 'error': None}
+rUZNDTZDAh4srG5p8Vx3i6PNXUbRZ71rLQ {'Balance': '99999990', 'Sequence': 21698945, 'OwnerCount': 0, 'error': None}

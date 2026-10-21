@@ -1,0 +1,126 @@
+{
+  "accountset_defaultripple_issuer": {
+    "applied": false,
+    "engine_result": "tesSUCCESS",
+    "engine_result_code": 0,
+    "engine_result_message": "The simulated transaction would have been applied.",
+    "ledger_index": 21692464,
+    "meta": {
+      "AffectedNodes": [
+        {
+          "ModifiedNode": {
+            "FinalFields": {
+              "Account": "rfsraes2gh6h26SgtaxR2Cf3UNVWHJJekH",
+              "Balance": "99999980",
+              "Flags": 8388608,
+              "OwnerCount": 0,
+              "Sequence": 21692365
+            },
+            "LedgerEntryType": "AccountRoot",
+            "LedgerIndex": "C38531775F1D0812299530B42119EE5546DB3D6808A69A09C8803CB3D304A76A",
+            "PreviousFields": {
+              "Balance": "99999990",
+              "Flags": 0,
+              "Sequence": 21692364
+            },
+            "PreviousTxnID": "C6EF15D0FA7B9427651B3129863991EDBED9005BD37A588037DB1DC3AB66AE98",
+            "PreviousTxnLgrSeq": 21692384
+          }
+        }
+      ],
+      "TransactionIndex": 4,
+      "TransactionResult": "tesSUCCESS"
+    },
+    "status": "success",
+    "tx_json": {
+      "Account": "rfsraes2gh6h26SgtaxR2Cf3UNVWHJJekH",
+      "Fee": "10",
+      "Sequence": 21692364,
+      "SetFlag": 8,
+      "SigningPubKey": "",
+      "TransactionType": "AccountSet",
+      "TxnSignature": "",
+      "hash": "1FB0881B4E9637FCF3E04C6B3097C8A0CD44B29E844BD3B92DB65B92DAE4F33C"
+    }
+  },
+  "ammcreate_wallet": {
+    "applied": false,
+    "engine_result": "terNO_RIPPLE",
+    "engine_result_code": -90,
+    "engine_result_message": "Path does not permit rippling.",
+    "ledger_index": 21692464,
+    "status": "success",
+    "tx_json": {
+      "Account": "rNgrA8eo8Bdee3hYEJ4euJoke4DhKJ1APy",
+      "Amount": "100000000",
+      "Amount2": {
+        "currency": "LAB",
+        "issuer": "rfsraes2gh6h26SgtaxR2Cf3UNVWHJJekH",
+        "value": "100"
+      },
+      "Fee": "200000",
+      "Sequence": 21692362,
+      "SigningPubKey": "",
+      "TradingFee": 0,
+      "TransactionType": "AMMCreate",
+      "TxnSignature": "",
+      "hash": "5A866A79D580401459B1ABFF9316E5EA0F14AACCCDF36E452CD6FA019FBA1496"
+    }
+  },
+  "ammdeposit_wallet_twoasset": {
+    "applied": false,
+    "engine_result": "terNO_AMM",
+    "engine_result_code": -87,
+    "engine_result_message": "AMM doesn't exist for the asset pair.",
+    "ledger_index": 21692464,
+    "status": "success",
+    "tx_json": {
+      "Account": "rNgrA8eo8Bdee3hYEJ4euJoke4DhKJ1APy",
+      "Amount": "10000000",
+      "Amount2": {
+        "currency": "LAB",
+        "issuer": "rfsraes2gh6h26SgtaxR2Cf3UNVWHJJekH",
+        "value": "10"
+      },
+      "Asset": {
+        "currency": "XRP"
+      },
+      "Asset2": {
+        "currency": "LAB",
+        "issuer": "rfsraes2gh6h26SgtaxR2Cf3UNVWHJJekH"
+      },
+      "Fee": "10",
+      "Flags": 1048576,
+      "Sequence": 21692362,
+      "SigningPubKey": "",
+      "TransactionType": "AMMDeposit",
+      "TxnSignature": "",
+      "hash": "1CCD93D0B63FF83EC35FF5CA2461C21F14B69672AABD8879803BE9A0E4FCA46F"
+    }
+  },
+  "ammwithdraw_wallet_all": {
+    "applied": false,
+    "engine_result": "terNO_AMM",
+    "engine_result_code": -87,
+    "engine_result_message": "AMM doesn't exist for the asset pair.",
+    "ledger_index": 21692464,
+    "status": "success",
+    "tx_json": {
+      "Account": "rNgrA8eo8Bdee3hYEJ4euJoke4DhKJ1APy",
+      "Asset": {
+        "currency": "XRP"
+      },
+      "Asset2": {
+        "currency": "LAB",
+        "issuer": "rfsraes2gh6h26SgtaxR2Cf3UNVWHJJekH"
+      },
+      "Fee": "10",
+      "Flags": 131072,
+      "Sequence": 21692362,
+      "SigningPubKey": "",
+      "TransactionType": "AMMWithdraw",
+      "TxnSignature": "",
+      "hash": "6CC3B536C0A3A93B2B33F9A8A3E8C06474E8ABBB4F85D059B314500A8D31429B"
+    }
+  }
+}

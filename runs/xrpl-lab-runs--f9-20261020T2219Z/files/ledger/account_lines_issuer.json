@@ -1,0 +1,18 @@
+{
+  "account": "rL9qGFJd1RMuCZyjcaBSfVNVfL9dhn5Pz8",
+  "ledger_hash": "F87B897EFC07C4AF0AF6FDB78C6B4140D91FC2D298EE5B9DE0E515F775C55D8E",
+  "ledger_index": 21693836,
+  "lines": [
+    {
+      "account": "rKFBaCTMv9nfNvocpJfTVtEDNgweNRi2y6",
+      "balance": "-1000",
+      "currency": "LAB",
+      "limit": "0",
+      "limit_peer": "10000",
+      "quality_in": 0,
+      "quality_out": 0
+    }
+  ],
+  "status": "success",
+  "validated": true
+}

@@ -1,0 +1,5 @@
+8CE6B8910B {'TransactionType': 'Payment', 'Account': 'rKmqG7p94CPXS9ybJw4N3kMMC2gWJq6Wyy', 'Destination': 'rKP5DEEQqd6zWer9fXzvjLjrwdyaqvPSrj', 'validated': True, 'ledger_index': 21699310, 'Sequence': 21699307, 'TransactionResult': 'tecPATH_DRY'}
+824B673732 {'TransactionType': 'TrustSet', 'Account': 'rKP5DEEQqd6zWer9fXzvjLjrwdyaqvPSrj', 'Destination': None, 'validated': True, 'ledger_index': 21699313, 'Sequence': 21699305, 'TransactionResult': 'tesSUCCESS'}
+7610568091 {'TransactionType': 'Payment', 'Account': 'rKmqG7p94CPXS9ybJw4N3kMMC2gWJq6Wyy', 'Destination': 'rKP5DEEQqd6zWer9fXzvjLjrwdyaqvPSrj', 'validated': True, 'ledger_index': 21699316, 'Sequence': 21699308, 'TransactionResult': 'tesSUCCESS'}
+rKP5DEEQqd6zWer9fXzvjLjrwdyaqvPSrj {'Balance': '99999990', 'Sequence': 21699306, 'OwnerCount': 1, 'error': None}
+rKmqG7p94CPXS9ybJw4N3kMMC2gWJq6Wyy {'Balance': '99999980', 'Sequence': 21699309, 'OwnerCount': 0, 'error': None}

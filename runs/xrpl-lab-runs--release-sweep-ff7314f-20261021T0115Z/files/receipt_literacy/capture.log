@@ -1,0 +1,3 @@
+E32C8106A4 {'TransactionType': 'Payment', 'Account': 'r1NP9K1XHNAs5EK2JNE9ZVU8RKBhmKqjy', 'Destination': 'rM7dp23jPq3nwcv9CF5vsTMfTtZWRjTuK9', 'validated': True, 'ledger_index': 21696986, 'Sequence': 21696983, 'TransactionResult': 'tesSUCCESS'}
+r1NP9K1XHNAs5EK2JNE9ZVU8RKBhmKqjy {'Balance': '89999990', 'Sequence': 21696984, 'OwnerCount': 0, 'error': None}
+rM7dp23jPq3nwcv9CF5vsTMfTtZWRjTuK9 {'Balance': '10000000', 'Sequence': 21696986, 'OwnerCount': 0, 'error': None}

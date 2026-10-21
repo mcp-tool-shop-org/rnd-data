@@ -1,0 +1,9 @@
+784A4006F2 {'TransactionType': 'NFTokenMint', 'Account': 'rQ3EeoDy9Mj5EX7EbxSEbXqBHV69fjsMVj', 'Destination': None, 'validated': True, 'ledger_index': 21699054, 'Sequence': 21699050, 'TransactionResult': 'tesSUCCESS'}
+6596EFFCFC {'TransactionType': 'NFTokenCreateOffer', 'Account': 'rQ3EeoDy9Mj5EX7EbxSEbXqBHV69fjsMVj', 'Destination': 'rGHkppdcVSXygH4KPMd1hbFPp9TXUc4VNy', 'validated': True, 'ledger_index': 21699056, 'Sequence': 21699051, 'TransactionResult': 'tesSUCCESS'}
+C2A57AC5DF {'TransactionType': 'NFTokenAcceptOffer', 'Account': 'rGHkppdcVSXygH4KPMd1hbFPp9TXUc4VNy', 'Destination': None, 'validated': True, 'ledger_index': 21699058, 'Sequence': 21699052, 'TransactionResult': 'tesSUCCESS'}
+44078EFD2C {'TransactionType': 'NFTokenCreateOffer', 'Account': 'rGHkppdcVSXygH4KPMd1hbFPp9TXUc4VNy', 'Destination': 'rQ3EeoDy9Mj5EX7EbxSEbXqBHV69fjsMVj', 'validated': True, 'ledger_index': 21699061, 'Sequence': 21699053, 'TransactionResult': 'tesSUCCESS'}
+96F5AA5B99 {'TransactionType': 'NFTokenAcceptOffer', 'Account': 'rQ3EeoDy9Mj5EX7EbxSEbXqBHV69fjsMVj', 'Destination': None, 'validated': True, 'ledger_index': 21699063, 'Sequence': 21699052, 'TransactionResult': 'tesSUCCESS'}
+4F6DBC6EAC {'TransactionType': 'NFTokenAcceptOffer', 'Account': 'rQ3EeoDy9Mj5EX7EbxSEbXqBHV69fjsMVj', 'Destination': None, 'validated': True, 'ledger_index': 21699066, 'Sequence': 21699053, 'TransactionResult': 'tecOBJECT_NOT_FOUND'}
+00081388FD {'error': 'txnNotFound'}
+rQ3EeoDy9Mj5EX7EbxSEbXqBHV69fjsMVj {'Balance': '89999960', 'Sequence': 21699054, 'OwnerCount': 1, 'error': None}
+rGHkppdcVSXygH4KPMd1hbFPp9TXUc4VNy {'Balance': '109999980', 'Sequence': 21699054, 'OwnerCount': 0, 'error': None}

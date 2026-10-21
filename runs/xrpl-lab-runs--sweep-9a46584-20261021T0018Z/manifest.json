@@ -1,0 +1,124 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "xrpl-lab-runs--sweep-9a46584-20261021T0018Z",
+ "kind": "collection",
+ "source": "xrpl-lab-runs/sweep-9a46584-20261021T0018Z",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "credentials_101/capture.log",
+   "sha256": "15be83e27b115cce1a9fe005f06e391cb5f4076908be59464c14198161688df9",
+   "bytes": 1577,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "credentials_101/command.txt",
+   "sha256": "78ae7b90f13ffb8b060d2c093091853a52b8ebedb41c5b4d075538d516d5eb50",
+   "bytes": 530,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "credentials_101/exit_code",
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "bytes": 2,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "credentials_101/ledger/ledger_evidence.json",
+   "sha256": "e521fe6a863451821814c27693ea0e3ddbf897ca7663f9f3646f6276c12419af",
+   "bytes": 7956,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "credentials_101/module_report.md",
+   "sha256": "ccbd9094953938977d3b2f6406b56c2f6660983a411448e2d0d5ce7711ff1f86",
+   "bytes": 1477,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "credentials_101/preflight.txt",
+   "sha256": "ea39f2910f308cb308baf16735a7f321eaf26bbc04736b1048ea6f05a9e7fc67",
+   "bytes": 257,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "credentials_101/state.json",
+   "sha256": null,
+   "bytes": 2724,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  },
+  {
+   "path": "credentials_101/stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "credentials_101/stdout.txt",
+   "sha256": null,
+   "bytes": 15060,
+   "tier": "T4",
+   "licence": null,
+   "visibility": "private",
+   "private_why": "identity"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "15be83e27b115cce1a9fe005f06e391cb5f4076908be59464c14198161688df9",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--sweep-9a46584-20261021T0018Z/files/credentials_101/capture.log"
+  },
+  {
+   "sha256": "78ae7b90f13ffb8b060d2c093091853a52b8ebedb41c5b4d075538d516d5eb50",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--sweep-9a46584-20261021T0018Z/files/credentials_101/command.txt"
+  },
+  {
+   "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--sweep-9a46584-20261021T0018Z/files/credentials_101/exit_code"
+  },
+  {
+   "sha256": "e521fe6a863451821814c27693ea0e3ddbf897ca7663f9f3646f6276c12419af",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--sweep-9a46584-20261021T0018Z/files/credentials_101/ledger/ledger_evidence.json"
+  },
+  {
+   "sha256": "ccbd9094953938977d3b2f6406b56c2f6660983a411448e2d0d5ce7711ff1f86",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--sweep-9a46584-20261021T0018Z/files/credentials_101/module_report.md"
+  },
+  {
+   "sha256": "ea39f2910f308cb308baf16735a7f321eaf26bbc04736b1048ea6f05a9e7fc67",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--sweep-9a46584-20261021T0018Z/files/credentials_101/preflight.txt"
+  },
+  {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "store": "rnd-data",
+   "location": "runs/xrpl-lab-runs--sweep-9a46584-20261021T0018Z/files/credentials_101/stderr.txt"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-10-20",
+ "rnd_commit": "7ba9f27440fbf2ba1180915f789b86ad9ed3aa94"
+}

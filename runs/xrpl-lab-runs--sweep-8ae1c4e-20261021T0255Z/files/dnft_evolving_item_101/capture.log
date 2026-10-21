@@ -1,0 +1,5 @@
+C4B447A82E {'TransactionType': 'NFTokenMint', 'Account': 'r9qfV4TG6633pHMxqmJxFQexNoLEKbWd55', 'Destination': None, 'validated': True, 'ledger_index': 21699092, 'Sequence': 21699089, 'TransactionResult': 'tesSUCCESS'}
+389CB3AE90 {'TransactionType': 'NFTokenModify', 'Account': 'r9qfV4TG6633pHMxqmJxFQexNoLEKbWd55', 'Destination': None, 'validated': True, 'ledger_index': 21699095, 'Sequence': 21699090, 'TransactionResult': 'tesSUCCESS'}
+E1F8BD07F6 {'TransactionType': 'NFTokenModify', 'Account': 'r9qfV4TG6633pHMxqmJxFQexNoLEKbWd55', 'Destination': None, 'validated': True, 'ledger_index': 21699099, 'Sequence': 21699092, 'TransactionResult': 'tecNO_PERMISSION'}
+0018000060 {'error': 'txnNotFound'}
+r9qfV4TG6633pHMxqmJxFQexNoLEKbWd55 {'Balance': '99999960', 'Sequence': 21699093, 'OwnerCount': 1, 'error': None}

@@ -1,0 +1,4 @@
+27FC47908A {'TransactionType': 'Payment', 'Account': 'rH4QSdsXN1DaJQpKGMuJd1zr1YQYLbaKB3', 'Destination': 'rph2vzZwppZGjPsS8d9L7A2b4BVkTMWnva', 'validated': True, 'ledger_index': 21698839, 'Sequence': 21698836, 'TransactionResult': 'tecUNFUNDED_PAYMENT'}
+C3D7EC3AA7 {'TransactionType': 'Payment', 'Account': 'rH4QSdsXN1DaJQpKGMuJd1zr1YQYLbaKB3', 'Destination': 'rph2vzZwppZGjPsS8d9L7A2b4BVkTMWnva', 'validated': True, 'ledger_index': 21698841, 'Sequence': 21698837, 'TransactionResult': 'tesSUCCESS'}
+rH4QSdsXN1DaJQpKGMuJd1zr1YQYLbaKB3 {'Balance': '89999980', 'Sequence': 21698838, 'OwnerCount': 0, 'error': None}
+rph2vzZwppZGjPsS8d9L7A2b4BVkTMWnva {'Balance': '10000000', 'Sequence': 21698841, 'OwnerCount': 0, 'error': None}

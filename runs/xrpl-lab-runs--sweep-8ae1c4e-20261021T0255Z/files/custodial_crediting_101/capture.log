@@ -1,0 +1,5 @@
+FADDB41029 {'TransactionType': 'AccountSet', 'Account': 'rLRtB9c2KcqZfFvao4xkLUHozAoMAMTQLE', 'Destination': None, 'validated': True, 'ledger_index': 21698979, 'Sequence': 21698977, 'TransactionResult': 'tesSUCCESS'}
+C48D40BE5D {'TransactionType': 'Payment', 'Account': 'rL6MXqohDe4C4Wcfbm5wPJu8u9s97X8byK', 'Destination': 'rLRtB9c2KcqZfFvao4xkLUHozAoMAMTQLE', 'validated': True, 'ledger_index': 21698984, 'Sequence': 21698981, 'TransactionResult': 'tesSUCCESS'}
+BB1D318227 {'TransactionType': 'Payment', 'Account': 'rL6MXqohDe4C4Wcfbm5wPJu8u9s97X8byK', 'Destination': 'rLRtB9c2KcqZfFvao4xkLUHozAoMAMTQLE', 'validated': True, 'ledger_index': 21698986, 'Sequence': 21698982, 'TransactionResult': 'tecDST_TAG_NEEDED'}
+rLRtB9c2KcqZfFvao4xkLUHozAoMAMTQLE {'Balance': '124999990', 'Sequence': 21698978, 'OwnerCount': 0, 'error': None}
+rL6MXqohDe4C4Wcfbm5wPJu8u9s97X8byK {'Balance': '74999980', 'Sequence': 21698983, 'OwnerCount': 0, 'error': None}

@@ -1,0 +1,20 @@
+{
+  "error": "actNotFound",
+  "error_code": 19,
+  "error_message": "Account not found.",
+  "ledger_hash": "B2601A136478A2514F5CA3C4399B2E77735833C814606C64E840B2D9A960426F",
+  "ledger_index": 21692914,
+  "request": {
+    "asset": {
+      "currency": "XRP"
+    },
+    "asset2": {
+      "currency": "LAB",
+      "issuer": "rGaJTbCz2i9ccNoJ9XZmZrVcrtzRLD2Ew5"
+    },
+    "command": "amm_info",
+    "ledger_index": "validated"
+  },
+  "status": "error",
+  "validated": true
+}

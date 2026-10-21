@@ -1,0 +1,80 @@
+{
+  "A55B97F203A4929087A997536251863F6F02917B3851CA59E6EEE0201E0BA31B": {
+    "error": "txnNotFound",
+    "error_code": 29,
+    "error_message": "Transaction not found.",
+    "request": {
+      "command": "tx",
+      "transaction": "A55B97F203A4929087A997536251863F6F02917B3851CA59E6EEE0201E0BA31B"
+    },
+    "status": "error"
+  },
+  "A91F3B025D989BBCA12A432532B7EF3BAAC913FF685F2CCE7AE3696D47FB7B98": {
+    "Account": "rQ3mdmTCHGHsVzSnfoSYqktePZeHu7CJCy",
+    "Asset": {
+      "currency": "XRP"
+    },
+    "Asset2": {
+      "currency": "LAB",
+      "issuer": "rGaJTbCz2i9ccNoJ9XZmZrVcrtzRLD2Ew5"
+    },
+    "Fee": "10",
+    "Flags": 131072,
+    "LastLedgerSequence": 21692905,
+    "Sequence": 21692854,
+    "SigningPubKey": "EDB0BD94D3235DADFDFE60C0A2CAC1FCE6CE8AC3BD0181E3DE185FD8D33F3395BF",
+    "TransactionType": "AMMWithdraw",
+    "TxnSignature": "88FF8FCBA6FB9F940D48BB93C99C7A7D17C776C2DFFC8A5CA86AA6806C621A5F840481F670D43858C0BDF9F0F4CABB5C4A91AF14FBBC1C3E066D3E22F6838409",
+    "hash": "A91F3B025D989BBCA12A432532B7EF3BAAC913FF685F2CCE7AE3696D47FB7B98",
+    "status": "success",
+    "validated": false
+  },
+  "1C14C1C3E9A16FF36961ED3AFC7C64D77E26A4065441CC45267021535E08A1F5": {
+    "Account": "rQ3mdmTCHGHsVzSnfoSYqktePZeHu7CJCy",
+    "Amount": "100000000",
+    "Amount2": {
+      "currency": "LAB",
+      "issuer": "rGaJTbCz2i9ccNoJ9XZmZrVcrtzRLD2Ew5",
+      "value": "100"
+    },
+    "Fee": "200000",
+    "LastLedgerSequence": 21692882,
+    "Sequence": 21692853,
+    "SigningPubKey": "EDB0BD94D3235DADFDFE60C0A2CAC1FCE6CE8AC3BD0181E3DE185FD8D33F3395BF",
+    "TradingFee": 500,
+    "TransactionType": "AMMCreate",
+    "TxnSignature": "064F6CA90FEF71D29E9582FBA43E3DE48571B9FE1D9F149EC7E9BF75FA3ECC552EE3DEE68B5387E7DC23489494C147B4382F9F27A667FA5725FD81D716E75D06",
+    "ctid": "C14B01C000060001",
+    "date": 845846692,
+    "hash": "1C14C1C3E9A16FF36961ED3AFC7C64D77E26A4065441CC45267021535E08A1F5",
+    "inLedger": 21692864,
+    "ledger_index": 21692864,
+    "meta": {
+      "AffectedNodes": [
+        {
+          "ModifiedNode": {
+            "FinalFields": {
+              "Account": "rQ3mdmTCHGHsVzSnfoSYqktePZeHu7CJCy",
+              "Balance": "99799990",
+              "Flags": 0,
+              "OwnerCount": 1,
+              "Sequence": 21692854
+            },
+            "LedgerEntryType": "AccountRoot",
+            "LedgerIndex": "5B0A66E9E0BDD0036D846009D2710594057D71B5E33225AF08B26AA11B33DE03",
+            "PreviousFields": {
+              "Balance": "99999990",
+              "Sequence": 21692853
+            },
+            "PreviousTxnID": "21B056C74C4D1ACB815E20EC1BB10923B4B354F2919F8D35440F9212E58FCE0F",
+            "PreviousTxnLgrSeq": 21692859
+          }
+        }
+      ],
+      "TransactionIndex": 6,
+      "TransactionResult": "tecUNFUNDED_AMM"
+    },
+    "status": "success",
+    "validated": true
+  }
+}

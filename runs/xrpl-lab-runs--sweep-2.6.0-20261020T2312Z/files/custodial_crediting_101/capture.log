@@ -1,0 +1,4 @@
+C7CDE3E6C5 {'TransactionType': 'AccountSet', 'Account': 'rMukfr4dQCHZQmTa8R1auXPoKYF79LpTJh', 'Destination': None, 'validated': True, 'ledger_index': 21695027, 'Sequence': 21695025, 'TransactionResult': 'tesSUCCESS'}
+F14C43D284 {'error': 'txnNotFound'}
+rMukfr4dQCHZQmTa8R1auXPoKYF79LpTJh {'Balance': '99999990', 'Sequence': 21695026, 'OwnerCount': 0, 'error': None}
+raX5qqSbt7gVPVEZv9qXV4FDqPDUrfhEWd {'Balance': '99999990', 'Sequence': 21695030, 'OwnerCount': 0, 'error': None}

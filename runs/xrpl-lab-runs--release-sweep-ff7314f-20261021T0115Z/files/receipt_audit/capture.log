@@ -1,0 +1,4 @@
+EA9B0130F1 {'TransactionType': 'Payment', 'Account': 'r44tAmkTqPEDsDVzrySdWATBiNitmvaj2q', 'Destination': 'rDi4wJQdacXd8TWKDUnUurS27R5dVrafzq', 'validated': True, 'ledger_index': 21697037, 'Sequence': 21697035, 'TransactionResult': 'tesSUCCESS'}
+F1B57C5B6F {'TransactionType': 'Payment', 'Account': 'r44tAmkTqPEDsDVzrySdWATBiNitmvaj2q', 'Destination': 'rDi4wJQdacXd8TWKDUnUurS27R5dVrafzq', 'validated': True, 'ledger_index': 21697039, 'Sequence': 21697036, 'TransactionResult': 'tesSUCCESS'}
+r44tAmkTqPEDsDVzrySdWATBiNitmvaj2q {'Balance': '97999980', 'Sequence': 21697037, 'OwnerCount': 0, 'error': None}
+rDi4wJQdacXd8TWKDUnUurS27R5dVrafzq {'Balance': '2000000', 'Sequence': 21697037, 'OwnerCount': 0, 'error': None}

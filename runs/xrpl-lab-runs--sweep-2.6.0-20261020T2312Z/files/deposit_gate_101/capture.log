@@ -1,0 +1,11 @@
+8879E82817 {'TransactionType': 'AccountSet', 'Account': 'r4pvhpBEYGorA92ahhq2zoJjangrewECX3', 'Destination': None, 'validated': True, 'ledger_index': 21694898, 'Sequence': 21694896, 'TransactionResult': 'tesSUCCESS'}
+23230E7132 {'TransactionType': 'DepositPreauth', 'Account': 'r4pvhpBEYGorA92ahhq2zoJjangrewECX3', 'Destination': None, 'validated': True, 'ledger_index': 21694921, 'Sequence': 21694897, 'TransactionResult': 'tesSUCCESS'}
+1E8C824A97 {'TransactionType': 'Payment', 'Account': 'r3VGraPp19yWpxWtHhGTCR35brfD9u6Seu', 'Destination': 'r4pvhpBEYGorA92ahhq2zoJjangrewECX3', 'validated': True, 'ledger_index': 21694926, 'Sequence': 21694900, 'TransactionResult': 'tesSUCCESS'}
+D302D3AE3B {'TransactionType': 'CredentialCreate', 'Account': 'r4pvhpBEYGorA92ahhq2zoJjangrewECX3', 'Destination': None, 'validated': True, 'ledger_index': 21694928, 'Sequence': 21694899, 'TransactionResult': 'tesSUCCESS'}
+E57D8252F0 {'TransactionType': 'CredentialAccept', 'Account': 'rDEantDeFad4geNFVWGDd5chrsr6fsJfUP', 'Destination': None, 'validated': True, 'ledger_index': 21694930, 'Sequence': 21694928, 'TransactionResult': 'tesSUCCESS'}
+8894628794 {'TransactionType': 'DepositPreauth', 'Account': 'r4pvhpBEYGorA92ahhq2zoJjangrewECX3', 'Destination': None, 'validated': True, 'ledger_index': 21694932, 'Sequence': 21694900, 'TransactionResult': 'tesSUCCESS'}
+19946EE902 {'TransactionType': 'DepositPreauth', 'Account': 'r4pvhpBEYGorA92ahhq2zoJjangrewECX3', 'Destination': None, 'validated': True, 'ledger_index': 21694942, 'Sequence': 21694901, 'TransactionResult': 'tesSUCCESS'}
+r4pvhpBEYGorA92ahhq2zoJjangrewECX3 {'Balance': '109999930', 'Sequence': 21694903, 'OwnerCount': 1, 'error': None}
+r3VGraPp19yWpxWtHhGTCR35brfD9u6Seu {'Balance': '89999990', 'Sequence': 21694901, 'OwnerCount': 0, 'error': None}
+rDEantDeFad4geNFVWGDd5chrsr6fsJfUP {'Balance': '99999990', 'Sequence': 21694929, 'OwnerCount': 1, 'error': None}
+rBsMyS6oRcSrydcWj2q3CBBTc77P2HxN36 {'Balance': '99999990', 'Sequence': 21694940, 'OwnerCount': 0, 'error': None}

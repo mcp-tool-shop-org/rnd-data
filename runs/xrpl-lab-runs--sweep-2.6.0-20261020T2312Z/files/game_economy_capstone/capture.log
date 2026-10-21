@@ -1,0 +1,9 @@
+F9BAA4670E {'TransactionType': 'MPTokenIssuanceCreate', 'Account': 'rpoikpcHJHJu4RFg6ZSKN9epFLAbqRnbrm', 'Destination': None, 'validated': True, 'ledger_index': 21695200, 'Sequence': 21695198, 'TransactionResult': 'tesSUCCESS'}
+311047FE93 {'TransactionType': 'NFTokenMint', 'Account': 'rpoikpcHJHJu4RFg6ZSKN9epFLAbqRnbrm', 'Destination': None, 'validated': True, 'ledger_index': 21695202, 'Sequence': 21695199, 'TransactionResult': 'tesSUCCESS'}
+5DA733DF15 {'TransactionType': 'NFTokenCreateOffer', 'Account': 'rpoikpcHJHJu4RFg6ZSKN9epFLAbqRnbrm', 'Destination': 'rpUTMFz2WmHqcfp149nkKXgx55citZV4kf', 'validated': True, 'ledger_index': 21695204, 'Sequence': 21695200, 'TransactionResult': 'tesSUCCESS'}
+56869DAEC5 {'TransactionType': 'NFTokenAcceptOffer', 'Account': 'rpUTMFz2WmHqcfp149nkKXgx55citZV4kf', 'Destination': None, 'validated': True, 'ledger_index': 21695207, 'Sequence': 21695204, 'TransactionResult': 'tecINSUFFICIENT_FUNDS'}
+413518C161 {'TransactionType': 'EscrowCreate', 'Account': 'rpoikpcHJHJu4RFg6ZSKN9epFLAbqRnbrm', 'Destination': 'rpoikpcHJHJu4RFg6ZSKN9epFLAbqRnbrm', 'validated': True, 'ledger_index': 21695210, 'Sequence': 21695201, 'TransactionResult': 'tesSUCCESS'}
+87BA633AC6 {'TransactionType': 'EscrowFinish', 'Account': 'rpoikpcHJHJu4RFg6ZSKN9epFLAbqRnbrm', 'Destination': None, 'validated': True, 'ledger_index': 21695213, 'Sequence': 21695202, 'TransactionResult': 'tesSUCCESS'}
+0008138813 {'error': 'txnNotFound'}
+rpoikpcHJHJu4RFg6ZSKN9epFLAbqRnbrm {'Balance': '99999950', 'Sequence': 21695203, 'OwnerCount': 3, 'error': None}
+rpUTMFz2WmHqcfp149nkKXgx55citZV4kf {'Balance': '99999990', 'Sequence': 21695205, 'OwnerCount': 0, 'error': None}
