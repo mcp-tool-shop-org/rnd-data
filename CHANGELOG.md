@@ -2,13 +2,16 @@
 
 All notable changes to rnd-data are recorded here.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/). rnd-data has no versions: each run is pinned
-by its manifest, and the repository by its commit, so entries are dated.
+The format is based on [Keep a Changelog](https://keepachangelog.com/). Each run is pinned by its manifest, the
+repository by its commit, and the `rnd-data` Python package follows Semantic Versioning (`src/rnd_data/__init__.py`).
 
-## [Unreleased]
+## [0.1.0] - 2026-10-23
 
 ### Added
 
+- Release workflow (`.github/workflows/release.yml`): publishes `rnd-data` to PyPI via OIDC trusted publishing (`pypa/gh-action-pypi-publish`, `environment: pypi`) on `release: published` and validated `workflow_dispatch` `tag` (`vX.Y.Z`), after `verify.sh`, `ruff`, `pytest`, and version-tag checks.
+- The stdlib-only `rnd-data` Python package (`0.1.0`, `ls`, `show`, `where`, `schema`) and JSON schemas (`run-v1.schema.json`, `store-v1.schema.json`) (#5, `e9fabd8`).
+- Raw `xrpl-lab` live-testnet runs: 11 collections (`xrpl-lab-runs--*`), 403 public files (`a4b8675`, #6 `bed3d54`).
 - `LICENSE` (CC BY 4.0, for the data) and `LICENSE-MIT` (for the scripts, `*.sh` and `*.py`); a third-party file keeps
   the licence its manifest names.
 - `verify.sh`, which runs rnd's `rnd raw verify --public-only` (or the full check, with `--full`).
