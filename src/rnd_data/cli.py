@@ -12,6 +12,8 @@ from . import __version__
 from .schema import validate_file
 from .store import RndDataError, Store
 
+INTERNAL_EXIT = 70  # EX_SOFTWARE: kept apart from 1 (user error) and 2 (usage or runtime error)
+
 
 def fail(code: str, message: str, hint: str = "", exit_code: int = 2) -> int:
     """Print an error in the studio shape (code, message and hint) to stderr and return `exit_code`."""
@@ -230,3 +232,10 @@ def main(argv: list[str] | None = None) -> int:
         return int(args.fn(args) or 0)
     except RndDataError as exc:
         return fail(exc.code, exc.message, exc.hint, exit_code=exc.exit_code)
+    except Exception as exc:  # an internal bug: the studio shape, never a traceback
+        return fail(
+            "INTERNAL",
+            f"{type(exc).__name__}: {exc}",
+            "this is a bug in rnd-data; please report it with the command you ran",
+            exit_code=INTERNAL_EXIT,
+        )

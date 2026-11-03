@@ -5,10 +5,13 @@ All notable changes to rnd-data are recorded here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/). Each run is pinned by its manifest, the
 repository by its commit, and the `rnd-data` Python package follows Semantic Versioning (`src/rnd_data/__init__.py`).
 
-## [0.1.0] - 2026-10-23
+## [0.1.0] - 2026-11-03
 
 ### Added
 
+- README translations (ja, zh, es, fr, hi, it, pt-BR), made locally with TranslateGemma.
+- CI: a `pip-audit --strict` dependency audit (pinned 2.10.1).
+- CLI: an internal error now prints `error: INTERNAL: …` with a hint and exits 70, never a traceback.
 - Release workflow (`.github/workflows/release.yml`): publishes `rnd-data` to PyPI via OIDC trusted publishing (`pypa/gh-action-pypi-publish`, `environment: pypi`) on `release: published` and validated `workflow_dispatch` `tag` (`vX.Y.Z`), after `verify.sh`, `ruff`, `pytest`, and version-tag checks.
 - The stdlib-only `rnd-data` Python package (`0.1.0`, `ls`, `show`, `where`, `schema`) and JSON schemas (`run-v1.schema.json`, `store-v1.schema.json`) (#5, `e9fabd8`).
 - Raw `xrpl-lab` live-testnet runs: 11 collections (`xrpl-lab-runs--*`), 403 public files (`a4b8675`, #6 `bed3d54`).
@@ -17,6 +20,7 @@ repository by its commit, and the `rnd-data` Python package follows Semantic Ver
 - `verify.sh`, which runs rnd's `rnd raw verify --public-only` (or the full check, with `--full`).
 - CI (`ci.yml`): `bash verify.sh` and `atlas check` on every pull request, with rnd pinned to a commit.
 - The landing page and a six-page handbook (`site/`), deployed by `pages.yml`.
+- `SHIP_GATE.md` brought up to date for a PyPI package (2026-11-03).
 - `SECURITY.md`, a "Security and trust" section and a "Licence" section in the README, `SHIP_GATE.md`,
   `SCORECARD.md`, and the repository's map in `atlas/`.
 
