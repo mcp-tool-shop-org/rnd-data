@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "pins": {
+    "07021a2377233f44:ja": {
+      "lang": "ja",
+      "source": "One run's files (schema `rnd-data-run/v1`): each file's path, SHA-256, size, tier, licence and visibility, and every copy",
+      "translation": "一回の実行のファイル（スキーマ `rnd-data-run/v1`）：各ファイルのパス、SHA-256、サイズ、ティア、ライセンス、および可視性、およびすべてのコピー",
+      "pinnedAt": "2026-11-03T18:45:01.360Z"
+    }
+  }
+}

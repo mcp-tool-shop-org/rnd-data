@@ -829,6 +829,21 @@ def test_show_command_and_errors(tmp_path: Path) -> None:
     assert "error: BAD_RUN_ID:" in err
 
 
+def test_internal_error_has_studio_shape_and_no_traceback(tmp_path: Path) -> None:
+    store_dir = write_fixture_store(tmp_path)
+
+    def broken(args: Any) -> int:
+        raise KeyError("boom")
+
+    with mock.patch("rnd_data.cli.cmd_ls", broken):
+        code, out, err = run_cli("--root", str(store_dir), "ls")
+    assert code == 70
+    assert out == ""
+    assert "error: INTERNAL: KeyError: 'boom'" in err
+    assert "hint: this is a bug in rnd-data" in err
+    assert "Traceback" not in err
+
+
 def test_root_resolution_and_error_shape(tmp_path: Path) -> None:
     store_a = write_fixture_store(tmp_path / "alpha")
     store_b = write_fixture_store(tmp_path / "beta")
