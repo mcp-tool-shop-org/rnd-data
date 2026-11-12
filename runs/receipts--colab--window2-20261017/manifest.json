@@ -32,8 +32,8 @@
   },
   {
    "path": "rig-attempt1.log",
-   "sha256": "36b257a6f1f72f1671b0316920a18b03904d34562dc18ef1cfca5b5280f83d26",
-   "bytes": 1283,
+   "sha256": "d41cddd8019550fb1153d4f9a99fca0835b750a057464237e49bcce7efa6b01c",
+   "bytes": 1061,
    "tier": "T4",
    "licence": "CC-BY-4.0",
    "visibility": "public"
@@ -112,7 +112,7 @@
    "location": "runs/receipts--colab--window2-20261017/files/pin-result.json"
   },
   {
-   "sha256": "36b257a6f1f72f1671b0316920a18b03904d34562dc18ef1cfca5b5280f83d26",
+   "sha256": "d41cddd8019550fb1153d4f9a99fca0835b750a057464237e49bcce7efa6b01c",
    "store": "rnd-data",
    "location": "runs/receipts--colab--window2-20261017/files/rig-attempt1.log"
   },
