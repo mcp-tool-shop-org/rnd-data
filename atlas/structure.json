@@ -5148,7 +5148,7 @@
           "path": "runs/receipts--colab--window2-20261017/files/pin-result.json"
         },
         {
-          "hash": "36b257a6f1f72f1671b0316920a18b03904d34562dc18ef1cfca5b5280f83d26",
+          "hash": "d41cddd8019550fb1153d4f9a99fca0835b750a057464237e49bcce7efa6b01c",
           "path": "runs/receipts--colab--window2-20261017/files/rig-attempt1.log"
         },
         {
@@ -5160,7 +5160,7 @@
           "path": "runs/receipts--colab--window2-20261017/files/smoke-window.log"
         },
         {
-          "hash": "2c01d6b132fbaf3f4214ba842417680dd047c2d341e82e99745bfcb23bd67b2a",
+          "hash": "a52e7b8a307363bca3ad22817c08e23442747c4c32aad2c2f6539443679cf262",
           "path": "runs/receipts--colab--window2-20261017/manifest.json"
         },
         {
@@ -9601,7 +9601,7 @@
   ],
   "engine": "1.26.0",
   "generatedFrom": {
-    "commit": "f7b1cfeac43022742edf7cd1a2d72b3e34ffbb6e",
+    "commit": "b6a3ae30fee51bf5bd6392223eaa2c37f9b3775c",
     "tracked": 1256
   },
   "landings": [

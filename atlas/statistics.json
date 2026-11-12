@@ -112,8 +112,8 @@
         "path": ".gitattributes"
       },
       {
-        "commits": 3,
-        "lines": 81,
+        "commits": 4,
+        "lines": 83,
         "path": ".github/workflows/ci.yml"
       },
       {
@@ -207,8 +207,8 @@
         "path": "SHIP_GATE.md"
       },
       {
-        "commits": 2,
-        "lines": 102,
+        "commits": 3,
+        "lines": 132,
         "path": "atlas/README.md"
       },
       {
@@ -217,18 +217,18 @@
         "path": "atlas/boundaries.yaml"
       },
       {
-        "commits": 2,
-        "lines": 240,
+        "commits": 3,
+        "lines": 379,
         "path": "atlas/page.json"
       },
       {
-        "commits": 2,
-        "lines": 4774,
+        "commits": 3,
+        "lines": 7049,
         "path": "atlas/statistics.json"
       },
       {
-        "commits": 2,
-        "lines": 16778,
+        "commits": 3,
+        "lines": 28087,
         "path": "atlas/structure.json"
       },
       {
@@ -6417,9 +6417,9 @@
     "level": "low",
     "reason": "fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions"
   },
-  "generatedAt": "2026-11-11T22:36:41.966Z",
+  "generatedAt": "2026-11-12T17:24:52.102Z",
   "generatedFrom": {
-    "commit": "f7b1cfeac43022742edf7cd1a2d72b3e34ffbb6e"
+    "commit": "b6a3ae30fee51bf5bd6392223eaa2c37f9b3775c"
   },
   "pairs": [],
   "parameters": {
@@ -6432,16 +6432,16 @@
     "floor": "fallen",
     "floorHeld": false,
     "floorTrigger": "both",
-    "headDate": "2026-11-03T13:50:34-05:00",
+    "headDate": "2026-11-11T18:36:59-05:00",
     "inScopeFiles": 1261,
     "pinnedStart": null,
     "priorFloor": "fallen",
-    "qualifyingCommits": 12,
+    "qualifyingCommits": 13,
     "qualifyingMinimum": 30,
     "revisions": 5,
     "shared": 10,
     "sharedFloorUsed": 3,
-    "since": "2026-05-07T18:50:34.000Z",
+    "since": "2026-05-15T23:36:59.000Z",
     "sourceExtensions": [
       ".js",
       ".mjs",
