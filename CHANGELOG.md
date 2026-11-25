@@ -5,6 +5,14 @@ All notable changes to rnd-data are recorded here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/). Each run is pinned by its manifest, the
 repository by its commit, and the `rnd-data` Python package follows Semantic Versioning (`src/rnd_data/__init__.py`).
 
+## [Unreleased]
+
+### Added
+
+- Run `merchant-league--m2-xrpl-rust-spike-2026-11-14`: merchant-league's M2 xrpl-rust Testnet spike receipt and the
+  `league-dice` escrow-condition encoding at `1d031a3e`, kept because the spike's PR (#2) is closed unmerged; 9 public
+  files, ingested under rnd's `docs/raw-data-rules/merchant-league-receipts.json`.
+
 ## [0.1.0] - 2026-11-03
 
 ### Added

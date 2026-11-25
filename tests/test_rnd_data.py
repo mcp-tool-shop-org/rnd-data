@@ -271,6 +271,30 @@ def write_fixture_store(base: Path) -> Path:
 # ----------------------------------------------------------------------
 
 
+# The store only grows. These are the counts of the 0.1.0 snapshot (2026-11-03); the live checks below derive their
+# expected values from the manifests on disk, read independently of Store, so a new run never breaks CI.
+SNAPSHOT_MIN_MANIFESTS = 111
+SNAPSHOT_NO_KIND_IDS = ["rnd-watch", "rnd-watch--argon-gpu-stack", "rnd-watch--reports", "rnd-watch--runs"]
+
+
+def _raw_manifest_facts() -> list[dict[str, Any]]:
+    """Read every runs/*/manifest.json as plain JSON (not through Store) and return the facts the counts need."""
+    facts = []
+    for mp in sorted((REPO_ROOT / "runs").glob("*/manifest.json")):
+        m = json.loads(mp.read_text(encoding="utf-8"))
+        public = [f for f in m.get("files", ()) if f.get("visibility") == "public"]
+        facts.append(
+            {
+                "id": m["id"],
+                "kind": m.get("kind"),
+                "source": m.get("source", ""),
+                "public_files": len(public),
+                "lead_ids": {f["licence"].split(" (", 1)[0] for f in public if f.get("licence")},
+            }
+        )
+    return facts
+
+
 def test_live_repo_manifests_and_store_validate() -> None:
     """Every real runs/*/manifest.json and store.json in the checkout passes the schema validator."""
     schema_id, problems = validate_file(REPO_ROOT / "store.json")
@@ -278,7 +302,7 @@ def test_live_repo_manifests_and_store_validate() -> None:
     assert problems == []
 
     manifest_paths = sorted((REPO_ROOT / "runs").glob("*/manifest.json"))
-    assert len(manifest_paths) == 111
+    assert len(manifest_paths) >= SNAPSHOT_MIN_MANIFESTS
     for mp in manifest_paths:
         s_id, probs = validate_file(mp)
         assert s_id == RUN_SCHEMA, f"{mp}: unexpected schema {s_id}"
@@ -286,42 +310,43 @@ def test_live_repo_manifests_and_store_validate() -> None:
 
 
 def test_live_repo_ls_counts() -> None:
-    """Gate 3 counts on live repo: 111 manifests (74 runs, 33 collections, 4 without kind); 70 MIT, 98 CC-BY-4.0."""
+    """Gate 3 counts on the live repo: Store's counts equal the ones read straight from the manifests."""
+    facts = _raw_manifest_facts()
+    n = len(facts)
+    n_run = sum(1 for f in facts if f["kind"] == "run")
+    n_coll = sum(1 for f in facts if f["kind"] == "collection")
+    no_kind_ids = sorted(f["id"] for f in facts if f["kind"] is None)
+    mit_ids = {f["id"] for f in facts if "MIT" in f["lead_ids"]}
+    cc_ids = {f["id"] for f in facts if "CC-BY-4.0" in f["lead_ids"]}
+
+    def from_source(prefix: str) -> int:
+        return sum(1 for f in facts if f["source"] == prefix or f["source"].startswith(prefix))
+
+    assert n >= SNAPSHOT_MIN_MANIFESTS
+    assert no_kind_ids == SNAPSHOT_NO_KIND_IDS
+
     store = Store(REPO_ROOT)
     all_runs = store.runs()
-    assert len(all_runs) == 111
-    assert sum(1 for r in all_runs if r["kind"] == "run") == 74
-    assert sum(1 for r in all_runs if r["kind"] == "collection") == 33
+    assert len(all_runs) == n
+    assert sum(1 for r in all_runs if r["kind"] == "run") == n_run
+    assert sum(1 for r in all_runs if r["kind"] == "collection") == n_coll
     no_kind = [r for r in all_runs if r["kind"] is None]
-    assert len(no_kind) == 4
     assert all(r["kind_label"] == "(no kind)" for r in no_kind)
-    assert [r["id"] for r in no_kind] == [
-        "rnd-watch",
-        "rnd-watch--argon-gpu-stack",
-        "rnd-watch--reports",
-        "rnd-watch--runs",
-    ]
+    assert [r["id"] for r in no_kind] == no_kind_ids
 
-    mit_runs = store.runs(licence="MIT")
-    cc_runs = store.runs(licence="CC-BY-4.0")
-    assert len(mit_runs) == 70
-    assert len(cc_runs) == 98
+    assert {r["id"] for r in store.runs(licence="MIT")} == mit_ids
+    assert {r["id"] for r in store.runs(licence="CC-BY-4.0")} == cc_ids
+    assert sum(1 for r in all_runs if r["public_files"] == 0) == sum(1 for f in facts if f["public_files"] == 0)
 
-    mit_ids = {r["id"] for r in mit_runs}
-    cc_ids = {r["id"] for r in cc_runs}
-    assert len(mit_ids & cc_ids) == 68
-    assert sum(1 for r in all_runs if r["public_files"] == 0) == 11
-
-    assert len(store.runs(kind="run")) == 74
-    assert len(store.runs(kind="collection")) == 33
-    assert len(store.runs(source="receipts")) == 96
-    assert len(store.runs(source="rnd-watch")) == 4
-    assert len(store.runs(source="xrpl-lab-runs")) == 11
+    assert len(store.runs(kind="run")) == n_run
+    assert len(store.runs(kind="collection")) == n_coll
+    for prefix in ("receipts", "rnd-watch", "xrpl-lab-runs", "merchant-league"):
+        assert len(store.runs(source=prefix)) == from_source(prefix), prefix
 
     code, out, err = run_cli("--root", str(REPO_ROOT), "ls")
     assert code == 0
     assert err == ""
-    assert "111 manifests: 74 runs, 33 collections and 4 without kind" in out
+    assert f"{n} manifests: {n_run} runs, {n_coll} collections and {len(no_kind_ids)} without kind" in out
 
 
 # ----------------------------------------------------------------------

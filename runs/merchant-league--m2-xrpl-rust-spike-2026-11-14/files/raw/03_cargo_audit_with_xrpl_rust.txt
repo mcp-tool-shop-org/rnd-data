@@ -1,0 +1,22 @@
+    Fetching advisory database from `https://github.com/RustSec/advisory-db.git`
+      Loaded 1509 security advisories (from <home>\.cargo\advisory-db)
+    Updating crates.io index
+    Scanning Cargo.lock for vulnerabilities (449 crate dependencies)
+Crate:     crypto-bigint
+Version:   0.5.5
+Title:     Multiple timing variability issues in operations intended to be constant-time
+Date:      2026-10-23
+ID:        RUSTSEC-2026-0387
+URL:       https://github.com/RustCrypto/crypto-bigint/pull/1365
+Solution:  Upgrade to >=0.7.6
+
+Crate:     atomic-polyfill
+Version:   1.0.3
+Warning:   unmaintained
+Title:     atomic-polyfill is unmaintained
+Date:      2023-07-11
+ID:        RUSTSEC-2023-0089
+URL:       https://rustsec.org/advisories/RUSTSEC-2023-0089
+
+error: 1 vulnerability found!
+error: 1 denied warning found!

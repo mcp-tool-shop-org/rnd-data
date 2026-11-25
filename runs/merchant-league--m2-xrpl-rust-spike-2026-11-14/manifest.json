@@ -1,0 +1,132 @@
+{
+ "schema": "rnd-data-run/v1",
+ "id": "merchant-league--m2-xrpl-rust-spike-2026-11-14",
+ "kind": "collection",
+ "source": "merchant-league/m2-xrpl-rust-spike-2026-11-14",
+ "models": [],
+ "licence_note": "generating models not yet recorded for this run",
+ "files": [
+  {
+   "path": "README.md",
+   "sha256": "7e31f768487e69bfd6002779eda149c1e30f6b447575049c55be9c918dc1ba25",
+   "bytes": 5791,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "league-dice-1d031a3e/Cargo.toml",
+   "sha256": "2f077e7f0174da4d3214ba329a916f76b8f893147f338a3323f3e38e4e6a6b3b",
+   "bytes": 380,
+   "tier": "T4",
+   "licence": "MIT",
+   "visibility": "public"
+  },
+  {
+   "path": "league-dice-1d031a3e/src/lib.rs",
+   "sha256": "194e5e0e9411388d69d61cf035c9dd40f1004d0aa519067e21719e4ca0004e77",
+   "bytes": 6599,
+   "tier": "T4",
+   "licence": "MIT",
+   "visibility": "public"
+  },
+  {
+   "path": "raw/00_snapshot.txt",
+   "sha256": "853f5be7aa847663ab6ff969a89b8e0b209c581c94d125f00db92c024a5427f9",
+   "bytes": 116,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "raw/01_spike.exit",
+   "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+   "bytes": 3,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "raw/01_spike.out",
+   "sha256": "c2659f7014a9f517a5bcb8f62fd6d62a9ac3418bdc89f3d8b473b6808af8f119",
+   "bytes": 2822,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "raw/02_merchant_account_tx.json",
+   "sha256": "ec56dde198ba382ccf454bfac2c5f28e5b8ef91a28f1fa38b4d923fa95a37b7e",
+   "bytes": 3097,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "raw/03_cargo_audit_with_xrpl_rust.txt",
+   "sha256": "2912f4a4569fca29709675ac96fdade55512f145d1d29344e28626ebbeee9667",
+   "bytes": 834,
+   "tier": "T4",
+   "licence": "CC-BY-4.0",
+   "visibility": "public"
+  },
+  {
+   "path": "testnet_spike.rs.txt",
+   "sha256": "11d19059ccc049e5dd2e1a10949114de9481762114e85d99967b6f6d372f2a35",
+   "bytes": 14696,
+   "tier": "T4",
+   "licence": "MIT",
+   "visibility": "public"
+  }
+ ],
+ "copies": [
+  {
+   "sha256": "7e31f768487e69bfd6002779eda149c1e30f6b447575049c55be9c918dc1ba25",
+   "store": "rnd-data",
+   "location": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/README.md"
+  },
+  {
+   "sha256": "2f077e7f0174da4d3214ba329a916f76b8f893147f338a3323f3e38e4e6a6b3b",
+   "store": "rnd-data",
+   "location": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/league-dice-1d031a3e/Cargo.toml"
+  },
+  {
+   "sha256": "194e5e0e9411388d69d61cf035c9dd40f1004d0aa519067e21719e4ca0004e77",
+   "store": "rnd-data",
+   "location": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/league-dice-1d031a3e/src/lib.rs"
+  },
+  {
+   "sha256": "853f5be7aa847663ab6ff969a89b8e0b209c581c94d125f00db92c024a5427f9",
+   "store": "rnd-data",
+   "location": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/00_snapshot.txt"
+  },
+  {
+   "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+   "store": "rnd-data",
+   "location": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/01_spike.exit"
+  },
+  {
+   "sha256": "c2659f7014a9f517a5bcb8f62fd6d62a9ac3418bdc89f3d8b473b6808af8f119",
+   "store": "rnd-data",
+   "location": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/01_spike.out"
+  },
+  {
+   "sha256": "ec56dde198ba382ccf454bfac2c5f28e5b8ef91a28f1fa38b4d923fa95a37b7e",
+   "store": "rnd-data",
+   "location": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/02_merchant_account_tx.json"
+  },
+  {
+   "sha256": "2912f4a4569fca29709675ac96fdade55512f145d1d29344e28626ebbeee9667",
+   "store": "rnd-data",
+   "location": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/03_cargo_audit_with_xrpl_rust.txt"
+  },
+  {
+   "sha256": "11d19059ccc049e5dd2e1a10949114de9481762114e85d99967b6f6d372f2a35",
+   "store": "rnd-data",
+   "location": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/testnet_spike.rs.txt"
+  }
+ ],
+ "private_files": {},
+ "ingested": "2026-11-25",
+ "rnd_commit": "ac5456e2f512318bd633158315ad30041a46e061"
+}
