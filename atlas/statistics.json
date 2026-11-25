@@ -49,7 +49,7 @@
       "confidence": "low",
       "highWater": null,
       "name": "runs",
-      "qualifyingSourceCommits": 0,
+      "qualifyingSourceCommits": 1,
       "rebaseline": null
     },
     {
@@ -99,7 +99,7 @@
       "confidence": "low",
       "highWater": null,
       "name": "tests",
-      "qualifyingSourceCommits": 3,
+      "qualifyingSourceCommits": 4,
       "rebaseline": null
     }
   ],
@@ -137,8 +137,8 @@
         "path": ".polyglot-pins.json"
       },
       {
-        "commits": 3,
-        "lines": 58,
+        "commits": 4,
+        "lines": 66,
         "path": "CHANGELOG.md"
       },
       {
@@ -207,8 +207,8 @@
         "path": "SHIP_GATE.md"
       },
       {
-        "commits": 3,
-        "lines": 132,
+        "commits": 4,
+        "lines": 143,
         "path": "atlas/README.md"
       },
       {
@@ -217,24 +217,74 @@
         "path": "atlas/boundaries.yaml"
       },
       {
-        "commits": 3,
-        "lines": 379,
+        "commits": 4,
+        "lines": 437,
         "path": "atlas/page.json"
       },
       {
-        "commits": 3,
-        "lines": 7049,
+        "commits": 4,
+        "lines": 7079,
         "path": "atlas/statistics.json"
       },
       {
-        "commits": 3,
-        "lines": 28087,
+        "commits": 4,
+        "lines": 28093,
         "path": "atlas/structure.json"
       },
       {
         "commits": 1,
         "lines": 78,
         "path": "pyproject.toml"
+      },
+      {
+        "commits": 1,
+        "lines": 75,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/README.md"
+      },
+      {
+        "commits": 1,
+        "lines": 15,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/league-dice-1d031a3e/Cargo.toml"
+      },
+      {
+        "commits": 1,
+        "lines": 184,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/league-dice-1d031a3e/src/lib.rs"
+      },
+      {
+        "commits": 1,
+        "lines": 3,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/00_snapshot.txt"
+      },
+      {
+        "commits": 1,
+        "lines": 1,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/01_spike.exit"
+      },
+      {
+        "commits": 1,
+        "lines": 18,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/01_spike.out"
+      },
+      {
+        "commits": 1,
+        "lines": 101,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/02_merchant_account_tx.json"
+      },
+      {
+        "commits": 1,
+        "lines": 22,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/03_cargo_audit_with_xrpl_rust.txt"
+      },
+      {
+        "commits": 1,
+        "lines": 487,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/testnet_spike.rs.txt"
+      },
+      {
+        "commits": 1,
+        "lines": 132,
+        "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json"
       },
       {
         "commits": 1,
@@ -3612,8 +3662,8 @@
         "path": "runs/receipts--colab--window2-20261017/files/pin-result.json"
       },
       {
-        "commits": 1,
-        "lines": 15,
+        "commits": 2,
+        "lines": 17,
         "path": "runs/receipts--colab--window2-20261017/files/rig-attempt1.log"
       },
       {
@@ -3627,8 +3677,8 @@
         "path": "runs/receipts--colab--window2-20261017/files/smoke-window.log"
       },
       {
-        "commits": 2,
-        "lines": 172,
+        "commits": 3,
+        "lines": 178,
         "path": "runs/receipts--colab--window2-20261017/manifest.json"
       },
       {
@@ -6402,8 +6452,8 @@
         "path": "store.json"
       },
       {
-        "commits": 3,
-        "lines": 990,
+        "commits": 4,
+        "lines": 1069,
         "path": "tests/test_rnd_data.py"
       },
       {
@@ -6417,9 +6467,9 @@
     "level": "low",
     "reason": "fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions"
   },
-  "generatedAt": "2026-11-12T17:24:52.102Z",
+  "generatedAt": "2026-11-25T13:00:14.652Z",
   "generatedFrom": {
-    "commit": "b6a3ae30fee51bf5bd6392223eaa2c37f9b3775c"
+    "commit": "890653c5949c9c368faea783ff5535802eefbec6"
   },
   "pairs": [],
   "parameters": {
@@ -6432,16 +6482,16 @@
     "floor": "fallen",
     "floorHeld": false,
     "floorTrigger": "both",
-    "headDate": "2026-11-11T18:36:59-05:00",
-    "inScopeFiles": 1261,
+    "headDate": "2026-11-25T07:56:22-05:00",
+    "inScopeFiles": 1271,
     "pinnedStart": null,
     "priorFloor": "fallen",
-    "qualifyingCommits": 13,
+    "qualifyingCommits": 16,
     "qualifyingMinimum": 30,
     "revisions": 5,
     "shared": 10,
     "sharedFloorUsed": 3,
-    "since": "2026-05-15T23:36:59.000Z",
+    "since": "2026-05-29T12:56:22.000Z",
     "sourceExtensions": [
       ".js",
       ".mjs",

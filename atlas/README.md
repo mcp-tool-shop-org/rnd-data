@@ -1,16 +1,20 @@
 # rnd-data: how it works
 
-Mapped at 2026-11-12 from commit b6a3ae3 by Atlas 1.26.0.
+Mapped at 2026-11-25 from commit 890653c by Atlas 1.26.0.
 
 ## What this is
 
 The raw data behind the studio's research: every run's receipts and outputs, with a manifest per run (rnd-data-run/v1) that pins each file by SHA-256, plus its MIT read-only Python package under src/. (written by a person)
 
-6 parts, mostly shell (79 files), Python (70), CSS (2), TypeScript (2), Astro (1) and JavaScript (1). Work enters through 4 doors; CI and Release each reach 3 parts, and CI is followed because a pull request goes through it. It publishes to PyPI. It deploys a site to GitHub Pages. People run rnd-data.
+6 parts, mostly shell (79 files), Python (70), CSS (2), TypeScript (2), Astro (1), JavaScript (1) and Rust (1). Work enters through 4 doors; CI and Release each reach 3 parts, and CI is followed because a pull request goes through it. It publishes to PyPI. It deploys a site to GitHub Pages. People run rnd-data.
 
-## What changed since 2026-11-11 (f7b1cfe)
+## What changed since 2026-11-12 (b6a3ae3)
 
-Nothing structural changed since 2026-11-11; 2 files changed content.
+- README.md is now also read by runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json.
+- runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/ is now read by runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json.
+- runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/README.md is now read by runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json.
+- And 8 more new writers and readers of places.
+- 10 files added and 2 changed content, across 3 parts.
 
 ## What comes in
 

@@ -35,33 +35,62 @@
   ],
   "changes": {
     "fileCounts": {
-      "added": 0,
+      "added": 10,
       "changed": 2,
       "moved": 0,
-      "parts": 1,
+      "parts": 3,
       "removed": 0
     },
     "items": [
       {
+        "kind": "landing",
+        "sentence": "README.md is now also read by runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json.",
+        "subjects": [
+          "README.md",
+          "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json"
+        ]
+      },
+      {
+        "kind": "landing",
+        "sentence": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/ is now read by runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json.",
+        "subjects": [
+          "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/",
+          "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json"
+        ]
+      },
+      {
+        "kind": "landing",
+        "sentence": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/README.md is now read by runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json.",
+        "subjects": [
+          "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/README.md",
+          "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json"
+        ]
+      },
+      {
+        "kind": "landing",
+        "sentence": "And 8 more new writers and readers of places.",
+        "subjects": []
+      },
+      {
         "kind": "counts",
-        "sentence": "Nothing structural changed since 2026-11-11; 2 files changed content.",
+        "sentence": "10 files added and 2 changed content, across 3 parts.",
         "subjects": []
       }
     ],
     "since": {
-      "commit": "f7b1cfeac43022742edf7cd1a2d72b3e34ffbb6e",
-      "generatedAt": "2026-11-11T22:36:41.966Z"
+      "commit": "b6a3ae30fee51bf5bd6392223eaa2c37f9b3775c",
+      "generatedAt": "2026-11-12T17:24:52.102Z"
     },
-    "unchanged": true
+    "unchanged": false
   },
   "changesTogether": [],
   "changesTogetherNote": [
     "Window: 180 days; a pair counts from 3 shared commits, since the window holds fewer than 30 qualifying commits."
   ],
   "changesTogetherWithTests": 0,
-  "commit": "b6a3ae30fee51bf5bd6392223eaa2c37f9b3775c",
+  "commit": "890653c5949c9c368faea783ff5535802eefbec6",
   "defaultBranch": "main",
-  "derived": "6 parts, mostly shell (79 files), Python (70), CSS (2), TypeScript (2), Astro (1) and JavaScript (1). Work enters through 4 doors; CI and Release each reach 3 parts, and CI is followed because a pull request goes through it. It publishes to PyPI. It deploys a site to GitHub Pages. People run rnd-data.",
+  "derived": "6 parts, mostly shell (79 files), Python (70), CSS (2), TypeScript (2), Astro (1), JavaScript (1) and Rust (1). Work enters through 4 doors; CI and Release each reach 3 parts, and CI is followed because a pull request goes through it. It publishes to PyPI. It deploys a site to GitHub Pages. People run rnd-data.",
   "doors": [
     {
       "checks": [
@@ -220,7 +249,7 @@
   ],
   "engine": "1.26.0",
   "generated": [],
-  "generatedAt": "2026-11-12T17:24:52.102Z",
+  "generatedAt": "2026-11-25T13:00:14.652Z",
   "limits": [
     "14 imports could not be resolved: `runs/receipts--colab--rung-prestep-muse-20261019--try5/files/prestep_fit_tokenizer.py` imports `pin_window`, which is no module on its import path and no declared dependency; `runs/receipts--colab--rung-prestep-muse-20261019--try5/files/rung_prestep_muse.py` imports `pin_window`, which is no module on its import path and no declared dependency; `runs/receipts--colab--rung-prestep-muse-20261019/files/derive_allow.py` imports `pin_window`, which is no module on its import path and no declared dependency; and 11 more.",
     "84 writes and 143 reads use paths built at run time and are not named here.",
@@ -250,7 +279,7 @@
   ],
   "summary": "The raw data behind the studio's research: every run's receipts and outputs, with a manifest per run (rnd-data-run/v1) that pins each file by SHA-256, plus its MIT read-only Python package under src/.",
   "summaryFrom": "person",
-  "testFiles": 1,
+  "testFiles": 2,
   "testedBy": {
     "src": 1
   },

@@ -52,7 +52,7 @@
           "path": ".polyglot-pins.json"
         },
         {
-          "hash": "5af2c45901ae7d264803855bd4032a1e773ed17f2b1ebe3d933f343cf571de0d",
+          "hash": "f61c98986c861a489dd3fbd73a0e74ff780e66ae1449999d824f0c362d13e04f",
           "path": "CHANGELOG.md"
         },
         {
@@ -135,9 +135,59 @@
       "dynamicSpawns": 0,
       "dynamicSpawnsInTests": 0,
       "dynamicWrites": 84,
-      "entryPoints": [],
+      "entryPoints": [
+        "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/league-dice-1d031a3e/src/lib.rs"
+      ],
       "externals": 0,
       "files": [
+        {
+          "hash": "7e31f768487e69bfd6002779eda149c1e30f6b447575049c55be9c918dc1ba25",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/README.md"
+        },
+        {
+          "hash": "2f077e7f0174da4d3214ba329a916f76b8f893147f338a3323f3e38e4e6a6b3b",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/league-dice-1d031a3e/Cargo.toml"
+        },
+        {
+          "exports": [
+            "condition_hex",
+            "condition_hex_for",
+            "finish_fee_drops",
+            "fulfillment_hex",
+            "fulfillment_hex_for"
+          ],
+          "hash": "194e5e0e9411388d69d61cf035c9dd40f1004d0aa519067e21719e4ca0004e77",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/league-dice-1d031a3e/src/lib.rs",
+          "testsInside": true
+        },
+        {
+          "hash": "853f5be7aa847663ab6ff969a89b8e0b209c581c94d125f00db92c024a5427f9",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/00_snapshot.txt"
+        },
+        {
+          "hash": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/01_spike.exit"
+        },
+        {
+          "hash": "c2659f7014a9f517a5bcb8f62fd6d62a9ac3418bdc89f3d8b473b6808af8f119",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/01_spike.out"
+        },
+        {
+          "hash": "ec56dde198ba382ccf454bfac2c5f28e5b8ef91a28f1fa38b4d923fa95a37b7e",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/02_merchant_account_tx.json"
+        },
+        {
+          "hash": "2912f4a4569fca29709675ac96fdade55512f145d1d29344e28626ebbeee9667",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/03_cargo_audit_with_xrpl_rust.txt"
+        },
+        {
+          "hash": "11d19059ccc049e5dd2e1a10949114de9481762114e85d99967b6f6d372f2a35",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/testnet_spike.rs.txt"
+        },
+        {
+          "hash": "5ccc0d90fcce35720997caa8fcd4f413bcfcf69101ec050ca133736a6e339f85",
+          "path": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json"
+        },
         {
           "hash": "1c355d17e2f725682e43bab9a2a5ba2e22080748ac7673d435f65a8566c24beb",
           "path": "runs/receipts--buildmode/manifest.json"
@@ -8440,7 +8490,8 @@
       "outsideReads": 88,
       "outsideWrites": 8,
       "role": "data",
-      "testedBy": 0,
+      "testedBy": 1,
+      "testedInside": true,
       "unresolvedNamed": [
         {
           "path": "runs/receipts--colab--rung-prestep-muse-20261019--try5/files/prestep_fit_tokenizer.py",
@@ -8880,7 +8931,7 @@
             "test_where_declared_and_undeclared_never_touches_blobs",
             "write_fixture_store"
           ],
-          "hash": "5f8189ca190ce6e926bb0dcdb9352dc0d8a32db91280016ff1e40579f53ab752",
+          "hash": "bdafbafe12708c12e81c33e5c20f7306bf068f66fd8e452cfe38f3fa25957968",
           "importsFiles": [
             "src/rnd_data/__init__.py",
             "src/rnd_data/cli.py"
@@ -9601,8 +9652,8 @@
   ],
   "engine": "1.26.0",
   "generatedFrom": {
-    "commit": "b6a3ae30fee51bf5bd6392223eaa2c37f9b3775c",
-    "tracked": 1256
+    "commit": "890653c5949c9c368faea783ff5535802eefbec6",
+    "tracked": 1266
   },
   "landings": [
     {
@@ -9626,6 +9677,11 @@
       "readers": [
         {
           "by": "pyproject.toml",
+          "call": "configuration",
+          "confidence": "config"
+        },
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
           "call": "configuration",
           "confidence": "config"
         },
@@ -9703,6 +9759,116 @@
         }
       ],
       "target": "runs",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/README.md",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/league-dice-1d031a3e/Cargo.toml",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/league-dice-1d031a3e/src/lib.rs",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/00_snapshot.txt",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/01_spike.exit",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/01_spike.out",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/02_merchant_account_tx.json",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/raw/03_cargo_audit_with_xrpl_rust.txt",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/manifest.json",
+          "call": "configuration",
+          "confidence": "config"
+        }
+      ],
+      "target": "runs/merchant-league--m2-xrpl-rust-spike-2026-11-14/files/testnet_spike.rs.txt",
       "writers": []
     },
     {
@@ -22970,6 +23136,6 @@
   "overlaps": [],
   "submodules": [],
   "symlinks": [],
-  "testFiles": 1,
+  "testFiles": 2,
   "unassigned": []
 }
