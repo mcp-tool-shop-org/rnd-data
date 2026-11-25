@@ -1,0 +1,18 @@
+{"build":"3.4.1","network_id":1,"step":"network_guard"}
+{"faucet_calls":2,"issuer":"rKja9ZxUyK54dKVSWJtsuf9Cbm2c7amDkk","merchant":"rDF9jgxWAgstbsi8UAEcqoNaFg9oc2rbWc","step":"accounts"}
+{"hash":"2464CAB6871A52E0C49B385FA6F826C11E5DC66748A6E53BF201C1AEDC97500C","ledger_index":22311281,"result":"tesSUCCESS","step":"issuer_allow_clawback","validated":true}
+{"hash":"D277D8C7410200DA939136BE7D74D9C492BD22044FAC709BA35A8A760E5E6055","ledger_index":22311282,"result":"tesSUCCESS","step":"issuer_default_ripple","validated":true}
+{"hash":"24F2845E2A03C0C82C9F8DF83B59776059A4277EE0456CC1056BB959ABF40E9C","ledger_index":22311284,"result":"tesSUCCESS","step":"merchant_trust_set","validated":true}
+{"hash":"E8AB1C14CEEFAFEDE04CC6B46B95AEAC3014397FE78088070923478915B7A9C1","ledger_index":22311286,"result":"tesSUCCESS","step":"issuer_pays_100","validated":true}
+{"hash":"E8E67453AC163ADD2E5B4F82A2A405EAEF878B4835C39E02B030988AABE67865","ledger_index":22311288,"result":"tesSUCCESS","step":"merchant_offer_create","validated":true}
+{"offers":[{"flags":0,"quality":"100000","seq":22311280,"taker_gets":{"currency":"MRK","issuer":"rKja9ZxUyK54dKVSWJtsuf9Cbm2c7amDkk","value":"10"},"taker_pays":"1000000"}],"step":"read_offers_after_create"}
+{"hash":"6B6A34AFDC668D153CD96BD1B25E83EA277856E186E344E501E31E5C8B1163A2","ledger_index":22311290,"result":"tesSUCCESS","step":"merchant_offer_cancel","validated":true}
+{"hash":"3E016AD9CD898E564ABF4AE9456941AC9118CD35C4EFF365A96F9E1B9FB26D94","ledger_index":22311292,"result":"tesSUCCESS","step":"issuer_check_create","validated":true}
+{"check_id":"82A10552DBA06769AF9F9A025A2FF6B0710856E949FF636D1A4CEE4EAA6A1A69","step":"read_check_id"}
+{"hash":"EB1754EF9A33A2DB985E4580CC4E31EE66BC1F709CCF5D1976D7268CB1376E24","ledger_index":22311294,"result":"tesSUCCESS","step":"merchant_check_cash","validated":true}
+{"hash":"5B8994B78663EB060C9EA35416A087C6C3FFAC586A33F555E76A4E3E2906FDB2","ledger_index":22311296,"result":"tesSUCCESS","step":"merchant_escrow_create","validated":true}
+{"condition":"A0258020D9439BB41E98851DA594B3D3979CD16D89EE184EE30AB25196EA14116044B8D2810120","escrows":1,"offer_sequence":22311283,"step":"read_escrow"}
+{"error":"XRPL Transaction Helper error: XRPL Submit and Wait error: Transaction submission failed: tecCRYPTOCONDITION_ERROR","step":"merchant_escrow_finish_wrong_secret"}
+{"hash":"904E4C7BA64BA14D5893F021B4F430BCAF757545CBBD14E2A78B1207BCBAB72E","ledger_index":22311300,"result":"tesSUCCESS","step":"merchant_escrow_finish","validated":true}
+{"hash":"EE29D6BD76878A2E67FC3EE28275E9BEFA966B385BBC78D2C6C90E2B2F246968","ledger_index":22311302,"result":"tesSUCCESS","step":"issuer_clawback_3","validated":true}
+{"checks_left":0,"escrows_left":0,"expected_balance":"102","merchant_mrk_balance":"102","offers_left":0,"step":"final_state"}

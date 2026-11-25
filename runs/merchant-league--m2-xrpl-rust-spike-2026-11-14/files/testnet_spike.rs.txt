@@ -1,0 +1,487 @@
+//! M2 Testnet spike: prove `xrpl-rust` 1.3.0 can do every transaction
+//! Merchant League needs, on the XRPL Testnet.
+//!
+//! Run: `cargo run -p league-ledger --example testnet_spike`
+//!
+//! Two faucet accounts, an issuer and a merchant, then in order:
+//!
+//! 1. issuer `AccountSet`: allow trust-line clawback (must come first)
+//! 2. issuer `AccountSet`: default ripple
+//! 3. merchant `TrustSet` to the issuer for MRK
+//! 4. issuer `Payment`: 100 MRK to the merchant
+//! 5. merchant `OfferCreate` (10 MRK for 1 XRP), then `OfferCancel`
+//! 6. issuer `CheckCreate` (5 MRK), then merchant `CheckCash`
+//! 7. merchant `EscrowCreate` locked to a secret's crypto-condition,
+//!    a finish with the WRONG secret (must fail), then with the right one
+//! 8. issuer `Clawback`: 3 MRK back from the merchant
+//!
+//! Every step prints one JSON line: the step, the transaction hash, its
+//! result and whether it is validated. Ledger reads at the end print the
+//! outcome. Seeds stay in memory and are never printed.
+
+use std::borrow::Cow;
+use std::error::Error;
+use std::time::{SystemTime, UNIX_EPOCH};
+
+use league_dice::{Secret, condition_hex, finish_fee_drops, fulfillment_hex};
+use league_ledger::{TESTNET_FAUCET, TESTNET_JSON_RPC, require_testnet};
+use serde_json::{Value, json};
+use xrpl::asynch::clients::AsyncJsonRpcClient;
+use xrpl::asynch::transaction::submit_and_wait;
+use xrpl::asynch::wallet::generate_faucet_wallet;
+use xrpl::models::transactions::account_set::{AccountSet, AccountSetFlag};
+use xrpl::models::transactions::check_cash::CheckCash;
+use xrpl::models::transactions::check_create::CheckCreate;
+use xrpl::models::transactions::clawback::Clawback;
+use xrpl::models::transactions::escrow_create::EscrowCreate;
+use xrpl::models::transactions::escrow_finish::EscrowFinish;
+use xrpl::models::transactions::offer_cancel::OfferCancel;
+use xrpl::models::transactions::offer_create::OfferCreate;
+use xrpl::models::transactions::payment::Payment;
+use xrpl::models::transactions::trust_set::TrustSet;
+use xrpl::models::{Amount, IssuedCurrencyAmount, XRPAmount};
+use xrpl::wallet::Wallet;
+
+type Res<T> = Result<T, Box<dyn Error>>;
+
+const CURRENCY: &str = "MRK";
+/// Seconds between the Unix epoch and the Ripple epoch (2000-01-01).
+const RIPPLE_EPOCH_OFFSET: u64 = 946_684_800;
+
+/// A plain JSON-RPC read, for the checks at the end. Not what the spike
+/// tests: the library is used for building, signing and submitting.
+fn rpc(method: &str, params: Value) -> Res<Value> {
+    let body = json!({ "method": method, "params": [params] });
+    let reply: Value = ureq::post(TESTNET_JSON_RPC)
+        .send_json(&body)?
+        .body_mut()
+        .read_json()?;
+    Ok(reply["result"].clone())
+}
+
+/// Print one step as a JSON line, from the submit result or the error.
+fn report(step: &str, outcome: Result<Value, String>) -> Value {
+    let line = match outcome {
+        Ok(tx) => json!({
+            "step": step,
+            "hash": tx["hash"],
+            "result": tx["meta"]["TransactionResult"],
+            "validated": tx["validated"],
+            "ledger_index": tx["ledger_index"],
+        }),
+        Err(e) => json!({ "step": step, "error": e }),
+    };
+    println!("{line}");
+    line
+}
+
+macro_rules! submit {
+    ($step:expr, $tx:expr, $client:expr, $wallet:expr) => {{
+        let mut tx = $tx;
+        let outcome = submit_and_wait(&mut tx, $client, Some($wallet), Some(true), Some(true))
+            .await
+            .map_err(|e| e.to_string())
+            .and_then(|r| serde_json::to_value(&r).map_err(|e| e.to_string()));
+        report($step, outcome)
+    }};
+}
+
+fn mrk(issuer: &str, value: &str) -> IssuedCurrencyAmount<'static> {
+    IssuedCurrencyAmount::new(
+        CURRENCY.into(),
+        issuer.to_string().into(),
+        value.to_string().into(),
+    )
+}
+
+fn address(w: &Wallet) -> Cow<'static, str> {
+    w.classic_address.clone().into()
+}
+
+#[tokio::main]
+async fn main() -> Res<()> {
+    // 0. The guard: the server must report the Testnet's network id.
+    let info = rpc("server_info", json!({}))?;
+    let reported = info["info"]["network_id"].as_u64().map(|n| n as u32);
+    println!(
+        "{}",
+        json!({"step": "network_guard", "network_id": reported, "build": info["info"]["build_version"]})
+    );
+    require_testnet(reported)?;
+
+    let client = AsyncJsonRpcClient::connect(TESTNET_JSON_RPC.parse()?);
+    let faucet = TESTNET_FAUCET.parse()?;
+    let usage: Option<Cow<'_, str>> = Some("merchant-league-spike".into());
+    let issuer = generate_faucet_wallet(&client, None, Some(faucet), usage.clone(), usage.clone())
+        .await
+        .map_err(|e| format!("faucet: {e:?}"))?;
+    let merchant = generate_faucet_wallet(
+        &client,
+        None,
+        Some(TESTNET_FAUCET.parse()?),
+        usage.clone(),
+        usage,
+    )
+    .await
+    .map_err(|e| format!("faucet: {e:?}"))?;
+    let (iss, mer) = (address(&issuer), address(&merchant));
+    println!(
+        "{}",
+        json!({"step": "accounts", "issuer": iss, "merchant": mer, "faucet_calls": 2})
+    );
+
+    // 1-2. Issuer flags. Clawback must be allowed before any trust line.
+    submit!(
+        "issuer_allow_clawback",
+        AccountSet::new(
+            iss.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            Some(AccountSetFlag::AsfAllowTrustLineClawback),
+            None,
+            None,
+            None,
+        ),
+        &client,
+        &issuer
+    );
+    submit!(
+        "issuer_default_ripple",
+        AccountSet::new(
+            iss.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            Some(AccountSetFlag::AsfDefaultRipple),
+            None,
+            None,
+            None,
+        ),
+        &client,
+        &issuer
+    );
+
+    // 3-4. Trust line and the first marks.
+    submit!(
+        "merchant_trust_set",
+        TrustSet::new(
+            mer.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            mrk(&iss, "1000"),
+            None,
+            None,
+        ),
+        &client,
+        &merchant
+    );
+    submit!(
+        "issuer_pays_100",
+        Payment::new(
+            iss.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            Amount::IssuedCurrencyAmount(mrk(&iss, "100")),
+            mer.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+        ),
+        &client,
+        &issuer
+    );
+
+    // 5. An offer on the order book, then its cancel.
+    let offer = submit!(
+        "merchant_offer_create",
+        OfferCreate::new(
+            mer.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            Amount::IssuedCurrencyAmount(mrk(&iss, "10")),
+            Amount::XRPAmount(XRPAmount::from("1000000")),
+            None,
+            None,
+        ),
+        &client,
+        &merchant
+    );
+    let offers = rpc(
+        "account_offers",
+        json!({"account": mer, "ledger_index": "validated"}),
+    )?;
+    println!(
+        "{}",
+        json!({"step": "read_offers_after_create", "offers": offers["offers"]})
+    );
+    let offer_seq = offers["offers"][0]["seq"].as_u64().map(|n| n as u32);
+    match offer_seq {
+        Some(seq) => {
+            submit!(
+                "merchant_offer_cancel",
+                OfferCancel::new(
+                    mer.clone(),
+                    None,
+                    None,
+                    None,
+                    None,
+                    None,
+                    None,
+                    None,
+                    None,
+                    seq,
+                ),
+                &client,
+                &merchant
+            );
+        }
+        None => println!(
+            "{}",
+            json!({"step": "merchant_offer_cancel", "error": "no open offer to cancel", "create": offer})
+        ),
+    }
+
+    // 6. A check written by the issuer and cashed by the merchant.
+    submit!(
+        "issuer_check_create",
+        CheckCreate::new(
+            iss.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            mer.clone(),
+            Amount::IssuedCurrencyAmount(mrk(&iss, "5")),
+            None,
+            None,
+            None,
+        ),
+        &client,
+        &issuer
+    );
+    let checks = rpc(
+        "account_objects",
+        json!({"account": iss, "type": "check", "ledger_index": "validated"}),
+    )?;
+    let check_id = checks["account_objects"][0]["index"]
+        .as_str()
+        .unwrap_or_default()
+        .to_string();
+    println!("{}", json!({"step": "read_check_id", "check_id": check_id}));
+    submit!(
+        "merchant_check_cash",
+        CheckCash::new(
+            mer.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            check_id.clone().into(),
+            Some(Amount::IssuedCurrencyAmount(mrk(&iss, "5"))),
+            None,
+        ),
+        &client,
+        &merchant
+    );
+
+    // 7. The dice commitment: an escrow locked to a secret's condition.
+    let secret = Secret(rand_bytes()?);
+    let wrong = Secret(rand_bytes()?);
+    let condition = condition_hex(&secret);
+    let now_ripple = SystemTime::now().duration_since(UNIX_EPOCH)?.as_secs() - RIPPLE_EPOCH_OFFSET;
+    let cancel_after = (now_ripple + 900) as u32;
+    let escrow = submit!(
+        "merchant_escrow_create",
+        EscrowCreate::new(
+            mer.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            XRPAmount::from("1"),
+            iss.clone(),
+            Some(cancel_after),
+            Some(condition.clone().into()),
+            None,
+            None,
+        ),
+        &client,
+        &merchant
+    );
+    let escrows = rpc(
+        "account_objects",
+        json!({"account": mer, "type": "escrow", "ledger_index": "validated"}),
+    )?;
+    let escrow_seq = escrow_sequence(&escrow);
+    println!(
+        "{}",
+        json!({"step": "read_escrow", "escrows": escrows["account_objects"].as_array().map(|a| a.len()), "offer_sequence": escrow_seq, "condition": condition})
+    );
+    let fee = (finish_fee_drops(32) + 150).to_string();
+    if let Some(seq) = escrow_seq {
+        submit!(
+            "merchant_escrow_finish_wrong_secret",
+            EscrowFinish::new(
+                mer.clone(),
+                None,
+                Some(XRPAmount::from(fee.clone())),
+                None,
+                None,
+                None,
+                None,
+                None,
+                None,
+                mer.clone(),
+                seq,
+                Some(condition.clone().into()),
+                Some(fulfillment_hex(&wrong).into()),
+            ),
+            &client,
+            &merchant
+        );
+        submit!(
+            "merchant_escrow_finish",
+            EscrowFinish::new(
+                mer.clone(),
+                None,
+                Some(XRPAmount::from(fee.clone())),
+                None,
+                None,
+                None,
+                None,
+                None,
+                None,
+                mer.clone(),
+                seq,
+                Some(condition.clone().into()),
+                Some(fulfillment_hex(&secret).into()),
+            ),
+            &client,
+            &merchant
+        );
+    }
+
+    // 8. Clawback: the issuer takes 3 MRK back.
+    submit!(
+        "issuer_clawback_3",
+        Clawback::new(
+            iss.clone(),
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            Amount::IssuedCurrencyAmount(mrk(&mer, "3")),
+            None,
+        ),
+        &client,
+        &issuer
+    );
+
+    // The outcome, read from the validated ledger.
+    let lines = rpc(
+        "account_lines",
+        json!({"account": mer, "peer": iss, "ledger_index": "validated"}),
+    )?;
+    let left_escrows = rpc(
+        "account_objects",
+        json!({"account": mer, "type": "escrow", "ledger_index": "validated"}),
+    )?;
+    let left_checks = rpc(
+        "account_objects",
+        json!({"account": iss, "type": "check", "ledger_index": "validated"}),
+    )?;
+    let left_offers = rpc(
+        "account_offers",
+        json!({"account": mer, "ledger_index": "validated"}),
+    )?;
+    println!(
+        "{}",
+        json!({
+            "step": "final_state",
+            "merchant_mrk_balance": lines["lines"][0]["balance"],
+            "expected_balance": "102",
+            "escrows_left": left_escrows["account_objects"].as_array().map(|a| a.len()),
+            "checks_left": left_checks["account_objects"].as_array().map(|a| a.len()),
+            "offers_left": left_offers["offers"].as_array().map(|a| a.len()),
+        })
+    );
+    Ok(())
+}
+
+/// The escrow's sequence: the `Sequence` of the `EscrowCreate` that made it,
+/// read back from the ledger by its hash.
+fn escrow_sequence(create: &Value) -> Option<u32> {
+    let hash = create["hash"].as_str()?;
+    let tx = rpc("tx", json!({"transaction": hash})).ok()?;
+    tx["tx_json"]["Sequence"]
+        .as_u64()
+        .or(tx["Sequence"].as_u64())
+        .and_then(|n| u32::try_from(n).ok())
+}
+
+/// 32 random bytes from the operating system.
+fn rand_bytes() -> Res<[u8; 32]> {
+    let mut out = [0u8; 32];
+    getrandom::fill(&mut out).map_err(|e| e.to_string())?;
+    Ok(out)
+}
